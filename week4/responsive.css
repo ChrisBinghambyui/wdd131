@@ -33,9 +33,9 @@ nav a {
     border-top: 1px solid gray;
 }
 
-/* .hide{
+.hide{
     display: none;
-} */
+}
 
 nav a:hover {
     text-decoration: none;
