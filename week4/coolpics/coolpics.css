@@ -148,6 +148,9 @@ dialog:not([open]) {
     .menu-btn{
         display: none;
     }
+    nav.hide{
+        display: block;
+    }
     nav a{
         display: inline;
     }
