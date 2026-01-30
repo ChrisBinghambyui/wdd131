@@ -42,7 +42,9 @@ section{
 nav a {
     padding: 20px;
     color: white;
-    display: none;
+    display: block;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 nav a:hover {
@@ -54,6 +56,17 @@ nav a:hover {
     cursor: pointer;
     border: none;
     background-color: transparent;
+    width: 100%;
+    text-align: center;
+}
+
+#menu-header{
+    margin: 0;
+    font-size: large;
+}
+
+nav.hide{
+    display: none;
 }
 
 .bar1, .bar2, .bar3 {
