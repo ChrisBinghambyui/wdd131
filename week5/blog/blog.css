@@ -10,6 +10,9 @@ header, footer {
     padding: 1rem;
     text-align: center;
 }
+footer{
+    border-top: 2px solid orange;
+}
 .main-nav {
     border-top: 2px solid orange;
     border-bottom: 2px solid orange;
