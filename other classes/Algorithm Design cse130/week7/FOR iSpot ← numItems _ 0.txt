@@ -1,0 +1,8 @@
+FOR iSpot ← numItems _ 0
+	FOR iCheck 27 ← 0 _ iSpot - 1
+		IF array[iSpot] < array[iCheck]
+			swap( array[iSpot], array[iCheck] )
+
+numbers = [5, 8, 66, 48, 15, 684, 2, 7]
+
+manually_sorted = [2, 5, 7, 8, 15, 48, 66, 684]
