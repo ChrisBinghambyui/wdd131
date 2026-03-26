@@ -1262,13 +1262,13 @@ input[type="text"]:focus { border-color: var(--gold); }
 <body>
 
 <!-- FEEDBACK BUTTON -->
-<a id="feedback-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSekRdEyZID3Kygw4YYl_YvNLabhpWJH-uixi2_n1PdW0qRtPA/viewform?usp=sharing&ouid=101055319341169915281" target="_blank" rel="noopener noreferrer">✦ Feedback</a>
+<a id="feedback-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSekRdEyZID3Kygw4YYl_YvNLabhpWJH-uixi2_n1PdW0qRtPA/viewform?usp=sharing&ouid=101055319341169915281" target="_blank" rel="noopener noreferrer">Ã¢Å“Â¦ Feedback</a>
 
 <!-- LOG PANEL -->
 <div id="log-panel">
   <div id="log-title">
-    <span>⚔ Combat Log</span>
-    <button id="log-close-btn" onclick="toggleLogPanel()">×</button>
+    <span>Ã¢Å¡â€ Combat Log</span>
+    <button id="log-close-btn" onclick="toggleLogPanel()">Ãƒâ€”</button>
   </div>
   <div id="log-entries"></div>
   <div id="log-chat-row">
@@ -1282,7 +1282,7 @@ input[type="text"]:focus { border-color: var(--gold); }
 <div id="xp-tooltip" class="xp-tooltip" hidden></div>
 
 <!-- LOG TOGGLE BUTTON (Mobile) -->
-<button id="log-toggle-btn" onclick="toggleLogPanel()">📋</button>
+<button id="log-toggle-btn" onclick="toggleLogPanel()">Ã°Å¸â€œâ€¹</button>
 
 <!-- MAIN CONTENT -->
 <div id="main">
@@ -1294,14 +1294,14 @@ input[type="text"]:focus { border-color: var(--gold); }
       <select id="title-lang-select" onchange="changeLanguage(this.value)"></select>
     </div>
     <div style="text-align:center; animation: fadeIn 1.2s ease">
-      <div class="title-bones">🦴 ✦ 🎲 ✦ 🦴</div>
+      <div class="title-bones">Ã°Å¸Â¦Â´ Ã¢Å“Â¦ Ã°Å¸Å½Â² Ã¢Å“Â¦ Ã°Å¸Â¦Â´</div>
       <div class="title-logo">Loaded Bones</div>
       <div class="title-subtitle" id="title-subtitle">A Dice & Card Adventure</div>
       <button class="btn primary" id="title-begin-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px" onclick="showCharCreate()">Begin</button>
       <button class="btn primary" id="continue-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px; margin-left:12px; display:none;" onclick="loadAndResume()">Continue</button>
       <button class="btn" id="title-import-btn" style="font-size:15px; padding:14px 30px; letter-spacing:2px; margin-left:12px;" onclick="importSave()">Import Save</button>
       <div id="title-quickmatch-wrap" style="margin-top:14px;">
-        <button class="btn primary" id="title-quickmatch-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px;" onclick="initQuickMatch()">⚡ Quick Match</button>
+        <button class="btn primary" id="title-quickmatch-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px;" onclick="initQuickMatch()">Ã¢Å¡Â¡ Quick Match</button>
       </div>
     </div>
   </div>
@@ -1359,7 +1359,7 @@ input[type="text"]:focus { border-color: var(--gold); }
     <div class="town-header">
       <div>
         <div class="player-title" id="town-player-name">Adventurer</div>
-        <div class="player-meta" id="town-player-meta">Fencer · Plains Tier 1</div>
+        <div class="player-meta" id="town-player-meta">Fencer Ã‚Â· Plains Tier 1</div>
       </div>
       <div>
         <div class="stats-row">
@@ -1392,46 +1392,46 @@ input[type="text"]:focus { border-color: var(--gold); }
       <div class="town-action" onclick="goAdventure()">
         <div class="town-action-name" id="town-action-adventure-name">Adventure</div>
         <div class="town-action-desc" id="town-action-adventure-desc">Head into the wilderness and fight enemies</div>
-        <div class="town-action-icon">⚔️</div>
+        <div class="town-action-icon">Ã¢Å¡â€Ã¯Â¸Â</div>
       </div>
       <div class="town-action" onclick="openBestiary()">
         <div class="town-action-name" id="town-action-rest-name">Bestiary</div>
         <div class="town-action-desc" id="town-action-rest-desc">Review foes you've faced, their cards, and status effects</div>
-        <div class="town-action-icon">📖</div>
+        <div class="town-action-icon">Ã°Å¸â€œâ€“</div>
       </div>
       <div class="town-action" onclick="openInventory()">
         <div class="town-action-name" id="town-action-inventory-name">Inventory & Deck</div>
         <div class="town-action-desc" id="town-action-inventory-desc">Manage your cards and active deck</div>
-        <div class="town-action-icon">🃏</div>
+        <div class="town-action-icon">Ã°Å¸Æ’Â</div>
       </div>
       <div class="town-action" id="town-shop" onclick="openShop()">
         <div class="town-action-name" id="town-action-shop-name">Shop</div>
         <div class="town-action-desc" id="town-action-shop-desc">Buy cards from the Naukin shopkeep</div>
-        <div class="town-action-icon">🏪</div>
+        <div class="town-action-icon">Ã°Å¸ÂÂª</div>
       </div>
       <div class="town-action" id="town-blacksmith" onclick="openBlacksmith()">
         <div class="town-action-name" id="town-action-blacksmith-name">Blacksmith</div>
         <div class="town-action-desc" id="town-action-blacksmith-desc">Forge 2 identical cards into an upgrade</div>
-        <div class="town-action-icon">🔨</div>
+        <div class="town-action-icon">Ã°Å¸â€Â¨</div>
       </div>
       <div class="town-action" onclick="openTraining()">
         <div class="town-action-name" id="town-action-training-name">Training</div>
         <div class="town-action-desc" id="town-action-training-desc">Improve your stats with Thessa's coaching</div>
-        <div class="town-action-icon">💪</div>
+        <div class="town-action-icon">Ã°Å¸â€™Âª</div>
       </div>
       <div class="town-action" onclick="showMultiplayerLobby()">
         <div class="town-action-name" id="town-action-multiplayer-name">Multiplayer</div>
         <div class="town-action-desc" id="town-action-multiplayer-desc">Create or join a room code and duel another player</div>
-        <div class="town-action-icon">🌐</div>
+        <div class="town-action-icon">Ã°Å¸Å’Â</div>
       </div>
     </div>
     
     <div style="margin-top:32px; padding-top:24px; border-top: 1px solid var(--card-border); text-align:center;">
       <div class="section-label" id="town-game-management-title" style="margin-bottom:12px;">Game Management</div>
-      <button class="btn" id="town-save-btn" style="font-size:12px; padding:10px 16px;" onclick="autoSave()">💾 Save</button>
-      <button class="btn" id="town-export-btn" style="font-size:12px; padding:10px 16px; margin-left:8px;" onclick="exportSave()">📥 Export Save</button>
-      <button class="btn" id="town-import-btn" style="font-size:12px; padding:10px 16px; margin-left:8px;" onclick="importSave()">📤 Import Save</button>
-      <button class="btn" id="town-main-menu-btn" style="font-size:12px; padding:10px 16px; margin-left:8px;" onclick="showScreen('title-screen')">🏠 Main Menu</button>
+      <button class="btn" id="town-save-btn" style="font-size:12px; padding:10px 16px;" onclick="autoSave()">Ã°Å¸â€™Â¾ Save</button>
+      <button class="btn" id="town-export-btn" style="font-size:12px; padding:10px 16px; margin-left:8px;" onclick="exportSave()">Ã°Å¸â€œÂ¥ Export Save</button>
+      <button class="btn" id="town-import-btn" style="font-size:12px; padding:10px 16px; margin-left:8px;" onclick="importSave()">Ã°Å¸â€œÂ¤ Import Save</button>
+      <button class="btn" id="town-main-menu-btn" style="font-size:12px; padding:10px 16px; margin-left:8px;" onclick="showScreen('title-screen')">Ã°Å¸ÂÂ  Main Menu</button>
     </div>
   </div>
 
@@ -1539,7 +1539,7 @@ input[type="text"]:focus { border-color: var(--gold); }
     <h1 class="title-main" style="font-size:32px; margin-bottom:40px; text-align:center;">Quick Match</h1>
     <div style="text-align:center; margin-bottom:30px;">
       <div class="info-text">Select a class to enter the quick match queue.</div>
-      <div class="info-text" style="margin-top:8px; color:var(--bone-dim);">Level 3 • Auto-equipped deck • Instant battles</div>
+      <div class="info-text" style="margin-top:8px; color:var(--bone-dim);">Level 3 Ã¢â‚¬Â¢ Auto-equipped deck Ã¢â‚¬Â¢ Instant battles</div>
     </div>
 
     <div style="background:rgba(0,0,0,0.3); border:1px solid var(--parchment); border-radius:4px; padding:16px; margin:20px auto; max-width:400px;">
@@ -1565,21 +1565,21 @@ input[type="text"]:focus { border-color: var(--gold); }
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; max-width:900px; margin:20px auto;">
       <!-- Offensive Deck -->
       <div class="panel" style="padding:20px; cursor:pointer; border:2px solid transparent; transition:all 0.2s;" id="deck-offensive" onclick="selectQuickMatchDeck('offensive')">
-        <div class="section-label" style="color:var(--blood-bright); margin-bottom:12px;">⚔️ OFFENSIVE</div>
+        <div class="section-label" style="color:var(--blood-bright); margin-bottom:12px;">Ã¢Å¡â€Ã¯Â¸Â OFFENSIVE</div>
         <div class="info-text" style="font-size:12px; margin-bottom:12px;">High damage output. Strike fast and hard.</div>
         <div id="qm-offensive-preview" style="font-size:11px; color:var(--bone-dim); min-height:60px;"></div>
       </div>
 
       <!-- Defensive Deck -->
       <div class="panel" style="padding:20px; cursor:pointer; border:2px solid transparent; transition:all 0.2s;" id="deck-defensive" onclick="selectQuickMatchDeck('defensive')">
-        <div class="section-label" style="color:var(--teal-light); margin-bottom:12px;">🛡️ DEFENSIVE</div>
+        <div class="section-label" style="color:var(--teal-light); margin-bottom:12px;">Ã°Å¸â€ºÂ¡Ã¯Â¸Â DEFENSIVE</div>
         <div class="info-text" style="font-size:12px; margin-bottom:12px;">Shield and heal. Outlast the enemy.</div>
         <div id="qm-defensive-preview" style="font-size:11px; color:var(--bone-dim); min-height:60px;"></div>
       </div>
 
       <!-- Utility/Status Deck -->
       <div class="panel" style="padding:20px; cursor:pointer; border:2px solid transparent; transition:all 0.2s;" id="deck-utility" onclick="selectQuickMatchDeck('utility')">
-        <div class="section-label" style="color:var(--ab47bc); margin-bottom:12px;">✨ UTILITY</div>
+        <div class="section-label" style="color:var(--ab47bc); margin-bottom:12px;">Ã¢Å“Â¨ UTILITY</div>
         <div class="info-text" style="font-size:12px; margin-bottom:12px;">Status effects & control. Debilitate foes.</div>
         <div id="qm-utility-preview" style="font-size:11px; color:var(--bone-dim); min-height:60px;"></div>
       </div>
@@ -1592,7 +1592,7 @@ input[type="text"]:focus { border-color: var(--gold); }
 
   <!-- QUICK MATCH LOBBY (MATCHMAKING) -->
   <div id="quickmatch-lobby-screen" class="screen" style="padding:40px 24px; max-width:900px; margin:0 auto; width:100%">
-    <h1 class="title-main" style="font-size:28px; margin-bottom:20px; text-align:center;">⚡ Quick Match Lobby</h1>
+    <h1 class="title-main" style="font-size:28px; margin-bottom:20px; text-align:center;">Ã¢Å¡Â¡ Quick Match Lobby</h1>
     
     <div style="text-align:center; margin-bottom:20px;">
       <div class="info-text">Your character: <span id="qm-player-info" style="color:var(--gold-light); font-weight:bold;">--</span></div>
@@ -1612,7 +1612,7 @@ input[type="text"]:focus { border-color: var(--gold); }
 
     <div id="qm-challenge-panel" style="display:none; background:rgba(0,0,0,0.3); border:2px solid var(--teal-light); border-radius:4px; padding:20px; margin-top:20px; text-align:center;">
       <div class="info-text" style="margin-bottom:12px;">Playing <span id="qm-opponent-name" style="color:var(--gold-light); font-weight:bold;">opponent</span></div>
-      <button class="btn primary" onclick="startQuickMatchBattle()" style="width:100%; max-width:200px;">⚔️ Begin Battle!</button>
+      <button class="btn primary" onclick="startQuickMatchBattle()" style="width:100%; max-width:200px;">Ã¢Å¡â€Ã¯Â¸Â Begin Battle!</button>
     </div>
   </div>
 
@@ -1985,11 +1985,11 @@ const UPGRADED_CARDS = [
 ["Earthshatter Y","Deal 22 damage, Apply 5 Lock, Apply 4 Frozen","25-4-119-01-22-00-354400",10],
 ["Earthshatter x","Deal 15 damage, Apply 3 Lock, Apply 2 Frozen","25-1-120-01-15-00-334200",10],
 ["Earthshatter y","Deal 18 damage, Apply 4 Lock, Apply 3 Frozen","25-3-122-01-18-00-344300",10],
-["Evade X","Gain Shield equal to 4 × the number of dice used this turn, Remove 1 negative effect","26-2-000-71-00-00-Z00023",10],
-["Evade XY","Gain Shield equal to 5 × the number of dice used this turn, Heal 3 HP, Remove all negative effects","26-5-000-71-00-00-Z00026",10],
-["Evade Y","Gain Shield equal to 3 × the number of dice used this turn, Heal 4 HP","26-4-000-71-00-00-Z00025",10],
-["Evade x","Gain Shield equal to 3 × the number of dice used this turn","26-1-000-71-00-00-Z00022",10],
-["Evade y","Gain Shield equal to 2 × the number of dice used this turn, Heal 2 HP","26-3-000-71-00-00-Z00024",10],
+["Evade X","Gain Shield equal to 4 Ãƒâ€” the number of dice used this turn, Remove 1 negative effect","26-2-000-71-00-00-Z00023",10],
+["Evade XY","Gain Shield equal to 5 Ãƒâ€” the number of dice used this turn, Heal 3 HP, Remove all negative effects","26-5-000-71-00-00-Z00026",10],
+["Evade Y","Gain Shield equal to 3 Ãƒâ€” the number of dice used this turn, Heal 4 HP","26-4-000-71-00-00-Z00025",10],
+["Evade x","Gain Shield equal to 3 Ãƒâ€” the number of dice used this turn","26-1-000-71-00-00-Z00022",10],
+["Evade y","Gain Shield equal to 2 Ãƒâ€” the number of dice used this turn, Heal 2 HP","26-3-000-71-00-00-Z00024",10],
 ["Execution X","Deal 25 damage, Apply 5 Bleed, Apply 1 Lock","27-2-120-01-25-00-543100",10],
 ["Execution XY","Deal 32 damage, Apply 7 Bleed, Apply 2 Lock, Heal 3 HP","27-5-118-01-32-00-573182",10],
 ["Execution Y","Deal 28 damage, Apply 6 Bleed, Heal 2 HP","27-4-122-01-28-00-568200",10],
@@ -2524,80 +2524,80 @@ const ENEMY_FLAVOR = {
   // Plains Tier 1
   "Wolf": "A lean, hungry wolf slinks out of the tall grass. Its yellow eyes track your every movement. The plains wolves have grown bold since the Naukin closed their borders.",
   "Giant Locust": "A locust the size of a dog. Its mandibles click rhythmically, legs twitching with coiled energy. The plains are plagued with them this season.",
-  "Naukin Outcast": "A ratman in tattered clothes, fur matted with grime. The Naukin are good by nature, but an outcast has been severed from their kin — dangerous in its desperation and shame.",
+  "Naukin Outcast": "A ratman in tattered clothes, fur matted with grime. The Naukin are good by nature, but an outcast has been severed from their kin Ã¢â‚¬â€ dangerous in its desperation and shame.",
   // Plains Tier 2
   "Dire Wolves": "A pack moves as one, circling in near-silence. Dire wolves are twice the weight of a normal wolf and far smarter. They have learned to separate prey from safety before striking.",
-  "Prowling Dellinid": "A massive dark cougar, long-bodied and low to the ground. The Dellinid are forest and mountain hunters by nature, but this one has strayed onto the plains — perhaps following blood.",
-  "Juvenile Auroc": "A young Auroc — what the locals call a Plainsdrake — golden-scaled and long-legged like a crocodile built to gallop. Juvenile, yes. Still dangerous enough to break a man in half.",
+  "Prowling Dellinid": "A massive dark cougar, long-bodied and low to the ground. The Dellinid are forest and mountain hunters by nature, but this one has strayed onto the plains Ã¢â‚¬â€ perhaps following blood.",
+  "Juvenile Auroc": "A young Auroc Ã¢â‚¬â€ what the locals call a Plainsdrake Ã¢â‚¬â€ golden-scaled and long-legged like a crocodile built to gallop. Juvenile, yes. Still dangerous enough to break a man in half.",
   // Plains Tier 3
   "Bovari Bandit": "A Bovari deserter, bison-headed and broad, with four hands and a grudge. The Hornlords of the Ironhorn fiefdom would pay to see this one returned. You'd rather not find out why.",
-  "Roaming Gallox": "A Gallox bull — the great bovine mounts of the Bovari people — gone feral. Without a rider to direct it, its aggression has nowhere to go but outward.",
+  "Roaming Gallox": "A Gallox bull Ã¢â‚¬â€ the great bovine mounts of the Bovari people Ã¢â‚¬â€ gone feral. Without a rider to direct it, its aggression has nowhere to go but outward.",
   "Lone Plainsdrake": "A fully grown Auroc. Its golden scales catch the sun as it circles you, reflecting light in disorienting patterns. The locals say they're almost intelligent. Almost.",
   // Tundra Tier 1
   "Blue Dellinid": "A Dellinid of the north, its dark fur shot through with pale blue that blends eerily with snow and ice. It moves without sound on the frozen ground.",
   "Khinari Exile": "Pale-skinned and sharp-eyed, this Khinari was cast out from their tundra bastion. Their fallen noble race is corrupted by depravity, but exiles are perhaps the most unpredictable of all.",
   "Territorial Whitespike": "A ram with massively curled horns and broad shovel tusks built for digging through permafrost. It lowers its head at your approach. You are standing in its territory.",
   // Tundra Tier 2
-  "Khinari Raider": "Lean and cold-eyed, a Khinari warrior in the raider caste — the second step on a violent progression. Their conflicting gods demand blood sacrifice. Today you are the offering.",
+  "Khinari Raider": "Lean and cold-eyed, a Khinari warrior in the raider caste Ã¢â‚¬â€ the second step on a violent progression. Their conflicting gods demand blood sacrifice. Today you are the offering.",
   "Tundra Boneguard": "An armored undead skeleton, morning star in hand, still moving through the tundra cold with no apparent purpose beyond violence. The bones are frosted over. It does not slow.",
-  "Alpha Whitespike": "The dominant ram of a highland herd. Its horns have been notched by a dozen battles. It snorts a cloud of frozen breath and stamps once — a warning that something already decided.",
+  "Alpha Whitespike": "The dominant ram of a highland herd. Its horns have been notched by a dozen battles. It snorts a cloud of frozen breath and stamps once Ã¢â‚¬â€ a warning that something already decided.",
   // Tundra Tier 3
   "Veteran Boneguard": "A Boneguard that has endured long enough to earn the title. Its armor is scored with countless old wounds. Something keeps it moving that has nothing to do with muscle or will.",
-  "Khinari Hunting Party": "Three — no, four of them emerge from the white. A Khinari hunting party, organized and silent. They were looking for prey. They found you instead.",
+  "Khinari Hunting Party": "Three Ã¢â‚¬â€ no, four of them emerge from the white. A Khinari hunting party, organized and silent. They were looking for prey. They found you instead.",
   "Hungry Frost Wyrm": "The apex predator of the tundra: an ice dragon, lean from a hard winter, moving with the sluggish menace of something that has never truly needed to hurry.",
   // Forest Tier 1
-  "Naukin Scouts": "A trio of Naukin scouts — ratmen in tight formation, watchful and fast. The Naukin are reclusive and organized, and they do not appreciate trespassers in their forest.",
+  "Naukin Scouts": "A trio of Naukin scouts Ã¢â‚¬â€ ratmen in tight formation, watchful and fast. The Naukin are reclusive and organized, and they do not appreciate trespassers in their forest.",
   "Arantza Hunters": "Six-armed spider-folk, primitive but tactical. The Arantza scavenge ruins and hunt ancient paths through this forest. They have already spotted you.",
   "Reclaimed Boneguard": "A skeleton draped in moss and root-growth, the forest slowly reclaiming what the undead should never have kept. Its morning star still swings true.",
   // Forest Tier 2
   "Dire Bear": "An enormous bear with a scar across its muzzle and ruin in its eyes. The forest here is old and strange, and so are the things that live within it.",
-  "Khinari Bladedancer": "A Khinari warrior of the bladedancer caste — fluid, elegant, and savage. They have been practicing their art on whatever wanders these woods.",
-  "Naukin Sunstriker": "An elite Naukin gliding assassin — one of the Sunstrikers, their most feared warriors. It drops from the canopy above without a sound. You barely had time to see it.",
+  "Khinari Bladedancer": "A Khinari warrior of the bladedancer caste Ã¢â‚¬â€ fluid, elegant, and savage. They have been practicing their art on whatever wanders these woods.",
+  "Naukin Sunstriker": "An elite Naukin gliding assassin Ã¢â‚¬â€ one of the Sunstrikers, their most feared warriors. It drops from the canopy above without a sound. You barely had time to see it.",
   // Forest Tier 3
   "Verdant Shepherd": "One of the Verdant Shepherds: ancient tree-folk, vast and slow in mind but terrible in wrath. It has decided this forest section is not for you. It is difficult to argue with a walking tree.",
   "Barkskin Colossus": "A massive creature armored in living bark, moving through the old-growth like it owns everything under the canopy. It probably does.",
-  "Emerald Lich": "An Emerald Lich — an archmage of the old world whose body has been consumed by nature-corruption. Vines thread through its ribcage. Its magic smells like rot and old rain.",
+  "Emerald Lich": "An Emerald Lich Ã¢â‚¬â€ an archmage of the old world whose body has been consumed by nature-corruption. Vines thread through its ribcage. Its magic smells like rot and old rain.",
   // Ruins Tier 1
   "Brass Golem": "A brass automaton, still animated by whatever enchantment the old civilization baked into it. The Arantza worship these ruins; this golem protects them.",
   "Arantza Looters": "Spider-folk in scavenged metal armor, picking through ancient rubble. They carry weapons that don't quite fit their hands. They don't care.",
   "Bloated Zombie": "A shambling corpse, swollen and foul, dragging itself through the ruin corridors. Whoever it was in life, that is long gone.",
   // Ruins Tier 2
-  "Iron Bulwark": "A golem of iron rather than brass — heavier, newer, more purposeful. It was built to guard something specific. It no longer remembers what. It guards you now.",
+  "Iron Bulwark": "A golem of iron rather than brass Ã¢â‚¬â€ heavier, newer, more purposeful. It was built to guard something specific. It no longer remembers what. It guards you now.",
   "Stone Drake": "A dragon of petrified scales, ancient enough that the stone has begun to grow through its flesh. Its eyes still burn.",
-  "Lost Myrrim": "A Myrrim — mushroom folk — wandering the ruins in silence, its spore-crown pulsing with faint light. The lost variant has separated from its grove. They become strange when alone.",
+  "Lost Myrrim": "A Myrrim Ã¢â‚¬â€ mushroom folk Ã¢â‚¬â€ wandering the ruins in silence, its spore-crown pulsing with faint light. The lost variant has separated from its grove. They become strange when alone.",
   // Ruins Tier 3
-  "Fell Lich": "A Fell Lich — once a great archmage, now an ancient undead with too much memory and too much power. It regards you the way a man regards a moth: with mild curiosity before ending the nuisance.",
+  "Fell Lich": "A Fell Lich Ã¢â‚¬â€ once a great archmage, now an ancient undead with too much memory and too much power. It regards you the way a man regards a moth: with mild curiosity before ending the nuisance.",
   "Blighted Auroc": "An Auroc consumed by corruption, its golden scales blackened and split, plague-breath fouling the air around it. It should not still be moving. It is.",
-  "Khinari Subjugator": "A Khinari warrior of the subjugator caste — near the top of a very bloody hierarchy. It has broken others to its will. You are next on its list.",
+  "Khinari Subjugator": "A Khinari warrior of the subjugator caste Ã¢â‚¬â€ near the top of a very bloody hierarchy. It has broken others to its will. You are next on its list.",
   // Slopes Tier 1
   "Steppe Whitespike": "A highland Whitespike, larger and more aggressive than the plains variants, its massive curled horns worn to bone-white points from years of impact.",
-  "Caghoul Shaman": "A Caghoul shaman — six-limbed, spine-protruding, unable to stand fully upright. It moves in a terrible crouch. Its god has given it lightning, and it believes this blessing enthusiastically.",
+  "Caghoul Shaman": "A Caghoul shaman Ã¢â‚¬â€ six-limbed, spine-protruding, unable to stand fully upright. It moves in a terrible crouch. Its god has given it lightning, and it believes this blessing enthusiastically.",
   "Naukin Outrider": "A Naukin outrider on patrol along the slope passes. The Naukin organization extends into every biome they claim. You have entered claimed territory.",
   // Slopes Tier 2
   "Hill Giant": "A Hill Giant, massive and dim-eyed, with arms like tree trunks and a boulder already in hand. It looks at you the way it looks at obstacles: as problems to be removed by force.",
-  "Black Roc": "A Black Roc, a variant of the great eagles — wingspan like a ship's sail, talons like short swords. It has been watching you from above for the last mile.",
+  "Black Roc": "A Black Roc, a variant of the great eagles Ã¢â‚¬â€ wingspan like a ship's sail, talons like short swords. It has been watching you from above for the last mile.",
   "Whitespike Patriarch": "The oldest bull of the high slopes, its horns so massively grown they curve back around. It has been fighting everything on these slopes since before you were born.",
   // Slopes Tier 3
-  "Thunder Giant": "A Thunder Giant — where Hill Giants are strong, Thunder Giants are apocalyptic. The ground vibrates with its footsteps. It has already decided you are an insect.",
+  "Thunder Giant": "A Thunder Giant Ã¢â‚¬â€ where Hill Giants are strong, Thunder Giants are apocalyptic. The ground vibrates with its footsteps. It has already decided you are an insect.",
   "Quakewyrm": "A Quakewyrm: a dragon that causes earthquakes. You felt the tremors twenty minutes ago. Now you understand what made them.",
-  "Caghoul Skyshaker": "A Caghoul blessed by its god — a Skyshaker, the highest divine caste. The spine protrusion on its back pulses with lightning. Its religion demands total destruction of the unblessed.",
+  "Caghoul Skyshaker": "A Caghoul blessed by its god Ã¢â‚¬â€ a Skyshaker, the highest divine caste. The spine protrusion on its back pulses with lightning. Its religion demands total destruction of the unblessed.",
   // Pit Tier 1
-  "Condemned": "A person corrupted by hatred until something demonic replaced whatever they once were. The Condemned are the first stage — still recognizably human in shape, utterly inhuman in purpose.",
+  "Condemned": "A person corrupted by hatred until something demonic replaced whatever they once were. The Condemned are the first stage Ã¢â‚¬â€ still recognizably human in shape, utterly inhuman in purpose.",
   "Bovari Thrall": "A Bovari enslaved by the Pit's influence, its four hands bearing weapons of rage. The Hornlords would weep. The Brutarchs would demand retribution.",
-  "Hatebound Imp": "A lesser demon of the Pit — a Hatebound Imp, born from rage and sustained by it. Small, fast, and absolutely committed to your destruction.",
+  "Hatebound Imp": "A lesser demon of the Pit Ã¢â‚¬â€ a Hatebound Imp, born from rage and sustained by it. Small, fast, and absolutely committed to your destruction.",
   // Pit Tier 2
-  "Blooded Khinari": "A Khinari corrupted by the Pit into the Blooded caste — their pale skin marked by violence, sharp blue eyes filled with something no longer entirely mortal.",
+  "Blooded Khinari": "A Khinari corrupted by the Pit into the Blooded caste Ã¢â‚¬â€ their pale skin marked by violence, sharp blue eyes filled with something no longer entirely mortal.",
   "Hatebound Priest": "A Hatebound Priest, conducting dark rites in the Pit's deepest passages. It heals itself from your suffering. The blessing it has received is a hideous inversion of grace.",
-  "Condemned Taskmaster": "A Condemned who has risen by breaking others. The Taskmaster wears its authority like a wound — everything about it is designed to inflict.",
+  "Condemned Taskmaster": "A Condemned who has risen by breaking others. The Taskmaster wears its authority like a wound Ã¢â‚¬â€ everything about it is designed to inflict.",
   // Pit Tier 3
-  "Pit Lord": "The supreme warlord of the Pit — a Pit Lord, vast and armored in hatred made metal. It has waged war since before the world was. You are a very small obstacle in a very long campaign.",
+  "Pit Lord": "The supreme warlord of the Pit Ã¢â‚¬â€ a Pit Lord, vast and armored in hatred made metal. It has waged war since before the world was. You are a very small obstacle in a very long campaign.",
   "Blood Judge": "The Blood Judge: executioner, condemner, the final word on worthiness in the Pit's brutal hierarchy. It has condemned thousands. It regards you with professional interest.",
-  "Prophet of Fire": "The Prophet of Fire — a dark religious leader burning with divine purpose and literal flame. It has seen the end of things and found it beautiful. It would like to share the experience with you.",
+  "Prophet of Fire": "The Prophet of Fire Ã¢â‚¬â€ a dark religious leader burning with divine purpose and literal flame. It has seen the end of things and found it beautiful. It would like to share the experience with you.",
 };
 
 function getEnemyFlavor(name) {
   // Try exact match first, then strip legendary prefix
-  const clean = name.replace(/^⚡ LEGENDARY /, '');
+  const clean = name.replace(/^Ã¢Å¡Â¡ LEGENDARY /, '');
   const fallback = ENEMY_FLAVOR[clean] || ENEMY_FLAVOR[name] || null;
   if (!fallback) return null;
 
@@ -2609,7 +2609,7 @@ function getEnemyFlavor(name) {
 
 function getCombatEnemyFlavor(enemy) {
   if (!enemy || !enemy.name) return null;
-  const cleanEnemyName = enemy.name.replace(/^⚡ LEGENDARY /, '');
+  const cleanEnemyName = enemy.name.replace(/^Ã¢Å¡Â¡ LEGENDARY /, '');
   const localizedFlavor = getLocaleValue(currentLanguage, `enemyFlavor.${cleanEnemyName}`)
     || getLocaleValue(currentLanguage, `enemyFlavor.${enemy.name}`);
 
@@ -2977,7 +2977,7 @@ function applyLanguageToMenuAndTown() {
   };
 
   // Log panel title
-  setText('log-title', translateVisibleText('⚔ Combat Log'));
+  setText('log-title', translateVisibleText('Ã¢Å¡â€ Combat Log'));
 
   // Menu screen
   setText('lang-label-title', t('menu.languageLabel', {}, 'Language'));
@@ -2986,7 +2986,7 @@ function applyLanguageToMenuAndTown() {
   setText('title-begin-btn', translateVisibleText(t('menu.begin', {}, 'Begin')));
   setText('continue-btn', translateVisibleText(t('menu.continue', {}, 'Continue')));
   setText('title-import-btn', translateVisibleText(t('menu.importSave', {}, 'Import Save')));
-  setText('title-quickmatch-btn', `⚡ ${translateVisibleText('Quick Match')}`);
+  setText('title-quickmatch-btn', `Ã¢Å¡Â¡ ${translateVisibleText('Quick Match')}`);
 
   // Character creation buttons
   setText('charcreate-begin-btn', t('charCreate.beginTale', {}, 'Begin Your Tale'));
@@ -3030,10 +3030,10 @@ function applyLanguageToMenuAndTown() {
   setText('town-action-multiplayer-desc', t('town.actions.multiplayerDesc', {}, 'Create or join a room code and duel another player'));
 
   setText('town-game-management-title', t('town.gameManagement', {}, 'Game Management'));
-  setText('town-save-btn', `💾 ${t('town.buttons.save', {}, 'Save')}`);
-  setText('town-export-btn', `📥 ${t('town.buttons.exportSave', {}, 'Export Save')}`);
-  setText('town-import-btn', `📤 ${t('town.buttons.importSave', {}, 'Import Save')}`);
-  setText('town-main-menu-btn', `🏠 ${t('town.buttons.mainMenu', {}, 'Main Menu')}`);
+  setText('town-save-btn', `Ã°Å¸â€™Â¾ ${t('town.buttons.save', {}, 'Save')}`);
+  setText('town-export-btn', `Ã°Å¸â€œÂ¥ ${t('town.buttons.exportSave', {}, 'Export Save')}`);
+  setText('town-import-btn', `Ã°Å¸â€œÂ¤ ${t('town.buttons.importSave', {}, 'Import Save')}`);
+  setText('town-main-menu-btn', `Ã°Å¸ÂÂ  ${t('town.buttons.mainMenu', {}, 'Main Menu')}`);
 
   if (G && G.name) updateTownUI();
 }
@@ -3084,7 +3084,7 @@ function initLanguage() {
 //
 // ROGUE: You select a lucky number at the start of each combat. Whenever that number is rolled,
 //        you deal damage to your enemy.
-//   - Upgrade: Deal (2 × level) damage per lucky roll
+//   - Upgrade: Deal (2 Ãƒâ€” level) damage per lucky roll
 //   - This triggers even with rerolls or dice splitting from other abilities
 // ============================================================
 
@@ -3094,7 +3094,7 @@ const CLASSES = [
   {id:"cleric",name:"Cleric",color:"#ffca28",hp:15,desc:"When rolling doubles, heal by that amount. At level 2+, excess healing converts to shield."},
   {id:"warlock",name:"Warlock",color:"#ab47bc",hp:14,desc:"When applying status effects or shield, apply extra equal to level."},
   {id:"druid",name:"Druid",color:"#66bb6a",hp:15,desc:"Once per turn, \"plant\" a die. Next turn it blooms into multiple dice."},
-  {id:"rogue",name:"Rogue",color:"#f06292",hp:13,desc:"Choose a lucky number before each fight. Whenever it's rolled, deal (2 × level) bonus damage."},
+  {id:"rogue",name:"Rogue",color:"#f06292",hp:13,desc:"Choose a lucky number before each fight. Whenever it's rolled, deal (2 Ãƒâ€” level) bonus damage."},
 ];
 
 const BIOME_NAMES = {
@@ -3107,12 +3107,12 @@ const BIOME_NAMES = {
 };
 
 const BIOME_ICONS = {
-  1: '🌾',
-  2: '❄️',
-  3: '🌲',
-  4: '🏛️',
-  5: '⛰️',
-  6: '🔥',
+  1: 'Ã°Å¸Å’Â¾',
+  2: 'Ã¢Ââ€žÃ¯Â¸Â',
+  3: 'Ã°Å¸Å’Â²',
+  4: 'Ã°Å¸Ââ€ºÃ¯Â¸Â',
+  5: 'Ã¢â€ºÂ°Ã¯Â¸Â',
+  6: 'Ã°Å¸â€Â¥',
 };
 
 function rand(min, max) { return min + Math.floor(Math.random() * (max - min + 1)); }
@@ -3982,7 +3982,7 @@ function spawnEnemy(biome, tier, legendary=false, powerMultiplier=1, encounterLe
   let hp = base.hp;
   hp = Math.ceil(hp * Math.max(1, powerMultiplier || 1));
   const enemy = makeCombatant(
-    legendary ? `⚡ LEGENDARY ${base.name}` : base.name,
+    legendary ? `Ã¢Å¡Â¡ LEGENDARY ${base.name}` : base.name,
     hp, cards, 3, base.dice
   );
   enemy.baseName = base.name;
@@ -4151,7 +4151,7 @@ function buildCardHTML(card, selected=false, unplayable=false, showPrice=false, 
     const reusable = isReusable(info.limit);
     const opc = isOncePerCombat(info.limit);
     if (opc) limitText = `<div class="card-reusable-badge" style="color:var(--legendary)">Once/Battle</div>`;
-    else if (reusable) limitText = `<div class="card-reusable-badge">↩ ${getReusableBadgeText(card)}</div>`;
+    else if (reusable) limitText = `<div class="card-reusable-badge">Ã¢â€ Â© ${getReusableBadgeText(card)}</div>`;
     else if (lv > 0) limitText = `<div class="card-limit-text">Limit: ${lv}</div>`;
   }
   const sel = selected ? 'selected' : '';
@@ -4198,7 +4198,7 @@ function populateClassGrid() {
     <div class="class-card" id="cc-${i}" onclick="selectClass(${i})">
       <div class="class-name class-${c.id}">${translateVisibleText(c.name)}</div>
       <div class="class-desc">${translateVisibleText(c.desc)}</div>
-      <div class="class-hp">❤ ${c.hp} HP</div>
+      <div class="class-hp">Ã¢ÂÂ¤ ${c.hp} HP</div>
     </div>`).join('');
 }
 
@@ -4351,7 +4351,7 @@ function registerEnemyEncounter(enemy) {
   ensureBestiaryState();
   if (!enemy) return;
 
-  const name = enemy.baseName || String(enemy.name || '').replace(/^⚡\s*LEGENDARY\s*/i, '').trim();
+  const name = enemy.baseName || String(enemy.name || '').replace(/^Ã¢Å¡Â¡\s*LEGENDARY\s*/i, '').trim();
   if (!name) return;
 
   const cardNames = Array.isArray(enemy.cardNames) ? enemy.cardNames : (enemy.deck || []).map(c => c?.name).filter(Boolean);
@@ -4388,7 +4388,7 @@ function registerEnemyEncounter(enemy) {
 function registerEnemyVictory(enemy) {
   ensureBestiaryState();
   if (!enemy) return;
-  const name = enemy.baseName || String(enemy.name || '').replace(/^⚡\s*LEGENDARY\s*/i, '').trim();
+  const name = enemy.baseName || String(enemy.name || '').replace(/^Ã¢Å¡Â¡\s*LEGENDARY\s*/i, '').trim();
   if (!name) return;
   if (!G.bestiary[name]) registerEnemyEncounter(enemy);
   G.bestiary[name].wins = (G.bestiary[name].wins || 0) + 1;
@@ -4467,7 +4467,7 @@ function renderBestiaryEntries(entries) {
       <div class="flex-row" style="justify-content:space-between;align-items:flex-start;">
         <div>
           <div class="panel-title" style="font-size:20px;margin-bottom:6px;">${translateVisibleText(entry.name)} ${legBadge}</div>
-          <div class="player-meta">${translateVisibleText(biomeName)} T${entry.tier || 1} · Encounters: ${entry.encounters || 0} · Wins: ${entry.wins || 0}</div>
+          <div class="player-meta">${translateVisibleText(biomeName)} T${entry.tier || 1} Ã‚Â· Encounters: ${entry.encounters || 0} Ã‚Â· Wins: ${entry.wins || 0}</div>
         </div>
       </div>
       <div class="section-label" style="margin-top:12px;">Known Cards</div>
@@ -4848,7 +4848,7 @@ function updateTownUI() {
       biome: getBiomeNameLocalized(G.currentBiome),
       tier: G.currentTier
     },
-    `${G.className} · ${BIOME_NAMES[G.currentBiome] || 'Plains'} Tier ${G.currentTier}`
+    `${G.className} Ã‚Â· ${BIOME_NAMES[G.currentBiome] || 'Plains'} Tier ${G.currentTier}`
   );
   document.getElementById('town-hp').textContent = `${G.hp}/${G.maxHp}`;
   document.getElementById('town-level').textContent = G.level;
@@ -4900,7 +4900,7 @@ function hideTownXpTooltip() {
 // - Public tunnel/same-origin hosting (ngrok/domain) uses page origin
 // - To force a specific URL (ngrok/hosted), set window.MULTIPLAYER_SERVER_URL before this script runs
 // - For static hosts (GitHub Pages/Netlify/etc), set a permanent backend URL below once.
-const PRODUCTION_MULTIPLAYER_SERVER_URL = 'https://browse-primarily-dam-breeding.trycloudflare.com';
+const PRODUCTION_MULTIPLAYER_SERVER_URL = 'https://accent-spokesman-deployment-thereof.trycloudflare.com';
 const MULTIPLAYER_SERVER_URL = (() => {
   const isConfiguredProductionUrl = typeof PRODUCTION_MULTIPLAYER_SERVER_URL === 'string'
     && PRODUCTION_MULTIPLAYER_SERVER_URL.trim()
@@ -5432,7 +5432,7 @@ function updateDeckPreview() {
     return `
       <div class="deck-preview-item">
         <span class="deck-preview-name">${name} (${count}x)</span>
-        <span class="deck-preview-remove" onclick="removeCardFromDeck('${name.replace(/'/g, "\\'")}')">✕</span>
+        <span class="deck-preview-remove" onclick="removeCardFromDeck('${name.replace(/'/g, "\\'")}')">Ã¢Å“â€¢</span>
       </div>
     `;
   }).join('');
@@ -5466,7 +5466,7 @@ function updateReadyIndicators() {
   if (youReadyEl) {
     if (mpDeckBuilder.isReady) {
       youReadyEl.classList.remove('not-ready');
-      if (yourTextEl) yourTextEl.textContent = '✓ Your deck is ready';
+      if (yourTextEl) yourTextEl.textContent = 'Ã¢Å“â€œ Your deck is ready';
     } else {
       youReadyEl.classList.add('not-ready');
       if (yourTextEl) yourTextEl.textContent = 'Building deck...';
@@ -5476,7 +5476,7 @@ function updateReadyIndicators() {
   if (oppReadyEl) {
     if (mpDeckBuilder.opponentReady) {
       oppReadyEl.classList.remove('not-ready');
-      if (oppTextEl) oppTextEl.textContent = '✓ Opponent deck ready';
+      if (oppTextEl) oppTextEl.textContent = 'Ã¢Å“â€œ Opponent deck ready';
     } else {
       oppReadyEl.classList.add('not-ready');
       if (oppTextEl) oppTextEl.textContent = 'Opponent: Building deck...';
@@ -6312,7 +6312,7 @@ function renderBiomeGrid() {
     const key = `${b}-${t}`;
     const unlocked = G.unlockedBiomes.has(key);
     return `<button type="button" class="biome-card ${unlocked?'':'locked'}" ${unlocked?`onclick="startAdventure(${b},${t})"`:'disabled'}>
-      <div class="biome-icon">${BIOME_ICONS[b]||'🗺️'}</div>
+      <div class="biome-icon">${BIOME_ICONS[b]||'Ã°Å¸â€”ÂºÃ¯Â¸Â'}</div>
       <div class="biome-name">${translateVisibleText(getBiomeNameLocalized(b))} T${t}</div>
       <div class="biome-tier">${unlocked?translateVisibleText('Unlocked'):translateVisibleText('Locked')}</div>
     </button>`;
@@ -6397,7 +6397,7 @@ function startNextCombat(legendaryOverride = null) {
   registerEnemyEncounter(enemy);
 
   if (legendary) {
-    log(`⚡ LEGENDARY ${enemy.name} appears!`, 'victory');
+    log(`Ã¢Å¡Â¡ LEGENDARY ${enemy.name} appears!`, 'victory');
   } else {
     log(`A ${enemy.name} appears in ${getBiomeNameLocalized(ADV.biome)} Tier ${ADV.tier}!`, 'enemy');
   }
@@ -6415,7 +6415,7 @@ function startNextCombat(legendaryOverride = null) {
     const hpLabel = translateVisibleText('HP');
     const diceLabel = translateVisibleText('Dice');
     const engageText = t('combat.engage', {}, translateVisibleText('Engage'));
-    const doomText = t('combat.faceDoom', {}, translateVisibleText('⚡ Face Your Doom'));
+    const doomText = t('combat.faceDoom', {}, translateVisibleText('Ã¢Å¡Â¡ Face Your Doom'));
 
     openModal(`
       <div style="text-align:center;margin-bottom:12px;">
@@ -7007,13 +7007,13 @@ function finishAdventure(result) {
   // Regenerate shop stock each time player returns to town
   if (G.shopUnlocked) generateAndShowShop();
   
-  const resultText = victory ? '⚔ Adventure Complete!' : (defeatOnly ? '💀 Defeated' : '🏃 Retreated');
+  const resultText = victory ? 'Ã¢Å¡â€ Adventure Complete!' : (defeatOnly ? 'Ã°Å¸â€™â‚¬ Defeated' : 'Ã°Å¸ÂÆ’ Retreated');
   const diffPenalty = (defeatOnly && ADV.winStreak < 10 && G.difficulty!=='easy') ? `<p class="info-text danger-text">(${G.difficulty==='normal'?'50%':'All'} earnings lost on defeat)</p>` : '';
 
   openModal(`<h2>${resultText}</h2>
     <p class="info-text">Earned: <span class="gold-text">+${xpGained} XP, +${goldGained} gold</span></p>
     ${diffPenalty}
-    ${leveled?`<p class="success-text" style="margin-top:8px;font-size:14px;">✨ LEVEL UP! Now level ${G.level}!</p>`:''}
+    ${leveled?`<p class="success-text" style="margin-top:8px;font-size:14px;">Ã¢Å“Â¨ LEVEL UP! Now level ${G.level}!</p>`:''}
     <p class="info-text" style="margin-top:8px;">HP: ${G.hp}/${G.maxHp}</p>
     <div class="mt-16"><button class="btn primary" onclick="closeModal();showTown()">Return to Ascus</button></div>`);
 }
@@ -7080,13 +7080,13 @@ function updateCombatUI() {
 function renderStatusBadges(containerId, c) {
   const el = document.getElementById(containerId);
   const statuses = [];
-  if (c.poison>0) statuses.push(`<span class="status-badge status-poison" data-status-key="poison" data-status-value="${c.poison}">☠ ${translateVisibleText('Poison')} ${c.poison}</span>`);
-  if (c.bleed>0) statuses.push(`<span class="status-badge status-bleed" data-status-key="bleed" data-status-value="${c.bleed}">🩸 ${translateVisibleText('Bleed')} ${c.bleed}</span>`);
-  if (c.burn>0) statuses.push(`<span class="status-badge status-burn" data-status-key="burn" data-status-value="${c.burn}">🔥 ${translateVisibleText('Burn')} ${c.burn}</span>`);
-  if (c.lock>0) statuses.push(`<span class="status-badge status-lock" data-status-key="lock" data-status-value="${c.lock}">🔒 ${translateVisibleText('Lock')} ${c.lock}</span>`);
-  if (c.freeze>0) statuses.push(`<span class="status-badge status-freeze" data-status-key="freeze" data-status-value="${c.freeze}">❄ ${translateVisibleText('Frozen')} ${c.freeze}</span>`);
-  if (c.blind>0) statuses.push(`<span class="status-badge status-blind" data-status-key="blind" data-status-value="${c.blind}">👁 ${translateVisibleText('Blind')} ${c.blind}</span>`);
-  if (c.shield>0) statuses.push(`<span class="status-badge status-shield" data-status-key="shield" data-status-value="${c.shield}">🛡 ${c.shield}</span>`);
+  if (c.poison>0) statuses.push(`<span class="status-badge status-poison" data-status-key="poison" data-status-value="${c.poison}">Ã¢ËœÂ  ${translateVisibleText('Poison')} ${c.poison}</span>`);
+  if (c.bleed>0) statuses.push(`<span class="status-badge status-bleed" data-status-key="bleed" data-status-value="${c.bleed}">Ã°Å¸Â©Â¸ ${translateVisibleText('Bleed')} ${c.bleed}</span>`);
+  if (c.burn>0) statuses.push(`<span class="status-badge status-burn" data-status-key="burn" data-status-value="${c.burn}">Ã°Å¸â€Â¥ ${translateVisibleText('Burn')} ${c.burn}</span>`);
+  if (c.lock>0) statuses.push(`<span class="status-badge status-lock" data-status-key="lock" data-status-value="${c.lock}">Ã°Å¸â€â€™ ${translateVisibleText('Lock')} ${c.lock}</span>`);
+  if (c.freeze>0) statuses.push(`<span class="status-badge status-freeze" data-status-key="freeze" data-status-value="${c.freeze}">Ã¢Ââ€ž ${translateVisibleText('Frozen')} ${c.freeze}</span>`);
+  if (c.blind>0) statuses.push(`<span class="status-badge status-blind" data-status-key="blind" data-status-value="${c.blind}">Ã°Å¸â€˜Â ${translateVisibleText('Blind')} ${c.blind}</span>`);
+  if (c.shield>0) statuses.push(`<span class="status-badge status-shield" data-status-key="shield" data-status-value="${c.shield}">Ã°Å¸â€ºÂ¡ ${c.shield}</span>`);
   el.innerHTML = statuses.join('');
 }
 
@@ -7283,7 +7283,7 @@ function renderHand() {
           <div class="card-limit-text">${prog}/${lv}</div>`;
       }
       if (isOncePerCombat(info.limit)) limitExtra += `<div class="card-reusable-badge" style="color:var(--legendary)">Once/Battle</div>`;
-      else if (isReusable(info.limit)) limitExtra += `<div class="card-reusable-badge">↩ ${getReusableBadgeText(card)}</div>`;
+      else if (isReusable(info.limit)) limitExtra += `<div class="card-reusable-badge">Ã¢â€ Â© ${getReusableBadgeText(card)}</div>`;
     }
     const reqStr = info ? `<div style="font-family:'Courier Prime',monospace;font-size:9px;color:var(--teal-light);margin-top:3px;">Req: ${descDieReq(info.dieReq)}</div>` : '';
     const color = RARITY_COLORS[card.rarity||1];
@@ -7518,7 +7518,7 @@ function doFencerReroll() {
   const newVal = rand(1,6);
   CB.player.dicePool[CB.selectedDie] = newVal;
   CB.player.classState.fencerUses = (CB.player.classState.fencerUses || 0) + 1;
-  log(`Fencer rerolls die ${CB.selectedDie+1}: ${old} → ${newVal}.`,'player');
+  log(`Fencer rerolls die ${CB.selectedDie+1}: ${old} Ã¢â€ â€™ ${newVal}.`,'player');
   
   // Re-apply dice trigger effects
   const msgs = triggerOnDiceRolled(CB.player);
@@ -7832,7 +7832,7 @@ function generateAndShowShop() {
 }
 
 function renderShopModal(sale=false) {
-  const saleText = sale ? `<div style="color:var(--gold-light);font-family:'Courier Prime',monospace;font-size:12px;margin-bottom:12px;">🔔 SALE DAY! Everything 50% off!</div>` : '';
+  const saleText = sale ? `<div style="color:var(--gold-light);font-family:'Courier Prime',monospace;font-size:12px;margin-bottom:12px;">Ã°Å¸â€â€ SALE DAY! Everything 50% off!</div>` : '';
   
   const offersHtml = currentShopOffers.map((offer, i) => {
     const card = offer.card;
@@ -8140,7 +8140,7 @@ function renderForgeOptions(cardName) {
           <div class="card-rarity-bar" style="background:${color}"></div>
           <div class="card-name">${upgradedName}</div>
           <div class="card-desc">${upgradedCard?.desc || 'Unknown'}</div>
-          <div style="color:var(--teal-light);font-size:11px;margin-top:6px;text-align:center;font-weight:bold;">${recipeText} → 1x ${upgradedName}</div>
+          <div style="color:var(--teal-light);font-size:11px;margin-top:6px;text-align:center;font-weight:bold;">${recipeText} Ã¢â€ â€™ 1x ${upgradedName}</div>
         </div>`;
       }).join('')}
     </div>
@@ -8246,7 +8246,7 @@ function forgeCard(baseName, upgradedName, inputA, inputB) {
   const recipeText = inputA === inputB
     ? `2x ${inputA}`
     : `1x ${inputA} + 1x ${inputB}`;
-  log(`Forged ${recipeText} → 1x ${upgradedName} (${cost}g).`, 'loot');
+  log(`Forged ${recipeText} Ã¢â€ â€™ 1x ${upgradedName} (${cost}g).`, 'loot');
   updateTownUI();
   renderBlacksmithModal();
 }
@@ -8369,12 +8369,12 @@ const TUTORIAL_STEPS = [
   {
     id: 'dice_basics',
     title: () => t('tutorial.diceBasics.title', {}, 'Dice & Cards'),
-    text: () => t('tutorial.diceBasics.text', {}, 'Each turn you roll dice (starting with 2, but trainable). Select a die, then a card (or card then die). Each card has a requirement — Any, Even, Odd, Min X, Exactly X. Spend a valid die to activate the card\'s effect.'),
+    text: () => t('tutorial.diceBasics.text', {}, 'Each turn you roll dice (starting with 2, but trainable). Select a die, then a card (or card then die). Each card has a requirement Ã¢â‚¬â€ Any, Even, Odd, Min X, Exactly X. Spend a valid die to activate the card\'s effect.'),
   },
   {
     id: 'end_turn',
     title: () => t('tutorial.endTurn.title', {}, 'Ending Your Turn'),
-    text: () => t('tutorial.endTurn.text', {}, 'Click End Turn when done. Unused cards stay in your hand. The enemy takes their turn, then a new round begins. Between battles you can retreat to town — but not mid-combat.'),
+    text: () => t('tutorial.endTurn.text', {}, 'Click End Turn when done. Unused cards stay in your hand. The enemy takes their turn, then a new round begins. Between battles you can retreat to town Ã¢â‚¬â€ but not mid-combat.'),
   },
 ];
 
@@ -8396,7 +8396,7 @@ function drainTutorialQueue() {
   const step = TUTORIAL_STEPS.find(s => s.id === id);
   if (!step) { drainTutorialQueue(); return; }
   const hasMore = tutorialQueue.length > 0;
-  const tutorialHeader = t('tutorial.header', {}, '✦ TUTORIAL ✦');
+  const tutorialHeader = t('tutorial.header', {}, 'Ã¢Å“Â¦ TUTORIAL Ã¢Å“Â¦');
   const nextBtn = t('tutorial.next', {}, 'Next');
   const understoodBtn = t('tutorial.understood', {}, 'Understood');
   openModal(`
@@ -8668,7 +8668,7 @@ function ensureQuickMatchButtonVisible() {
   btn.style.fontSize = '15px';
   btn.style.padding = '14px 40px';
   btn.style.letterSpacing = '4px';
-  btn.textContent = '⚡ Quick Match';
+  btn.textContent = 'Ã¢Å¡Â¡ Quick Match';
   btn.addEventListener('click', initQuickMatch);
 
   wrap.appendChild(btn);
