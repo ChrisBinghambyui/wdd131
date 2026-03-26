@@ -4900,7 +4900,7 @@ function hideTownXpTooltip() {
 // - Public tunnel/same-origin hosting (ngrok/domain) uses page origin
 // - To force a specific URL (ngrok/hosted), set window.MULTIPLAYER_SERVER_URL before this script runs
 // - For static hosts (GitHub Pages/Netlify/etc), set a permanent backend URL below once.
-const PRODUCTION_MULTIPLAYER_SERVER_URL = 'https://accent-spokesman-deployment-thereof.trycloudflare.com';
+const PRODUCTION_MULTIPLAYER_SERVER_URL = 'https://your-multiplayer-server.onrender.com';
 const MULTIPLAYER_SERVER_URL = (() => {
   const isConfiguredProductionUrl = typeof PRODUCTION_MULTIPLAYER_SERVER_URL === 'string'
     && PRODUCTION_MULTIPLAYER_SERVER_URL.trim()
