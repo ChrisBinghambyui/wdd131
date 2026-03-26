@@ -5047,6 +5047,7 @@ function bindMultiplayerUiEventsOnce() {
  });
 
  multiplayer.on('gameStarted', (gameState) => {
+ if (MP_COMBAT.active) return;
  startMultiplayerCombat(gameState);
  });
 
@@ -5321,6 +5322,7 @@ function startMultiplayerGame() {
  if (statusEl) statusEl.textContent = 'Waiting for both players to connect.';
  return;
  }
+ if (statusEl) statusEl.textContent = 'Starting live PvP match...';
  proceedToMultiplayerCombat();
  return;
  }
@@ -5580,9 +5582,16 @@ function proceedToMultiplayerCombat(gameState) {
  if (!resp?.success) {
  mpDeckBuilder.matchStartRequested = false;
  log('Failed to start match', 'system');
+ const statusEl = document.getElementById('multiplayer-status') || document.getElementById('deck-builder-status');
+ if (statusEl) statusEl.innerHTML = `<span class="danger-text">${resp?.error || 'Failed to start match.'}</span>`;
  return;
  }
  log('Match started with selected decks', 'system');
+
+ // Fallback: if the realtime gameStarted event is delayed/missed, bootstrap from callback state.
+ if (resp?.gameState && !MP_COMBAT.active) {
+ startMultiplayerCombat(resp.gameState);
+ }
  });
 }
 
