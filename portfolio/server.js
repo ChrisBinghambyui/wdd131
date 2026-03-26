@@ -426,7 +426,7 @@ io.on('connection', (socket) => {
         const profile = p.profile || {};
         const profileDeck = Array.isArray(profile.deck) ? profile.deck : [];
         const deck = submittedDeck.length > 0 ? submittedDeck : profileDeck;
-        const classKey = p.character;
+        const classKey = p.character || profile.className || profile.classId;
         const fallbackClassHp = gameData.hpByClass[classKey] || 20;
         const maxHp = Math.max(1, Number(profile.maxHp) || fallbackClassHp);
         const hp = Math.max(1, Math.min(maxHp, Number(profile.hp) || maxHp));
@@ -438,7 +438,9 @@ io.on('connection', (socket) => {
         return {
           socketId: p.socketId,
           name: safeName,
-          character: p.character,
+          character: p.character || profile.className || profile.classId || null,
+          classId: profile.classId || null,
+          className: profile.className || null,
           level: Math.max(1, Number(profile.level) || 1),
           handLimit: Number(profile.handLimit) || null,
           diceLimit: Number(profile.diceLimit) || null,
