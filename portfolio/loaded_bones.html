@@ -233,6 +233,14 @@ body {
   justify-content: center;
   background: radial-gradient(ellipse at center, rgba(122,28,28,0.15) 0%, transparent 70%);
 }
+@media (max-height: 760px) {
+  #title-screen {
+    justify-content: flex-start;
+    overflow-y: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
 .title-logo {
   font-family: 'Cinzel', serif;
   font-size: clamp(60px, 10vw, 100px);
@@ -1292,12 +1300,11 @@ input[type="text"]:focus { border-color: var(--gold); }
       <button class="btn primary" id="title-begin-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px" onclick="showCharCreate()">Begin</button>
       <button class="btn primary" id="continue-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px; margin-left:12px; display:none;" onclick="loadAndResume()">Continue</button>
       <button class="btn" id="title-import-btn" style="font-size:15px; padding:14px 30px; letter-spacing:2px; margin-left:12px;" onclick="importSave()">Import Save</button>
-      <div style="margin-top:14px;">
+      <div id="title-quickmatch-wrap" style="margin-top:14px;">
         <button class="btn primary" id="title-quickmatch-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px;" onclick="initQuickMatch()">⚡ Quick Match</button>
       </div>
     </div>
   </div>
-
   <!-- CHAR CREATE SCREEN -->
   <div id="charcreate-screen" class="screen" style="padding:40px 24px; max-width:780px; margin:0 auto; width:100%">
     <div class="panel-title" style="font-family:'Cinzel Decorative','Cinzel',serif;font-size:32px;color:var(--parchment);margin-bottom:24px;">Create Your Adventurer</div>
@@ -2979,6 +2986,7 @@ function applyLanguageToMenuAndTown() {
   setText('title-begin-btn', translateVisibleText(t('menu.begin', {}, 'Begin')));
   setText('continue-btn', translateVisibleText(t('menu.continue', {}, 'Continue')));
   setText('title-import-btn', translateVisibleText(t('menu.importSave', {}, 'Import Save')));
+  setText('title-quickmatch-btn', `⚡ ${translateVisibleText('Quick Match')}`);
 
   // Character creation buttons
   setText('charcreate-begin-btn', t('charCreate.beginTale', {}, 'Begin Your Tale'));
@@ -8569,6 +8577,33 @@ function deleteSave() {
   }
 }
 
+function ensureQuickMatchButtonVisible() {
+  const existing = document.getElementById('title-quickmatch-btn');
+  if (existing) {
+    existing.style.display = 'inline-block';
+    return;
+  }
+
+  const beginBtn = document.getElementById('title-begin-btn');
+  if (!beginBtn || !beginBtn.parentElement) return;
+
+  const wrap = document.createElement('div');
+  wrap.id = 'title-quickmatch-wrap';
+  wrap.style.marginTop = '14px';
+
+  const btn = document.createElement('button');
+  btn.className = 'btn primary';
+  btn.id = 'title-quickmatch-btn';
+  btn.style.fontSize = '15px';
+  btn.style.padding = '14px 40px';
+  btn.style.letterSpacing = '4px';
+  btn.textContent = '⚡ Quick Match';
+  btn.addEventListener('click', initQuickMatch);
+
+  wrap.appendChild(btn);
+  beginBtn.parentElement.appendChild(wrap);
+}
+
 // ============================================================
 // INIT
 // ============================================================
@@ -8587,6 +8622,8 @@ window.addEventListener('load', () => {
   if (hasSave()) {
     document.getElementById('continue-btn').style.display = 'inline-block';
   }
+
+  ensureQuickMatchButtonVisible();
   
   log('Welcome to LOADED BONES.', 'story');
   log('In Loaded Bones, you will use your magical dice to activate spellcards to ensure victory on your adventures. Try each class, refine your strategy, and triumph!', 'story');
