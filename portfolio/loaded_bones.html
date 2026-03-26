@@ -5887,49 +5887,52 @@ function generateQuickMatchDeck(type = 'offensive') {
   const deckSize = 30;
   const deck = [];
 
-  if (type === 'offensive') {
-    // Build offensive deck: high-damage cards
-    const offensiveCards = allCardNames.filter(name => {
-      const card = CARD_BY_NAME[name];
-      if (!card) return false;
-      const desc = (card.desc || '').toLowerCase();
+  const themeMatch = (card) => {
+    if (!card) return false;
+    const desc = (card.desc || '').toLowerCase();
+
+    if (type === 'offensive') {
       return desc.includes('damage') && !desc.includes('shield') && !desc.includes('heal');
-    }).slice(0, 20);
-
-    for (let i = 0; i < deckSize; i++) {
-      const card = CARD_BY_NAME[offensiveCards[i % offensiveCards.length]];
-      if (card) deck.push({...card});
     }
-  } else if (type === 'defensive') {
-    // Build defensive deck: shield, heal, protection
-    const defensiveCards = allCardNames.filter(name => {
-      const card = CARD_BY_NAME[name];
-      if (!card) return false;
-      const desc = (card.desc || '').toLowerCase();
+
+    if (type === 'defensive') {
       return desc.includes('shield') || desc.includes('heal') || desc.includes('gain');
-    }).slice(0, 20);
-
-    for (let i = 0; i < deckSize; i++) {
-      const card = CARD_BY_NAME[defensiveCards[i % defensiveCards.length]];
-      if (card) deck.push({...card});
     }
-  } else if (type === 'utility') {
-    // Build utility deck: status effects, control
-    const utilityCards = allCardNames.filter(name => {
-      const card = CARD_BY_NAME[name];
-      if (!card) return false;
-      const desc = (card.desc || '').toLowerCase();
-      return desc.includes('poison') || desc.includes('bleed') || desc.includes('lock') 
+
+    if (type === 'utility') {
+      return desc.includes('poison') || desc.includes('bleed') || desc.includes('lock')
         || desc.includes('freeze') || desc.includes('blind') || desc.includes('apply');
-    }).slice(0, 20);
-
-    for (let i = 0; i < deckSize; i++) {
-      const card = CARD_BY_NAME[utilityCards[i % utilityCards.length]];
-      if (card) deck.push({...card});
     }
+
+    return false;
+  };
+
+  const themedNames = allCardNames.filter((name) => themeMatch(CARD_BY_NAME[name]));
+  const commonUncommonPool = themedNames.filter((name) => (CARD_BY_NAME[name]?.rarity || 1) <= 2);
+  const fallbackCommonUncommonPool = allCardNames.filter((name) => (CARD_BY_NAME[name]?.rarity || 1) <= 2);
+  const basePool = commonUncommonPool.length ? commonUncommonPool : fallbackCommonUncommonPool;
+
+  let rarePool = themedNames.filter((name) => (CARD_BY_NAME[name]?.rarity || 1) === 3);
+  if (!rarePool.length) {
+    rarePool = allCardNames.filter((name) => (CARD_BY_NAME[name]?.rarity || 1) === 3);
   }
 
-  return deck.length > 0 ? deck : Object.values(CARD_BY_NAME).slice(0, deckSize).map(c => ({...c}));
+  if (!basePool.length || !rarePool.length) {
+    return Object.values(CARD_BY_NAME)
+      .filter((c) => (c?.rarity || 1) <= 3)
+      .slice(0, deckSize)
+      .map((c) => ({ ...c }));
+  }
+
+  const rareIndex = Math.floor(Math.random() * deckSize);
+  for (let i = 0; i < deckSize; i++) {
+    const sourcePool = i === rareIndex ? rarePool : basePool;
+    const cardName = sourcePool[i % sourcePool.length];
+    const card = CARD_BY_NAME[cardName];
+    if (card) deck.push({ ...card });
+  }
+
+  return deck;
 }
 
 function renderQuickMatchDeckOptions() {
