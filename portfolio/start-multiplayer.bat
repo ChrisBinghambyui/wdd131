@@ -22,19 +22,36 @@ echo LOADED BONES MULTIPLAYER SERVER LAUNCHER
 echo ============================================================
 echo.
 set TUNNEL_TOOL=
+set TUNNEL_CMD=
 where cloudflared >nul 2>nul
 if %errorlevel% equ 0 (
     set TUNNEL_TOOL=cloudflared
+    set TUNNEL_CMD=cloudflared
 ) else (
+    if exist "%ProgramFiles%\cloudflared\cloudflared.exe" (
+        set TUNNEL_TOOL=cloudflared
+        set TUNNEL_CMD=%ProgramFiles%\cloudflared\cloudflared.exe
+    )
+
+    if "%TUNNEL_TOOL%"=="" (
+        for /f "delims=" %%F in ('dir /b /s "%LOCALAPPDATA%\Microsoft\WinGet\Packages\Cloudflare.cloudflared*\cloudflared.exe" 2^>nul') do (
+            if "%TUNNEL_TOOL%"=="" (
+                set TUNNEL_TOOL=cloudflared
+                set TUNNEL_CMD=%%F
+            )
+        )
+    )
+
     where ngrok >nul 2>nul
-    if %errorlevel% equ 0 (
+    if %errorlevel% equ 0 if "%TUNNEL_TOOL%"=="" (
         set TUNNEL_TOOL=ngrok
+        set TUNNEL_CMD=ngrok
     )
 )
 
 if "%TUNNEL_TOOL%"=="" (
     echo [ERROR] No tunnel tool found.
-    echo Install Cloudflare Tunnel (recommended):
+    echo Install Cloudflare Tunnel ^(recommended^):
     echo   winget install --id Cloudflare.cloudflared -e
     echo Or install ngrok from https://ngrok.com/download
     echo.
@@ -51,7 +68,7 @@ if "%TUNNEL_TOOL%"=="cloudflared" (
         echo cloudflared is already running. Reusing the existing tunnel.
         echo Check the cloudflared window for the current trycloudflare URL.
     ) else (
-        start "Cloudflare Tunnel" cmd /k cloudflared tunnel --url http://localhost:3000
+        start "Cloudflare Tunnel" cmd /k ""%TUNNEL_CMD%" tunnel --url http://localhost:3000"
         timeout /t 3 /nobreak >nul
     )
 
@@ -66,7 +83,7 @@ if "%TUNNEL_TOOL%"=="cloudflared" (
         echo ngrok is already running. Reusing the existing tunnel.
         echo If needed, open http://127.0.0.1:4040 to view the active public URL.
     ) else (
-        start "NGrok Tunnel" cmd /k ngrok http 3000
+        start "NGrok Tunnel" cmd /k ""%TUNNEL_CMD%" http 3000"
         timeout /t 3 /nobreak >nul
     )
 
