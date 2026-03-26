@@ -4984,6 +4984,10 @@ function bindMultiplayerUiEventsOnce() {
 
   multiplayer.on('playerJoined', (data) => {
     multiplayerPlayers = data?.players || [];
+    const waitingStatusEl = document.getElementById('waiting-status');
+    if (waitingStatusEl && multiplayerPlayers.length < 2) {
+      waitingStatusEl.textContent = `Players connected: ${multiplayerPlayers.length}/2`;
+    }
     if (multiplayerPlayers.length === 2) {
       handleBothPlayersReady(multiplayerPlayers);
     }
@@ -5168,12 +5172,18 @@ function createMultiplayerRoom() {
       return;
     }
 
+    multiplayerPlayers = Array.isArray(resp.players) ? resp.players : [];
+
     document.getElementById('lobby-main').style.display = 'none';
     document.getElementById('lobby-waiting').style.display = 'block';
     document.getElementById('waiting-room-code').textContent = resp.roomCode;
-    document.getElementById('waiting-status').textContent = 'Share this room code with your opponent.';
+    document.getElementById('waiting-status').textContent = 'Share this room code with your opponent. Players connected: 1/2';
     statusEl.innerHTML = `<span class="success-text">Room created: ${resp.roomCode}</span>`;
     log(`Multiplayer room ${resp.roomCode} created.`, 'system');
+
+    if (multiplayerPlayers.length === 2) {
+      handleBothPlayersReady(multiplayerPlayers);
+    }
   });
 }
 
@@ -5201,7 +5211,21 @@ function joinMultiplayerRoom() {
       statusEl.innerHTML = `<span class="danger-text">${resp?.error || 'Failed to join room.'}</span>`;
       return;
     }
+
+    multiplayerPlayers = Array.isArray(resp.players) ? resp.players : [];
+
+    document.getElementById('lobby-main').style.display = 'none';
+    document.getElementById('lobby-waiting').style.display = 'block';
+    document.getElementById('waiting-room-code').textContent = roomCode;
+    document.getElementById('waiting-status').textContent = multiplayerPlayers.length >= 2
+      ? 'Opponent found. Loading class select...'
+      : `Waiting for opponent... Players connected: ${Math.max(1, multiplayerPlayers.length)}/2`;
+
     statusEl.innerHTML = `<span class="success-text">Joined room ${roomCode}.</span>`;
+
+    if (multiplayerPlayers.length === 2) {
+      handleBothPlayersReady(multiplayerPlayers);
+    }
   });
 }
 
@@ -5824,6 +5848,7 @@ const QUICK_MATCH_STATE = {
   waitingPlayers: [],
   isSearching: false,
   playerName: null,
+  queueBound: false,
 };
 
 function initQuickMatch() {
@@ -5996,27 +6021,60 @@ function enterQuickMatchQueue() {
     playerInfo.textContent = `${QUICK_MATCH_STATE.selectedClass} (Level ${G.level})`;
   }
 
-  // Simulate lobby listing (in a real system, this would query a server)
-  simulateQuickMatchLobby();
+  renderQuickMatchPlayersList();
+
+  if (ensureMultiplayerClient()) {
+    bindMultiplayerUiEventsOnce();
+
+    if (!QUICK_MATCH_STATE.queueBound) {
+      multiplayer.on('quickMatchQueueUpdated', (data) => {
+        if (!QUICK_MATCH_STATE.isSearching) return;
+
+        const allPlayers = Array.isArray(data?.players) ? data.players : [];
+        QUICK_MATCH_STATE.waitingPlayers = allPlayers
+          .filter((p) => p?.socketId !== multiplayer.playerId)
+          .map((p) => ({
+            socketId: p.socketId,
+            name: p.name,
+            class: p.class,
+            level: p.level
+          }));
+
+        if (QUICK_MATCH_STATE.currentOpponent?.socketId) {
+          const stillPresent = QUICK_MATCH_STATE.waitingPlayers.some((p) => p.socketId === QUICK_MATCH_STATE.currentOpponent.socketId);
+          if (!stillPresent) QUICK_MATCH_STATE.currentOpponent = null;
+        }
+
+        renderQuickMatchPlayersList();
+      });
+      QUICK_MATCH_STATE.queueBound = true;
+    }
+
+    const joinQueue = () => {
+      multiplayer.joinQuickMatchQueue({
+        name: G.name,
+        class: QUICK_MATCH_STATE.selectedClass,
+        level: G.level
+      }, (resp) => {
+        if (!resp?.success) {
+          log(`Quick Match queue failed: ${resp?.error || 'Unknown error'}`, 'system');
+        }
+      });
+    };
+
+    if (!multiplayer.isConnected) {
+      const onConnected = () => {
+        multiplayer.off('connected', onConnected);
+        joinQueue();
+      };
+      multiplayer.on('connected', onConnected);
+      multiplayer.connect(MULTIPLAYER_SERVER_URL);
+    } else {
+      joinQueue();
+    }
+  }
   
   showScreen('quickmatch-lobby-screen');
-}
-
-function simulateQuickMatchLobby() {
-  // Simulate finding waiting players
-  const possibleOpponents = [
-    { name: 'Fencer_ABC1', class: 'Fencer', level: 3 },
-    { name: 'Knight_DEF2', class: 'Knight', level: 3 },
-    { name: 'Cleric_GHI3', class: 'Cleric', level: 3 },
-    { name: 'Rogue_JKL4', class: 'Rogue', level: 3 },
-  ];
-
-  QUICK_MATCH_STATE.waitingPlayers = possibleOpponents
-    .filter(p => p.name !== G.name)
-    .sort(() => 0.5 - Math.random())
-    .slice(0, 2 + Math.floor(Math.random() * 3));
-
-  renderQuickMatchPlayersList();
 }
 
 function renderQuickMatchPlayersList() {
@@ -6024,18 +6082,9 @@ function renderQuickMatchPlayersList() {
   if (!list) return;
 
   if (QUICK_MATCH_STATE.waitingPlayers.length === 0) {
-    list.innerHTML = '<div class="info-text" style="text-align:center; color:var(--bone-dim);">No opponents available. Creating match...</div>';
-    
-    // Auto-create an opponent after a delay
-    setTimeout(() => {
-      const opponent = {
-        name: `${['Fencer','Knight','Cleric','Warlock','Druid','Rogue'][Math.floor(Math.random()*6)]}_${Math.random().toString(36).slice(2,6).toUpperCase()}`,
-        class: ['Fencer','Knight','Cleric','Warlock','Druid','Rogue'][Math.floor(Math.random()*6)],
-        level: 3
-      };
-      QUICK_MATCH_STATE.waitingPlayers.push(opponent);
-      renderQuickMatchPlayersList();
-    }, 1500);
+    list.innerHTML = '<div class="info-text" style="text-align:center; color:var(--bone-dim);">No other players are currently in queue.</div>';
+    const panel = document.getElementById('qm-challenge-panel');
+    if (panel) panel.style.display = 'none';
     return;
   }
 
@@ -6074,6 +6123,10 @@ function startQuickMatchBattle() {
       console.error('No opponent selected');
       log('No opponent selected.', 'system');
       return;
+    }
+
+    if (ensureMultiplayerClient()) {
+      multiplayer.leaveQuickMatchQueue(() => {});
     }
 
     console.log('Starting quick match battle with opponent:', QUICK_MATCH_STATE.currentOpponent);
@@ -6145,7 +6198,11 @@ function startQuickMatchBattle() {
 
 function backFromQuickMatch() {
   QUICK_MATCH_STATE.isSearching = false;
-  if (ensureMultiplayerClient()) multiplayer.leaveRoom();
+  QUICK_MATCH_STATE.waitingPlayers = [];
+  QUICK_MATCH_STATE.currentOpponent = null;
+  if (ensureMultiplayerClient()) {
+    multiplayer.leaveQuickMatchQueue(() => {});
+  }
   resetMultiplayerLobbyPanels();
   showScreen('title-screen');
 }
@@ -6698,8 +6755,18 @@ function endCombat(result) {
   if (CB.isQuickMatch) {
     // Quick match: return to lobby after any result
     setTimeout(() => {
-      QUICK_MATCH_STATE.isSearching = false;
-      simulateQuickMatchLobby();
+      QUICK_MATCH_STATE.isSearching = true;
+      QUICK_MATCH_STATE.currentOpponent = null;
+      QUICK_MATCH_STATE.waitingPlayers = [];
+      renderQuickMatchPlayersList();
+
+      if (ensureMultiplayerClient()) {
+        multiplayer.joinQuickMatchQueue({
+          name: G.name,
+          class: QUICK_MATCH_STATE.selectedClass || G.className || 'Adventurer',
+          level: G.level || 3
+        }, () => {});
+      }
       showScreen('quickmatch-lobby-screen');
     }, 500);
     return;

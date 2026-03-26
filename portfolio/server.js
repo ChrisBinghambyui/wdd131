@@ -21,6 +21,24 @@ app.get('/', (_req, res) => {
 // ==================== GAME STATE ====================
 const rooms = new Map(); // roomCode -> { players, gameState, turn }
 const players = new Map(); // socketId -> { name, roomCode, character }
+const quickMatchQueue = new Map(); // socketId -> { socketId, name, class, level, joinedAt }
+
+function getQuickMatchQueueList() {
+  return Array.from(quickMatchQueue.values())
+    .sort((a, b) => (a.joinedAt || 0) - (b.joinedAt || 0))
+    .map((p) => ({
+      socketId: p.socketId,
+      name: p.name,
+      class: p.class,
+      level: p.level
+    }));
+}
+
+function broadcastQuickMatchQueue() {
+  io.emit('quickMatchQueueUpdated', {
+    players: getQuickMatchQueueList()
+  });
+}
 
 function normalizePlayerPayload(input) {
   if (typeof input === 'string') {
@@ -105,9 +123,13 @@ io.on('connection', (socket) => {
       profile
     });
     room.players.push({ socketId: socket.id, name: playerName, isHost: true, profile });
+
+    if (quickMatchQueue.delete(socket.id)) {
+      broadcastQuickMatchQueue();
+    }
     
     console.log(`Room created: ${roomCode} by ${playerName}`);
-    callback({ success: true, roomCode });
+    callback({ success: true, roomCode, players: room.players });
   });
 
   // Join an existing game room
@@ -140,6 +162,10 @@ io.on('connection', (socket) => {
       profile
     });
     room.players.push({ socketId: socket.id, name: playerName, isHost: false, profile });
+
+    if (quickMatchQueue.delete(socket.id)) {
+      broadcastQuickMatchQueue();
+    }
     
     console.log(`${playerName} joined room: ${roomCode}`);
     
@@ -149,7 +175,36 @@ io.on('connection', (socket) => {
       status: room.status
     });
     
-    callback({ success: true, roomCode });
+    callback({ success: true, roomCode, players: room.players });
+  });
+
+  socket.on('joinQuickMatchQueue', (payload, callback) => {
+    const safeName = typeof payload?.name === 'string' && payload.name.trim()
+      ? payload.name.trim()
+      : 'Adventurer';
+    const safeClass = typeof payload?.class === 'string' && payload.class.trim()
+      ? payload.class.trim()
+      : 'Adventurer';
+    const safeLevel = Math.max(1, Number(payload?.level) || 1);
+
+    quickMatchQueue.set(socket.id, {
+      socketId: socket.id,
+      name: safeName,
+      class: safeClass,
+      level: safeLevel,
+      joinedAt: Date.now()
+    });
+
+    const playersInQueue = getQuickMatchQueueList();
+    broadcastQuickMatchQueue();
+    if (callback) callback({ success: true, players: playersInQueue });
+  });
+
+  socket.on('leaveQuickMatchQueue', (callback) => {
+    quickMatchQueue.delete(socket.id);
+    const playersInQueue = getQuickMatchQueueList();
+    broadcastQuickMatchQueue();
+    if (callback) callback({ success: true, players: playersInQueue });
   });
 
   socket.on('updateProfile', (profilePayload, callback) => {
@@ -499,6 +554,10 @@ io.on('connection', (socket) => {
     
     players.delete(socket.id);
     socket.leave(player.roomCode);
+
+    if (quickMatchQueue.delete(socket.id)) {
+      broadcastQuickMatchQueue();
+    }
   });
 
   socket.on('disconnect', () => {
@@ -518,6 +577,10 @@ io.on('connection', (socket) => {
         }
       }
       players.delete(socket.id);
+    }
+
+    if (quickMatchQueue.delete(socket.id)) {
+      broadcastQuickMatchQueue();
     }
   });
 });

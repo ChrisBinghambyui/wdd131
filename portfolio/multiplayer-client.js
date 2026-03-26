@@ -48,6 +48,7 @@ class MultiplayerManager {
     this.socket.on('playerLeft', (data) => this.emit('playerLeft', data));
     this.socket.on('playerDisconnected', (data) => this.emit('playerDisconnected', data));
     this.socket.on('combatAction', (data) => this.emit('combatAction', data));
+    this.socket.on('quickMatchQueueUpdated', (data) => this.emit('quickMatchQueueUpdated', data));
     
     // Deck builder events
     this.socket.on('deckBuilderStarted', (data) => this.emit('deckBuilderStarted', data));
@@ -221,6 +222,28 @@ class MultiplayerManager {
     }
 
     this.socket.emit('takeDamage', damage, targetSocketId, (response) => {
+      callback(response);
+    });
+  }
+
+  joinQuickMatchQueue(playerData, callback = () => {}) {
+    if (!this.isConnected) {
+      callback({ success: false, error: 'Not connected to server' });
+      return;
+    }
+
+    this.socket.emit('joinQuickMatchQueue', playerData, (response) => {
+      callback(response);
+    });
+  }
+
+  leaveQuickMatchQueue(callback = () => {}) {
+    if (!this.isConnected) {
+      callback({ success: false, error: 'Not connected to server' });
+      return;
+    }
+
+    this.socket.emit('leaveQuickMatchQueue', (response) => {
       callback(response);
     });
   }
