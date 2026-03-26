@@ -10,8 +10,13 @@ const io = new Server(httpServer, {
 });
 
 app.use(cors());
-app.use(express.static('public'));
+// Serve the project files directly so the ngrok URL can host the game page end-to-end.
+app.use(express.static('.'));
 app.use(express.json());
+
+app.get('/', (_req, res) => {
+  res.sendFile('loaded_bones.html', { root: process.cwd() });
+});
 
 // ==================== GAME STATE ====================
 const rooms = new Map(); // roomCode -> { players, gameState, turn }

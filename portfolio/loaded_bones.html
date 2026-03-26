@@ -1292,6 +1292,9 @@ input[type="text"]:focus { border-color: var(--gold); }
       <button class="btn primary" id="title-begin-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px" onclick="showCharCreate()">Begin</button>
       <button class="btn primary" id="continue-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px; margin-left:12px; display:none;" onclick="loadAndResume()">Continue</button>
       <button class="btn" id="title-import-btn" style="font-size:15px; padding:14px 30px; letter-spacing:2px; margin-left:12px;" onclick="importSave()">Import Save</button>
+      <div style="margin-top:14px;">
+        <button class="btn primary" id="title-quickmatch-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px;" onclick="initQuickMatch()">⚡ Quick Match</button>
+      </div>
     </div>
   </div>
 
@@ -1521,6 +1524,88 @@ input[type="text"]:focus { border-color: var(--gold); }
         <button class="btn" onclick="backFromMultiplayer()">Cancel</button>
       </div>
       <div id="deck-builder-status" class="info-text" style="margin-top:10px;"></div>
+    </div>
+  </div>
+
+  <!-- QUICK MATCH CLASS SELECT -->
+  <div id="quickmatch-class-screen" class="screen" style="padding:40px 24px; max-width:900px; margin:0 auto; width:100%">
+    <h1 class="title-main" style="font-size:32px; margin-bottom:40px; text-align:center;">Quick Match</h1>
+    <div style="text-align:center; margin-bottom:30px;">
+      <div class="info-text">Select a class to enter the quick match queue.</div>
+      <div class="info-text" style="margin-top:8px; color:var(--bone-dim);">Level 3 • Auto-equipped deck • Instant battles</div>
+    </div>
+
+    <div style="background:rgba(0,0,0,0.3); border:1px solid var(--parchment); border-radius:4px; padding:16px; margin:20px auto; max-width:400px;">
+      <label class="input-label" style="display:block; margin-bottom:8px; font-weight:bold;">Your Fighter Name:</label>
+      <input type="text" id="qm-player-name-input" placeholder="Enter your name" maxlength="20" style="width:100%; padding:8px 12px; border:1px solid var(--parchment); border-radius:2px; background:rgba(0,0,0,0.5); color:var(--parchment); font-family:'Courier New',monospace;" />
+      <div style="font-size:11px; color:var(--bone-dim); margin-top:6px;">This will help other players identify you</div>
+    </div>
+
+    <div class="class-grid" id="quickmatch-class-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:30px 0; max-width:700px; margin-left:auto; margin-right:auto;">
+      <!-- Populated by JS -->
+    </div>
+
+    <div style="margin-top:30px; text-align:center;">
+      <button class="btn" onclick="showScreen('title-screen')">Back to Menu</button>
+    </div>
+  </div>
+
+  <!-- QUICK MATCH DECK SELECT -->
+  <div id="quickmatch-deck-screen" class="screen" style="padding:40px 24px; max-width:900px; margin:0 auto; width:100%">
+    <h1 class="title-main" style="font-size:32px; margin-bottom:20px; text-align:center;">Choose Your Playstyle</h1>
+    <div class="info-text" style="text-align:center; margin-bottom:30px;">Three pre-built decks to match your combat style</div>
+
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; max-width:900px; margin:20px auto;">
+      <!-- Offensive Deck -->
+      <div class="panel" style="padding:20px; cursor:pointer; border:2px solid transparent; transition:all 0.2s;" id="deck-offensive" onclick="selectQuickMatchDeck('offensive')">
+        <div class="section-label" style="color:var(--blood-bright); margin-bottom:12px;">⚔️ OFFENSIVE</div>
+        <div class="info-text" style="font-size:12px; margin-bottom:12px;">High damage output. Strike fast and hard.</div>
+        <div id="qm-offensive-preview" style="font-size:11px; color:var(--bone-dim); min-height:60px;"></div>
+      </div>
+
+      <!-- Defensive Deck -->
+      <div class="panel" style="padding:20px; cursor:pointer; border:2px solid transparent; transition:all 0.2s;" id="deck-defensive" onclick="selectQuickMatchDeck('defensive')">
+        <div class="section-label" style="color:var(--teal-light); margin-bottom:12px;">🛡️ DEFENSIVE</div>
+        <div class="info-text" style="font-size:12px; margin-bottom:12px;">Shield and heal. Outlast the enemy.</div>
+        <div id="qm-defensive-preview" style="font-size:11px; color:var(--bone-dim); min-height:60px;"></div>
+      </div>
+
+      <!-- Utility/Status Deck -->
+      <div class="panel" style="padding:20px; cursor:pointer; border:2px solid transparent; transition:all 0.2s;" id="deck-utility" onclick="selectQuickMatchDeck('utility')">
+        <div class="section-label" style="color:var(--ab47bc); margin-bottom:12px;">✨ UTILITY</div>
+        <div class="info-text" style="font-size:12px; margin-bottom:12px;">Status effects & control. Debilitate foes.</div>
+        <div id="qm-utility-preview" style="font-size:11px; color:var(--bone-dim); min-height:60px;"></div>
+      </div>
+    </div>
+
+    <div style="margin-top:30px; text-align:center;">
+      <button class="btn" onclick="backFromQuickMatch()">Back</button>
+    </div>
+  </div>
+
+  <!-- QUICK MATCH LOBBY (MATCHMAKING) -->
+  <div id="quickmatch-lobby-screen" class="screen" style="padding:40px 24px; max-width:900px; margin:0 auto; width:100%">
+    <h1 class="title-main" style="font-size:28px; margin-bottom:20px; text-align:center;">⚡ Quick Match Lobby</h1>
+    
+    <div style="text-align:center; margin-bottom:20px;">
+      <div class="info-text">Your character: <span id="qm-player-info" style="color:var(--gold-light); font-weight:bold;">--</span></div>
+      <div class="info-text" style="font-size:12px; margin-top:6px; color:var(--bone-dim);">Looking for opponents...</div>
+    </div>
+
+    <div style="background:rgba(0,0,0,0.3); border:1px solid var(--parchment); border-radius:4px; padding:20px; margin:20px 0;">
+      <div class="section-label" style="margin-bottom:16px;">Players Seeking Matches</div>
+      <div id="qm-players-list" style="min-height:100px;">
+        <div class="info-text" style="text-align:center; color:var(--bone-dim);">Searching...</div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:20px;">
+      <button class="btn" onclick="backFromQuickMatch()">Cancel</button>
+    </div>
+
+    <div id="qm-challenge-panel" style="display:none; background:rgba(0,0,0,0.3); border:2px solid var(--teal-light); border-radius:4px; padding:20px; margin-top:20px; text-align:center;">
+      <div class="info-text" style="margin-bottom:12px;">Playing <span id="qm-opponent-name" style="color:var(--gold-light); font-weight:bold;">opponent</span></div>
+      <button class="btn primary" onclick="startQuickMatchBattle()" style="width:100%; max-width:200px;">⚔️ Begin Battle!</button>
     </div>
   </div>
 
@@ -4802,13 +4887,52 @@ function hideTownXpTooltip() {
 }
 
 // Multiplayer server URL configuration:
-// OPTION 1 (Local Network): Friends on same WiFi/LAN
-// const MULTIPLAYER_SERVER_URL = 'http://192.168.1.100:3000'; // Replace with your local IP
-// OPTION 2 (Internet-wide): Friends on different connections (requires ngrok tunnel running)
-// const MULTIPLAYER_SERVER_URL = 'https://your-url.ngrok.io'; // Replace with your ngrok public URL
-// OPTION 3 (Hosted): HelioHost or other hosting
-// const MULTIPLAYER_SERVER_URL = 'https://your-domain.com';
-const MULTIPLAYER_SERVER_URL = 'https://unrewarding-remarkably-bethel.ngrok-free.dev';
+// - Local testing from file:// or localhost uses localhost:3000
+// - LAN testing from another device uses host:3000
+// - Public tunnel/same-origin hosting (ngrok/domain) uses page origin
+// - To force a specific URL (ngrok/hosted), set window.MULTIPLAYER_SERVER_URL before this script runs
+// - For static hosts (GitHub Pages/Netlify/etc), set a permanent backend URL below once.
+const PRODUCTION_MULTIPLAYER_SERVER_URL = 'https://your-multiplayer-server.onrender.com';
+const MULTIPLAYER_SERVER_URL = (() => {
+  const isConfiguredProductionUrl = typeof PRODUCTION_MULTIPLAYER_SERVER_URL === 'string'
+    && PRODUCTION_MULTIPLAYER_SERVER_URL.trim()
+    && !PRODUCTION_MULTIPLAYER_SERVER_URL.includes('your-multiplayer-server.onrender.com');
+
+  if (typeof window.MULTIPLAYER_SERVER_URL === 'string' && window.MULTIPLAYER_SERVER_URL.trim()) {
+    return window.MULTIPLAYER_SERVER_URL.trim();
+  }
+
+  const isFile = window.location.protocol === 'file:';
+  const host = window.location.hostname;
+  const isLocalhost = host === 'localhost' || host === '127.0.0.1';
+  const currentPort = window.location.port;
+  const isPrivateIp = /^(10\.|192\.168\.|172\.(1[6-9]|2\d|3[0-1])\.)/.test(host);
+
+  if (isFile || isLocalhost) {
+    return 'http://localhost:3000';
+  }
+
+  if (currentPort === '3000') {
+    return window.location.origin;
+  }
+
+  if (isPrivateIp) {
+    const scheme = window.location.protocol === 'https:' ? 'https' : 'http';
+    return `${scheme}://${host}:3000`;
+  }
+
+  const isStaticHost = /\.github\.io$|\.netlify\.app$|\.pages\.dev$/.test(host);
+  if (isStaticHost && isConfiguredProductionUrl) {
+    return PRODUCTION_MULTIPLAYER_SERVER_URL.trim();
+  }
+
+  if (isConfiguredProductionUrl) {
+    return PRODUCTION_MULTIPLAYER_SERVER_URL.trim();
+  }
+
+  // Public hosting/tunnel: default to same origin so no hardcoded port is required.
+  return window.location.origin;
+})();
 let multiplayerUiBound = false;
 let multiplayerPlayers = [];
 let selectedMultiplayerClass = '';
@@ -5682,6 +5806,339 @@ function copyMultiplayerRoomCode(code) {
   log(`Room code: ${code}`, 'system');
 }
 
+// ==================== QUICK MATCH SYSTEM ====================
+
+const QUICK_MATCH_STATE = {
+  selectedClass: null,
+  selectedDeck: null,
+  selectedDecks: {},
+  currentOpponent: null,
+  waitingPlayers: [],
+  isSearching: false,
+  playerName: null,
+};
+
+function initQuickMatch() {
+  QUICK_MATCH_STATE.selectedClass = null;
+  QUICK_MATCH_STATE.selectedDeck = null;
+  QUICK_MATCH_STATE.currentOpponent = null;
+  
+  // Set a default name (can be overridden)
+  const nameInput = document.getElementById('qm-player-name-input');
+  if (nameInput) {
+    nameInput.value = `Fighter_${Math.random().toString(36).slice(2, 6).toUpperCase()}`;
+    nameInput.focus();
+  }
+  
+  renderQuickMatchClassGrid();
+  showScreen('quickmatch-class-screen');
+}
+
+function renderQuickMatchClassGrid() {
+  const grid = document.getElementById('quickmatch-class-grid');
+  if (!grid) return;
+
+  const classes = [
+    { key: 'Fencer', css: 'class-fencer', desc: 'Quick strikes, high crit', hp: 18 },
+    { key: 'Knight', css: 'class-knight', desc: 'Heavy armor, block', hp: 24 },
+    { key: 'Cleric', css: 'class-cleric', desc: 'Healing, support', hp: 20 },
+    { key: 'Warlock', css: 'class-warlock', desc: 'Curses, damage', hp: 19 },
+    { key: 'Druid', css: 'class-druid', desc: 'Nature, shields', hp: 21 },
+    { key: 'Rogue', css: 'class-rogue', desc: 'Stealth, evasion', hp: 17 }
+  ];
+
+  grid.innerHTML = classes.map(c => `
+    <div class="class-card" onclick="selectQuickMatchClass('${c.key}', this)">
+      <div class="class-name ${c.css}">${c.key}</div>
+      <div class="class-desc">${c.desc}</div>
+      <div class="class-hp">HP: ${c.hp}</div>
+    </div>`).join('');
+}
+
+function selectQuickMatchClass(className, cardEl) {
+  // Capture player name
+  const nameInput = document.getElementById('qm-player-name-input');
+  if (nameInput && nameInput.value.trim()) {
+    QUICK_MATCH_STATE.playerName = nameInput.value.trim();
+  } else {
+    QUICK_MATCH_STATE.playerName = `Fighter_${Math.random().toString(36).slice(2, 6).toUpperCase()}`;
+  }
+  
+  QUICK_MATCH_STATE.selectedClass = className;
+  document.querySelectorAll('#quickmatch-class-grid .class-card').forEach(c => c.classList.remove('selected'));
+  if (cardEl) cardEl.classList.add('selected');
+
+  setTimeout(() => {
+    renderQuickMatchDeckOptions();
+    showScreen('quickmatch-deck-screen');
+  }, 200);
+}
+
+function generateQuickMatchDeck(type = 'offensive') {
+  const allCardNames = Object.keys(CARD_BY_NAME);
+  const deckSize = 30;
+  const deck = [];
+
+  if (type === 'offensive') {
+    // Build offensive deck: high-damage cards
+    const offensiveCards = allCardNames.filter(name => {
+      const card = CARD_BY_NAME[name];
+      if (!card) return false;
+      const desc = (card.desc || '').toLowerCase();
+      return desc.includes('damage') && !desc.includes('shield') && !desc.includes('heal');
+    }).slice(0, 20);
+
+    for (let i = 0; i < deckSize; i++) {
+      const card = CARD_BY_NAME[offensiveCards[i % offensiveCards.length]];
+      if (card) deck.push({...card});
+    }
+  } else if (type === 'defensive') {
+    // Build defensive deck: shield, heal, protection
+    const defensiveCards = allCardNames.filter(name => {
+      const card = CARD_BY_NAME[name];
+      if (!card) return false;
+      const desc = (card.desc || '').toLowerCase();
+      return desc.includes('shield') || desc.includes('heal') || desc.includes('gain');
+    }).slice(0, 20);
+
+    for (let i = 0; i < deckSize; i++) {
+      const card = CARD_BY_NAME[defensiveCards[i % defensiveCards.length]];
+      if (card) deck.push({...card});
+    }
+  } else if (type === 'utility') {
+    // Build utility deck: status effects, control
+    const utilityCards = allCardNames.filter(name => {
+      const card = CARD_BY_NAME[name];
+      if (!card) return false;
+      const desc = (card.desc || '').toLowerCase();
+      return desc.includes('poison') || desc.includes('bleed') || desc.includes('lock') 
+        || desc.includes('freeze') || desc.includes('blind') || desc.includes('apply');
+    }).slice(0, 20);
+
+    for (let i = 0; i < deckSize; i++) {
+      const card = CARD_BY_NAME[utilityCards[i % utilityCards.length]];
+      if (card) deck.push({...card});
+    }
+  }
+
+  return deck.length > 0 ? deck : Object.values(CARD_BY_NAME).slice(0, deckSize).map(c => ({...c}));
+}
+
+function renderQuickMatchDeckOptions() {
+  QUICK_MATCH_STATE.selectedDecks.offensive = generateQuickMatchDeck('offensive');
+  QUICK_MATCH_STATE.selectedDecks.defensive = generateQuickMatchDeck('defensive');
+  QUICK_MATCH_STATE.selectedDecks.utility = generateQuickMatchDeck('utility');
+
+  const renderDeckPreview = (deckType) => {
+    const deck = QUICK_MATCH_STATE.selectedDecks[deckType];
+    if (!deck || deck.length === 0) return '(empty)';
+    const preview = deck.slice(0, 4).map(c => c.name).join(', ');
+    return `${preview}... (${deck.length} cards)`;
+  };
+
+  const offensive = document.getElementById('qm-offensive-preview');
+  const defensive = document.getElementById('qm-defensive-preview');
+  const utility = document.getElementById('qm-utility-preview');
+
+  if (offensive) offensive.textContent = renderDeckPreview('offensive');
+  if (defensive) defensive.textContent = renderDeckPreview('defensive');
+  if (utility) utility.textContent = renderDeckPreview('utility');
+}
+
+function selectQuickMatchDeck(deckType) {
+  QUICK_MATCH_STATE.selectedDeck = deckType;
+
+  // Highlight selected deck
+  document.querySelectorAll('#quickmatch-deck-screen .panel').forEach(p => {
+    p.style.borderColor = 'transparent';
+  });
+  const selectedDeckEl = document.getElementById(`deck-${deckType}`);
+  if (selectedDeckEl) selectedDeckEl.style.borderColor = 'var(--teal-light)';
+
+  setTimeout(() => {
+    enterQuickMatchQueue();
+  }, 200);
+}
+
+function enterQuickMatchQueue() {
+  QUICK_MATCH_STATE.isSearching = true;
+
+  // Initialize player character at level 3 with quick-match setup
+  const classId = QUICK_MATCH_STATE.selectedClass.toLowerCase();
+  const classObj = CLASSES.find(c => c.id === classId) || CLASSES[0];
+  
+  const playerName = QUICK_MATCH_STATE.playerName || `${QUICK_MATCH_STATE.selectedClass}_${Math.random().toString(36).slice(2,6).toUpperCase()}`;
+  const deck = QUICK_MATCH_STATE.selectedDecks[QUICK_MATCH_STATE.selectedDeck] || [];
+  
+  G.name = playerName;
+  G.className = QUICK_MATCH_STATE.selectedClass;
+  G.classId = classId;
+  G.level = 3;
+  G.maxHp = Math.max(20, classObj.hp + 10);
+  G.hp = G.maxHp;
+  G.deck = deck;
+  G.selectedClass = CLASSES.findIndex(c => c.id === classId);
+
+  // Update player info display
+  const playerInfo = document.getElementById('qm-player-info');
+  if (playerInfo) {
+    playerInfo.textContent = `${QUICK_MATCH_STATE.selectedClass} (Level ${G.level})`;
+  }
+
+  // Simulate lobby listing (in a real system, this would query a server)
+  simulateQuickMatchLobby();
+  
+  showScreen('quickmatch-lobby-screen');
+}
+
+function simulateQuickMatchLobby() {
+  // Simulate finding waiting players
+  const possibleOpponents = [
+    { name: 'Fencer_ABC1', class: 'Fencer', level: 3 },
+    { name: 'Knight_DEF2', class: 'Knight', level: 3 },
+    { name: 'Cleric_GHI3', class: 'Cleric', level: 3 },
+    { name: 'Rogue_JKL4', class: 'Rogue', level: 3 },
+  ];
+
+  QUICK_MATCH_STATE.waitingPlayers = possibleOpponents
+    .filter(p => p.name !== G.name)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 2 + Math.floor(Math.random() * 3));
+
+  renderQuickMatchPlayersList();
+}
+
+function renderQuickMatchPlayersList() {
+  const list = document.getElementById('qm-players-list');
+  if (!list) return;
+
+  if (QUICK_MATCH_STATE.waitingPlayers.length === 0) {
+    list.innerHTML = '<div class="info-text" style="text-align:center; color:var(--bone-dim);">No opponents available. Creating match...</div>';
+    
+    // Auto-create an opponent after a delay
+    setTimeout(() => {
+      const opponent = {
+        name: `${['Fencer','Knight','Cleric','Warlock','Druid','Rogue'][Math.floor(Math.random()*6)]}_${Math.random().toString(36).slice(2,6).toUpperCase()}`,
+        class: ['Fencer','Knight','Cleric','Warlock','Druid','Rogue'][Math.floor(Math.random()*6)],
+        level: 3
+      };
+      QUICK_MATCH_STATE.waitingPlayers.push(opponent);
+      renderQuickMatchPlayersList();
+    }, 1500);
+    return;
+  }
+
+  list.innerHTML = QUICK_MATCH_STATE.waitingPlayers.map((opponent, idx) => `
+    <div class="stat-box" style="display:inline-block; margin:8px; padding:12px 16px; cursor:pointer; border:2px solid transparent; transition:all 0.2s;" onclick="selectQuickMatchOpponent(${idx}, this)">
+      <div class="class-name" style="color:var(--gold-light); margin-bottom:4px;">${opponent.class}</div>
+      <div style="font-size:12px; color:var(--bone-dim);">${opponent.name}</div>
+      <div style="font-size:11px; color:var(--bone-dim); margin-top:4px;">Level ${opponent.level}</div>
+    </div>
+  `).join('');
+}
+
+function selectQuickMatchOpponent(idx, el) {
+  QUICK_MATCH_STATE.currentOpponent = QUICK_MATCH_STATE.waitingPlayers[idx];
+
+  // Highlight selected opponent
+  document.querySelectorAll('#qm-players-list .stat-box').forEach(box => {
+    box.style.borderColor = 'transparent';
+  });
+  if (el) el.style.borderColor = 'var(--teal-light)';
+
+  // Show challenge panel
+  const panel = document.getElementById('qm-challenge-panel');
+  if (panel) {
+    const opponentName = document.getElementById('qm-opponent-name');
+    if (opponentName) {
+      opponentName.textContent = `${QUICK_MATCH_STATE.currentOpponent.class} (${QUICK_MATCH_STATE.currentOpponent.name})`;
+    }
+    panel.style.display = 'block';
+  }
+}
+
+function startQuickMatchBattle() {
+  try {
+    if (!QUICK_MATCH_STATE.currentOpponent) {
+      console.error('No opponent selected');
+      log('No opponent selected.', 'system');
+      return;
+    }
+
+    console.log('Starting quick match battle with opponent:', QUICK_MATCH_STATE.currentOpponent);
+
+    // Create opponent character
+    const opponentClass = QUICK_MATCH_STATE.currentOpponent.class.toLowerCase();
+    const opponentClassObj = CLASSES.find(c => c.id === opponentClass) || CLASSES[0];
+    console.log('Opponent class:', opponentClass, 'obj:', opponentClassObj);
+
+    const opponentCards = generateQuickMatchDeck(['offensive', 'defensive', 'utility'][Math.floor(Math.random() * 3)])
+      .map(c => ({...c}));
+    console.log('Opponent cards generated:', opponentCards.length);
+
+    const opponent = makeCombatant(
+      QUICK_MATCH_STATE.currentOpponent.name,
+      Math.max(20, opponentClassObj.hp + 10),
+      opponentCards,
+      3,
+      4,
+      opponentClass,
+      3,
+      Math.max(20, opponentClassObj.hp + 10)
+    );
+    console.log('Opponent created:', opponent.name);
+
+    const playerCards = G.deck.map(c => ({...c, instanceId: generateCardInstanceId()}));
+    console.log('Player cards prepared:', playerCards.length);
+
+    const player = makeCombatant(
+      G.name,
+      G.maxHp,
+      playerCards,
+      3,
+      4,
+      G.classId,
+      G.level,
+      G.hp
+    );
+    console.log('Player created:', player.name);
+
+    CB = {
+      player: player,
+      enemy: opponent,
+      phase: 'player',
+      selectedAction: null,
+      selectedTarget: null,
+      selectedDie: -1,
+      selectedCard: -1,
+      turn: 0,
+      round: 1,
+      log: [],
+      isQuickMatch: true
+    };
+    console.log('Combat state initialized');
+
+    showScreen('combat-screen');
+    console.log('Combat screen shown');
+    
+    // Initialize combat: draw cards, roll dice, start first turn
+    setTimeout(() => {
+      startPlayerTurn();
+      console.log('Player turn started');
+    }, 100);
+  } catch (err) {
+    console.error('Error in startQuickMatchBattle:', err, err.stack);
+    alert(`Battle Error: ${err.message}`);
+  }
+}
+
+function backFromQuickMatch() {
+  QUICK_MATCH_STATE.isSearching = false;
+  if (ensureMultiplayerClient()) multiplayer.leaveRoom();
+  resetMultiplayerLobbyPanels();
+  showScreen('title-screen');
+}
+
 function toggleTownXpTooltip(evt) {
   const tip = document.getElementById('xp-tooltip');
   if (!tip) return;
@@ -6227,6 +6684,16 @@ function confirmRetreat() {
 }
 
 function endCombat(result) {
+  if (CB.isQuickMatch) {
+    // Quick match: return to lobby after any result
+    setTimeout(() => {
+      QUICK_MATCH_STATE.isSearching = false;
+      simulateQuickMatchLobby();
+      showScreen('quickmatch-lobby-screen');
+    }, 500);
+    return;
+  }
+
   if (MP_COMBAT.active) {
     emitMultiplayerCombatAction('combatEnd', { result });
     finishMultiplayerMatch(result);
