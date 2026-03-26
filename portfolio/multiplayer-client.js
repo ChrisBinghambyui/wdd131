@@ -49,6 +49,7 @@ class MultiplayerManager {
     this.socket.on('playerDisconnected', (data) => this.emit('playerDisconnected', data));
     this.socket.on('combatAction', (data) => this.emit('combatAction', data));
     this.socket.on('quickMatchQueueUpdated', (data) => this.emit('quickMatchQueueUpdated', data));
+    this.socket.on('quickMatchChallenged', (data) => this.emit('quickMatchChallenged', data));
     
     // Deck builder events
     this.socket.on('deckBuilderStarted', (data) => this.emit('deckBuilderStarted', data));
@@ -71,7 +72,7 @@ class MultiplayerManager {
       : 'Host';
     const profile = isObj ? playerData.profile : null;
 
-    this.socket.emit('createRoom', playerName, (response) => {
+    this.socket.emit('createRoom', { name: playerName, profile }, (response) => {
       if (response.success) {
         this.currentRoom = response.roomCode;
         this.playerId = this.socket.id;
@@ -100,7 +101,7 @@ class MultiplayerManager {
       : 'Guest';
     const profile = isObj ? playerData.profile : null;
 
-    this.socket.emit('joinRoom', roomCode, playerName, (response) => {
+    this.socket.emit('joinRoom', roomCode, { name: playerName, profile }, (response) => {
       if (response.success) {
         this.currentRoom = roomCode;
         this.playerId = this.socket.id;
@@ -244,6 +245,23 @@ class MultiplayerManager {
     }
 
     this.socket.emit('leaveQuickMatchQueue', (response) => {
+      callback(response);
+    });
+  }
+
+  quickMatchChallenge(payload, callback = () => {}) {
+    if (!this.isConnected) {
+      callback({ success: false, error: 'Not connected to server' });
+      return;
+    }
+
+    this.socket.emit('quickMatchChallenge', payload, (response) => {
+      if (response?.success && response.roomCode) {
+        this.currentRoom = response.roomCode;
+        this.playerId = this.socket.id;
+        this.isHost = true;
+        this.mode = 'multiplayer';
+      }
       callback(response);
     });
   }

@@ -1262,13 +1262,13 @@ input[type="text"]:focus { border-color: var(--gold); }
 <body>
 
 <!-- FEEDBACK BUTTON -->
-<a id="feedback-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSekRdEyZID3Kygw4YYl_YvNLabhpWJH-uixi2_n1PdW0qRtPA/viewform?usp=sharing&ouid=101055319341169915281" target="_blank" rel="noopener noreferrer">Ã¢Å“Â¦ Feedback</a>
+<a id="feedback-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSekRdEyZID3Kygw4YYl_YvNLabhpWJH-uixi2_n1PdW0qRtPA/viewform?usp=sharing&ouid=101055319341169915281" target="_blank" rel="noopener noreferrer">Feedback</a>
 
 <!-- LOG PANEL -->
 <div id="log-panel">
   <div id="log-title">
-    <span>Ã¢Å¡â€ Combat Log</span>
-    <button id="log-close-btn" onclick="toggleLogPanel()">Ãƒâ€”</button>
+    <span id="log-title-text">Combat Log</span>
+    <button id="log-close-btn" onclick="toggleLogPanel()">x</button>
   </div>
   <div id="log-entries"></div>
   <div id="log-chat-row">
@@ -1282,7 +1282,7 @@ input[type="text"]:focus { border-color: var(--gold); }
 <div id="xp-tooltip" class="xp-tooltip" hidden></div>
 
 <!-- LOG TOGGLE BUTTON (Mobile) -->
-<button id="log-toggle-btn" onclick="toggleLogPanel()">Ã°Å¸â€œâ€¹</button>
+<button id="log-toggle-btn" onclick="toggleLogPanel()">Log</button>
 
 <!-- MAIN CONTENT -->
 <div id="main">
@@ -1294,14 +1294,14 @@ input[type="text"]:focus { border-color: var(--gold); }
       <select id="title-lang-select" onchange="changeLanguage(this.value)"></select>
     </div>
     <div style="text-align:center; animation: fadeIn 1.2s ease">
-      <div class="title-bones">Ã°Å¸Â¦Â´ Ã¢Å“Â¦ Ã°Å¸Å½Â² Ã¢Å“Â¦ Ã°Å¸Â¦Â´</div>
+      <div class="title-bones">BONES OF FATE</div>
       <div class="title-logo">Loaded Bones</div>
       <div class="title-subtitle" id="title-subtitle">A Dice & Card Adventure</div>
       <button class="btn primary" id="title-begin-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px" onclick="showCharCreate()">Begin</button>
       <button class="btn primary" id="continue-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px; margin-left:12px; display:none;" onclick="loadAndResume()">Continue</button>
       <button class="btn" id="title-import-btn" style="font-size:15px; padding:14px 30px; letter-spacing:2px; margin-left:12px;" onclick="importSave()">Import Save</button>
       <div id="title-quickmatch-wrap" style="margin-top:14px;">
-        <button class="btn primary" id="title-quickmatch-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px;" onclick="initQuickMatch()">Ã¢Å¡Â¡ Quick Match</button>
+        <button class="btn primary" id="title-quickmatch-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px;" onclick="initQuickMatch()">Quick Match</button>
       </div>
     </div>
   </div>
@@ -1359,7 +1359,7 @@ input[type="text"]:focus { border-color: var(--gold); }
     <div class="town-header">
       <div>
         <div class="player-title" id="town-player-name">Adventurer</div>
-        <div class="player-meta" id="town-player-meta">Fencer Ã‚Â· Plains Tier 1</div>
+        <div class="player-meta" id="town-player-meta">Fencer - Plains Tier 1</div>
       </div>
       <div>
         <div class="stats-row">
@@ -1539,7 +1539,7 @@ input[type="text"]:focus { border-color: var(--gold); }
     <h1 class="title-main" style="font-size:32px; margin-bottom:40px; text-align:center;">Quick Match</h1>
     <div style="text-align:center; margin-bottom:30px;">
       <div class="info-text">Select a class to enter the quick match queue.</div>
-      <div class="info-text" style="margin-top:8px; color:var(--bone-dim);">Level 3 Ã¢â‚¬Â¢ Auto-equipped deck Ã¢â‚¬Â¢ Instant battles</div>
+      <div class="info-text" style="margin-top:8px; color:var(--bone-dim);">Level 3 - Auto-equipped deck - Instant battles</div>
     </div>
 
     <div style="background:rgba(0,0,0,0.3); border:1px solid var(--parchment); border-radius:4px; padding:16px; margin:20px auto; max-width:400px;">
@@ -1565,21 +1565,21 @@ input[type="text"]:focus { border-color: var(--gold); }
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; max-width:900px; margin:20px auto;">
       <!-- Offensive Deck -->
       <div class="panel" style="padding:20px; cursor:pointer; border:2px solid transparent; transition:all 0.2s;" id="deck-offensive" onclick="selectQuickMatchDeck('offensive')">
-        <div class="section-label" style="color:var(--blood-bright); margin-bottom:12px;">Ã¢Å¡â€Ã¯Â¸Â OFFENSIVE</div>
+        <div class="section-label" style="color:var(--blood-bright); margin-bottom:12px;">OFFENSIVE</div>
         <div class="info-text" style="font-size:12px; margin-bottom:12px;">High damage output. Strike fast and hard.</div>
         <div id="qm-offensive-preview" style="font-size:11px; color:var(--bone-dim); min-height:60px;"></div>
       </div>
 
       <!-- Defensive Deck -->
       <div class="panel" style="padding:20px; cursor:pointer; border:2px solid transparent; transition:all 0.2s;" id="deck-defensive" onclick="selectQuickMatchDeck('defensive')">
-        <div class="section-label" style="color:var(--teal-light); margin-bottom:12px;">Ã°Å¸â€ºÂ¡Ã¯Â¸Â DEFENSIVE</div>
+        <div class="section-label" style="color:var(--teal-light); margin-bottom:12px;">DEFENSIVE</div>
         <div class="info-text" style="font-size:12px; margin-bottom:12px;">Shield and heal. Outlast the enemy.</div>
         <div id="qm-defensive-preview" style="font-size:11px; color:var(--bone-dim); min-height:60px;"></div>
       </div>
 
       <!-- Utility/Status Deck -->
       <div class="panel" style="padding:20px; cursor:pointer; border:2px solid transparent; transition:all 0.2s;" id="deck-utility" onclick="selectQuickMatchDeck('utility')">
-        <div class="section-label" style="color:var(--ab47bc); margin-bottom:12px;">Ã¢Å“Â¨ UTILITY</div>
+        <div class="section-label" style="color:var(--ab47bc); margin-bottom:12px;">UTILITY</div>
         <div class="info-text" style="font-size:12px; margin-bottom:12px;">Status effects & control. Debilitate foes.</div>
         <div id="qm-utility-preview" style="font-size:11px; color:var(--bone-dim); min-height:60px;"></div>
       </div>
@@ -1592,7 +1592,7 @@ input[type="text"]:focus { border-color: var(--gold); }
 
   <!-- QUICK MATCH LOBBY (MATCHMAKING) -->
   <div id="quickmatch-lobby-screen" class="screen" style="padding:40px 24px; max-width:900px; margin:0 auto; width:100%">
-    <h1 class="title-main" style="font-size:28px; margin-bottom:20px; text-align:center;">Ã¢Å¡Â¡ Quick Match Lobby</h1>
+    <h1 class="title-main" style="font-size:28px; margin-bottom:20px; text-align:center;">Quick Match Lobby</h1>
     
     <div style="text-align:center; margin-bottom:20px;">
       <div class="info-text">Your character: <span id="qm-player-info" style="color:var(--gold-light); font-weight:bold;">--</span></div>
@@ -1612,7 +1612,7 @@ input[type="text"]:focus { border-color: var(--gold); }
 
     <div id="qm-challenge-panel" style="display:none; background:rgba(0,0,0,0.3); border:2px solid var(--teal-light); border-radius:4px; padding:20px; margin-top:20px; text-align:center;">
       <div class="info-text" style="margin-bottom:12px;">Playing <span id="qm-opponent-name" style="color:var(--gold-light); font-weight:bold;">opponent</span></div>
-      <button class="btn primary" onclick="startQuickMatchBattle()" style="width:100%; max-width:200px;">Ã¢Å¡â€Ã¯Â¸Â Begin Battle!</button>
+      <button class="btn primary" onclick="startQuickMatchBattle()" style="width:100%; max-width:200px;">Begin Battle!</button>
     </div>
   </div>
 
@@ -1985,11 +1985,11 @@ const UPGRADED_CARDS = [
 ["Earthshatter Y","Deal 22 damage, Apply 5 Lock, Apply 4 Frozen","25-4-119-01-22-00-354400",10],
 ["Earthshatter x","Deal 15 damage, Apply 3 Lock, Apply 2 Frozen","25-1-120-01-15-00-334200",10],
 ["Earthshatter y","Deal 18 damage, Apply 4 Lock, Apply 3 Frozen","25-3-122-01-18-00-344300",10],
-["Evade X","Gain Shield equal to 4 Ãƒâ€” the number of dice used this turn, Remove 1 negative effect","26-2-000-71-00-00-Z00023",10],
-["Evade XY","Gain Shield equal to 5 Ãƒâ€” the number of dice used this turn, Heal 3 HP, Remove all negative effects","26-5-000-71-00-00-Z00026",10],
-["Evade Y","Gain Shield equal to 3 Ãƒâ€” the number of dice used this turn, Heal 4 HP","26-4-000-71-00-00-Z00025",10],
-["Evade x","Gain Shield equal to 3 Ãƒâ€” the number of dice used this turn","26-1-000-71-00-00-Z00022",10],
-["Evade y","Gain Shield equal to 2 Ãƒâ€” the number of dice used this turn, Heal 2 HP","26-3-000-71-00-00-Z00024",10],
+["Evade X","Gain Shield equal to 4 x the number of dice used this turn, Remove 1 negative effect","26-2-000-71-00-00-Z00023",10],
+["Evade XY","Gain Shield equal to 5 x the number of dice used this turn, Heal 3 HP, Remove all negative effects","26-5-000-71-00-00-Z00026",10],
+["Evade Y","Gain Shield equal to 3 x the number of dice used this turn, Heal 4 HP","26-4-000-71-00-00-Z00025",10],
+["Evade x","Gain Shield equal to 3 x the number of dice used this turn","26-1-000-71-00-00-Z00022",10],
+["Evade y","Gain Shield equal to 2 x the number of dice used this turn, Heal 2 HP","26-3-000-71-00-00-Z00024",10],
 ["Execution X","Deal 25 damage, Apply 5 Bleed, Apply 1 Lock","27-2-120-01-25-00-543100",10],
 ["Execution XY","Deal 32 damage, Apply 7 Bleed, Apply 2 Lock, Heal 3 HP","27-5-118-01-32-00-573182",10],
 ["Execution Y","Deal 28 damage, Apply 6 Bleed, Heal 2 HP","27-4-122-01-28-00-568200",10],
@@ -2597,7 +2597,7 @@ const ENEMY_FLAVOR = {
 
 function getEnemyFlavor(name) {
   // Try exact match first, then strip legendary prefix
-  const clean = name.replace(/^Ã¢Å¡Â¡ LEGENDARY /, '');
+  const clean = name.replace(/^LEGENDARY /, '');
   const fallback = ENEMY_FLAVOR[clean] || ENEMY_FLAVOR[name] || null;
   if (!fallback) return null;
 
@@ -2609,7 +2609,7 @@ function getEnemyFlavor(name) {
 
 function getCombatEnemyFlavor(enemy) {
   if (!enemy || !enemy.name) return null;
-  const cleanEnemyName = enemy.name.replace(/^Ã¢Å¡Â¡ LEGENDARY /, '');
+  const cleanEnemyName = enemy.name.replace(/^LEGENDARY /, '');
   const localizedFlavor = getLocaleValue(currentLanguage, `enemyFlavor.${cleanEnemyName}`)
     || getLocaleValue(currentLanguage, `enemyFlavor.${enemy.name}`);
 
@@ -2977,7 +2977,7 @@ function applyLanguageToMenuAndTown() {
   };
 
   // Log panel title
-  setText('log-title', translateVisibleText('Ã¢Å¡â€ Combat Log'));
+  setText('log-title-text', translateVisibleText('Combat Log'));
 
   // Menu screen
   setText('lang-label-title', t('menu.languageLabel', {}, 'Language'));
@@ -2986,7 +2986,7 @@ function applyLanguageToMenuAndTown() {
   setText('title-begin-btn', translateVisibleText(t('menu.begin', {}, 'Begin')));
   setText('continue-btn', translateVisibleText(t('menu.continue', {}, 'Continue')));
   setText('title-import-btn', translateVisibleText(t('menu.importSave', {}, 'Import Save')));
-  setText('title-quickmatch-btn', `Ã¢Å¡Â¡ ${translateVisibleText('Quick Match')}`);
+  setText('title-quickmatch-btn', translateVisibleText('Quick Match'));
 
   // Character creation buttons
   setText('charcreate-begin-btn', t('charCreate.beginTale', {}, 'Begin Your Tale'));
@@ -3030,10 +3030,10 @@ function applyLanguageToMenuAndTown() {
   setText('town-action-multiplayer-desc', t('town.actions.multiplayerDesc', {}, 'Create or join a room code and duel another player'));
 
   setText('town-game-management-title', t('town.gameManagement', {}, 'Game Management'));
-  setText('town-save-btn', `Ã°Å¸â€™Â¾ ${t('town.buttons.save', {}, 'Save')}`);
-  setText('town-export-btn', `Ã°Å¸â€œÂ¥ ${t('town.buttons.exportSave', {}, 'Export Save')}`);
-  setText('town-import-btn', `Ã°Å¸â€œÂ¤ ${t('town.buttons.importSave', {}, 'Import Save')}`);
-  setText('town-main-menu-btn', `Ã°Å¸ÂÂ  ${t('town.buttons.mainMenu', {}, 'Main Menu')}`);
+  setText('town-save-btn', t('town.buttons.save', {}, 'Save'));
+  setText('town-export-btn', t('town.buttons.exportSave', {}, 'Export Save'));
+  setText('town-import-btn', t('town.buttons.importSave', {}, 'Import Save'));
+  setText('town-main-menu-btn', t('town.buttons.mainMenu', {}, 'Main Menu'));
 
   if (G && G.name) updateTownUI();
 }
@@ -3084,7 +3084,7 @@ function initLanguage() {
 //
 // ROGUE: You select a lucky number at the start of each combat. Whenever that number is rolled,
 //        you deal damage to your enemy.
-//   - Upgrade: Deal (2 Ãƒâ€” level) damage per lucky roll
+//   - Upgrade: Deal (2 x level) damage per lucky roll
 //   - This triggers even with rerolls or dice splitting from other abilities
 // ============================================================
 
@@ -3094,7 +3094,7 @@ const CLASSES = [
   {id:"cleric",name:"Cleric",color:"#ffca28",hp:15,desc:"When rolling doubles, heal by that amount. At level 2+, excess healing converts to shield."},
   {id:"warlock",name:"Warlock",color:"#ab47bc",hp:14,desc:"When applying status effects or shield, apply extra equal to level."},
   {id:"druid",name:"Druid",color:"#66bb6a",hp:15,desc:"Once per turn, \"plant\" a die. Next turn it blooms into multiple dice."},
-  {id:"rogue",name:"Rogue",color:"#f06292",hp:13,desc:"Choose a lucky number before each fight. Whenever it's rolled, deal (2 Ãƒâ€” level) bonus damage."},
+  {id:"rogue",name:"Rogue",color:"#f06292",hp:13,desc:"Choose a lucky number before each fight. Whenever it's rolled, deal (2 x level) bonus damage."},
 ];
 
 const BIOME_NAMES = {
@@ -3982,7 +3982,7 @@ function spawnEnemy(biome, tier, legendary=false, powerMultiplier=1, encounterLe
   let hp = base.hp;
   hp = Math.ceil(hp * Math.max(1, powerMultiplier || 1));
   const enemy = makeCombatant(
-    legendary ? `Ã¢Å¡Â¡ LEGENDARY ${base.name}` : base.name,
+    legendary ? `LEGENDARY ${base.name}` : base.name,
     hp, cards, 3, base.dice
   );
   enemy.baseName = base.name;
@@ -4985,6 +4985,11 @@ function bindMultiplayerUiEventsOnce() {
 
   multiplayer.on('playerJoined', (data) => {
     multiplayerPlayers = data?.players || [];
+    if (QUICK_MATCH_STATE.isQuickMatchMode && multiplayer.currentRoom) {
+      tryStartQuickMatchRoomBattle(multiplayerPlayers);
+      return;
+    }
+
     const waitingStatusEl = document.getElementById('waiting-status');
     if (waitingStatusEl && multiplayerPlayers.length < 2) {
       waitingStatusEl.textContent = `Players connected: ${multiplayerPlayers.length}/2`;
@@ -5432,7 +5437,7 @@ function updateDeckPreview() {
     return `
       <div class="deck-preview-item">
         <span class="deck-preview-name">${name} (${count}x)</span>
-        <span class="deck-preview-remove" onclick="removeCardFromDeck('${name.replace(/'/g, "\\'")}')">Ã¢Å“â€¢</span>
+        <span class="deck-preview-remove" onclick="removeCardFromDeck('${name.replace(/'/g, "\\'")}')">x</span>
       </div>
     `;
   }).join('');
@@ -5466,7 +5471,7 @@ function updateReadyIndicators() {
   if (youReadyEl) {
     if (mpDeckBuilder.isReady) {
       youReadyEl.classList.remove('not-ready');
-      if (yourTextEl) yourTextEl.textContent = 'Ã¢Å“â€œ Your deck is ready';
+      if (yourTextEl) yourTextEl.textContent = 'Ready: Your deck is ready';
     } else {
       youReadyEl.classList.add('not-ready');
       if (yourTextEl) yourTextEl.textContent = 'Building deck...';
@@ -5476,7 +5481,7 @@ function updateReadyIndicators() {
   if (oppReadyEl) {
     if (mpDeckBuilder.opponentReady) {
       oppReadyEl.classList.remove('not-ready');
-      if (oppTextEl) oppTextEl.textContent = 'Ã¢Å“â€œ Opponent deck ready';
+      if (oppTextEl) oppTextEl.textContent = 'Ready: Opponent deck ready';
     } else {
       oppReadyEl.classList.add('not-ready');
       if (oppTextEl) oppTextEl.textContent = 'Opponent: Building deck...';
@@ -5680,7 +5685,11 @@ function handleRemoteCombatAction(payload) {
   if (payload.type === 'combatEnd') {
     applyRemoteMultiplayerSnapshot(payload);
     const result = payload.result === 'victory' ? 'defeat' : 'victory';
-    finishMultiplayerMatch(result);
+    if (CB.isQuickMatch) {
+      finishQuickMatchRound(result);
+    } else {
+      finishMultiplayerMatch(result);
+    }
   }
 }
 
@@ -5778,6 +5787,7 @@ function startMultiplayerCombat(gameState) {
     selectedCard: -1,
     selectedDie: -1,
     rogueLuckyPending: false,
+    isQuickMatch: !!QUICK_MATCH_STATE.isQuickMatchMode,
   };
 
   // Provide basic adventure defaults so combat UI can render badges safely.
@@ -5846,8 +5856,11 @@ const QUICK_MATCH_STATE = {
   selectedDeck: null,
   selectedDecks: {},
   currentOpponent: null,
+  roomCode: null,
   waitingPlayers: [],
   isSearching: false,
+  isQuickMatchMode: false,
+  roomStarting: false,
   playerName: null,
   queueBound: false,
 };
@@ -5856,6 +5869,9 @@ function initQuickMatch() {
   QUICK_MATCH_STATE.selectedClass = null;
   QUICK_MATCH_STATE.selectedDeck = null;
   QUICK_MATCH_STATE.currentOpponent = null;
+  QUICK_MATCH_STATE.roomCode = null;
+  QUICK_MATCH_STATE.roomStarting = false;
+  QUICK_MATCH_STATE.isQuickMatchMode = true;
   
   // Set a default name (can be overridden)
   const nameInput = document.getElementById('qm-player-name-input');
@@ -5999,6 +6015,9 @@ function selectQuickMatchDeck(deckType) {
 
 function enterQuickMatchQueue() {
   QUICK_MATCH_STATE.isSearching = true;
+  QUICK_MATCH_STATE.roomCode = null;
+  QUICK_MATCH_STATE.roomStarting = false;
+  QUICK_MATCH_STATE.isQuickMatchMode = true;
 
   // Initialize player character at level 3 with quick-match setup
   const classId = QUICK_MATCH_STATE.selectedClass.toLowerCase();
@@ -6048,6 +6067,48 @@ function enterQuickMatchQueue() {
 
         renderQuickMatchPlayersList();
       });
+
+      multiplayer.on('quickMatchChallenged', (data) => {
+        if (!QUICK_MATCH_STATE.isQuickMatchMode) return;
+
+        const roomCode = String(data?.roomCode || '').trim().toUpperCase();
+        if (!roomCode) return;
+
+        QUICK_MATCH_STATE.isSearching = false;
+        QUICK_MATCH_STATE.roomCode = roomCode;
+        QUICK_MATCH_STATE.roomStarting = false;
+
+        if (data?.challenger) {
+          QUICK_MATCH_STATE.currentOpponent = {
+            socketId: data.challenger.socketId,
+            name: data.challenger.name,
+            class: data.challenger.class,
+            level: data.challenger.level
+          };
+          const opponentName = document.getElementById('qm-opponent-name');
+          if (opponentName) {
+            opponentName.textContent = `${data.challenger.class || 'Opponent'} (${data.challenger.name || 'Unknown'})`;
+          }
+        }
+
+        multiplayer.joinRoom(roomCode, getMultiplayerPlayerProfile(G.name), (resp) => {
+          if (!resp?.success) {
+            log(`Quick Match join failed: ${resp?.error || 'Unknown error'}`, 'system');
+            QUICK_MATCH_STATE.isSearching = true;
+            multiplayer.joinQuickMatchQueue({
+              name: G.name,
+              class: QUICK_MATCH_STATE.selectedClass,
+              level: G.level || 3
+            }, () => {});
+            return;
+          }
+
+          multiplayerPlayers = Array.isArray(resp.players) ? resp.players : [];
+          log('Quick Match challenge accepted. Preparing live PvP battle...', 'system');
+          tryStartQuickMatchRoomBattle(multiplayerPlayers);
+        });
+      });
+
       QUICK_MATCH_STATE.queueBound = true;
     }
 
@@ -6076,6 +6137,37 @@ function enterQuickMatchQueue() {
   }
   
   showScreen('quickmatch-lobby-screen');
+}
+
+function getQuickMatchHpByClass() {
+  return {
+    Fencer: 18,
+    Knight: 24,
+    Cleric: 20,
+    Warlock: 19,
+    Druid: 21,
+    Rogue: 17
+  };
+}
+
+function tryStartQuickMatchRoomBattle(players = []) {
+  if (!QUICK_MATCH_STATE.isQuickMatchMode || !ensureMultiplayerClient()) return;
+  if (!Array.isArray(players) || players.length < 2) return;
+
+  const selectedClass = QUICK_MATCH_STATE.selectedClass || G.className || 'Fencer';
+  multiplayer.selectCharacter(selectedClass, () => {});
+
+  if (!multiplayer.isHost || QUICK_MATCH_STATE.roomStarting) return;
+
+  QUICK_MATCH_STATE.roomStarting = true;
+  multiplayer.startGame({ hpByClass: getQuickMatchHpByClass() }, (resp) => {
+    if (!resp?.success) {
+      QUICK_MATCH_STATE.roomStarting = false;
+      log(`Quick Match start failed: ${resp?.error || 'Unknown error'}`, 'system');
+      return;
+    }
+    log('Quick Match started. Live turn-based PvP engaged.', 'system');
+  });
 }
 
 function renderQuickMatchPlayersList() {
@@ -6119,90 +6211,48 @@ function selectQuickMatchOpponent(idx, el) {
 }
 
 function startQuickMatchBattle() {
-  try {
-    if (!QUICK_MATCH_STATE.currentOpponent) {
-      console.error('No opponent selected');
-      log('No opponent selected.', 'system');
+  if (!QUICK_MATCH_STATE.currentOpponent?.socketId) {
+    log('No opponent selected.', 'system');
+    return;
+  }
+
+  if (!ensureMultiplayerClient()) {
+    log('Multiplayer unavailable. Cannot start quick match.', 'system');
+    return;
+  }
+
+  QUICK_MATCH_STATE.isSearching = false;
+  QUICK_MATCH_STATE.roomStarting = false;
+
+  const challengePayload = {
+    targetSocketId: QUICK_MATCH_STATE.currentOpponent.socketId,
+    challenger: getMultiplayerPlayerProfile(G.name)
+  };
+
+  multiplayer.quickMatchChallenge(challengePayload, (resp) => {
+    if (!resp?.success) {
+      QUICK_MATCH_STATE.isSearching = true;
+      log(`Challenge failed: ${resp?.error || 'Unknown error'}`, 'system');
       return;
     }
 
-    if (ensureMultiplayerClient()) {
-      multiplayer.leaveQuickMatchQueue(() => {});
-    }
-
-    console.log('Starting quick match battle with opponent:', QUICK_MATCH_STATE.currentOpponent);
-
-    // Create opponent character
-    const opponentClass = QUICK_MATCH_STATE.currentOpponent.class.toLowerCase();
-    const opponentClassObj = CLASSES.find(c => c.id === opponentClass) || CLASSES[0];
-    console.log('Opponent class:', opponentClass, 'obj:', opponentClassObj);
-
-    const opponentCards = generateQuickMatchDeck(['offensive', 'defensive', 'utility'][Math.floor(Math.random() * 3)])
-      .map(c => ({...c}));
-    console.log('Opponent cards generated:', opponentCards.length);
-
-    const opponent = makeCombatant(
-      QUICK_MATCH_STATE.currentOpponent.name,
-      Math.max(20, opponentClassObj.hp + 10),
-      opponentCards,
-      3,
-      4,
-      opponentClass,
-      3,
-      Math.max(20, opponentClassObj.hp + 10)
-    );
-    console.log('Opponent created:', opponent.name);
-
-    const playerCards = G.deck.map(c => ({...c, instanceId: generateCardInstanceId()}));
-    console.log('Player cards prepared:', playerCards.length);
-
-    const player = makeCombatant(
-      G.name,
-      G.maxHp,
-      playerCards,
-      3,
-      4,
-      G.classId,
-      G.level,
-      G.hp
-    );
-    console.log('Player created:', player.name);
-
-    CB = {
-      player: player,
-      enemy: opponent,
-      phase: 'player',
-      selectedAction: null,
-      selectedTarget: null,
-      selectedDie: -1,
-      selectedCard: -1,
-      turn: 0,
-      round: 1,
-      log: [],
-      isQuickMatch: true
-    };
-    console.log('Combat state initialized');
-
-    showScreen('combat-screen');
-    console.log('Combat screen shown');
-    
-    // Initialize combat: draw cards, roll dice, start first turn
-    setTimeout(() => {
-      startPlayerTurn();
-      console.log('Player turn started');
-    }, 100);
-  } catch (err) {
-    console.error('Error in startQuickMatchBattle:', err, err.stack);
-    alert(`Battle Error: ${err.message}`);
-  }
+    QUICK_MATCH_STATE.roomCode = resp.roomCode || null;
+    multiplayerPlayers = Array.isArray(resp.players) ? resp.players : [];
+    log('Challenge sent. Connecting both players to a live PvP room...', 'system');
+    tryStartQuickMatchRoomBattle(multiplayerPlayers);
+  });
 }
 
 function backFromQuickMatch() {
   QUICK_MATCH_STATE.isSearching = false;
+  QUICK_MATCH_STATE.isQuickMatchMode = false;
+  QUICK_MATCH_STATE.roomStarting = false;
+  QUICK_MATCH_STATE.roomCode = null;
   QUICK_MATCH_STATE.waitingPlayers = [];
   QUICK_MATCH_STATE.currentOpponent = null;
   if (ensureMultiplayerClient()) {
     multiplayer.leaveQuickMatchQueue(() => {});
+    multiplayer.leaveRoom();
   }
   resetMultiplayerLobbyPanels();
   showScreen('title-screen');
@@ -6397,7 +6447,7 @@ function startNextCombat(legendaryOverride = null) {
   registerEnemyEncounter(enemy);
 
   if (legendary) {
-    log(`Ã¢Å¡Â¡ LEGENDARY ${enemy.name} appears!`, 'victory');
+    log(`LEGENDARY ${enemy.name} appears!`, 'victory');
   } else {
     log(`A ${enemy.name} appears in ${getBiomeNameLocalized(ADV.biome)} Tier ${ADV.tier}!`, 'enemy');
   }
@@ -6415,7 +6465,7 @@ function startNextCombat(legendaryOverride = null) {
     const hpLabel = translateVisibleText('HP');
     const diceLabel = translateVisibleText('Dice');
     const engageText = t('combat.engage', {}, translateVisibleText('Engage'));
-    const doomText = t('combat.faceDoom', {}, translateVisibleText('Ã¢Å¡Â¡ Face Your Doom'));
+    const doomText = t('combat.faceDoom', {}, translateVisibleText('Face Your Doom'));
 
     openModal(`
       <div style="text-align:center;margin-bottom:12px;">
@@ -6754,22 +6804,10 @@ function confirmRetreat() {
 
 function endCombat(result) {
   if (CB.isQuickMatch) {
-    // Quick match: return to lobby after any result
-    setTimeout(() => {
-      QUICK_MATCH_STATE.isSearching = true;
-      QUICK_MATCH_STATE.currentOpponent = null;
-      QUICK_MATCH_STATE.waitingPlayers = [];
-      renderQuickMatchPlayersList();
-
-      if (ensureMultiplayerClient()) {
-        multiplayer.joinQuickMatchQueue({
-          name: G.name,
-          class: QUICK_MATCH_STATE.selectedClass || G.className || 'Adventurer',
-          level: G.level || 3
-        }, () => {});
-      }
-      showScreen('quickmatch-lobby-screen');
-    }, 500);
+    if (MP_COMBAT.active) {
+      emitMultiplayerCombatAction('combatEnd', { result });
+    }
+    finishQuickMatchRound(result);
     return;
   }
 
@@ -6843,6 +6881,33 @@ function endCombat(result) {
     log(forced ? 'You were defeated and forced to retreat!' : 'You retreat to Ascus.', 'defeat');
     finishAdventure(result);
   }
+}
+
+function finishQuickMatchRound(result) {
+  MP_COMBAT.active = false;
+  MP_COMBAT.myTurn = false;
+
+  const summary = result === 'victory' ? 'You won the quick match.' : (result === 'defeat' ? 'You lost the quick match.' : 'Quick match ended.');
+  log(summary, result === 'victory' ? 'victory' : (result === 'defeat' ? 'defeat' : 'system'));
+
+  setTimeout(() => {
+    QUICK_MATCH_STATE.isSearching = true;
+    QUICK_MATCH_STATE.roomStarting = false;
+    QUICK_MATCH_STATE.roomCode = null;
+    QUICK_MATCH_STATE.currentOpponent = null;
+    QUICK_MATCH_STATE.waitingPlayers = [];
+    renderQuickMatchPlayersList();
+
+    if (ensureMultiplayerClient()) {
+      multiplayer.leaveRoom();
+      multiplayer.joinQuickMatchQueue({
+        name: G.name,
+        class: QUICK_MATCH_STATE.selectedClass || G.className || 'Adventurer',
+        level: G.level || 3
+      }, () => {});
+    }
+    showScreen('quickmatch-lobby-screen');
+  }, 500);
 }
 
 function handlePrologueCombatEnd(result) {
@@ -8668,7 +8733,7 @@ function ensureQuickMatchButtonVisible() {
   btn.style.fontSize = '15px';
   btn.style.padding = '14px 40px';
   btn.style.letterSpacing = '4px';
-  btn.textContent = 'Ã¢Å¡Â¡ Quick Match';
+  btn.textContent = 'Quick Match';
   btn.addEventListener('click', initQuickMatch);
 
   wrap.appendChild(btn);

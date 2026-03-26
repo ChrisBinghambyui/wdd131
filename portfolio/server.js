@@ -207,6 +207,70 @@ io.on('connection', (socket) => {
     if (callback) callback({ success: true, players: playersInQueue });
   });
 
+  socket.on('quickMatchChallenge', (payload, callback) => {
+    const challengerQueued = quickMatchQueue.get(socket.id);
+    const targetSocketId = typeof payload?.targetSocketId === 'string' ? payload.targetSocketId : '';
+    const targetQueued = targetSocketId ? quickMatchQueue.get(targetSocketId) : null;
+
+    if (!challengerQueued) {
+      if (callback) callback({ success: false, error: 'You are not in quick match queue.' });
+      return;
+    }
+
+    if (!targetQueued) {
+      if (callback) callback({ success: false, error: 'Selected opponent is no longer in queue.' });
+      return;
+    }
+
+    if (targetSocketId === socket.id) {
+      if (callback) callback({ success: false, error: 'Cannot challenge yourself.' });
+      return;
+    }
+
+    const challengerPayload = normalizePlayerPayload(payload?.challenger || payload?.player || challengerQueued.name);
+    const challengerName = challengerPayload.name || challengerQueued.name || 'Challenger';
+    const roomCode = createRoom();
+    const room = getRoom(roomCode);
+
+    socket.join(roomCode);
+    players.set(socket.id, {
+      name: challengerName,
+      roomCode,
+      character: challengerQueued.class || null,
+      isHost: true,
+      profile: challengerPayload.profile
+    });
+    room.players.push({
+      socketId: socket.id,
+      name: challengerName,
+      isHost: true,
+      character: challengerQueued.class || null,
+      profile: challengerPayload.profile
+    });
+
+    quickMatchQueue.delete(socket.id);
+    quickMatchQueue.delete(targetSocketId);
+    broadcastQuickMatchQueue();
+
+    io.to(targetSocketId).emit('quickMatchChallenged', {
+      roomCode,
+      challenger: {
+        socketId: socket.id,
+        name: challengerName,
+        class: challengerQueued.class,
+        level: challengerQueued.level
+      }
+    });
+
+    if (callback) {
+      callback({
+        success: true,
+        roomCode,
+        players: room.players
+      });
+    }
+  });
+
   socket.on('updateProfile', (profilePayload, callback) => {
     const player = players.get(socket.id);
     if (!player) {
@@ -347,7 +411,9 @@ io.on('connection', (socket) => {
     }
 
     const readyDeckCount = Object.keys(room.deckSubmissions || {}).filter(id => room.deckSubmissions[id]?.ready).length;
-    if (room.players.length !== 2 || readyDeckCount !== 2) {
+    const playersHaveProfileDecks = room.players.length === 2
+      && room.players.every((p) => Array.isArray(p?.profile?.deck) && p.profile.deck.length > 0);
+    if (room.players.length !== 2 || (readyDeckCount !== 2 && !playersHaveProfileDecks)) {
       if (callback) callback({ success: false, error: 'Both players must submit decks before starting.' });
       return;
     }
