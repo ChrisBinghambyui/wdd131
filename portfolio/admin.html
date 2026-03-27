@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loaded Bones Admin Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1d130b;
+      --parchment: #f4e9d1;
+      --parchment-deep: #dfcda8;
+      --brass: #b7862f;
+      --embers: #b7481c;
+      --pine: #2e4b41;
+      --charcoal: #0f1213;
+      --panel: rgba(18, 23, 25, 0.72);
+      --line: rgba(223, 205, 168, 0.28);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--parchment);
+      font-family: "IBM Plex Mono", monospace;
+      background:
+        radial-gradient(1200px 600px at 0% 0%, rgba(183, 72, 28, 0.20), transparent 70%),
+        radial-gradient(900px 600px at 100% 100%, rgba(46, 75, 65, 0.24), transparent 70%),
+        linear-gradient(160deg, #18120f 0%, #12181a 55%, #0f1213 100%);
+      padding: 24px;
+    }
+
+    .frame {
+      max-width: 1160px;
+      margin: 0 auto;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--panel);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 24px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .title {
+      font-family: "Cinzel", serif;
+      letter-spacing: 1px;
+      margin: 0;
+      font-size: clamp(1.4rem, 2.4vw, 2rem);
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      color: var(--parchment-deep);
+      font-size: 0.9rem;
+    }
+
+    .controls {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--parchment);
+      font-family: inherit;
+      font-size: 0.85rem;
+      padding: 10px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(244, 233, 209, 0.5);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .btn.primary {
+      border-color: rgba(183, 134, 47, 0.7);
+      background: rgba(183, 134, 47, 0.16);
+    }
+
+    .status {
+      padding: 10px 24px;
+      border-bottom: 1px solid var(--line);
+      color: var(--parchment-deep);
+      font-size: 0.82rem;
+    }
+
+    .grid {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+
+    .card {
+      grid-column: span 12;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+      background: rgba(0, 0, 0, 0.12);
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-family: "Cinzel", serif;
+      letter-spacing: 0.5px;
+      font-size: 1.05rem;
+      color: var(--parchment);
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .metric {
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .metric .label {
+      color: var(--parchment-deep);
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .metric .value {
+      margin-top: 4px;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 8px 6px;
+      text-align: left;
+    }
+
+    th {
+      color: var(--parchment-deep);
+      font-weight: 600;
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.45px;
+    }
+
+    .empty {
+      color: rgba(244, 233, 209, 0.65);
+      font-size: 0.85rem;
+      padding: 6px 2px;
+    }
+
+    .accent-embers { border-left: 4px solid var(--embers); }
+    .accent-brass { border-left: 4px solid var(--brass); }
+    .accent-pine { border-left: 4px solid var(--pine); }
+
+    @media (min-width: 880px) {
+      .col-4 { grid-column: span 4; }
+      .col-6 { grid-column: span 6; }
+      .col-8 { grid-column: span 8; }
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <section class="hero">
+      <div>
+        <h1 class="title">Loaded Bones Analytics Console</h1>
+        <div class="subtitle">Run balance signals from live save snapshots</div>
+      </div>
+      <div class="controls">
+        <button id="refresh-btn" class="btn primary" type="button">Refresh</button>
+        <a class="btn" href="/api/analytics/excel.csv" target="_blank" rel="noopener">Download CSV</a>
+        <a class="btn" href="/api/analytics/excel.xlsx" target="_blank" rel="noopener">Download XLSX</a>
+      </div>
+    </section>
+
+    <div id="status" class="status">Loading analytics...</div>
+
+    <section class="grid">
+      <article class="card col-4 accent-brass">
+        <h2>Core Totals</h2>
+        <div id="core-metrics" class="meta-grid"></div>
+      </article>
+
+      <article class="card col-8 accent-pine">
+        <h2>Tracking Migration Flags</h2>
+        <div id="tracking-metrics" class="meta-grid"></div>
+      </article>
+
+      <article class="card col-6 accent-embers">
+        <h2>Top Picked Classes</h2>
+        <div id="table-classes"></div>
+      </article>
+
+      <article class="card col-6 accent-brass">
+        <h2>Top Training Upgrades</h2>
+        <div id="table-training"></div>
+      </article>
+
+      <article class="card col-6 accent-pine">
+        <h2>Cards Added To Deck</h2>
+        <div id="table-card-add"></div>
+      </article>
+
+      <article class="card col-6 accent-pine">
+        <h2>Cards Used In Combat</h2>
+        <div id="table-card-used"></div>
+      </article>
+
+      <article class="card col-6 accent-embers">
+        <h2>Enemies Defeating Players</h2>
+        <div id="table-killers"></div>
+      </article>
+
+      <article class="card col-6 accent-brass">
+        <h2>Run Results</h2>
+        <div id="table-run-results"></div>
+      </article>
+    </section>
+  </div>
+
+  <script>
+    function fmtDate(ms) {
+      if (!ms) return 'n/a';
+      const d = new Date(ms);
+      return Number.isNaN(d.getTime()) ? 'n/a' : d.toLocaleString();
+    }
+
+    function renderMetrics(targetId, pairs) {
+      const container = document.getElementById(targetId);
+      container.innerHTML = pairs.map(({ label, value }) => `
+        <div class="metric">
+          <div class="label">${label}</div>
+          <div class="value">${value}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderTable(targetId, rows) {
+      const target = document.getElementById(targetId);
+      if (!rows || !rows.length) {
+        target.innerHTML = '<div class="empty">No data yet.</div>';
+        return;
+      }
+
+      const body = rows.map((row) => `
+        <tr>
+          <td>${row.name}</td>
+          <td>${row.count}</td>
+        </tr>
+      `).join('');
+
+      target.innerHTML = `
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Count</th></tr>
+          </thead>
+          <tbody>${body}</tbody>
+        </table>
+      `;
+    }
+
+    async function loadSummary() {
+      const status = document.getElementById('status');
+      status.textContent = 'Loading analytics...';
+
+      try {
+        const response = await fetch('/api/analytics/summary', { cache: 'no-store' });
+        const payload = await response.json();
+        if (!response.ok || !payload.success) {
+          throw new Error(payload.error || 'Failed to load summary.');
+        }
+
+        const summary = payload.summary || {};
+
+        renderMetrics('core-metrics', [
+          { label: 'Events Processed', value: summary.eventsProcessed || 0 },
+          { label: 'Last Updated', value: fmtDate(summary.lastUpdatedAt) },
+          { label: 'Summary Generated', value: fmtDate(summary.generatedAt) },
+          { label: 'Top Class', value: (summary.topClasses && summary.topClasses[0] && summary.topClasses[0].name) || 'n/a' },
+        ]);
+
+        const tracking = summary.trackingStarts || {};
+        renderMetrics('tracking-metrics', [
+          { label: 'New Character Tracking Starts', value: tracking.newCharacter || 0 },
+          { label: 'Legacy Migration Tracking Starts', value: tracking.legacyMigration || 0 },
+          { label: 'Legacy Carryover Saves', value: tracking.legacyCarryOver || 0 },
+          { label: 'Runs Started Before Tracking', value: tracking.runStartedBeforeTracking || 0 },
+        ]);
+
+        renderTable('table-classes', summary.topClasses || []);
+        renderTable('table-training', summary.topTrainingUpgrades || []);
+        renderTable('table-card-add', summary.topCardsAddedToDeck || []);
+        renderTable('table-card-used', summary.topCardsUsed || []);
+        renderTable('table-killers', summary.enemyKillLeaders || []);
+        renderTable('table-run-results', summary.runResults || []);
+
+        status.textContent = `Last refreshed: ${new Date().toLocaleTimeString()}`;
+      } catch (err) {
+        status.textContent = `Error: ${err.message}`;
+      }
+    }
+
+    document.getElementById('refresh-btn').addEventListener('click', loadSummary);
+    loadSummary();
+  </script>
+</body>
+</html>

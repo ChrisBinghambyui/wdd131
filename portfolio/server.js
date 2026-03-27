@@ -2,6 +2,9 @@ import express from 'express';
 import { createServer } from 'http';
 import { Server } from 'socket.io';
 import cors from 'cors';
+import path from 'path';
+import { promises as fs } from 'fs';
+import XLSX from 'xlsx';
 
 const app = express();
 const httpServer = createServer(app);
@@ -16,6 +19,378 @@ app.use(express.json());
 
 app.get('/', (_req, res) => {
   res.sendFile('loaded_bones.html', { root: process.cwd() });
+});
+
+const CHARACTER_CODE_REGEX = /^\d{6}$/;
+const SAVE_SYNC_DIR = path.join(process.cwd(), 'cloud-saves');
+const ANALYTICS_DIR = path.join(process.cwd(), 'analytics');
+const ANALYTICS_AGGREGATE_PATH = path.join(ANALYTICS_DIR, 'aggregate.json');
+const ANALYTICS_EVENTS_CSV_PATH = path.join(ANALYTICS_DIR, 'analytics_events.csv');
+const ANALYTICS_EXCEL_CSV_PATH = path.join(ANALYTICS_DIR, 'excel_metrics.csv');
+const ANALYTICS_XLSX_PATH = path.join(ANALYTICS_DIR, 'excel_metrics.xlsx');
+
+function normalizeCharacterCode(value) {
+  const code = String(value || '').trim();
+  return CHARACTER_CODE_REGEX.test(code) ? code : '';
+}
+
+async function ensureSaveSyncDirectory() {
+  await fs.mkdir(SAVE_SYNC_DIR, { recursive: true });
+}
+
+function getSaveSyncFilePath(characterCode) {
+  return path.join(SAVE_SYNC_DIR, `${characterCode}.json`);
+}
+
+function createEmptyAnalyticsAggregate() {
+  return {
+    schemaVersion: 1,
+    lastUpdatedAt: 0,
+    eventsProcessed: 0,
+    processedEventIds: {},
+    classPicked: {},
+    trainingPurchases: {},
+    cardAddedToDeck: {},
+    cardUsed: {},
+    enemyDefeatedPlayer: {},
+    runResults: {},
+    trackingStarts: {
+      newCharacter: 0,
+      legacyMigration: 0,
+      legacyCarryOver: 0,
+      runStartedBeforeTracking: 0,
+    }
+  };
+}
+
+async function ensureAnalyticsDirectory() {
+  await fs.mkdir(ANALYTICS_DIR, { recursive: true });
+}
+
+async function loadAnalyticsAggregate() {
+  try {
+    const raw = await fs.readFile(ANALYTICS_AGGREGATE_PATH, 'utf8');
+    const parsed = JSON.parse(raw);
+    return {
+      ...createEmptyAnalyticsAggregate(),
+      ...parsed,
+      processedEventIds: parsed?.processedEventIds && typeof parsed.processedEventIds === 'object'
+        ? parsed.processedEventIds
+        : {},
+    };
+  } catch (err) {
+    if (err?.code !== 'ENOENT') {
+      console.warn('Failed to read analytics aggregate, recreating:', err);
+    }
+    return createEmptyAnalyticsAggregate();
+  }
+}
+
+async function saveAnalyticsAggregate(aggregate) {
+  await fs.writeFile(ANALYTICS_AGGREGATE_PATH, JSON.stringify(aggregate, null, 2), 'utf8');
+}
+
+function csvEscape(value) {
+  const text = String(value ?? '');
+  if (/[",\n\r]/.test(text)) {
+    return `"${text.replace(/"/g, '""')}"`;
+  }
+  return text;
+}
+
+async function appendCsvRow(filePath, headers, values) {
+  let exists = true;
+  try {
+    await fs.access(filePath);
+  } catch {
+    exists = false;
+  }
+
+  if (!exists) {
+    await fs.writeFile(filePath, `${headers.map(csvEscape).join(',')}\n`, 'utf8');
+  }
+
+  await fs.appendFile(filePath, `${values.map(csvEscape).join(',')}\n`, 'utf8');
+}
+
+function incrementCounter(mapObj, key, amount = 1) {
+  const safeKey = String(key || 'unknown').trim() || 'unknown';
+  mapObj[safeKey] = (Number(mapObj[safeKey]) || 0) + amount;
+}
+
+function sortedEntriesByCount(obj) {
+  return Object.entries(obj || {}).sort((a, b) => (Number(b[1]) || 0) - (Number(a[1]) || 0));
+}
+
+function buildAggregateMetricRows(aggregate) {
+  const rows = [];
+
+  for (const [item, count] of sortedEntriesByCount(aggregate.classPicked)) {
+    rows.push({ category: 'class_picked', item, count });
+  }
+  for (const [item, count] of sortedEntriesByCount(aggregate.trainingPurchases)) {
+    rows.push({ category: 'training_purchase', item, count });
+  }
+  for (const [item, count] of sortedEntriesByCount(aggregate.cardAddedToDeck)) {
+    rows.push({ category: 'card_added_to_deck', item, count });
+  }
+  for (const [item, count] of sortedEntriesByCount(aggregate.cardUsed)) {
+    rows.push({ category: 'card_used', item, count });
+  }
+  for (const [item, count] of sortedEntriesByCount(aggregate.enemyDefeatedPlayer)) {
+    rows.push({ category: 'enemy_defeated_player', item, count });
+  }
+  for (const [item, count] of sortedEntriesByCount(aggregate.runResults)) {
+    rows.push({ category: 'run_result', item, count });
+  }
+
+  return rows;
+}
+
+function buildAnalyticsSummary(aggregate) {
+  const top = (obj, limit = 20) => sortedEntriesByCount(obj)
+    .slice(0, limit)
+    .map(([name, count]) => ({ name, count: Number(count) || 0 }));
+
+  return {
+    generatedAt: Date.now(),
+    eventsProcessed: Number(aggregate?.eventsProcessed) || 0,
+    lastUpdatedAt: Number(aggregate?.lastUpdatedAt) || 0,
+    trackingStarts: {
+      ...(aggregate?.trackingStarts || {}),
+    },
+    topClasses: top(aggregate?.classPicked),
+    topTrainingUpgrades: top(aggregate?.trainingPurchases),
+    topCardsAddedToDeck: top(aggregate?.cardAddedToDeck),
+    topCardsUsed: top(aggregate?.cardUsed),
+    enemyKillLeaders: top(aggregate?.enemyDefeatedPlayer),
+    runResults: top(aggregate?.runResults, 10),
+  };
+}
+
+async function writeExcelMetricsCsv(aggregate) {
+  const headers = ['category', 'item', 'count'];
+  const rows = buildAggregateMetricRows(aggregate).map((row) => [row.category, row.item, row.count]);
+
+  const content = [headers, ...rows]
+    .map((line) => line.map(csvEscape).join(','))
+    .join('\n');
+  await fs.writeFile(ANALYTICS_EXCEL_CSV_PATH, `${content}\n`, 'utf8');
+}
+
+async function writeExcelWorkbook(aggregate) {
+  const metricsRows = buildAggregateMetricRows(aggregate);
+  const summaryRows = [
+    { metric: 'eventsProcessed', value: Number(aggregate?.eventsProcessed) || 0 },
+    { metric: 'lastUpdatedAt', value: Number(aggregate?.lastUpdatedAt) || 0 },
+    { metric: 'trackingStarts.newCharacter', value: Number(aggregate?.trackingStarts?.newCharacter) || 0 },
+    { metric: 'trackingStarts.legacyMigration', value: Number(aggregate?.trackingStarts?.legacyMigration) || 0 },
+    { metric: 'trackingStarts.legacyCarryOver', value: Number(aggregate?.trackingStarts?.legacyCarryOver) || 0 },
+    { metric: 'trackingStarts.runStartedBeforeTracking', value: Number(aggregate?.trackingStarts?.runStartedBeforeTracking) || 0 },
+  ];
+
+  const workbook = XLSX.utils.book_new();
+  const metricsSheet = XLSX.utils.json_to_sheet(metricsRows.length ? metricsRows : [{ category: '', item: '', count: 0 }]);
+  const summarySheet = XLSX.utils.json_to_sheet(summaryRows);
+
+  XLSX.utils.book_append_sheet(workbook, metricsSheet, 'Metrics');
+  XLSX.utils.book_append_sheet(workbook, summarySheet, 'Summary');
+  XLSX.writeFile(workbook, ANALYTICS_XLSX_PATH);
+}
+
+async function processAnalyticsEvents(characterCode, trigger, saveData) {
+  const analytics = saveData?.G?.analytics;
+  const events = Array.isArray(analytics?.eventsPending) ? analytics.eventsPending : [];
+  if (!events.length) {
+    return { processedEventIds: [], processedCount: 0 };
+  }
+
+  await ensureAnalyticsDirectory();
+  const aggregate = await loadAnalyticsAggregate();
+  const processedEventIds = [];
+
+  for (const event of events) {
+    const eventId = typeof event?.eventId === 'string' ? event.eventId.trim() : '';
+    const eventType = typeof event?.type === 'string' ? event.type.trim() : '';
+    if (!eventId || !eventType) continue;
+    if (aggregate.processedEventIds[eventId]) continue;
+
+    const payload = event?.payload && typeof event.payload === 'object' ? event.payload : {};
+    const timestamp = Number(event?.ts) || Date.now();
+
+    if (eventType === 'class_picked') {
+      incrementCounter(aggregate.classPicked, payload.className || payload.classId || 'unknown');
+    } else if (eventType === 'training_purchase') {
+      incrementCounter(aggregate.trainingPurchases, payload.upgradeType || 'unknown');
+    } else if (eventType === 'card_added_to_deck') {
+      incrementCounter(aggregate.cardAddedToDeck, payload.cardName || 'unknown');
+    } else if (eventType === 'card_used') {
+      incrementCounter(aggregate.cardUsed, payload.cardName || 'unknown');
+    } else if (eventType === 'player_defeated_by_enemy') {
+      incrementCounter(aggregate.enemyDefeatedPlayer, payload.enemyName || 'Unknown Enemy');
+    } else if (eventType === 'run_ended') {
+      incrementCounter(aggregate.runResults, payload.result || 'unknown');
+    } else if (eventType === 'tracking_started') {
+      if (saveData?.G?.analytics?.trackingSource === 'new_character') {
+        aggregate.trackingStarts.newCharacter += 1;
+      } else {
+        aggregate.trackingStarts.legacyMigration += 1;
+      }
+      if (payload.legacyCarryOver) aggregate.trackingStarts.legacyCarryOver += 1;
+      if (payload.runStartedBeforeTracking) aggregate.trackingStarts.runStartedBeforeTracking += 1;
+    }
+
+    await appendCsvRow(
+      ANALYTICS_EVENTS_CSV_PATH,
+      [
+        'eventId', 'timestamp', 'characterCode', 'trigger', 'eventType',
+        'runId', 'className', 'upgradeType', 'cardName', 'enemyName',
+        'result', 'biome', 'tier', 'xpEarned', 'goldEarned', 'startedBeforeTracking'
+      ],
+      [
+        eventId,
+        timestamp,
+        characterCode,
+        trigger,
+        eventType,
+        payload.runId || '',
+        payload.className || payload.classId || '',
+        payload.upgradeType || '',
+        payload.cardName || '',
+        payload.enemyName || '',
+        payload.result || '',
+        payload.biome || '',
+        payload.tier || '',
+        payload.xpEarned || '',
+        payload.goldEarned || '',
+        payload.startedBeforeTracking ? '1' : '0',
+      ]
+    );
+
+    aggregate.processedEventIds[eventId] = true;
+    aggregate.eventsProcessed += 1;
+    processedEventIds.push(eventId);
+  }
+
+  aggregate.lastUpdatedAt = Date.now();
+  await saveAnalyticsAggregate(aggregate);
+  await writeExcelMetricsCsv(aggregate);
+  await writeExcelWorkbook(aggregate);
+
+  return { processedEventIds, processedCount: processedEventIds.length };
+}
+
+app.get('/admin', (_req, res) => {
+  res.sendFile('admin.html', { root: process.cwd() });
+});
+
+app.get('/api/analytics/summary', async (_req, res) => {
+  try {
+    await ensureAnalyticsDirectory();
+    const aggregate = await loadAnalyticsAggregate();
+    res.json({ success: true, summary: buildAnalyticsSummary(aggregate) });
+  } catch (err) {
+    console.error('Failed to build analytics summary:', err);
+    res.status(500).json({ success: false, error: 'Failed to build analytics summary.' });
+  }
+});
+
+app.get('/api/analytics/excel.csv', async (_req, res) => {
+  try {
+    await ensureAnalyticsDirectory();
+    try {
+      await fs.access(ANALYTICS_EXCEL_CSV_PATH);
+    } catch {
+      await writeExcelMetricsCsv(await loadAnalyticsAggregate());
+    }
+    res.sendFile(ANALYTICS_EXCEL_CSV_PATH);
+  } catch (err) {
+    console.error('Failed to serve analytics CSV:', err);
+    res.status(500).json({ success: false, error: 'Failed to build analytics CSV.' });
+  }
+});
+
+app.get('/api/analytics/excel.xlsx', async (_req, res) => {
+  try {
+    await ensureAnalyticsDirectory();
+    try {
+      await fs.access(ANALYTICS_XLSX_PATH);
+    } catch {
+      const aggregate = await loadAnalyticsAggregate();
+      await writeExcelWorkbook(aggregate);
+    }
+    res.download(ANALYTICS_XLSX_PATH, 'excel_metrics.xlsx');
+  } catch (err) {
+    console.error('Failed to serve analytics XLSX:', err);
+    res.status(500).json({ success: false, error: 'Failed to build analytics XLSX.' });
+  }
+});
+
+app.post('/api/save-sync', async (req, res) => {
+  const requestedCode = normalizeCharacterCode(req.body?.characterCode);
+  const saveDataCode = normalizeCharacterCode(req.body?.saveData?.G?.characterCode);
+  const characterCode = requestedCode || saveDataCode;
+  const saveData = req.body?.saveData;
+
+  if (!characterCode) {
+    return res.status(400).json({ success: false, error: 'A valid six-digit characterCode is required.' });
+  }
+
+  if (!saveData || typeof saveData !== 'object') {
+    return res.status(400).json({ success: false, error: 'saveData payload is required.' });
+  }
+
+  try {
+    await ensureSaveSyncDirectory();
+    const trigger = typeof req.body?.trigger === 'string' ? req.body.trigger : 'unknown';
+    const stampedSaveData = {
+      ...saveData,
+      G: {
+        ...(saveData.G || {}),
+        characterCode,
+      },
+      cloud: {
+        trigger,
+        updatedAt: Date.now(),
+      }
+    };
+
+    const analyticsResult = await processAnalyticsEvents(characterCode, trigger, stampedSaveData);
+
+    await fs.writeFile(
+      getSaveSyncFilePath(characterCode),
+      JSON.stringify(stampedSaveData, null, 2),
+      'utf8'
+    );
+
+    return res.json({
+      success: true,
+      characterCode,
+      analytics: analyticsResult,
+    });
+  } catch (err) {
+    console.error('Failed to write save sync file:', err);
+    return res.status(500).json({ success: false, error: 'Failed to store cloud save.' });
+  }
+});
+
+app.get('/api/save-sync/:characterCode', async (req, res) => {
+  const characterCode = normalizeCharacterCode(req.params?.characterCode);
+  if (!characterCode) {
+    return res.status(400).json({ success: false, error: 'Invalid character code.' });
+  }
+
+  try {
+    const saveDataRaw = await fs.readFile(getSaveSyncFilePath(characterCode), 'utf8');
+    const saveData = JSON.parse(saveDataRaw);
+    return res.json({ success: true, characterCode, saveData });
+  } catch (err) {
+    if (err?.code === 'ENOENT') {
+      return res.status(404).json({ success: false, error: 'No save found for that code.' });
+    }
+    console.error('Failed to read save sync file:', err);
+    return res.status(500).json({ success: false, error: 'Failed to load cloud save.' });
+  }
 });
 
 // ==================== GAME STATE ====================

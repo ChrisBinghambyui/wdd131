@@ -5,11 +5,29 @@ REM Usage:
 REM   keep-render-awake.bat
 REM   keep-render-awake.bat https://your-service.onrender.com/health
 
+set "SCRIPT_DIR=%~dp0"
+set "LOCAL_BASE_URL=http://localhost:3000"
+set "ADMIN_URL=%LOCAL_BASE_URL%/admin"
+set "XLSX_URL=%LOCAL_BASE_URL%/api/analytics/excel.xlsx"
+set "CSV_URL=%LOCAL_BASE_URL%/api/analytics/excel.csv"
+
 set "PING_URL=https://your-service.onrender.com/health"
 set "INTERVAL_SECONDS=600"
 set "REQUEST_TIMEOUT_SECONDS=20"
 
 if not "%~1"=="" set "PING_URL=%~1"
+
+echo ============================================================
+echo Loaded Bones Local Links
+echo Admin Dashboard: %ADMIN_URL%
+echo XLSX Download:   %XLSX_URL%
+echo CSV Download:    %CSV_URL%
+echo ============================================================
+echo.
+
+echo Starting local server in a separate terminal window...
+start "Loaded Bones Server" cmd /k "cd /d ""%SCRIPT_DIR%"" && npm start"
+echo.
 
 echo ============================================================
 echo Render Keep-Alive Pinger

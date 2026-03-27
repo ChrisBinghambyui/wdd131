@@ -1300,6 +1300,7 @@ input[type="text"]:focus { border-color: var(--gold); }
  <button class="btn primary" id="title-begin-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px" onclick="showCharCreate()">Begin</button>
  <button class="btn primary" id="continue-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px; margin-left:12px; display:none;" onclick="loadAndResume()">Continue</button>
  <button class="btn" id="title-import-btn" style="font-size:15px; padding:14px 30px; letter-spacing:2px; margin-left:12px;" onclick="importSave()">Import Save</button>
+ <button class="btn" id="title-cloud-load-btn" style="font-size:15px; padding:14px 30px; letter-spacing:2px; margin-left:12px;" onclick="importCloudSaveByCode()">Load by ID</button>
  <div id="title-quickmatch-wrap" style="margin-top:14px;">
  <button class="btn primary" id="title-quickmatch-btn" style="font-size:15px; padding:14px 40px; letter-spacing:4px;" onclick="initQuickMatch()">Quick Match</button>
  </div>
@@ -1359,6 +1360,7 @@ input[type="text"]:focus { border-color: var(--gold); }
  <div class="town-header">
  <div>
  <div class="player-title" id="town-player-name">Adventurer</div>
+ <div class="player-meta" id="town-player-code">Character ID: 000000</div>
  <div class="player-meta" id="town-player-meta">Fencer - Plains Tier 1</div>
  </div>
  <div>
@@ -1431,6 +1433,7 @@ input[type="text"]:focus { border-color: var(--gold); }
  <button class="btn" id="town-save-btn" style="font-size:12px; padding:10px 16px;" onclick="autoSave()">Save</button>
  <button class="btn" id="town-export-btn" style="font-size:12px; padding:10px 16px; margin-left:8px;" onclick="exportSave()">Export Save</button>
  <button class="btn" id="town-import-btn" style="font-size:12px; padding:10px 16px; margin-left:8px;" onclick="importSave()">Import Save</button>
+ <button class="btn" id="town-cloud-load-btn" style="font-size:12px; padding:10px 16px; margin-left:8px;" onclick="importCloudSaveByCode()">Load by ID</button>
  <button class="btn" id="town-main-menu-btn" style="font-size:12px; padding:10px 16px; margin-left:8px;" onclick="showScreen('title-screen')">Main Menu</button>
  </div>
  </div>
@@ -3753,6 +3756,7 @@ function resolveCardUse(source, target, card, dieVal) {
  const effectiveReusableDie = unlimitedReusable ? Math.max(1, dieVal - REUSABLE_BALANCE_CONFIG.diePenalty) : dieVal;
 
  if (!effectTriggersNow) {
+ if (source === CB.player) trackCardUsed(card.name);
  if (unlimitedReusable) registerReusableUse(source, card);
  return {ok:true, msg:chargeMsg, keepInHand:true};
  }
@@ -3767,6 +3771,7 @@ function resolveCardUse(source, target, card, dieVal) {
  const enemyPowerMult = (source === CB.enemy) ? (CB.enemy.powerMultiplier || 1) : 1;
  const effectiveDie = (source === CB.enemy) ? Math.ceil(effectiveReusableDie * enemyPowerMult) : effectiveReusableDie;
  const zMsg = resolveZEffect(zCode, source, target, effectiveDie);
+ if (source === CB.player) trackCardUsed(card.name);
  if (unlimitedReusable) registerReusableUse(source, card);
  return {ok:true, msg:`${source.name} uses ${card.name} with a ${dieVal}: ${zMsg}.`, keepInHand: reusable};
  }
@@ -3827,6 +3832,8 @@ function resolveCardUse(source, target, card, dieVal) {
  if (hpDmg > 0) msg += `, dealing ${hpDmg} HP damage`;
  if (statusMsgs.length > 0) msg += `, ${statusMsgs.join(', ')}`;
  msg += '.';
+
+ if (source === CB.player) trackCardUsed(card.name);
 
  // Reusable cards remain in hand so they can consume multiple dice in one turn.
  if (unlimitedReusable) registerReusableUse(source, card);
@@ -4236,6 +4243,7 @@ function startGame() {
  const cls = CLASSES[G.selectedClass];
  G = {
  name,
+ characterCode: generateCharacterCode(),
  classId: cls.id,
  className: cls.name,
  language: currentLanguage,
@@ -4260,6 +4268,9 @@ function startGame() {
  selectedDifficulty: G.selectedDifficulty || 'normal',
  bestiary: {},
  };
+
+ ensureAnalyticsState({ legacyCarryOver: false, startedOutsideTown: false });
+ trackClassPicked(G.classId, G.className);
 
  // Starting deck
  STARTING_DECK_NAMES.forEach(n => {
@@ -4831,6 +4842,7 @@ function showTown() {
  showScreen('town-screen');
  // Autosave when returning to town
  autoSave();
+ syncSaveToCloud('town-return');
  try {
  updateTownUI();
  } catch (err) {
@@ -4841,6 +4853,10 @@ function showTown() {
 
 function updateTownUI() {
  document.getElementById('town-player-name').textContent = G.name;
+ const characterCodeEl = document.getElementById('town-player-code');
+ if (characterCodeEl) {
+ characterCodeEl.textContent = `Character ID: ${ensureCharacterCode(G.characterCode)}`;
+ }
  document.getElementById('town-player-meta').textContent = t(
  'town.meta',
  {
@@ -6441,6 +6457,7 @@ function startAdventure(biome, tier) {
 
  G.currentBiome = biome;
  G.currentTier = tier;
+ beginAnalyticsRun(biome, tier);
  ADV = {
  biome, tier,
  winStreak: 0,
@@ -6932,6 +6949,7 @@ function endCombat(result) {
  afterVictoryChoice();
  } else if (result === 'defeat' || result === 'retreat') {
  const forced = result === 'defeat';
+ if (forced) trackEnemyDefeatedPlayer(CB.enemy);
  log(forced ? 'You were defeated and forced to retreat!' : 'You retreat to Ascus.', 'defeat');
  finishAdventure(result);
  }
@@ -6996,6 +7014,7 @@ function addDropToInventory(cardName, addToDeck) {
  G.inventory.push(card);
  const actuallyAddedToDeck = addToDeck && (countCards(G.deck)[card.name]||0) < 3;
  if (actuallyAddedToDeck) G.deck.push(card);
+ if (actuallyAddedToDeck) trackCardAddedToDeck(card.name, 'loot_drop');
  log(`${card.name} added to ${actuallyAddedToDeck?'deck':'inventory'}${addToDeck&&!actuallyAddedToDeck?' (deck already has 3 copies)':''}.`, 'loot');
  }
  closeModal();
@@ -7054,6 +7073,7 @@ function finishAdventure(result) {
 
  G.xp += xpGained;
  G.gold += goldGained;
+ finishAnalyticsRun(result, xpGained, goldGained);
 
  log(`Returned to Ascus with +${xpGained} XP, +${goldGained} gold.`, victory?'victory':'system');
 
@@ -7837,6 +7857,7 @@ function addCardToDeck(name) {
  log('No more copies available.','system'); return;
  }
  G.deck.push(card);
+ trackCardAddedToDeck(name, 'deck_builder');
  log(`${name} added to deck.`,'system');
  openAddCardToDeck();
 }
@@ -8443,6 +8464,7 @@ function renderTrainingModal() {
 function buyTraining(type, cost) {
  if (G.gold < cost) return;
  G.gold -= cost;
+ trackTrainingPurchase(type, cost);
  if (type==='hand') {
  G.trainingHandLevel=(G.trainingHandLevel||0)+1;
  G.trainingHand = G.trainingHandLevel;
@@ -8610,9 +8632,268 @@ const UPDATE_NOTES = {
 
 const SAVE_KEY = 'loadedBones_autosave';
 const SAVE_VERSION = 1;
+const CHARACTER_CODE_REGEX = /^\d{6}$/;
+
+function normalizeCharacterCode(value) {
+ const code = String(value || '').trim();
+ return CHARACTER_CODE_REGEX.test(code) ? code : '';
+}
+
+function generateCharacterCode() {
+ return String(Math.floor(100000 + Math.random() * 900000));
+}
+
+function ensureCharacterCode(value) {
+ return normalizeCharacterCode(value) || generateCharacterCode();
+}
+
+function createAnalyticsState(options = {}) {
+ const now = Date.now();
+ const legacyCarryOver = !!options.legacyCarryOver;
+ const startedOutsideTown = !!options.startedOutsideTown;
+ return {
+ schemaVersion: 1,
+ trackingStartedAt: now,
+ trackingSource: legacyCarryOver ? 'legacy_migration' : 'new_character',
+ legacyCarryOver,
+ runStartedBeforeTracking: legacyCarryOver && startedOutsideTown,
+ eventSeq: 0,
+ runCounter: 0,
+ currentRun: null,
+ eventsPending: [],
+ lastSyncedAt: 0,
+ };
+}
+
+function ensureAnalyticsState(options = {}) {
+ if (!G || typeof G !== 'object') return;
+
+ if (!G.analytics || typeof G.analytics !== 'object' || Array.isArray(G.analytics)) {
+ G.analytics = createAnalyticsState(options);
+ pushAnalyticsEvent('tracking_started', {
+ legacyCarryOver: !!G.analytics.legacyCarryOver,
+ runStartedBeforeTracking: !!G.analytics.runStartedBeforeTracking,
+ });
+ return;
+ }
+
+ G.analytics.eventsPending = Array.isArray(G.analytics.eventsPending) ? G.analytics.eventsPending : [];
+ G.analytics.eventSeq = Math.max(0, Number(G.analytics.eventSeq) || 0);
+ G.analytics.runCounter = Math.max(0, Number(G.analytics.runCounter) || 0);
+ G.analytics.lastSyncedAt = Math.max(0, Number(G.analytics.lastSyncedAt) || 0);
+ if (!G.analytics.currentRun || typeof G.analytics.currentRun !== 'object') {
+ G.analytics.currentRun = null;
+ }
+}
+
+function nextAnalyticsEventId() {
+ ensureAnalyticsState();
+ G.analytics.eventSeq += 1;
+ const code = ensureCharacterCode(G.characterCode);
+ return `${code}-${G.analytics.eventSeq}`;
+}
+
+function pushAnalyticsEvent(type, payload = {}) {
+ ensureAnalyticsState();
+ const event = {
+ eventId: nextAnalyticsEventId(),
+ type,
+ ts: Date.now(),
+ payload,
+ };
+ G.analytics.eventsPending.push(event);
+ return event;
+}
+
+function ensureAnalyticsRun() {
+ ensureAnalyticsState();
+ if (G.analytics.currentRun) return G.analytics.currentRun;
+
+ G.analytics.runCounter += 1;
+ const runId = `${ensureCharacterCode(G.characterCode)}-run-${G.analytics.runCounter}`;
+ G.analytics.currentRun = {
+ runId,
+ startedAt: Date.now(),
+ startedBeforeTracking: !!G.analytics.runStartedBeforeTracking,
+ classId: G.classId || null,
+ className: G.className || null,
+ biome: Number(G.currentBiome) || 1,
+ tier: Number(G.currentTier) || 1,
+ };
+ return G.analytics.currentRun;
+}
+
+function beginAnalyticsRun(biome, tier) {
+ ensureAnalyticsState();
+ const run = ensureAnalyticsRun();
+ run.startedAt = Date.now();
+ run.biome = Number(biome) || Number(run.biome) || 1;
+ run.tier = Number(tier) || Number(run.tier) || 1;
+ run.classId = G.classId || run.classId || null;
+ run.className = G.className || run.className || null;
+ pushAnalyticsEvent('run_started', {
+ runId: run.runId,
+ classId: run.classId,
+ className: run.className,
+ biome: run.biome,
+ tier: run.tier,
+ startedBeforeTracking: !!run.startedBeforeTracking,
+ });
+}
+
+function finishAnalyticsRun(result, xpEarned, goldEarned) {
+ ensureAnalyticsState();
+ const run = ensureAnalyticsRun();
+ pushAnalyticsEvent('run_ended', {
+ runId: run.runId,
+ result,
+ classId: run.classId,
+ className: run.className,
+ biome: run.biome,
+ tier: run.tier,
+ winStreak: Number(ADV?.winStreak) || 0,
+ xpEarned: Number(xpEarned) || 0,
+ goldEarned: Number(goldEarned) || 0,
+ startedBeforeTracking: !!run.startedBeforeTracking,
+ });
+ G.analytics.currentRun = null;
+ G.analytics.runStartedBeforeTracking = false;
+}
+
+function trackClassPicked(classId, className) {
+ pushAnalyticsEvent('class_picked', { classId: classId || null, className: className || null });
+}
+
+function trackTrainingPurchase(type, cost) {
+ pushAnalyticsEvent('training_purchase', {
+ upgradeType: type,
+ cost: Number(cost) || 0,
+ runId: G.analytics?.currentRun?.runId || null,
+ });
+}
+
+function trackCardAddedToDeck(cardName, source = 'unknown') {
+ pushAnalyticsEvent('card_added_to_deck', {
+ cardName,
+ source,
+ runId: G.analytics?.currentRun?.runId || null,
+ });
+}
+
+function trackCardUsed(cardName) {
+ pushAnalyticsEvent('card_used', {
+ cardName,
+ runId: G.analytics?.currentRun?.runId || null,
+ biome: Number(ADV?.biome) || Number(G.currentBiome) || 1,
+ tier: Number(ADV?.tier) || Number(G.currentTier) || 1,
+ });
+}
+
+function trackEnemyDefeatedPlayer(enemy) {
+ const enemyName = enemy?.baseName || String(enemy?.name || '').replace(/^\s*LEGENDARY\s*/i, '').trim() || 'Unknown Enemy';
+ pushAnalyticsEvent('player_defeated_by_enemy', {
+ enemyName,
+ runId: G.analytics?.currentRun?.runId || null,
+ biome: Number(ADV?.biome) || Number(G.currentBiome) || 1,
+ tier: Number(ADV?.tier) || Number(G.currentTier) || 1,
+ });
+}
+
+function buildSaveSyncUrl(endpoint = '') {
+ const base = String(MULTIPLAYER_SERVER_URL || window.location.origin || '').replace(/\/+$/, '');
+ const path = String(endpoint || '').replace(/^\/+/, '');
+ return path ? `${base}/${path}` : base;
+}
+
+async function syncSaveToCloud(trigger = 'manual') {
+ if (!window.fetch || !G || typeof G !== 'object') return false;
+
+ try {
+ G.characterCode = ensureCharacterCode(G.characterCode);
+ const saveData = serializeGameState();
+ saveData.G.characterCode = G.characterCode;
+
+ const response = await fetch(buildSaveSyncUrl('api/save-sync'), {
+ method: 'POST',
+ headers: { 'Content-Type': 'application/json' },
+ body: JSON.stringify({
+ characterCode: G.characterCode,
+ trigger,
+ saveData,
+ })
+ });
+
+ if (!response.ok) return false;
+ const payload = await response.json().catch(() => ({}));
+ const processedIds = Array.isArray(payload?.analytics?.processedEventIds)
+ ? new Set(payload.analytics.processedEventIds)
+ : null;
+
+ if (processedIds && processedIds.size > 0 && G?.analytics?.eventsPending) {
+ G.analytics.eventsPending = G.analytics.eventsPending.filter((evt) => !processedIds.has(evt?.eventId));
+ G.analytics.lastSyncedAt = Date.now();
+ autoSave(true);
+ }
+
+ return true;
+ } catch (err) {
+ console.warn('Cloud sync failed:', err);
+ return false;
+ }
+}
+
+async function importCloudSaveByCode() {
+ if (!window.fetch) {
+ alert('Your browser does not support cloud sync.');
+ return;
+ }
+
+ const rawCode = prompt('Enter your 6-digit character ID:');
+ if (rawCode === null) return;
+
+ const code = normalizeCharacterCode(rawCode);
+ if (!code) {
+ alert('Character ID must be exactly 6 digits.');
+ return;
+ }
+
+ try {
+ const response = await fetch(buildSaveSyncUrl(`api/save-sync/${code}`));
+ if (!response.ok) {
+ alert('No cloud save was found for that ID.');
+ return;
+ }
+
+ const payload = await response.json();
+ const saveData = payload?.saveData;
+ if (!saveData) {
+ alert('Cloud save data was empty.');
+ return;
+ }
+
+ if (!deserializeGameState(saveData)) {
+ alert('Cloud save format is invalid or outdated.');
+ return;
+ }
+
+ localStorage.setItem(SAVE_KEY, JSON.stringify(saveData));
+ const continueBtn = document.getElementById('continue-btn');
+ if (continueBtn) continueBtn.style.display = 'inline-block';
+ log(`Loaded cloud save: ${G.name} (${G.characterCode})`, 'system');
+ showTown();
+ showUpdateSummaryIfNeeded(saveData);
+ } catch (err) {
+ console.error('Failed to load cloud save:', err);
+ alert(`Failed to load cloud save: ${err.message}`);
+ }
+}
 
 function serializeGameState() {
  // Convert Sets to arrays for JSON serialization
+ if (G && typeof G === 'object') {
+ G.characterCode = ensureCharacterCode(G.characterCode);
+ ensureAnalyticsState();
+ }
  const saveData = {
  version: SAVE_VERSION,
  build: GAME_BUILD,
@@ -8634,10 +8915,16 @@ function deserializeGameState(saveData) {
  
  G = {
  ...saveData.G,
+ characterCode: ensureCharacterCode(saveData?.G?.characterCode),
  unlockedBiomes: new Set(saveData.G.unlockedBiomes || []),
  cardChargeProgress: saveData.G.cardChargeProgress || {},
  bestiary: saveData.G.bestiary || {},
  };
+
+ ensureAnalyticsState({
+ legacyCarryOver: true,
+ startedOutsideTown: saveData?.screen && saveData.screen !== 'town-screen' && saveData.screen !== 'title-screen',
+ });
 
  ensureBestiaryState();
 
