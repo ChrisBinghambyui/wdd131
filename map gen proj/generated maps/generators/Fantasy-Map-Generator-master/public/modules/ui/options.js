@@ -157,6 +157,8 @@ optionsContent.addEventListener("click", event => {
   else if (id === "optionsMapHistory") showSeedHistoryDialog();
   else if (id === "optionsCopySeed") copyMapURL();
   else if (id === "optionsEraRegenerate") regenerateEra();
+  else if (id === "scenarioGenerateMap") regeneratePrompt({scenarioPrompt: byId("scenarioPrompt")?.value || ""});
+  else if (id === "scenarioApplyCurrent") applyScenarioPromptToCurrentMap(byId("scenarioPrompt")?.value || "");
   else if (id === "templateInputContainer") openTemplateSelectionDialog();
   else if (id === "zoomExtentDefault") restoreDefaultZoomExtent();
   else if (id === "translateExtent") toggleTranslateExtent(event.target);
@@ -599,7 +601,10 @@ function randomizeOptions() {
   if (randomize || !locked("sizeVariety")) sizeVariety.value = gauss(4, 2, 0, 10, 1);
   if (randomize || !locked("growthRate")) growthRate.value = rn(1 + Math.random(), 1);
   if (randomize || !locked("cultures")) culturesInput.value = culturesOutput.value = gauss(12, 3, 5, 30);
-  if (randomize || !locked("culturesSet")) randomizeCultureSet();
+  if (randomize || !locked("culturesSet")) {
+    if (!randomize && culturesSet.value === "durgeth") changeCultureSet();
+    else randomizeCultureSet();
+  }
 
   // 'Configure World' settings
   if (randomize || !locked("temperatureEquator")) options.temperatureEquator = gauss(25, 7, 20, 35, 0);
@@ -632,6 +637,7 @@ function randomizeHeightmapTemplate() {
 // select culture set pseudo-randomly
 function randomizeCultureSet() {
   const sets = {
+    durgeth: 14,
     world: 10,
     european: 10,
     oriental: 2,
@@ -701,6 +707,172 @@ async function openTemplateSelectionDialog() {
   HeightmapSelectionDialog.open();
 }
 
+function parseScenarioPrompt(rawPrompt) {
+  const prompt = (rawPrompt || "").trim();
+  const lower = prompt.toLowerCase();
+  const has = regexp => regexp.test(lower);
+  const parseSignedNumber = regexp => {
+    const match = lower.match(regexp);
+    if (!match) return 0;
+    const value = Number(match[1]);
+    return Number.isFinite(value) ? value : 0;
+  };
+
+  const mentionsSouth = has(/south|southern|bottom|lower half|southlands?/);
+  const mentionsSwamp = has(/swamp|swamps|fen|fens|marsh|marshes|wetland|wetlands|bog|bogs|mire|mangrove/);
+  const mentionsForest = has(/forest|forests|canopy|woods?|woodland|jungle|rainforest|grove/);
+  const mentionsNear = has(/near|next to|border|adjacent|neighbor|touching/);
+
+  const directives = {
+    prompt,
+    useDurgeth: has(/durgeth|verdathi|sylvarirum|aethermoor/),
+    forceVerdathiSouthSwamp: has(/verdathi/) && mentionsSouth && mentionsSwamp,
+    forceSylvarirumSouthForest: has(/sylvarirum/) && mentionsSouth && mentionsForest,
+    nearConstraint: mentionsNear,
+    statesDelta: 0,
+    culturesDelta: 0,
+    religionsDelta: 0,
+    temperatureDelta: 0,
+    precipitationDelta: 0,
+    applyCurrent: {
+      cultures: has(/culture|verdathi|sylvarirum/),
+      states: has(/state|kingdom|realm|empire/),
+      religions: has(/religion|faith|cult/),
+      burgs: has(/burg|city|town|settlement/),
+      rivers: has(/river|waterway/),
+      provinces: has(/province|duchy|county/)
+    }
+  };
+
+  if (has(/more states?|increase states?|larger political|more kingdoms?/)) directives.statesDelta += 3;
+  if (has(/fewer states?|less states?|reduce states?|bigger states?/)) directives.statesDelta -= 3;
+  directives.statesDelta += parseSignedNumber(/states?\s*([+-]\d{1,2})/);
+
+  if (has(/more cultures?|increase cultures?/)) directives.culturesDelta += 3;
+  if (has(/fewer cultures?|less cultures?|reduce cultures?/)) directives.culturesDelta -= 3;
+  directives.culturesDelta += parseSignedNumber(/cultures?\s*([+-]\d{1,2})/);
+
+  if (has(/more religions?|increase religions?/)) directives.religionsDelta += 2;
+  if (has(/fewer religions?|less religions?|reduce religions?/)) directives.religionsDelta -= 2;
+  directives.religionsDelta += parseSignedNumber(/religions?\s*([+-]\d{1,2})/);
+
+  if (has(/warmer|hotter|more tropical/)) directives.temperatureDelta += 4;
+  if (has(/colder|cooler|more arctic/)) directives.temperatureDelta -= 4;
+  directives.temperatureDelta += parseSignedNumber(/temp(?:erature)?\s*([+-]\d{1,2})/);
+
+  if (has(/wetter|more rain|rainier|more humid/)) directives.precipitationDelta += 15;
+  if (has(/drier|less rain|more arid|dryer/)) directives.precipitationDelta -= 15;
+  directives.precipitationDelta += parseSignedNumber(/prec(?:ipitation)?\s*([+-]\d{1,3})/);
+
+  // Explicit command mode examples:
+  // "verdathi:south-swamp"  "sylvarirum:south-forest"  "adjacent:true"
+  if (has(/verdathi\s*:\s*south[-\s]?swamp/)) directives.forceVerdathiSouthSwamp = true;
+  if (has(/sylvarirum\s*:\s*south[-\s]?forest/)) directives.forceSylvarirumSouthForest = true;
+  if (has(/adjacent\s*:\s*true|border\s*:\s*true/)) directives.nearConstraint = true;
+
+  return directives;
+}
+
+function clampNumber(value, min, max) {
+  return Math.min(max, Math.max(min, value));
+}
+
+function setInputOutputPair(inputId, outputId, nextValue) {
+  const input = byId(inputId);
+  const output = byId(outputId);
+  if (!input || !output) return;
+
+  const min = Number(output.min || input.min || 0);
+  const max = Number(output.max || input.max || 9999);
+  const clamped = clampNumber(nextValue, min, max);
+  input.value = String(clamped);
+  output.value = String(clamped);
+}
+
+function applyScenarioPromptToGeneration(directives) {
+  if (!directives?.prompt) return;
+
+  if (directives.useDurgeth) {
+    culturesSet.value = "durgeth";
+    changeCultureSet();
+  }
+
+  if (directives.culturesDelta) {
+    const current = Number(culturesOutput.value || culturesInput.value || 10);
+    setInputOutputPair("culturesInput", "culturesOutput", current + directives.culturesDelta);
+  }
+
+  if (directives.statesDelta) {
+    statesNumber.value = String(clampNumber(statesNumber.valueAsNumber + directives.statesDelta, 0, 100));
+  }
+
+  if (directives.religionsDelta) {
+    const current = Number(religionsNumber.value || 0);
+    religionsNumber.value = String(clampNumber(current + directives.religionsDelta, 0, 50));
+  }
+
+  if (directives.temperatureDelta) {
+    const current = Number(temperatureEquatorOutput.value || temperatureEquatorInput.value || 25);
+    setInputOutputPair(
+      "temperatureEquatorInput",
+      "temperatureEquatorOutput",
+      current + directives.temperatureDelta,
+    );
+  }
+
+  if (directives.precipitationDelta) {
+    const current = Number(precOutput.value || precInput.value || 100);
+    setInputOutputPair("precInput", "precOutput", current + directives.precipitationDelta);
+  }
+
+  window.durgethScenarioPrompt = directives.prompt;
+  window.durgethScenarioDirectives = directives;
+}
+
+function applyScenarioPromptToCurrentMap(rawPrompt) {
+  const directives = parseScenarioPrompt(rawPrompt);
+  if (!directives.prompt) return tip("Enter scenario instructions first", false, "warn");
+
+  applyScenarioPromptToGeneration(directives);
+
+  let changed = 0;
+  if (directives.applyCurrent.cultures && typeof regenerateCultures === "function") {
+    regenerateCultures();
+    changed++;
+  }
+  if (directives.applyCurrent.states && typeof regenerateStates === "function") {
+    regenerateStates();
+    changed++;
+  }
+  if (directives.applyCurrent.religions && typeof regenerateReligions === "function") {
+    regenerateReligions();
+    changed++;
+  }
+  if (directives.applyCurrent.burgs && typeof regenerateBurgs === "function") {
+    regenerateBurgs();
+    changed++;
+  }
+  if (directives.applyCurrent.provinces && typeof regenerateProvinces === "function") {
+    regenerateProvinces();
+    changed++;
+  }
+  if (directives.applyCurrent.rivers && typeof regenerateRivers === "function") {
+    regenerateRivers();
+    changed++;
+  }
+
+  if (!changed) {
+    tip(
+      "Applied prompt settings. For geography-level changes, click Generate with Prompt to create a new constrained map.",
+      true,
+      "warn",
+      5000,
+    );
+  } else {
+    tip(`Applied prompt to current map (${changed} system${changed > 1 ? "s" : ""} regenerated)`, true, "success", 4000);
+  }
+}
+
 // Sticked menu Options listeners
 byId("sticked").addEventListener("click", function (event) {
   const id = event.target.id;
@@ -712,10 +884,18 @@ byId("sticked").addEventListener("click", function (event) {
 });
 
 function regeneratePrompt(options) {
+  const mergedOptions = options ? {...options} : {};
+  if (!mergedOptions.scenarioPrompt && byId("scenarioPrompt")) {
+    mergedOptions.scenarioPrompt = byId("scenarioPrompt").value || "";
+  }
+
+  const directives = parseScenarioPrompt(mergedOptions.scenarioPrompt);
+  applyScenarioPromptToGeneration(directives);
+
   if (customization)
     return tip("New map cannot be generated when edit mode is active, please exit the mode and retry", false, "error");
   const workingTime = (Date.now() - last(mapHistory).created) / 60000; // minutes
-  if (workingTime < 5) return regenerateMap(options);
+  if (workingTime < 5) return regenerateMap(mergedOptions);
 
   alertMessage.innerHTML = /* html */ `Are you sure you want to generate a new map?<br />
     All unsaved changes made to the current map will be lost`;
@@ -728,7 +908,7 @@ function regeneratePrompt(options) {
       },
       Generate: function () {
         closeDialogs();
-        regenerateMap(options);
+        regenerateMap(mergedOptions);
       }
     }
   });

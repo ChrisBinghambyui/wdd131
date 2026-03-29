@@ -1730,7 +1730,8 @@
               <td>Cultures set</td>
               <td>
                 <select id="culturesSet" data-stored="culturesSet">
-                  <option value="world" data-max="32" selected>All-world</option>
+                  <option value="durgeth" data-max="20" selected>Durgeth (Custom)</option>
+                  <option value="world" data-max="32">All-world</option>
                   <option value="european" data-max="15">European</option>
                   <option value="oriental" data-max="13">Oriental</option>
                   <option value="english" data-max="10">English</option>
@@ -1741,6 +1742,25 @@
                 </select>
               </td>
               <td></td>
+            </tr>
+
+            <tr
+              data-tip="Describe constraints for the next map (e.g. Verdathi in southern swamp next to Sylvarirum forest) or instructions to alter the current map"
+            >
+              <td></td>
+              <td>Scenario prompt</td>
+              <td colspan="2">
+                <textarea
+                  id="scenarioPrompt"
+                  rows="3"
+                  style="width: 100%; resize: vertical"
+                  placeholder="Example: verdathi in southern swamp bordering sylvarirum forest; more states; fewer religions"
+                ></textarea>
+                <div style="margin-top: 0.35em; display: flex; gap: 0.35em; flex-wrap: wrap">
+                  <button id="scenarioGenerateMap" type="button">Generate with Prompt</button>
+                  <button id="scenarioApplyCurrent" type="button">Apply Prompt to Current Map</button>
+                </div>
+              </td>
             </tr>
 
             <tr data-tip="Define how many states and capitals should be generated">

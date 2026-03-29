@@ -1236,6 +1236,65 @@ function showStatistics() {
   window.dispatchEvent(new CustomEvent("map:generated", {detail: {seed, mapId}}));
 }
 
+function requiresScenarioValidation(directives = {}) {
+  return !!(
+    directives.forceVerdathiSouthSwamp ||
+    directives.forceSylvarirumSouthForest ||
+    directives.nearConstraint
+  );
+}
+
+function areCulturesAdjacent(cultureA, cultureB) {
+  const {cells} = pack;
+  for (const i of cells.i) {
+    if (cells.culture[i] !== cultureA) continue;
+    if (cells.c[i].some(nei => cells.culture[nei] === cultureB)) return true;
+  }
+  return false;
+}
+
+function validateScenarioConstraints(directives = {}) {
+  if (!requiresScenarioValidation(directives)) return {valid: true, reasons: []};
+
+  const reasons = [];
+  const cultures = pack.cultures || [];
+  const cells = pack.cells;
+  const verdathi = cultures.find(c => c && !c.removed && c.name === "Verdathi Fens");
+  const sylvarirum = cultures.find(c => c && !c.removed && c.name === "Sylvarirum Canopy");
+
+  if (!verdathi || verdathi.center === undefined) reasons.push("Verdathi center is missing");
+  if (!sylvarirum || sylvarirum.center === undefined) reasons.push("Sylvarirum center is missing");
+  if (reasons.length) return {valid: false, reasons};
+
+  const verdathiCenter = verdathi.center;
+  const sylvarirumCenter = sylvarirum.center;
+  const verdathiY = cells.p[verdathiCenter][1];
+  const sylvarirumY = cells.p[sylvarirumCenter][1];
+  const verdathiBiome = cells.biome[verdathiCenter];
+  const sylvarirumBiome = cells.biome[sylvarirumCenter];
+
+  if (directives.forceVerdathiSouthSwamp) {
+    const isSouth = verdathiY > graphHeight * 0.55;
+    const isSwamp = verdathiBiome === 12;
+    if (!isSouth) reasons.push("Verdathi is not in the southern zone");
+    if (!isSwamp) reasons.push("Verdathi center is not in swamp/fen biome");
+  }
+
+  if (directives.forceSylvarirumSouthForest) {
+    const isSouth = sylvarirumY > graphHeight * 0.52;
+    const isForest = [6, 7, 8, 9].includes(sylvarirumBiome);
+    if (!isSouth) reasons.push("Sylvarirum is not in the southern zone");
+    if (!isForest) reasons.push("Sylvarirum center is not in forest biome");
+  }
+
+  if (directives.nearConstraint) {
+    const adjacent = areCulturesAdjacent(verdathi.i, sylvarirum.i);
+    if (!adjacent) reasons.push("Verdathi and Sylvarirum do not share a border");
+  }
+
+  return {valid: reasons.length === 0, reasons};
+}
+
 const regenerateMap = debounce(async function (options) {
   WARN && console.warn("Generate new random map");
 
@@ -1247,7 +1306,51 @@ const regenerateMap = debounce(async function (options) {
   customization = 0;
   resetZoom(1000);
   undraw();
-  await generate(options);
+
+  const directives = window.durgethScenarioDirectives || {};
+  const validateScenario = requiresScenarioValidation(directives);
+  const maxAttempts = validateScenario ? 10 : 1;
+  const hasFixedSeed = !!(options && options.seed);
+
+  let validationResult = {valid: true, reasons: []};
+  let attempts = 0;
+
+  do {
+    attempts++;
+    await generate(options);
+    validationResult = validateScenarioConstraints(directives);
+
+    if (validationResult.valid) break;
+    if (hasFixedSeed) break;
+    if (attempts < maxAttempts && mapHistory.length) mapHistory.pop();
+  } while (attempts < maxAttempts);
+
+  if (validateScenario && !validationResult.valid) {
+    const reasonText = validationResult.reasons.join("; ");
+    if (hasFixedSeed) {
+      tip(
+        `Scenario constraints were not fully met with a fixed seed. Clear seed lock or use random seed. Details: ${reasonText}`,
+        true,
+        "warn",
+        7000,
+      );
+    } else {
+      tip(
+        `Scenario constraints were not fully met after ${attempts} attempt${attempts > 1 ? "s" : ""}. Details: ${reasonText}`,
+        true,
+        "warn",
+        7000,
+      );
+    }
+  } else if (validateScenario && attempts > 1) {
+    tip(
+      `Scenario constraints satisfied after ${attempts} attempt${attempts > 1 ? "s" : ""}`,
+      true,
+      "success",
+      4000,
+    );
+  }
+
   drawLayers();
   if (ThreeD.options.isOn) ThreeD.redraw();
   if ($("#worldConfigurator").is(":visible")) editWorld();

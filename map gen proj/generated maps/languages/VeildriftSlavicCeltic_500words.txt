@@ -1,0 +1,604 @@
+VEILDRIFT SLAVIC-CELTIC - 500 Common Word Translations
+Fantasy Language based on VeildriftSlavic-Celtic name patterns
+Linguistic roots: South Slavic primary (Serbian/Bulgarian/Macedonian)
+with broad Celtic blend (Old Irish primary, Breton/Welsh/Scottish Gaelic secondary)
+Stylization: Fantasy-leaning, consistent feel prioritized.
+Note: Distinct from Nordal which uses OCS/Polish — Veildrift uses South Slavic.
+
+KEY SOURCE WORDS (Serbian/Bulgarian):
+  Serbian: ja (I), ti (you), on/ona (he/she), mi (we), oni (they),
+  i (and), ali (but), ne (not), na (on/at), od (from/of), za (for),
+  sa (with), u (in/into), ili (or), ako (if), jer (because),
+  biti (be), imati (have), raditi (do/work), reći (say), videti (see),
+  ići (go), doći (come), znati (know), dati (give), uzeti (take),
+  čovek (man/person), žena (woman), dete (child), kralj (king),
+  zemlja (earth), vatra (fire), voda (water), nebo (sky), dan (day),
+  mesec (moon), zvezda (star), dobar (good), veliki (great/big), istina (truth)
+  Bulgarian: аз/az (I), ти/ti (you), той/toy (he), тя/tya (she),
+  и/i (and), но/no (but), не/ne (not), на/na (on/at), от/ot (from),
+  за/za (for), с/s (with), в/v (in), или/ili (or), ако/ako (if),
+
+KEY SOURCE WORDS (Celtic blend):
+  Old Irish: mé (I), tú (you), é (he), sí (she), muid (we),
+  agus (and), ach (but), ní (not), ar (on), ó (from/since), do (to/for),
+  le (with), nó (or), má (if), mar (as/like), is (be/am),
+  duine (person), bean (woman), mac (son), rí (king), tír (land),
+  tine (fire), uisce (water), spéir (sky), lá (day), gealach (moon),
+  réalt (star), maith (good), mór (great/big), fíor (true),
+  Breton: ur/un (a), ha (and), met (but), ne...ket (not), war (on),
+  diouz (from), evit (for), gant (with), pe (or), ma (if),
+  Scottish Gaelic: mi (I), thu (you), e (he), i (she), sinn (we),
+  agus (and), ach (but), chan eil (not), air (on), bho (from),
+  Welsh: dyn (man), tan (fire), dŵr (water), awyr (sky), dydd (day)
+
+PHONETIC BRIDGE STRATEGY:
+  South Slavic: hard consonants (č/š/ž), palatals, -ić/-ić diminutives,
+  vowel-rich, -nje/-nje abstract nouns, verb aspect pairs
+  Celtic: lenition (bh/mh/gh), broad/slender consonant distinction,
+  -ach/-ech suffixes, compound words, mutation system
+  Bridge: Both share: r liquids, n/m nasals, v/w sounds, open a/e/i vowels
+  South Slavic -je/-nje meets Celtic -e/-che endings naturally
+  Fantasy suffix system: -vrath (noun, fr. Serbian vrata=gate + Celtic -rath=fort),
+  -dru (verb, fr. Breton -dru + Serbian -dru intensive), -slav (quality/glory,
+  fr. Serbian slava=glory), -mhar (adj, fr. Irish -mhar = having quality of),
+  -zelj (desire/spirit, fr. Serbian želja=wish + Celtic spirit roots),
+  -nocht (dark/revealed, fr. Irish nocht=bare/revealed + Slavic noc=night)
+
+===================================================================================
+RANK | ENGLISH       | VEILDRIFT               | ROOT / NOTES
+===================================================================================
+
+--- ARTICLES & PRONOUNS ---
+1    | the           | tavrath                 | Serb. ta (the/that) + -vrath
+2    | a / an        | jedvrath                | Serb. jed- (one/a) + -vrath
+3    | to            | dodru                   | Serb. do (to/until) + -dru
+6    | it            | onvrath                 | Serb. on (it/he) + -vrath
+8    | that          | onovrath                | Serb. ono (that/it) + -vrath
+10   | it            | onvrath                 | same
+11   | for           | zaslav                  | Serb. za (for) + -slav
+14   | this          | ovvrath                 | Serb. ov (this) + -vrath
+20   | this          | ovvrath                 | same
+22   | his           | njegovrath              | Serb. njegov (his) + -rath
+28   | her           | njenavrath              | Serb. njena (her) + -vrath
+29   | she           | onamhar                 | Serb. ona (she) + -mhar
+31   | an            | jedvrath                | same as a
+34   | one           | jedanvrath              | Serb. jedan (one) + -vrath
+35   | all           | svimhar                 | Serb. svi (all) + -mhar
+37   | there         | tamoslav                | Serb. tamo (there) + -slav
+38   | their         | njihovrath              | Serb. njihov (their) + -rath
+39   | what          | štavrath                | Serb. šta (what) + -vrath
+45   | who           | kovrath                 | Serb. ko (who) + -vrath
+49   | me            | mevrath                 | Serb. me (me) + -vrath
+50   | when          | kadvrath                | Serb. kad (when) + -vrath
+55   | no            | nevrath                 | Serb. ne (no/not) + -vrath
+63   | your          | tvojmhar                | Serb. tvoj (your) + -mhar
+64   | good          | dobarmhar               | Serb. dobar (good) + -mhar
+65   | some          | nekivrath               | Serb. neki (some) + -vrath
+69   | other         | drugvrath               | Serb. drug (other/friend) + -vrath
+83   | two           | dvavrath                | Serb. dva (two) + -vrath
+85   | our           | naše slav               | Serb. naše (our) + -slav
+95   | these         | ovivrath                | Serb. ovi (these) + -vrath
+99   | us            | nasvrath                | Serb. nas (us) + -vrath
+120  | got           | dobivrath               | Serb. dobi (got) + -vrath
+
+--- BEING / EXISTENCE ---
+2    | be / is / are | bitizdru                | Serb. biti (to be) + -zdru
+70   | there         | tamoslav                | same as there
+72   | seem          | činitimhar              | Serb. činiti (to seem/do) + -mhar
+78   | think         | mislitivrath            | Serb. misliti (to think) + -vrath
+
+--- PREPOSITIONS & CONJUNCTIONS ---
+4    | of            | odslav                  | Serb. od (of/from) + -slav
+5    | and           | ivrath                  | Serb./OIr. i/agus (and) + -vrath
+12   | not           | nevrath                 | Serb. ne (not) + -vrath
+13   | on            | navrath                 | Serb. na (on/at) + -vrath
+14   | with          | sazdru                  | Serb. sa (with) + -zdru
+19   | at            | kodvrath                | Serb. kod (at/near) + -vrath
+21   | but           | alivrath                | Serb. ali (but) + -vrath
+23   | by            | prizdru                 | Serb. pri (by/near) + -zdru
+24   | from          | odzdru                  | Serb. od (from) + -zdru
+30   | or            | ilivrath                | Serb. ili (or) + -vrath
+32   | will          | hoćedru                 | Serb. hoće (will/want) + -dru
+33   | my            | mojslav                 | Serb. moj (my) + -slav
+36   | would         | bioslav                 | Serb. bio (would be) + -slav
+40   | so            | takoslav                | Serb. tako (so/thus) + -slav
+41   | up            | gorezdru                | Serb. gore (up/above) + -zdru
+42   | out           | vanvrath                | Serb. van (out/outside) + -vrath
+43   | if            | akoslav                 | Serb. ako (if) + -slav
+44   | about         | ozelj                   | Serb. o (about/concerning) + -zelj
+60   | because       | jervrath                | Serb. jer (because) + -vrath
+61   | into          | uvrath                  | Serb. u (into/in) + -vrath
+71   | only          | samovrath               | Serb. samo (only/alone) + -vrath
+76   | its           | onvrath                 | same as it
+77   | over          | prezdru                 | Serb. prek (over) + -zdru
+79   | also          | takođevrath             | Serb. takođe (also) + -vrath
+80   | back          | nazadvrath              | Serb. nazad (back) + -vrath
+81   | after         | poslevrath              | Serb. posle (after) + -vrath
+82   | use           | koristidru              | Serb. koristiti (use) + -dru
+87   | first         | prvimhar                | Serb. prvi (first) + -mhar
+88   | well          | dobromhar               | Serb. dobro (well) + -mhar
+90   | even          | čakvrath                | Serb. čak (even) + -vrath
+94   | any           | bilokojivrath           | Serb. bilo koji (any) + -vrath
+102  | need          | potrebazelj             | Serb. potreba (need) + -zelj
+104  | often         | čestovrath              | Serb. često (often) + -vrath
+106  | high          | visokslav               | Serb. visok (high) + -slav
+110  | never         | nikadevrath             | Serb. nikad (never) + -vrath
+112  | north         | severzdru               | Serb. sever (north) + -zdru
+114  | seem          | činitimhar              | same as seem
+116  | next          | sledećivrath            | Serb. sledeći (next) + -vrath
+119  | begin         | početizdru              | Serb. početi (to begin) + -zdru
+129  | both          | obamhar                 | Serb. oba (both) + -mhar
+133  | until         | dozdru                  | Serb. do (until/to) + -zdru
+147  | ever          | ikadvrath               | Serb. ikad (ever) + -vrath
+150  | though        | madarslav               | OIr. mada (though/if) + Serb. -slav
+154  | soon          | uskoslav                | Serb. usko (soon/narrow) + -slav
+158  | direct        | pravomhar               | Serb. pravo (direct/right) + -mhar
+160  | leave         | otićidru                | Serb. otići (to leave) + -dru
+169  | wind          | vetarvrath              | Serb. vetar (wind) + -vrath
+172  | since         | odkadvrath              | Serb. otkad (since) + -vrath
+183  | against       | protivslav              | Serb. protiv (against) + -slav
+192  | during        | tokomvrath              | Serb. tokom (during) + -vrath
+194  | true          | istinmhar               | Serb. istin (true) + -mhar
+219  | toward        | premavrath              | Serb. prema (toward) + -vrath
+225  | center        | središnocht             | Serb. središte (center) + -nocht
+251  | still         | jošvrath                | Serb. još (still/yet) + -vrath
+261  | above         | iznadslav               | Serb. iznad (above) + -slav
+287  | behind        | izavrath                | Serb. iza (behind) + -vrath
+330  | yes           | davrath                 | Serb. da (yes/that) + -vrath
+332  | fill          | punizdru                | Serb. puniti (fill) + -zdru
+338  | yet           | jošvrath                | same as still
+339  | among         | međunocht               | Serb. među (among) + -nocht
+340  | perhaps       | moždaslav               | Serb. možda (perhaps) + -slav
+343  | am            | jesmslav                | Serb. jesm (I am) + -slav
+446  | whether       | akoslav                 | same as if
+451  | shall         | treba dru               | Serb. treba (shall/must) + -dru
+457  | either        | ilivrath ilivrath       | Serb. ili...ili (either...or)
+488  | else          | drugvrath               | same as other
+489  | quite         | veomamhar               | Serb. veoma (quite/very) + -mhar
+490  | quite         | veomamhar               | same
+
+--- VERBS: CORE ACTIONS ---
+7    | do            | raditizdru              | Serb. raditi (to do/work) + -zdru
+9    | have          | imatidru                | Serb. imati (to have) + -dru
+15   | he            | onslav                  | Serb. on (he) + -slav
+16   | as            | kaomhar                 | Serb. kao (as/like) + -mhar
+17   | you           | tivrath                 | Serb. ti (you) + -vrath
+18   | do            | raditizdru              | same
+25   | they          | onivrath                | Serb. oni (they) + -vrath
+26   | we            | mizdru                  | Serb. mi (we) + -zdru
+27   | say           | rećizdru                | Serb. reći (to say) + -zdru
+46   | get           | dobitizdru              | Serb. dobiti (to get) + -zdru
+47   | which         | kojivrath               | Serb. koji (which) + -vrath
+48   | go            | ićizdru                 | Serb. ići (to go) + -zdru
+51   | make          | pravitizdru             | Serb. praviti (to make) + -zdru
+52   | can           | moćidru                 | Serb. moći (can) + -dru
+53   | like          | voleti dru              | Serb. voleti (to like/love) + -dru
+54   | time          | vremevrath              | Serb. vreme (time) + -vrath
+56   | just          | samovrath               | same as only
+57   | him           | njegovrath              | Serb. njega (him) + -vrath
+58   | know          | znatizdru               | Serb. znati (to know) + -zdru
+59   | take          | uzetizdru               | Serb. uzeti (to take) + -zdru
+62   | year          | godinazdru              | Serb. godina (year) + -zdru
+66   | could         | mogaomhar               | Serb. mogao (could) + -mhar
+67   | them          | njihvrath               | Serb. njih (them) + -vrath
+68   | see           | videtizdru              | Serb. videti (to see) + -zdru
+73   | look          | gledatizdru             | Serb. gledati (to look) + -zdru
+74   | only          | samovrath               | same
+75   | come          | dočizdru                | Serb. doći (to come) + -zdru
+84   | use           | koristidru              | same as use above
+86   | work          | radzdru                 | Serb. rad (work) + -zdru
+89   | way           | putslav                 | Serb. put (way/road) + -slav
+91   | new           | novmhar                 | Serb. nov (new) + -mhar
+92   | want          | htetizdru               | Serb. hteti (to want) + -zdru
+93   | because       | jervrath                | same as because
+96   | give          | datizdru                | Serb. dati (to give) + -zdru
+97   | day           | danvrath                | Serb. dan (day) + -vrath
+98   | most          | najvišemhar             | Serb. najviše (most) + -mhar
+100  | great         | velikslav               | Serb. velik (great) + -slav
+101  | between       | izmeđunocht             | Serb. između (between) + -nocht
+103  | large         | velikmhar               | Serb. velik (large) + -mhar
+105  | hand          | rukavrath               | Serb. ruka (hand) + -vrath
+107  | place         | mestovrath              | Serb. mesto (place) + -vrath
+108  | hold          | držatizdru              | Serb. držati (to hold) + -zdru
+109  | turn          | okrenutizdru            | Serb. okrenuti (to turn) + -zdru
+111  | few           | malovrath               | Serb. malo (few/little) + -vrath
+113  | open          | otvoriti zdru           | Serb. otvoriti (to open) + -zdru
+115  | together      | zajedno nocht           | Serb. zajedno (together) + -nocht
+117  | white         | belavrath               | Serb. bela (white) + -vrath
+118  | children      | decazelj                | Serb. deca (children) + -zelj
+121  | walk          | hodatizdru              | Serb. hodati (to walk) + -zdru
+122  | example       | primerzelj              | Serb. primer (example) + -zelj
+123  | ease          | lakoćanocht             | Serb. lakoća (ease) + -nocht
+124  | paper         | papirzdru               | Serb. papir (paper) + -zdru
+125  | group         | grupavrath              | Serb. grupa (group) + -vrath
+126  | always        | uvekslav                | Serb. uvek (always) + -slav
+127  | music         | muzikanocht             | Serb. muzika (music) + -nocht
+128  | those         | onivrath                | Serb. oni (those) + -vrath
+130  | mark          | oznakavrath             | Serb. oznaka (mark) + -vrath
+131  | book          | knjigazelj              | Serb. knjiga (book) + -zelj
+132  | letter        | pismozdru               | Serb. pismo (letter) + -zdru
+134  | mile          | miljamhar               | Serb. milja (mile) + -mhar
+135  | river         | rekavrath               | Serb. reka (river) + -vrath
+136  | car           | kolavrath               | Serb. kola (car/vehicle) + -vrath
+137  | feet          | nogezelj                | Serb. noge (feet) + -zelj
+138  | care          | brinuti dru             | Serb. brinuti (to care) + -dru
+139  | second        | drugimhar               | Serb. drugi (second) + -mhar
+140  | enough        | dovoljnocht             | Serb. dovoljno (enough) + -nocht
+141  | plain         | ravnicazelj             | Serb. ravnica (plain) + -zelj
+142  | girl          | devojkavrath            | Serb. devojka (girl) + -vrath
+143  | usual         | uobičajmhar             | Serb. uobičaj (usual) + -mhar
+144  | young         | mladslav                | Serb. mlad (young) + -slav
+145  | ready         | spremnocht              | Serb. spreman (ready) + -nocht
+146  | above         | iznadslav               | same as above
+148  | red           | crvenacht               | Serb. crven (red) + -acht
+149  | list          | listanocht              | Serb. lista (list) + -nocht
+151  | feel          | osećatizdru             | Serb. osećati (to feel) + -zdru
+152  | talk          | pričatizdru             | Serb. pričati (to talk) + -zdru
+153  | bird          | pticazelj               | Serb. ptica (bird) + -zelj
+155  | body          | telovrath               | Serb. telo (body) + -vrath
+156  | dog           | paszelj                 | Serb. pas (dog) + -zelj
+157  | family        | porodicazelj            | Serb. porodica (family) + -zelj
+159  | pose          | stavnocht               | Serb. stav (pose/stance) + -nocht
+161  | song          | pesmazdru               | Serb. pesma (song) + -zdru
+162  | measure       | meravrath               | Serb. mera (measure) + -vrath
+163  | door          | vratazdru               | Serb. vrata (door/gate) + -zdru
+164  | product       | proizvodvrath           | Serb. proizvod (product) + -vrath
+165  | black         | crnacht                 | Serb. crn (black) + -acht
+166  | short         | kratakslav              | Serb. kratak (short) + -slav
+167  | numeral       | brojavrath              | Serb. broj (numeral/number) + -vrath
+168  | class         | klasavrath              | Serb. klasa (class) + -vrath
+170  | question      | pitanjezelj             | Serb. pitanje (question) + -zelj
+171  | happen        | desavatizdru            | Serb. dešavati (to happen) + -zdru
+173  | ship          | brodvrath               | Serb. brod (ship) + -vrath
+174  | area          | oblastnocht             | Serb. oblast (area/region) + -nocht
+175  | half          | polovinazdru            | Serb. polovina (half) + -zdru
+176  | rock          | stenavrath              | Serb. stena (rock) + -vrath
+177  | order         | redzdru                 | Serb. red (order/row) + -zdru
+178  | fire          | vatrandom               | Serb. vatra (fire) + -ndom
+179  | south         | jugvrath                | Serb. jug (south) + -vrath
+180  | problem       | problemzelj             | Serb. problem + -zelj
+181  | piece         | komadvrath              | Serb. komad (piece) + -vrath
+182  | told          | kazaovrath              | Serb. kazao (told/said) + -vrath
+184  | pass          | prolaziti dru           | Serb. prolaziti (pass) + -dru
+185  | since         | odkadvrath              | same as since
+186  | top           | vrhnocht                | Serb. vrh (top/peak) + -nocht
+187  | whole         | celovrath               | Serb. celo (whole) + -vrath
+188  | king          | kraljslav               | Serb. kralj (king) + -slav
+189  | space         | prostornocht            | Serb. prostor (space) + -nocht
+190  | heard         | čuovrath                | Serb. čuo (heard) + -vrath
+191  | best          | najboljmhar             | Serb. najbolji (best) + -mhar
+192  | hour          | čas vrath               | Serb. čas (hour/moment) + -vrath
+193  | better        | boljmhar                | Serb. bolji (better) + -mhar
+195  | during        | tokomvrath              | same as during
+196  | hundred       | stovrath                | Serb. sto (hundred) + -vrath
+197  | five          | petslav                 | Serb. pet (five) + -slav
+198  | remember      | sećatizdru              | Serb. sećati (remember) + -zdru
+199  | step          | korakvrath              | Serb. korak (step) + -vrath
+200  | early         | ranoslaav               | Serb. rano (early) + -slav
+201  | hold          | držatizdru              | same as hold
+202  | west          | zapadzdru               | Serb. zapad (west) + -zdru
+203  | ground        | tlozdru                 | Serb. tlo (ground) + -zdru
+204  | interest      | intereszelj             | Serb. interes + -zelj
+205  | reach         | doseći zdru             | Serb. doseći (reach) + -zdru
+206  | fast          | brzymhar                | Serb. brz (fast) + -ymhar
+207  | verb          | glagolazdru             | Serb. glagol (verb) + -azdru
+208  | sing          | pevatidru               | Serb. pevati (to sing) + -dru
+209  | listen        | slušatizdru             | Serb. slušati (listen) + -zdru
+210  | six           | šestvrath               | Serb. šest (six) + -vrath
+211  | table         | stovrath                | Serb. sto (table) + -vrath
+212  | travel        | putovatizdru            | Serb. putovati (travel) + -zdru
+213  | less          | manjemhar               | Serb. manje (less) + -mhar
+214  | morning       | jutronocht              | Serb. jutro (morning) + -nocht
+215  | ten           | deset vrath             | Serb. deset (ten) + -vrath
+216  | simple        | jednostavmhar           | Serb. jednostav (simple) + -mhar
+217  | several       | nekoliko mhar           | Serb. nekoliko (several) + -mhar
+218  | vowel         | samoglasniknocht        | Serb. samoglasnik (vowel) + -nocht
+220  | war           | ratzdru                 | Serb. rat (war) + -zdru
+221  | lay           | legatidru               | Serb. legati (to lay) + -dru
+222  | against       | protivslav              | same as against
+223  | pattern       | uzornocht               | Serb. uzor (pattern/model) + -nocht
+224  | slow          | sporslav                | Serb. spor (slow) + -slav
+226  | love          | ljubavzelj              | Serb. ljubav (love) + -zelj
+227  | person        | osobavrath              | Serb. osoba (person) + -vrath
+228  | money         | novaczdru               | Serb. novac (money) + -zdru
+229  | serve         | služitizdru             | Serb. služiti (to serve) + -zdru
+230  | appear        | pojavazdru              | Serb. pojava (appear/phenomenon) + -zdru
+231  | road          | putvrath                | Serb. put (road) + -vrath
+232  | map           | mapavrath               | Serb. mapa (map) + -vrath
+233  | rain          | kišazelj                | Serb. kiša (rain) + -zelj
+234  | rule          | pravilozelj             | Serb. pravilo (rule) + -zelj
+235  | govern        | vladatizdru             | Serb. vladati (to govern) + -zdru
+236  | pull          | vući zdru               | Serb. vući (to pull) + -zdru
+237  | cold          | hladannocht             | Serb. hladan (cold) + -nocht
+238  | notice        | primetitizdru           | Serb. primetiti (notice) + -zdru
+239  | voice         | glasvrath               | Serb. glas (voice) + -vrath
+240  | fall          | pasti zdru              | Serb. pasti (to fall) + -zdru
+241  | power         | moćslav                 | Serb. moć (power) + -slav
+242  | town          | gradzdru                | Serb. grad (town/city) + -zdru
+243  | fine          | finhacht                | OIr. fin (fine/bright) + -acht
+244  | drive         | voziti dru              | Serb. voziti (to drive) + -dru
+245  | lead          | voditidru               | Serb. voditi (to lead) + -dru
+246  | cry           | plakatizdru             | Serb. plakati (to cry) + -zdru
+247  | dark          | tamnonocht              | Serb. taman (dark) + -nocht
+248  | machine       | mašinanocht             | Serb. mašina (machine) + -nocht
+249  | note          | beležkazelj             | Serb. beleška (note) + -zelj
+250  | wait          | čekatizdru              | Serb. čekati (to wait) + -zdru
+252  | figure        | liknocht                | Serb. lik (figure/face) + -nocht
+253  | star          | zvezdaslav              | Serb. zvezda (star) + -slav
+254  | box           | kutijandru              | Serb. kutija (box) + -ndru
+255  | noun          | imenicanocht            | Serb. imenica (noun) + -nocht
+256  | field         | poljevrath              | Serb. polje (field) + -vrath
+257  | rest          | odmorzdru               | Serb. odmor (rest) + -zdru
+258  | correct       | ispravmhar              | Serb. ispravan (correct) + -mhar
+259  | able          | sposobanmhar            | Serb. sposoban (able) + -mhar
+260  | pound         | funtvrath               | Serb. funta (pound) + -vrath
+262  | beauty        | lepotazelj              | Serb. lepota (beauty) + -zelj
+263  | drive         | voziti dru              | same as drive
+264  | stood         | stajaozdru              | Serb. stajao (stood) + -zdru
+265  | contain       | sadržatizdru            | Serb. sadržati (contain) + -zdru
+266  | front         | prednjezdru             | Serb. prednje (front) + -zdru
+267  | teach         | učitizdru               | Serb. učiti (to teach) + -zdru
+268  | week          | nedeljandru             | Serb. nedelja (week) + -ndru
+269  | final         | završnimhar             | Serb. završni (final) + -mhar
+270  | gave          | daovrath                | Serb. dao (gave) + -vrath
+271  | green         | zelenacht               | Serb. zelen (green) + -acht
+272  | oh            | ovrath                  | Serb. o (oh!) + -vrath
+273  | quick         | brzymhar                | same as fast
+274  | develop       | razvijatizdru           | Serb. razvijati (develop) + -zdru
+275  | ocean         | okeanzelj               | Serb. okean (ocean) + -zelj
+276  | warm          | topalmhar               | Serb. topao (warm) + -mhar
+277  | free          | slobodanslav            | Serb. slobodan (free) + -slav
+278  | minute        | minutavrath             | Serb. minuta (minute) + -vrath
+279  | strong        | jakezelj                | Serb. jak (strong) + -ezelj
+280  | special       | posebannocht            | Serb. poseban (special) + -nocht
+281  | behind        | izavrath                | same as behind
+282  | clear         | jasan mhar              | Serb. jasan (clear) + -mhar
+283  | tail          | repvrath                | Serb. rep (tail) + -vrath
+284  | produce       | produkovatizdru         | Serb. produkovati (produce) + -zdru
+285  | fact          | činjenica zelj          | Serb. činjenica (fact) + -zelj
+286  | street        | ulicavrath              | Serb. ulica (street) + -vrath
+288  | lot           | punovrath               | Serb. puno (lot/full) + -vrath
+289  | nothing       | ništavrath              | Serb. ništa (nothing) + -vrath
+290  | course        | tokvrath                | Serb. tok (course/flow) + -vrath
+291  | stay          | ostatizdru              | Serb. ostati (to stay) + -zdru
+292  | wheel         | točakvrath              | Serb. točak (wheel) + -vrath
+293  | full          | punslav                 | Serb. pun (full) + -slav
+294  | force         | silazelj                | Serb. sila (force) + -zelj
+295  | blue          | plavaacht               | Serb. plav (blue) + -aacht
+296  | object        | predmetvrath            | Serb. predmet (object) + -vrath
+297  | decide        | odlučitizdru            | Serb. odlučiti (decide) + -zdru
+298  | surface       | površinanocht           | Serb. površina (surface) + -nocht
+299  | deep          | duboknocht              | Serb. dubok (deep) + -nocht
+300  | moon          | meseczelj               | Serb. mesec (moon) + -zelj
+301  | island        | ostrvo zelj             | Serb. ostrvo (island) + -zelj
+302  | foot          | stopavrath              | Serb. stopa (foot) + -vrath
+303  | system        | sistemvrath             | Serb. sistem + -vrath
+304  | busy          | zauzetnocht             | Serb. zauzet (busy) + -nocht
+305  | test          | testzdru                | Serb. test + -zdru
+306  | record        | zapisvrath              | Serb. zapis (record) + -vrath
+307  | boat          | čamaczelj               | Serb. čamac (boat) + -zelj
+308  | common        | zajedničkimhar          | Serb. zajednički (common) + -mhar
+309  | gold          | zlatozdru               | Serb. zlato (gold) + -zdru
+310  | possible      | mogućmhar               | Serb. moguć (possible) + -mhar
+311  | plane         | ravannocht              | Serb. ravan (plane/flat) + -nocht
+312  | stead         | mestovrath              | same as place
+313  | dry           | suv mhar                | Serb. suv (dry) + -mhar
+314  | wonder        | čudonocht               | Serb. čudo (wonder/miracle) + -nocht
+315  | laugh         | smejatizdru             | Serb. smejati (to laugh) + -zdru
+316  | thousand      | hiljada zdru            | Serb. hiljada (thousand) + -zdru
+317  | ago           | prenvrath               | OIr. ren (before) + Serb. -vrath
+318  | ran           | trčaovrath              | Serb. trčao (ran) + -vrath
+319  | check         | proverit dru            | Serb. proveriti (check) + -dru
+320  | game          | igrazelj                | Serb. igra (game) + -zelj
+321  | shape         | oblikvrath              | Serb. oblik (shape) + -vrath
+322  | equate        | izjednačitizdru         | Serb. izjednačiti (equate) + -zdru
+323  | hot           | vrućnocht               | Serb. vruć (hot) + -nocht
+324  | miss          | promašitizdru           | Serb. promašiti (miss) + -zdru
+325  | brought       | donesaovrath            | Serb. donesao (brought) + -vrath
+326  | heat          | toplotazelj             | Serb. toplota (heat) + -zelj
+327  | snow          | snegvrath               | Serb. sneg (snow) + -vrath
+328  | tire          | umoriti dru             | Serb. umoriti (tire) + -dru
+329  | bring         | doneti zdru             | Serb. doneti (bring) + -zdru
+331  | distant       | dalekslav               | Serb. dalek (distant) + -slav
+333  | east          | istokvrath              | Serb. istok (east) + -vrath
+334  | paint         | slika tizdru            | Serb. slikati (paint) + -zdru
+335  | language      | jeziknocht              | Serb. jezik (language) + -nocht
+336  | among         | međunocht               | same as among
+337  | grand         | veličanstvoslav         | Serb. veličanstven (grand) + -slav
+341  | drop          | kapvrath                | Serb. kap (drop) + -vrath
+342  | heart         | srcenocht               | Serb. srce (heart) + -nocht
+344  | present       | sadašnjimhar            | Serb. sadašnji (present) + -mhar
+345  | heavy         | tešaknocht              | Serb. težak (heavy) + -nocht
+346  | dance         | plesatizdru             | Serb. plesati (to dance) + -zdru
+347  | engine        | motorvrath              | Serb. motor + -vrath
+348  | position      | pozicijanocht           | Serb. pozicija (position) + -nocht
+349  | arm           | rukavrath               | same as hand (arm/hand share ruka)
+350  | wide          | širok slav              | Serb. širok (wide) + -slav
+351  | sail          | jedriti dru             | Serb. jedriti (to sail) + -dru
+352  | material      | materijalnocht          | Serb. materijal + -nocht
+353  | size          | veličinamhar            | Serb. veličina (size) + -mhar
+354  | vary          | variratizdru            | Serb. varirati (vary) + -zdru
+355  | settle        | nastanitizdru           | Serb. nastaniti (settle) + -zdru
+356  | speak         | govoritizdru            | Serb. govoriti (speak) + -zdru
+357  | weight        | težinanocht             | Serb. težina (weight) + -nocht
+358  | general       | opštimhar               | Serb. opšti (general) + -mhar
+359  | ice           | ledvrath                | Serb. led (ice) + -vrath
+360  | matter        | stvar zelj              | Serb. stvar (matter/thing) + -zelj
+361  | circle        | krug nocht              | Serb. krug (circle) + -nocht
+362  | pair          | par vrath               | Serb. par (pair) + -vrath
+363  | include       | uključitizdru           | Serb. uključiti (include) + -zdru
+364  | divide        | podelitizdru            | Serb. podeliti (divide) + -zdru
+365  | syllable      | slog vrath              | Serb. slog (syllable) + -vrath
+366  | felt          | osećaovrath             | Serb. osećao (felt) + -vrath
+367  | perhaps       | moždaslav               | same as perhaps
+368  | pick          | biratidru               | Serb. birati (to pick) + -dru
+369  | sudden        | iznenadan nocht         | Serb. iznenadan (sudden) + -nocht
+370  | count         | broja tizdru            | Serb. brojati (count) + -zdru
+371  | square        | kvadratvrath            | Serb. kvadrat (square) + -vrath
+372  | reason        | razlogzelj              | Serb. razlog (reason) + -zelj
+373  | length        | dužinanocht             | Serb. dužina (length) + -nocht
+374  | represent     | predstavljazdru         | Serb. predstavljati (represent) + -zdru
+375  | art           | umetnostnocht           | Serb. umetnost (art) + -nocht
+376  | subject       | temavrath               | Serb. tema (subject/theme) + -vrath
+377  | region        | regionvrath             | Serb. region + -vrath
+378  | energy        | energijazelj            | Serb. energija (energy) + -zelj
+379  | hunt          | loviti dru              | Serb. loviti (hunt) + -dru
+380  | probable      | verovatnomhar           | Serb. verovatno (probable) + -mhar
+381  | bed           | krevetnocht             | Serb. krevet (bed) + -nocht
+382  | brother       | bratslav                | Serb. brat (brother) + -slav
+383  | egg           | jajevrath               | Serb. jaje (egg) + -vrath
+384  | ride          | jahatizdru              | Serb. jahati (to ride) + -zdru
+385  | cell          | ćelijazelj              | Serb. ćelija (cell) + -zelj
+386  | believe       | verovatizdru            | Serb. verovati (believe) + -zdru
+387  | fraction      | razlomak zelj           | Serb. razlomak (fraction) + -zelj
+388  | forest        | šuma zelj               | Serb. šuma (forest) + -zelj
+389  | sit           | seditizdru              | Serb. sedeti (to sit) + -zdru
+390  | race          | trkavrath               | Serb. trka (race) + -vrath
+391  | window        | prozornocht             | Serb. prozor (window) + -nocht
+392  | store         | prodavnicanocht         | Serb. prodavnica (store) + -nocht
+393  | summer        | letoslav                | Serb. leto (summer) + -slav
+394  | train         | vozvrath                | Serb. voz (train) + -vrath
+395  | sleep         | spavatizdru             | Serb. spavati (to sleep) + -zdru
+396  | prove         | dokazatizdru            | Serb. dokazati (prove) + -zdru
+397  | lone          | samotanslav             | Serb. samotan (lone) + -slav
+398  | leg           | nogavrath               | Serb. noga (leg) + -vrath
+399  | exercise      | vežbazelj               | Serb. vežba (exercise) + -zelj
+400  | wall          | zidvrath                | Serb. zid (wall) + -vrath
+401  | catch         | uhvatitizdru            | Serb. uhvatiti (catch) + -zdru
+402  | mount         | penjatizdru             | Serb. penjati (to mount) + -zdru
+403  | wish          | željazelj               | Serb. želja (wish) + -zelj
+404  | sky           | nebonocht               | Serb. nebo (sky) + -nocht
+405  | board         | daskazdru               | Serb. daska (board) + -zdru
+406  | joy           | radostnocht             | Serb. radost (joy) + -nocht
+407  | winter        | zimavrath               | Serb. zima (winter) + -vrath
+408  | sat           | sedaovrath              | Serb. sedao (sat) + -vrath
+409  | written       | napisanmhar             | Serb. napisan (written) + -mhar
+410  | wild          | divljinacht             | Serb. divlji (wild) + -nacht
+411  | instrument    | instrumentnocht         | Serb. instrument + -nocht
+412  | kept          | čuvaovrath              | Serb. čuvao (kept) + -vrath
+413  | glass         | staklovrath             | Serb. staklo (glass) + -vrath
+414  | grass         | travandru               | Serb. trava (grass) + -ndru
+415  | cow           | kravandru               | Serb. krava (cow) + -ndru
+416  | job           | posaozdru               | Serb. posao (job) + -zdru
+417  | edge          | ivicazelj               | Serb. ivica (edge) + -zelj
+418  | sign          | znakzelj                | Serb. znak (sign) + -zelj
+419  | visit         | poseta zdru             | Serb. poseta (visit) + -zdru
+420  | past          | prošlostslav            | Serb. prošlost (past) + -slav
+421  | soft          | mekannocht              | Serb. mekan (soft) + -nocht
+422  | fun           | zabavanocht             | Serb. zabava (fun) + -nocht
+423  | bright        | svetaomhar              | Serb. svetao (bright) + -mhar
+424  | gas           | gasvrath                | Serb. gas + -vrath
+425  | weather       | vremevrath              | same as time (weather/time share vreme)
+426  | month         | mesecvrath              | Serb. mesec (month) + -vrath
+427  | million       | milionvrath             | Serb. milion + -vrath
+428  | bear          | medvedzelj              | Serb. medved (bear) + -zelj
+429  | finish        | završitizdru            | Serb. završiti (finish) + -zdru
+430  | happy         | srećannocht             | Serb. srećan (happy) + -nocht
+431  | hope          | nadazelj                | Serb. nada (hope) + -zelj
+432  | flower        | cvetslav                | Serb. cvet (flower) + -slav
+433  | clothe        | oblačitizdru            | Serb. oblačiti (clothe) + -zdru
+434  | strange       | čudannocht              | Serb. čudan (strange) + -nocht
+435  | gone          | otišaovrath             | Serb. otišao (gone) + -vrath
+436  | jump          | skakatizdru             | Serb. skakati (jump) + -zdru
+437  | baby          | bebavrath               | Serb. beba (baby) + -vrath
+438  | eight         | osamnocht               | Serb. osam (eight) + -nocht
+439  | village       | selozelj                | Serb. selo (village) + -zelj
+440  | meet          | sresti zdru             | Serb. sresti (meet) + -zdru
+441  | root          | korenzelj               | Serb. koren (root) + -zelj
+442  | buy           | kupitizdru              | Serb. kupiti (buy) + -zdru
+443  | raise         | podićizdru              | Serb. podići (raise) + -zdru
+444  | solve         | rešitizdru              | Serb. rešiti (solve) + -zdru
+445  | metal         | metalvrath              | Serb. metal + -vrath
+447  | push          | gurati dru              | Serb. gurati (push) + -dru
+448  | seven         | sedam nocht             | Serb. sedam (seven) + -nocht
+449  | paragraph     | paragrafvrath           | Serb. paragraf + -vrath
+450  | third         | trećimhar               | Serb. treći (third) + -mhar
+452  | held          | držaovrath              | Serb. držao (held) + -vrath
+453  | hair          | kosamhar                | Serb. kosa (hair) + -mhar
+454  | describe      | opisatizdru             | Serb. opisati (describe) + -zdru
+455  | cook          | kuvatizdru              | Serb. kuvati (cook) + -zdru
+456  | floor         | podvrath                | Serb. pod (floor) + -vrath
+458  | result        | rezultatvrath           | Serb. rezultat + -vrath
+459  | burn          | goreti dru              | Serb. goreti (burn) + -dru
+460  | hill          | bregnocht               | Serb. breg (hill) + -nocht
+461  | safe          | bezbedannocht           | Serb. bezbedan (safe) + -nocht
+462  | cat           | mačkazelj               | Serb. mačka (cat) + -zelj
+463  | century       | veknocht                | Serb. vek (century) + -nocht
+464  | consider      | razmatratizdru          | Serb. razmatrati (consider) + -zdru
+465  | type          | tipvrath                | Serb. tip (type) + -vrath
+466  | law           | zakonslav               | Serb. zakon (law) + -slav
+467  | bit           | bitslav                 | OIr. bit (bit/small) + -slav
+468  | coast         | obalazelj               | Serb. obala (coast) + -zelj
+469  | copy          | kopijandru              | Serb. kopija (copy) + -ndru
+470  | phrase        | frazazdru               | Serb. fraza (phrase) + -zdru
+471  | silent        | tihonocht               | Serb. tiho (silent/quiet) + -nocht
+472  | tall          | visokslav               | same as high
+473  | sand          | pesakvrath              | Serb. pesak (sand) + -vrath
+474  | soil          | zemljandru              | Serb. zemlja (soil) + -ndru
+475  | roll          | kotrljatizdru           | Serb. kotrljati (roll) + -zdru
+476  | temperature   | temperatura zelj        | Serb. temperatura + -zelj
+477  | finger        | prstvrath               | Serb. prst (finger) + -vrath
+478  | industry      | industrijandru          | Serb. industrija + -ndru
+479  | value         | vrednostnocht           | Serb. vrednost (value) + -nocht
+480  | fight         | boriti dru              | Serb. boriti (fight) + -dru
+481  | lie           | legatidru               | same as lay
+482  | beat          | tućizdru                | Serb. tuci (beat) + -zdru
+483  | excite        | uzbuditi dru            | Serb. uzbuditi (excite) + -dru
+484  | natural       | prirodanmhar            | Serb. prirodan (natural) + -mhar
+485  | view          | pogled zelj             | Serb. pogled (view) + -zelj
+486  | sense         | osećajzelj              | Serb. osećaj (sense) + -zelj
+487  | ear           | uvovrath                | Serb. uvo (ear) + -vrath
+491  | case          | slučajvrath             | Serb. slučaj (case) + -vrath
+492  | middle        | srednanocht             | Serb. sredan (middle) + -nocht
+493  | kill          | ubiti zdru              | Serb. ubiti (kill) + -zdru
+494  | son           | sinslav                 | Serb. sin (son) + -slav
+495  | lake          | jezerozelj              | Serb. jezero (lake) + -zelj
+496  | moment        | trenutakvrath           | Serb. trenutak (moment) + -vrath
+497  | scale         | skalaslaav              | Serb. skala (scale) + -slav
+498  | loud          | glasanslav              | Serb. glasan (loud) + -slav
+499  | spring        | prolećeslav             | Serb. proleće (spring) + -slav
+500  | observe       | posmatratizdru          | Serb. posmatrati (observe) + -zdru
+
+===================================================================================
+PHONETIC GUIDE FOR VEILDRIFT
+===================================================================================
+
+South Slavic (Serbian/Bulgarian) sounds:
+  č   = voiceless palatal affricate (as in "church")
+  š   = voiceless palatal fricative (as in "shoe")
+  ž   = voiced palatal fricative (as in "measure")
+  ć   = lighter palatal affricate (between ch and ty)
+  đ   = voiced palatal affricate (between dj and dy)
+  lj  = palatal lateral (as in "million")
+  nj  = palatal nasal (as in "canyon")
+  Aspect pairs: imperfective/perfective verb distinction
+  Case endings: -a/-e/-i/-u for different grammatical roles
+
+Celtic sounds adding texture:
+  OIr. lenition: bh/mh = /v/, gh = /γ/, ch = /x/, fh = silent
+  -acht/-echt = abstract noun suffix (very characteristic of Old Irish)
+  -mhar = adjective suffix (Old Irish -mar = having quality of)
+  Breton -ndr- clusters bridge with Slavic -ndru
+  Welsh initial mutations echo Slavic consonant alternation
+
+Key attested Serbian words used:
+  kralj (king), zvezda (star), nebo (sky), vatra (fire), voda (water),
+  zemlja (earth), mesec (moon), brat (brother), srce (heart),
+  ljubav (love), nada (hope), radost (joy), slobodan (free),
+  zlato (gold), sneg (snow), kiša (rain), šuma (forest), medved (bear)
+
+Veildrift suffix system:
+  -vrath  = primary noun ending (fr. Serb. vrata=gate/portal + Celtic -rath=fort)
+  -zdru   = verb ending (active/transitive, fr. Serb. -zdrav=healthy + Celtic -dru)
+  -dru    = verb ending (stative/intransitive, lighter form)
+  -slav   = quality/glory ending (fr. Serb. slava=glory — all elevated qualities)
+  -mhar   = adjective ending (fr. OIr. -mhar = having quality of)
+  -nocht  = dark/mysterious noun (fr. OIr. nocht=bare + Serb. noć=night)
+  -zelj   = desire/living noun (fr. Serb. želja=wish + Celtic life-roots)
+  -acht   = abstract quality (fr. OIr. -acht suffix — attested extensively)
+  -ndru   = material/earthy noun (Breton -ndr + Serb. -ndru blend)
+
+===================================================================================
+END OF FILE — VeildriftSlavicCeltic_500words.txt
+Generated for Durgeth fantasy world language system
+===================================================================================

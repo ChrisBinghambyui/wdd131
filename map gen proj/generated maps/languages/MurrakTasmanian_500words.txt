@@ -1,0 +1,604 @@
+MURRAK TASMANIAN-ETRUSCAN - 500 Common Word Translations
+Fantasy Language based on MurrakTasmanian name patterns
+Linguistic roots: Equal blend of Tasmanian Aboriginal (phonetics/sound palette)
+and Etruscan (vocabulary structure/grammar)
+Stylization: Fully built-out fantasy language.
+
+KEY SOURCE WORDS (Tasmanian Aboriginal — Palawa kani/various fragments):
+  nina (fire), timme (water/rain), wana (go/walk), lanna (day),
+  tana (they/those), para (place/country), rawa (good), mana (I/me),
+  nara (person), lara (woman), kara (stone/rock), pakana (people of this land),
+  lutruwita (Tasmania), nila (sky/wind/cold)
+
+KEY SOURCE WORDS (Etruscan — partially deciphered):
+  mi (I/me), mini (me/to me), an (he/she/it), ita (this/these),
+  θui (here), θan (there/that), ipa (this), ais (god/divine),
+  clan (son), sec (daughter), ati (mother), lautni (family member),
+  zilc (magistrate/ruler), θur (to stand/be), tur (give), man (remain/stay),
+  ril (year/age), avil (year), sval (alive/live), śuc (die/death),
+  fler (offering/sacrifice), trin (plead/pray/think), menθ (face/front),
+  θesan (dawn), rasna (Etruscan people), tular (boundaries/limits),
+  lur (vessel/urn), śpural (of the city), luθ (pipe/music/play),
+  acl (portray/see), kap (take/seize), eθ (go/come), uzi (end/rise),
+  Numerals: θu(1), zal(2), ci(3), śa(4), maχ(5), huθ(6), semφ(7), cezp(8), nurφ(9), śar(10)
+
+SUFFIX SYSTEM:
+  -lara  = primary noun (Tasm. lara=woman + Etr. -ra genitive)
+  -turia = verb ending (Etr. tur=give + Tasm. -ia)
+  -walθ  = adjective (Tasm. wal- + Etr. -θ past marker)
+  -θuna  = place/realm noun (Etr. θun + Tasm. -na)
+  -θlara = intensive noun (weighty/significant things)
+
+===================================================================================
+RANK | ENGLISH       | MURRAK                  | ROOT / NOTES
+===================================================================================
+
+--- ARTICLES & PRONOUNS ---
+1    | the           | ipa                     | Etr. ipa (this/the) — attested
+2    | a / an        | θulara                  | Etr. θu (one) + -lara
+3    | to            | rituria                 | Etr. ri (toward) + -turia
+6    | it            | anlara                  | Etr. an (it/he/she) + -lara
+8    | that          | θanlara                 | Etr. θan (that) + -lara
+10   | it            | anlara                  | same
+11   | for           | θunalara                | Etr. θun (for/to) + -lara
+14   | this          | italara                 | Etr. ita (this) + -lara
+20   | this          | italara                 | same
+22   | his           | anwalθ                  | Etr. an (his/her) + -walθ
+28   | her           | anwalθ                  | same — gender-neutral
+29   | she           | tanara                  | Tasm. tana (she/they) + -ra
+31   | an            | θulara                  | same as a
+34   | one           | θurana                  | Etr. θu (one) + -rana
+35   | all           | manalara                | Tasm. mana (all) + -lara
+37   | there         | θuiθuna                 | Etr. θui (here) + -θuna
+38   | their         | tanwalθ                 | Tasm. tana (their) + -walθ
+39   | what          | penalara                | Etr. pen (what) + -lara
+45   | who           | karalara                | Tasm. kara (who/person) + -lara
+49   | me            | minilara                | Etr. mini (me) + -lara
+50   | when          | rillara                 | Etr. ril (when/year) + -lara
+55   | no            | nalara                  | Tasm./Etr. na (no/not) + -lara
+63   | your          | zuslara                 | Etr. zus (your) + -lara
+64   | good          | rawalθ                  | Tasm. rawa (good) + -walθ
+65   | some          | larilara                | Etr. lari (some) + -lara
+69   | other         | alilara                 | Etr. ali (other) + -lara
+83   | two           | zallara                 | Etr. zal (two) + -lara
+85   | our           | miθlara                 | Etr. mi (our) + θ + -lara
+95   | these         | itaklara                | Etr. ita (these) + k + -lara
+99   | us            | milara                  | Etr. mi (us) + -lara
+120  | got           | turiθwalθ               | Etr. tur (got/gave) + -iθwalθ
+
+--- BEING / EXISTENCE ---
+2    | be / is / are | svalturia               | Etr. sval (to live/be) + -turia
+70   | there         | θanθuna                 | Etr. θan (there) + -θuna
+72   | seem          | menθturia               | Etr. menθ (face/seem) + -turia
+78   | think         | trinturia               | Etr. trin (to think/plead) + -turia
+
+--- PREPOSITIONS & CONJUNCTIONS ---
+4    | of            | alwalθ                  | Etr. -al (of/genitive) + -walθ
+5    | and           | iklara                  | Etr. -c/-k (and, enclitic) + -lara
+12   | not           | nalara                  | same as no
+13   | on            | paralara                | Tasm. para (on/place) + -lara
+14   | with          | hamθlara                | Etr. ham (with) + θ + -lara
+19   | at            | θuiwalθ                 | Etr. θui (at/here) + -walθ
+21   | but           | aklara                  | Etr. ak (but) + -lara
+23   | by            | eklara                  | Etr. ek (by) + -lara
+24   | from          | tilara                  | Etr. ti (from) + -lara
+30   | or            | ethnalara               | Etr. ethn- (or) + -lara
+32   | will          | svanturia               | Etr. svan (will/become) + -turia
+33   | my            | miwalθ                  | Etr. mi (my) + -walθ
+36   | would         | manθlara                | Etr. man (would/remain) + θ + -lara
+40   | so            | θuituria                | Etr. θui (so/thus) + -turia
+41   | up            | uralara                 | Tasm. ura (up) + -lara
+42   | out           | vanalara                | Tasm. wana (out/go) + -lara
+43   | if            | ipalara                 | Etr. ipa (if/this) + -lara
+44   | about         | menθlara                | Etr. menθ (about/face) + -lara
+60   | because       | θunlara                 | Etr. θun (because/to) + -lara
+61   | into          | nangolara               | Tasm. nango (into/within) + -lara
+71   | only          | θuralara                | Etr. θur (only/stand) + -lara
+76   | its           | anwalθ                  | same as his/her
+77   | over          | uzilara                 | Etr. uzi (over/end) + -lara
+79   | also          | iklara                  | same as and
+80   | back          | θanlara                 | Etr. θan (back/there) + -lara
+81   | after         | uzθlara                 | Etr. uzθ (after/end) + -lara
+82   | use           | tulθturia               | Etr. tul (use/set) + θ + -turia
+87   | first         | naχwalθ                 | Etr. naχ (first/so) + -walθ
+88   | well          | rawaθuna                | Tasm. rawa (well/good) + -θuna
+90   | even          | hamθwalθ                | Etr. ham (even/with) + θ + -walθ
+94   | any           | lariwalθ                | Etr. lari (any/some) + -walθ
+102  | need          | flerturia               | Etr. fler (need/offering) + -turia
+104  | often         | nilwalθ                 | Tasm. nil (often) + -walθ
+106  | high          | θuralara                | Etr. θur (high/stand) + -lara
+110  | never         | naθlara                 | na + θ (never) + -lara
+112  | north         | marwalθ                 | Tasm. mar (north/far) + -walθ
+114  | seem          | menθturia               | same as seem
+116  | next          | uzilara                 | Etr. uzi (next/end) + -lara
+119  | begin         | θurturia                | Etr. θur (begin/stand) + -turia
+129  | both          | zalθlara                | Etr. zal (both/two) + θ + -lara
+133  | until         | uzθlara                 | same as after/until
+147  | ever          | svalθlara               | Etr. sval (ever/alive) + θ + -lara
+150  | though        | aklara                  | same as but
+154  | soon          | θesanlara               | Etr. θesan (dawn/soon) + -lara
+158  | direct        | prawlara                | Tasm. prawa (direct) + -lara
+160  | leave         | vanturia                | Tasm. wana (to leave/go) + -turia
+169  | wind          | nilalara                | Tasm. nila (wind/sky) + -lara
+172  | since         | tilθlara                | Etr. ti (since/from) + lθ + -lara
+183  | against       | ekθlara                 | Etr. ek (against/by) + θ + -lara
+192  | during        | hamθturia               | Etr. ham (during/with) + θ + -turia
+194  | true          | rasnawalθ               | Etr. rasna (true/people) + -walθ
+219  | toward        | riwalθ                  | Etr. ri (toward) + -walθ
+225  | center        | menaθuna                | Etr. men (center) + -aθuna
+251  | still         | manθlara                | Etr. man (still/remain) + θ + -lara
+261  | above         | uzilara                 | Etr. uzi (above/end) + -lara
+287  | behind        | θanθlara                | Etr. θan (behind/there) + θ + -lara
+330  | yes           | nalθlara                | nal (affirm) + θ + -lara
+332  | fill          | lurlara                 | Etr. lur (fill/vessel) + -lara
+338  | yet           | manθlara                | same as still
+339  | among         | hamθuna                 | Etr. ham (among/with) + -θuna
+340  | perhaps       | ipaθlara                | Etr. ipa (perhaps) + θ + -lara
+343  | am            | svalwalθ                | Etr. sval (am/alive) + -walθ
+446  | whether       | ipalara                 | same as if
+451  | shall         | svanturia               | same as will
+457  | either        | ethnalara ethnalara     | Etr. ethn- (either/or)
+488  | else          | alilara                 | same as other
+489  | quite         | maχwalθ                 | Etr. maχ (quite/great) + -walθ
+490  | quite         | maχwalθ                 | same
+
+--- VERBS: CORE ACTIONS ---
+7    | do            | θurturia                | Etr. θur (do/stand) + -turia
+9    | have          | manturia                | Etr. man (have/remain) + -turia
+15   | he            | anlara                  | Etr. an (he) + -lara
+16   | as            | ipawalθ                 | Etr. ipa (as/this) + -walθ
+17   | you           | zuslara                 | Etr. zus (you) + -lara
+18   | do            | θurturia                | same
+25   | they          | tanθlara                | Tasm. tana (they) + θ + -lara
+26   | we            | mithlara                | Etr. mi (we) + th + -lara
+27   | say           | kapturia                | Etr. kap (say/take) + -turia
+46   | get           | kapturia                | Etr. kap (get/take) + -turia
+47   | which         | penlara                 | Etr. pen (which) + -lara
+48   | go            | wanaturia               | Tasm. wana (to go) + -turia
+51   | make          | θurturia                | Etr. θur (make/do) + -turia
+52   | can           | svalturia               | Etr. sval (can/live) + -turia
+53   | like          | rawturia                | Tasm. rawa (like/good) + -turia
+54   | time          | rillara                 | Etr. ril (time/year) + -lara
+56   | just          | θuralara                | same as only
+57   | him           | anlara                  | same as he
+58   | know          | trinturia               | Etr. trin (know/think) + -turia
+59   | take          | kapturia                | Etr. kap (take) + -turia
+62   | year          | avillara                | Etr. avil (year) + -lara
+66   | could         | svalθlara               | Etr. sval (could/alive) + θ + -lara
+67   | them          | tanθlara                | Tasm. tana (them) + θ + -lara
+68   | see           | aclnalara               | Etr. acl (see/portray) + -nalara
+73   | look          | aclwalθ                 | Etr. acl (look/portray) + -walθ
+74   | only          | θuralara                | same
+75   | come          | eθturia                 | Etr. eθ (come/go) + -turia
+84   | use           | tulθturia               | same as use
+86   | work          | θurθlara                | Etr. θur (work) + θ + -lara
+89   | way           | wanapara                | Tasm. wana (way/going) + -para
+91   | new           | nawawalθ                | Tasm. nawa (new) + -walθ
+92   | want          | flerturia               | Etr. fler (want/offering) + -turia
+93   | because       | θunlara                 | same as because
+96   | give          | turturia                | Etr. tur (give) + -turia
+97   | day           | lannalara               | Tasm. lanna (day) + -lara
+98   | most          | maχθlara                | Etr. maχ (most/great) + θ + -lara
+100  | great         | maχwalθ                 | Etr. maχ (great) + -walθ
+101  | between       | hamθuna                 | same as among
+103  | large         | maχlara                 | Etr. maχ (large) + -lara
+105  | hand          | suplara                 | Etr. sup (hand) + -lara
+107  | place         | paralara                | Tasm. para (place) + -lara
+108  | hold          | θurturia                | Etr. θur (hold/stand) + -turia
+109  | turn          | θezituria               | Etr. θezi (turn) + -turia
+111  | few           | θulara                  | Etr. θu (few/one) + -lara
+113  | open          | vanturia                | Tasm. wana (open/go) + -turia
+115  | together      | hamturia                | Etr. ham (together/with) + -turia
+117  | white         | θesanwalθ               | Etr. θesan (white/dawn) + -walθ
+118  | children      | clanapakana             | Etr. clan (child) + -apakana
+121  | walk          | wanaturia               | Tasm. wana (walk) + -turia
+122  | example       | menθlara                | Etr. menθ (example/face) + -lara
+123  | ease          | rawaθuna                | Tasm. rawa (ease/good) + -θuna
+124  | paper         | peralara                | Etr. pera (paper) + -lara
+125  | group         | pakanalara              | Tasm. pakana (group/people) + -lara
+126  | always        | svalθlara               | Etr. sval (always/alive) + θ + -lara
+127  | music         | luθlara                 | Etr. luθ (music/pipe) + -lara
+128  | those         | θanklara                | Etr. θan (those) + k + -lara
+130  | mark          | tullara                 | Etr. tul (mark/set) + -lara
+131  | book          | achllara                | Etr. achl (book/writing) + -lara
+132  | letter        | θrulara                 | Etr. θru (letter/write) + -lara
+134  | mile          | tularwalθ               | Etr. tular (boundary/mile) + -walθ
+135  | river         | timmenlara              | Tasm. timme (water) + -nlara
+136  | car           | θurlara                 | Etr. θur (vehicle) + -lara
+137  | feet          | suθlara                 | Etr. suθ (feet/base) + -lara
+138  | care          | flerlara                | Etr. fler (care/offering) + -lara
+139  | second        | zalθlara                | Etr. zal (second/two) + θ + -lara
+140  | enough        | maχθlara                | Etr. maχ (enough) + θ + -lara
+141  | plain         | paraθuna                | Tasm. para (plain/place) + -θuna
+142  | girl          | secilara                | Etr. sec (girl/daughter) + -ilara
+143  | usual         | rawaθlara               | Tasm. rawa (usual/good) + θ + -lara
+144  | young         | clanwalθ                | Etr. clan (young/son) + -walθ
+145  | ready         | θurθlara                | Etr. θur (ready/standing) + θ + -lara
+146  | above         | uzilara                 | Etr. uzi (above) + -lara
+148  | red           | aiswalθ                 | Etr. ais (red/divine) + -walθ
+149  | list          | tulθlara                | Etr. tul (list/set) + θ + -lara
+151  | feel          | tezituria               | Etr. tezi (feel) + -turia
+152  | talk          | kapturia                | Etr. kap (talk/say) + -turia
+153  | bird          | nilalara                | Tasm. nila (bird/sky) + -lara
+155  | body          | θurlara                 | Etr. θur (body/stand) + -lara
+156  | dog           | kanalara                | Tasm. kana (dog) + -lara
+157  | family        | lautnilara              | Etr. lautni (family) + -lara
+159  | pose          | menθturia               | Etr. menθ (pose/face) + -turia
+161  | song          | luθturia                | Etr. luθ (song/pipe) + -turia
+162  | measure       | tularlara               | Etr. tular (measure/boundary) + -lara
+163  | door          | θurθuna                 | Etr. θur (door/stand-place) + -θuna
+164  | product       | θurθlara                | Etr. θur (product/made) + θ + -lara
+165  | black         | sucwalθ                 | Etr. śuc (black/death) + -walθ
+166  | short         | θulawalθ                | Etr. θu (short/one) + -lawalθ
+167  | numeral       | rillara                 | Etr. ril (numeral/year-count) + -lara
+168  | class         | rasnaθlara              | Etr. rasna (class/people) + θ + -lara
+170  | question      | penlara                 | Etr. pen (question/what) + -lara
+171  | happen        | eθturia                 | Etr. eθ (happen/come) + -turia
+173  | ship          | lurlara                 | Etr. lur (ship/vessel) + -lara
+174  | area          | paraθuna                | Tasm. para (area) + -θuna
+175  | half          | zalθuna                 | Etr. zal (half/two) + -θuna
+176  | rock          | karalara                | Tasm. kara (rock/stone) + -lara
+177  | order         | zilclara                | Etr. zilc (order/magistrate) + -lara
+178  | fire          | ninalara                | Tasm. nina (fire) + -lara
+179  | south         | lutrawalθ               | Tasm. lutra (south) + -walθ
+180  | problem       | ekθlara                 | Etr. ek (problem/against) + θ + -lara
+181  | piece         | θulara                  | Etr. θu (piece/one) + -lara
+182  | told          | kapθlara                | Etr. kap (told) + θ + -lara
+184  | pass          | eθturia                 | Etr. eθ (pass/come) + -turia
+185  | since         | tilθlara                | same as since
+186  | top           | uzilara                 | Etr. uzi (top) + -lara
+187  | whole         | manalara                | Tasm. mana (whole/all) + -lara
+188  | king          | zilclara                | Etr. zilc (king/ruler) + -lara
+189  | space         | paraθuna                | Tasm. para (space/place) + -θuna
+190  | heard         | θesθlara                | Etr. θes (heard) + θ + -lara
+191  | best          | rawaθlara               | Tasm. rawa (best/good) + θ + -lara
+192  | hour          | rilalara                | Etr. ril (hour/year) + -alara
+193  | better        | rawalara                | Tasm. rawa (better/good) + -lara
+195  | during        | hamθturia               | Etr. ham (during/with) + θ + -turia
+196  | hundred       | huθθlara                | Etr. huθ (six/large-count) + θ + -lara
+197  | five          | maχlara                 | Etr. maχ (five) + -lara
+198  | remember      | trinturia               | Etr. trin (remember/think) + -turia
+199  | step          | wanaθlara               | Tasm. wana (step/go) + θ + -lara
+200  | early         | θesanlara               | Etr. θesan (early/dawn) + -lara
+201  | hold          | θurturia                | same as hold
+202  | west          | lutraθuna               | Tasm. lutra (west) + -θuna
+203  | ground        | paralara                | Tasm. para (ground/place) + -lara
+204  | interest      | flerlara                | Etr. fler (interest/offering) + -lara
+205  | reach         | eθturia                 | Etr. eθ (reach/come) + -turia
+206  | fast          | θesanwalθ               | Etr. θesan (fast/dawn-swift) + -walθ
+207  | verb          | kaplara                 | Etr. kap (verb/action) + -lara
+208  | sing          | luθturia                | Etr. luθ (sing/pipe) + -turia
+209  | listen        | θesθturia               | Etr. θes (listen) + θ + -turia
+210  | six           | huθlara                 | Etr. huθ (six) + -lara
+211  | table         | θurθuna                 | Etr. θur (table/stand-place) + -θuna
+212  | travel        | wanaturia               | Tasm. wana (travel) + -turia
+213  | less          | θulawalθ                | same as short/few
+214  | morning       | θesanθuna               | Etr. θesan (morning/dawn) + -θuna
+215  | ten           | śarlara                 | Etr. śar (ten) + -lara
+216  | simple        | θuralara                | Etr. θur (simple/standing) + -lara
+217  | several       | cizlawalθ               | Etr. cizl (several/many) + -awalθ
+218  | vowel         | kaplara                 | Etr. kap (vowel/voice) + -lara
+220  | war           | suclara                 | Etr. śuc (war/death) + -lara
+221  | lay           | suθturia                | Etr. suθ (lay/rest) + -turia
+222  | against       | ekθlara                 | same as against
+223  | pattern       | tullara                 | Etr. tul (pattern/mark) + -lara
+224  | slow          | manθlara                | Etr. man (slow/remain) + θ + -lara
+226  | love          | rawazelj                | Tasm. rawa (love/good) + -zelj
+227  | person        | naralara                | Tasm. nara (person) + -lara
+228  | money         | aislara                 | Etr. ais (money/divine-gift) + -lara
+229  | serve         | flerturia               | Etr. fler (serve/offer) + -turia
+230  | appear        | menθturia               | Etr. menθ (appear/face) + -turia
+231  | road          | wanaθuna                | Tasm. wana (road/going) + -θuna
+232  | map           | tularlara               | Etr. tular (map/boundary) + -lara
+233  | rain          | timmelara               | Tasm. timme (rain/water) + -lara
+234  | rule          | zilcwalθ                | Etr. zilc (rule/magistrate) + -walθ
+235  | govern        | zilcturia               | Etr. zilc (govern/rule) + -turia
+236  | pull          | kapturia                | Etr. kap (pull/take) + -turia
+237  | cold          | nilalara                | Tasm. nila (cold/sky) + -lara
+238  | notice        | aclwalθ                 | Etr. acl (notice/see) + -walθ
+239  | voice         | kaplara                 | Etr. kap (voice/take) + -lara
+240  | fall          | suθturia                | Etr. suθ (fall/tomb) + -turia
+241  | power         | maχθlara                | Etr. maχ (power/great) + θ + -lara
+242  | town          | spuralθuna              | Etr. śpural (town/city) + -θuna
+243  | fine          | rawalara                | Tasm. rawa (fine/good) + -lara
+244  | drive         | θurturia                | Etr. θur (drive/move) + -turia
+245  | lead          | zilcturia               | Etr. zilc (lead/rule) + -turia
+246  | cry           | suclara                 | Etr. śuc (cry/mourn) + -lara
+247  | dark          | sucwalθ                 | Etr. śuc (dark/death) + -walθ
+248  | machine       | θurθuna                 | Etr. θur (machine) + -θuna
+249  | note          | θrulara                 | Etr. θru (note/write) + -lara
+250  | wait          | manturia                | Etr. man (wait/remain) + -turia
+252  | figure        | menθlara                | Etr. menθ (figure/face) + -lara
+253  | star          | θesanlara               | Etr. θesan (star/dawn-light) + -lara
+254  | box           | lurlara                 | Etr. lur (box/vessel) + -lara
+255  | noun          | rasnaθlara              | Etr. rasna (noun/people-word) + θ + -lara
+256  | field         | paraθuna                | Tasm. para (field/place) + -θuna
+257  | rest          | manturia                | Etr. man (rest/remain) + -turia
+258  | correct       | rasnawalθ               | Etr. rasna (correct/true) + -walθ
+259  | able          | svalturia               | Etr. sval (able/live) + -turia
+260  | pound         | tularlara               | Etr. tular (pound/measure) + -lara
+262  | beauty        | θesanθuna               | Etr. θesan (beauty/dawn) + -θuna
+263  | drive         | θurturia                | same as drive
+264  | stood         | θurθlara                | Etr. θur (stood/standing) + θ + -lara
+265  | contain       | lurlara                 | Etr. lur (contain/vessel) + -lara
+266  | front         | menθθuna                | Etr. menθ (front/face) + -θuna
+267  | teach         | trinturia               | Etr. trin (teach/show) + -turia
+268  | week          | rilθlara                | Etr. ril (week/count) + θ + -lara
+269  | final         | uzθlara                 | Etr. uzθ (final/end) + -lara
+270  | gave          | turθlara                | Etr. tur (gave) + θ + -lara
+271  | green         | svalwalθ                | Etr. sval (green/alive) + -walθ
+272  | oh            | aisθlara                | Etr. ais (oh/divine) + θ + -lara
+273  | quick         | θesanwalθ               | same as fast
+274  | develop       | svalturia               | Etr. sval (develop/grow) + -turia
+275  | ocean         | timmeθuna               | Tasm. timme (ocean/great-water) + -θuna
+276  | warm          | ninalara                | Tasm. nina (warm/fire) + -lara
+277  | free          | rasnawalθ               | Etr. rasna (free/own-people) + -walθ
+278  | minute        | rilθlara                | same as week
+279  | strong        | θurθlara                | Etr. θur (strong/standing) + θ + -lara
+280  | special       | aislara                 | Etr. ais (special/divine) + -lara
+281  | behind        | θanθlara                | same as behind
+282  | clear         | θesanlara               | Etr. θesan (clear/dawn-bright) + -lara
+283  | tail          | uzilara                 | Etr. uzi (tail/end) + -lara
+284  | produce       | θurturia                | Etr. θur (produce/make) + -turia
+285  | fact          | rasnaθlara              | Etr. rasna (fact/truth) + θ + -lara
+286  | street        | wanaθuna                | Tasm. wana (street/road) + -θuna
+288  | lot           | cizlawalθ               | Etr. cizl (lot/many) + -awalθ
+289  | nothing       | naθlara                 | na + θ (nothing/not) + -lara
+290  | course        | wanaθuna                | same as road/street
+291  | stay          | manturia                | same as wait/remain
+292  | wheel         | θezilara                | Etr. θezi (wheel/turn) + -lara
+293  | full          | lurlara                 | Etr. lur (full/vessel) + -lara
+294  | force         | maχθlara                | same as power
+295  | blue          | nilalara                | Tasm. nila (blue/sky) + -lara
+296  | object        | θurlara                 | Etr. θur (object/thing) + -lara
+297  | decide        | zilcturia               | Etr. zilc (decide/rule) + -turia
+298  | surface       | menθθuna                | Etr. menθ (surface/face) + -θuna
+299  | deep          | suθθlara                | Etr. suθ (deep/tomb) + θ + -lara
+300  | moon          | nilθuna                 | Tasm. nila (moon/sky) + -θuna
+301  | island        | paraθuna                | Tasm. para (island/place-water) + -θuna
+302  | foot          | suθlara                 | Etr. suθ (foot/base) + -lara
+303  | system        | rasnaθuna               | Etr. rasna (system/people-order) + -θuna
+304  | busy          | θurθlara                | Etr. θur (busy/active) + θ + -lara
+305  | test          | trinturia               | Etr. trin (test/try) + -turia
+306  | record        | θrulara                 | Etr. θru (record/write) + -lara
+307  | boat          | lurlara                 | Etr. lur (boat/vessel) + -lara
+308  | common        | rasnawalθ               | Etr. rasna (common/people) + -walθ
+309  | gold          | aislara                 | Etr. ais (gold/divine) + -lara
+310  | possible      | svalturia               | Etr. sval (possible/living) + -turia
+311  | plane         | parawalθ                | Tasm. para (plane/flat-place) + -walθ
+312  | stead         | paralara                | same as place
+313  | dry           | uzilara                 | Etr. uzi (dry/end) + -lara
+314  | wonder        | θesanlara               | Etr. θesan (wonder/dawn) + -lara
+315  | laugh         | svalθturia              | Etr. sval (laugh/joy-alive) + θ + -turia
+316  | thousand      | sarθlara                | Etr. śar (thousand/ten-great) + θ + -lara
+317  | ago           | uzθlara                 | Etr. uzθ (ago/end-time) + -lara
+318  | ran           | wanaθlara               | Tasm. wana (ran/went fast) + θ + -lara
+319  | check         | aclwalθ                 | same as notice/look
+320  | game          | luθlara                 | Etr. luθ (game/play) + -lara
+321  | shape         | menθlara                | Etr. menθ (shape/face) + -lara
+322  | equate        | zalθturia               | Etr. zal (equate/make-two) + θ + -turia
+323  | hot           | ninalara                | Tasm. nina (hot/fire) + -lara
+324  | miss          | naθturia                | na + θ (miss/not-reach) + -turia
+325  | brought       | turθlara                | Etr. tur (brought) + θ + -lara
+326  | heat          | ninaθuna                | Tasm. nina (heat/fire) + -θuna
+327  | snow          | nilθlara                | Tasm. nila (snow/cold-sky) + -lara
+328  | tire          | suclara                 | Etr. śuc (tire/wane) + -lara
+329  | bring         | turturia                | Etr. tur (bring/give) + -turia
+331  | distant       | tularwalθ               | Etr. tular (distant/boundary) + -walθ
+333  | east          | θesanθuna               | Etr. θesan (east/dawn) + -θuna
+334  | paint         | aclturia                | Etr. acl (paint/portray) + -turia
+335  | language      | kaplara                 | Etr. kap (language/speech) + -lara
+336  | among         | hamθuna                 | same as among
+337  | grand         | maχθlara                | Etr. maχ (grand) + θ + -lara
+341  | drop          | timmenlara              | Tasm. timme (drop/water) + -nlara
+342  | heart         | θurlara                 | Etr. θur (heart/standing-core) + -lara
+344  | present       | θuilara                 | Etr. θui (present/here) + -lara
+345  | heavy         | θurθlara                | Etr. θur (heavy/weight) + θ + -lara
+346  | dance         | luθturia                | Etr. luθ (dance/play) + -turia
+347  | engine        | θurθuna                 | same as machine
+348  | position      | menθθuna                | same as surface/front
+349  | arm           | suplara                 | Etr. sup (arm/hand) + -lara
+350  | wide          | parawalθ                | Tasm. para (wide/great-place) + -walθ
+351  | sail          | lurturia                | Etr. lur (sail/vessel-move) + -turia
+352  | material      | θurlara                 | Etr. θur (material/thing) + -lara
+353  | size          | maχlara                 | Etr. maχ (size/great) + -lara
+354  | vary          | θezituria               | Etr. θezi (vary/turn) + -turia
+355  | settle        | manturia                | Etr. man (settle/remain) + -turia
+356  | speak         | kapturia                | Etr. kap (speak/take-voice) + -turia
+357  | weight        | tularlara               | Etr. tular (weight/measure) + -lara
+358  | general       | rasnawalθ               | same as common
+359  | ice           | nilθlara                | Tasm. nila (ice/cold-sky) + -lara
+360  | matter        | θurlara                 | Etr. θur (matter/thing) + -lara
+361  | circle        | θezilara                | Etr. θezi (circle/turn) + -lara
+362  | pair          | zalθlara                | Etr. zal (pair/two) + θ + -lara
+363  | include       | hamturia                | Etr. ham (include/with) + -turia
+364  | divide        | zalθturia               | Etr. zal (divide/make-two) + θ + -turia
+365  | syllable      | kaplara                 | Etr. kap (syllable/voice-part) + -lara
+366  | felt          | teziθlara               | Etr. tezi (felt) + θ + -lara
+367  | perhaps       | ipaθlara                | same as perhaps
+368  | pick          | kapturia                | Etr. kap (pick/take) + -turia
+369  | sudden        | θesanθlara              | Etr. θesan (sudden/dawn-swift) + θ + -lara
+370  | count         | rilturia                | Etr. ril (count/year) + -turia
+371  | square        | tularθlara              | Etr. tular (square/boundary) + θ + -lara
+372  | reason        | trinturia               | Etr. trin (reason/plead) + -turia
+373  | length        | tularwalθ               | Etr. tular (length/boundary) + -walθ
+374  | represent     | menθturia               | Etr. menθ (represent/face) + -turia
+375  | art           | acllara                 | Etr. acl (art/portray) + -lara
+376  | subject       | penlara                 | Etr. pen (subject/what) + -lara
+377  | region        | paraθuna                | Tasm. para (region/place) + -θuna
+378  | energy        | svalturia               | Etr. sval (energy/living) + -turia
+379  | hunt          | kapturia                | Etr. kap (hunt/seize) + -turia
+380  | probable      | ipaθlara                | same as perhaps/probable
+381  | bed           | suθθuna                 | Etr. suθ (bed/rest-place) + -θuna
+382  | brother       | clanitlara              | Etr. clan (brother/son-kin) + -itlara
+383  | egg           | θurlara                 | Etr. θur (egg/round-thing) + -lara
+384  | ride          | θurturia                | Etr. θur (ride/stand-move) + -turia
+385  | cell          | lurlara                 | Etr. lur (cell/vessel) + -lara
+386  | believe       | trinturia               | Etr. trin (believe/think) + -turia
+387  | fraction      | zalθlara                | Etr. zal (fraction/half) + θ + -lara
+388  | forest        | nilθuna                 | Tasm. nila (forest/sky-place) + -θuna
+389  | sit           | suθturia                | Etr. suθ (sit/rest) + -turia
+390  | race          | wanaθlara               | Tasm. wana (race/going-fast) + θ + -lara
+391  | window        | menθθuna                | Etr. menθ (window/face-opening) + -θuna
+392  | store         | lurlara                 | Etr. lur (store/vessel-place) + -lara
+393  | summer        | ninalara                | Tasm. nina (summer/fire-time) + -lara
+394  | train         | θurθuna                 | Etr. θur (train/moving) + -θuna
+395  | sleep         | suθturia                | Etr. suθ (sleep/rest) + -turia
+396  | prove         | rasnaturia              | Etr. rasna (prove/truth) + -turia
+397  | lone          | θuralara                | Etr. θur (lone/standing-one) + -lara
+398  | leg           | suθlara                 | Etr. suθ (leg/support) + -lara
+399  | exercise      | θurturia                | Etr. θur (exercise/stand-work) + -turia
+400  | wall          | tularlara               | Etr. tular (wall/boundary) + -lara
+401  | catch         | kapturia                | Etr. kap (catch/take) + -turia
+402  | mount         | uzituria                | Etr. uzi (mount/rise) + -turia
+403  | wish          | flerturia               | Etr. fler (wish/offering) + -turia
+404  | sky           | nilθuna                 | Tasm. nila (sky) + -θuna
+405  | board         | θurθuna                 | Etr. θur (board/flat-stand) + -θuna
+406  | joy           | svalθlara               | Etr. sval (joy/alive) + θ + -lara
+407  | winter        | nilalara                | Tasm. nila (winter/cold-sky) + -lara
+408  | sat           | suθθlara                | Etr. suθ (sat/rested) + θ + -lara
+409  | written       | θruθlara                | Etr. θru (written) + θ + -lara
+410  | wild          | vanaturia               | Tasm. wana (wild/free-going) + -turia
+411  | instrument    | luθlara                 | Etr. luθ (instrument/pipe) + -lara
+412  | kept          | manθlara                | Etr. man (kept/remained) + θ + -lara
+413  | glass         | θesanlara               | Etr. θesan (glass/clear-dawn) + -lara
+414  | grass         | paralara                | Tasm. para (grass/ground) + -lara
+415  | cow           | θurlara                 | Etr. θur (cow/great-beast) + -lara
+416  | job           | θurθlara                | Etr. θur (job/work) + θ + -lara
+417  | edge          | uzilara                 | Etr. uzi (edge/end) + -lara
+418  | sign          | tullara                 | Etr. tul (sign/mark) + -lara
+419  | visit         | eθturia                 | Etr. eθ (visit/come) + -turia
+420  | past          | uzθlara                 | Etr. uzθ (past/ended) + -lara
+421  | soft          | manθlara                | Etr. man (soft/gentle-remain) + θ + -lara
+422  | fun           | luθlara                 | Etr. luθ (fun/play) + -lara
+423  | bright        | θesanwalθ               | Etr. θesan (bright/dawn) + -walθ
+424  | gas           | nilalara                | Tasm. nila (gas/air-sky) + -lara
+425  | weather       | nilθuna                 | Tasm. nila (weather/sky) + -θuna
+426  | month         | rilalara                | Etr. ril (month/year-count) + -alara
+427  | million       | sarmaχlara              | Etr. śar+maχ (million/ten-great) + -lara
+428  | bear          | θurlara                 | Etr. θur (bear/great-beast) + -lara
+429  | finish        | uzθturia                | Etr. uzθ (finish/end) + -turia
+430  | happy         | svalθlara               | Etr. sval (happy/alive) + θ + -lara
+431  | hope          | θesanlara               | Etr. θesan (hope/dawn-promise) + -lara
+432  | flower        | θesanθuna               | Etr. θesan (flower/dawn-beauty) + -θuna
+433  | clothe        | θurturia                | Etr. θur (clothe/cover) + -turia
+434  | strange       | naθlara                 | na + θ (strange/not-known) + -lara
+435  | gone          | uzθlara                 | Etr. uzθ (gone/ended) + -lara
+436  | jump          | uzituria                | Etr. uzi (jump/rise) + -turia
+437  | baby          | clanitlara              | Etr. clan (baby/child) + -itlara
+438  | eight         | cezplara                | Etr. cezp (eight) + -lara
+439  | village       | spuralθuna              | Etr. śpural (village/city) + -θuna
+440  | meet          | hamturia                | Etr. ham (meet/with) + -turia
+441  | root          | suθlara                 | Etr. suθ (root/base) + -lara
+442  | buy           | kapturia                | Etr. kap (buy/take) + -turia
+443  | raise         | uzituria                | Etr. uzi (raise/rise) + -turia
+444  | solve         | trinturia               | Etr. trin (solve/think) + -turia
+445  | metal         | aislara                 | Etr. ais (metal/divine-hard) + -lara
+447  | push          | θurturia                | Etr. θur (push/force) + -turia
+448  | seven         | semflara                | Etr. semφ (seven) + -lara
+449  | paragraph     | θruθlara                | Etr. θru (paragraph/text) + θ + -lara
+450  | third         | cilara                  | Etr. ci (three/third) + -lara
+452  | held          | manθlara                | Etr. man (held/remained) + θ + -lara
+453  | hair          | nilalara                | Tasm. nila (hair/fine-sky) + -lara
+454  | describe      | aclturia                | Etr. acl (describe/portray) + -turia
+455  | cook          | ninaturia               | Tasm. nina (cook/fire-make) + -turia
+456  | floor         | paraθuna                | Tasm. para (floor/ground-place) + -θuna
+458  | result        | uzθlara                 | Etr. uzθ (result/end) + -lara
+459  | burn          | ninaturia               | Tasm. nina (burn/fire) + -turia
+460  | hill          | uzilara                 | Etr. uzi (hill/rise) + -lara
+461  | safe          | svalθlara               | Etr. sval (safe/alive) + θ + -lara
+462  | cat           | kanalara                | Tasm. kana (cat/creature) + -lara
+463  | century       | rilθuna                 | Etr. ril (century/great-year) + -θuna
+464  | consider      | trinturia               | Etr. trin (consider/think) + -turia
+465  | type          | rasnaθlara              | Etr. rasna (type/people-kind) + θ + -lara
+466  | law           | zilcwalθ                | Etr. zilc (law/rule) + -walθ
+467  | bit           | θulara                  | Etr. θu (bit/one) + -lara
+468  | coast         | timmeparalara           | Tasm. timme+para (coast/water-place)
+469  | copy          | aclturia                | Etr. acl (copy/portray) + -turia
+470  | phrase        | kaplara                 | Etr. kap (phrase/voice-thing) + -lara
+471  | silent        | naθlara                 | na + θ (silent/not-sound) + -lara
+472  | tall          | θuralara                | Etr. θur (tall/standing) + -lara
+473  | sand          | paralara                | Tasm. para (sand/ground) + -lara
+474  | soil          | paralara                | same as ground/sand
+475  | roll          | θezituria               | Etr. θezi (roll/turn) + -turia
+476  | temperature   | ninaθuna                | Tasm. nina (temperature/fire) + -θuna
+477  | finger        | suplara                 | Etr. sup (finger/hand-part) + -lara
+478  | industry      | θurθuna                 | Etr. θur (industry/work-place) + -θuna
+479  | value         | aislara                 | Etr. ais (value/divine) + -lara
+480  | fight         | sucturia                | Etr. śuc (fight/death-force) + -turia
+481  | lie           | suθturia                | Etr. suθ (lie/rest) + -turia
+482  | beat          | θurturia                | Etr. θur (beat/force) + -turia
+483  | excite        | svalθturia              | Etr. sval (excite/enliven) + θ + -turia
+484  | natural       | parawalθ                | Tasm. para (natural/of-the-place) + -walθ
+485  | view          | aclwalθ                 | Etr. acl (view/portray) + -walθ
+486  | sense         | tezilara                | Etr. tezi (sense/feel) + -lara
+487  | ear           | θesθlara                | Etr. θes (ear/hear) + θ + -lara
+491  | case          | menθlara                | Etr. menθ (case/matter-face) + -lara
+492  | middle        | menaθuna                | Etr. men (middle) + -aθuna
+493  | kill          | sucturia                | Etr. śuc (kill/death) + -turia
+494  | son           | clanlara                | Etr. clan (son) + -lara
+495  | lake          | timmeθuna               | Tasm. timme (lake/still-water) + -θuna
+496  | moment        | rilθlara                | Etr. ril (moment/year-point) + θ + -lara
+497  | scale         | tularlara               | Etr. tular (scale/measure) + -lara
+498  | loud          | kapθlara                | Etr. kap (loud/great-voice) + θ + -lara
+499  | spring        | θesanθuna               | Etr. θesan (spring/dawn) + -θuna
+500  | observe       | aclturia                | Etr. acl (observe/portray) + -turia
+
+===================================================================================
+PHONETIC GUIDE FOR MURRAK
+===================================================================================
+
+Etruscan sounds used in Murrak:
+  θ   = voiceless dental fricative (as in "thin") — very characteristic
+  ś   = palatalized s (between s and sh — rendered as plain s in fantasy use)
+  χ   = voiceless velar fricative (as in Scots "loch" — rendered as χ or ch)
+  φ   = labiodental fricative (as in "f" — rendered as f in fantasy use)
+  All Etruscan vowels: a, e, i, u — no o in classical Etruscan
+
+Key attested Etruscan words used:
+  mi (I), mini (me), an (he/she/it), ita (this), θui (here), θan (that),
+  clan (son), sec (daughter), ati (mother), lautni (family), zilc (ruler),
+  sval (alive), ril (year), avil (year), θesan (dawn), rasna (Etruscans),
+  tular (boundaries), lur (vessel), śpural (city), fler (offering), trin (plead),
+  θur (stand), tur (give), man (remain), kap (take), eθ (go), uzi (end),
+  acl (portray), luθ (pipe), menθ (face), suθ (tomb/rest), śuc (death),
+  θu/zal/ci/śa/maχ/huθ/semφ/cezp/nurφ/śar (Etruscan numerals 1-10)
+
+Tasmanian phonetic elements woven through:
+  nina (fire) → fire/heat/warm/cook/burn/summer words
+  timme (water) → water/rain/river/ocean/lake/drop words
+  wana (go/walk) → movement/travel/road/street/wild words
+  para (place) → place/ground/field/plain/area/floor words
+  nila (sky/wind/cold) → sky/cold/blue/wind/moon/forest words
+  rawa (good) → positive qualities/love/ease/fine words
+  nara (person) → person/people words
+  kara/kana (stone/creature) → rock/animal words
+  lanna (day) → day/time words
+  tana (they) → pronoun forms
+  pakana (people of this land) → collective nouns
+
+Murrak suffix system:
+  -lara   = primary noun (Tasm. lara=woman + Etr. -ra genitive)
+  -turia  = verb ending (Etr. tur=give + Tasm. -ia)
+  -walθ   = adjective/quality ending (Tasm. wal- + Etr. -θ past marker)
+  -θuna   = place/realm noun (Etr. θun + Tasm. -na)
+  -pakana = collective/people noun (Tasm. pakana — the people's word)
+  -θlara  = intensive noun (θ + -lara = weighty/significant things)
+  -alara  = temporal noun (time-inflected form)
+  -nlara  = liquid/flowing noun (water-adjacent words)
+  -zelj   = desire/living noun (borrowed from Veildrift for love/living)
+  -itlara = kinship noun (clan-kin words)
+
+NOTE ON ETRUSCAN:
+Etruscan is genuinely deciphered enough to work with — we know its
+grammar, numerals, and several hundred words from inscriptions.
+It is NOT related to any other known language. Its vocabulary structure
+(short CVC roots, agglutinative suffixes, no gender distinction)
+pairs beautifully with Tasmanian's open-syllable phonetics.
+Murrak inherits this mystery — a language that sounds ancient because
+both its sources genuinely are.
+
+===================================================================================
+END OF FILE — MurrakTasmanian_500words.txt
+Generated for Durgeth fantasy world language system
+===================================================================================

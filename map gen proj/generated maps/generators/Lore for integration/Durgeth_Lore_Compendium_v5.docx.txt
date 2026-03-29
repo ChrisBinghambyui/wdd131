@@ -1,0 +1,574 @@
+﻿DURGETH
+A Lore Compendium
+for Scrolls & Steel
+
+
+________________
+
+
+PEOPLES & LINEAGES
+
+
+
+
+BEASTBORN
+Arantza (the Broodborn)
+The Arantza are bipedal, chitinous spider-folk - primitive in the sense that their culture is oral, decentralized, and largely pre-agricultural, not in the sense of being simple. Despite being a young people, their rate of development has been remarkable. Historians note that there were no mentions of the Arantza before the third age, yet many of the first recorded encounters took place in deeply old and long-settled mountain holds. The accepted theory is that conditions aligned and they came into being - byproducts of some unknown combination of factors. This theory is not universally accepted, but unlike the Naukin's deliberate seclusion, the Arantza are happy to assist in the study of their origins, most believing it will hold hints of their future. This study is contingent on scholars coming to them; Arantza are rarely well-traveled and prefer to stay near their Brood-Mothers.
+
+
+Arantza anatomy is immediately arresting. They have three pairs of arms: one pair in the normal humanoid configuration with hands at the ends, and two pairs that emerge from just below the shoulder blades, ending in the chitinous back-spurs they call 'eztena' - tapered points used for climbing and close combat. Their faces have eight eyes arranged in two vertical rows along the sides of the skull, giving them a full 270-degree field of vision. Their skin is covered in fine dark bristle-hairs and their coloration varies from near-black to dark amber to a grey-brown that makes them nearly invisible in shadow.
+
+
+Arantza communities are organized around a Brood-Mother - an authority figure who combines biological, political, and theological roles in a way that most outside cultures find difficult to categorize. Individual Arantza who travel the wider world are unusual by their culture's standards; those who do tend to be either sent deliberately or exiled. The community's oral tradition is not available to outsiders - not through active prohibition, but through the simple fact that it is transmitted in a language outsiders cannot speak and organized in a logic they have not yet been able to map.
+
+
+GM Note: Arantza NPCs in surface communities are rare enough to be notable encounters. An individual Arantza in a lowland city is almost certainly there deliberately, for a reason, and is more aware of their surroundings than they appear. The eztena as a social and combat element should be physically present in every description - they are not a feature that Arantza hide or retract, they are always there, and people who have never encountered an Arantza before will react to them.
+	* * *
+BEASTBORN
+Bovari (the Ox-Folk)
+The Bovari are a large and immediately distinctive people. Broadly built at the shoulder, standing just under six feet in most cases, with the squared heads and prominent curved horns of bovine ancestry - but it is their arms that stop most first-time encounters. Each arm bifurcates at the elbow, branching into two forearms and two hands. A Bovari at rest typically holds two of their four hands at their sides and keeps the other two available; in conversation, all four are often in motion simultaneously. This gives them a social expressiveness that other peoples can find overwhelming and a practical capability that makes them sought-after as craftspeople, builders, and cooks.
+
+
+Bovari culture attaches enormous personal significance to horns. They are cultivated, carved, painted, and adorned across a lifetime. Their condition and decoration communicate more about a Bovari's personal history than any word of introduction: the materials used, the patterns chosen, the degree of care evident in the maintenance - all of this is readable to anyone who knows how to look, and the Bovari communicate with considerable precision through it. An outsider who insults a Bovari's horn-work has committed a social error of the first order. An outsider who compliments it with genuine understanding has made a friend.
+
+
+The Bovari are among Durgeth's most widely traveled peoples. Their nomadic family groups move goods across the continent's longest overland routes as a matter of course, and this life on the road has produced a people with deep hospitality woven into their character. A Bovari camp encountered on the Steppe Corridors will feed you before it asks who you are. The Bovari sit at the center of what many traders call the Commonweal Triangle - the interlocking partnership between themselves, the Hearthborn, and the Sunblade that forms the commercial and martial backbone of much of the continent. The roads exist because Hearthborn administrators built the infrastructure. Goods move because Bovari drovers know the routes. And the whole enterprise stays standing because Sunblade guards ensure it can. All three parties would acknowledge, if pressed, that the arrangement works better than any two of them could manage without the third.
+
+
+This broad-road familiarity with the world means the Bovari carry knowledge of routes, communities, and peoples that few maps fully capture. Their reliability as long-distance traders and caravan guards is unmatched - not merely because they are capable fighters, but because they know where the water holds in summer and which settlements will deal fairly with a stranger.
+
+
+GM Note: Bovari NPCs are a natural fit for caravan-based adventure hooks. The horn-reading social system is worth playing: a Bovari who has met the players before will have formed opinions visible in their body language, and a Bovari who keeps their horns unadorned is either very young or carrying something they don't want read. Four-handedness opens interesting possibilities for what they can carry, make, or do simultaneously. The hospitality element is reliable character texture - a Bovari who refuses to offer food or shelter is making a pointed statement.
+	* * *
+BEASTBORN
+Verdathi (the Marsh-Born)
+‘Verdathi’ is the term for the members of the reptilian race from the vast marshland territories of the southern coast who have left their home, either because they are scouts, diplomats, or exiles. They are reliable in ways that are hard to fake: the swamp does not forgive pretense, and a culture that has survived in marsh territory for centuries has been thoroughly tested by an environment with no patience for inadequacy. On land, Verdathi are capable - solid, if slightly slower than average. In water, they are something else entirely. A Verdathi in their element is faster than almost anything that did not evolve there, and the water offers capabilities that land-dwellers simply cannot counter.
+
+
+Fine overlapping scales in green, brown, black, or grey - occasional gold or blue patterning in rarer lineages. Amber, yellow, or pale green eyes with vertical pupils that see well in murky water. Broadly muscled through the tail and lower body, using the tail for balance as much as the legs. Cold-blooded, which matters: extreme cold significantly impairs Verdathi function, and any environment cold enough to matter is cold enough to be a genuine tactical vulnerability.
+
+
+Their language has significant non-verbal components - posture and tail position carry meaning that does not translate into spoken form. A Verdathi speaking Common Tongue is providing approximately seventy percent of their communicative bandwidth; the rest is present in their body and legible only to those who know how to read it. Verdathi who have spent significant time in non-Verdathi communities often develop frustration with this - not because they cannot communicate, but because they are aware of communicating less than they would like.
+
+
+The Sylvarirum-Verdathi territorial understanding is the quietest of Durgeth's cultural alliances. Both peoples occupy adjacent difficult terrain, both are defined by their home territory in ways that make them effective there and less effective elsewhere, and both understand invisibility to outsiders as a legitimate and useful cultural practice. They have not signed agreements. They have simply not been in conflict nearly as often as other neighbouring cultures, and this absence has only deepened mutual respect.
+
+
+GM Note: Verdathi NPCs outside their home territory are almost always there for a reason - they travel deliberately rather than casually. Verdathi body language is an emotional indicator for players who have learned to read it: subtle changes in their scales can give away emotions and reactions. Cold environments create genuine tactical considerations for Verdathi player characters and NPCs.
+	* * *
+DWARVEN
+Apisdrenn (the Mountain Kin)
+The Apisdrenn are the most widely encountered of the dwarven peoples - builders, miners, and smiths who maintain a vast network of mountain strongholds and underground trade routes across Durgeth. The term ‘Apis-’ derives from an old Stone-Tongue root meaning 'of the stone,' a designation all four dwarven lineages share, though the Apisdrenn wear it most visibly. Stocky even by dwarven standards, broad-shouldered and thick-necked, they are heavier than their height suggests by a margin that consistently surprises those who have never tried to move one. Their reputation for stubbornness is one they consider accurate and not remotely an insult.
+
+
+Apisdrenn culture is organized around the hold - a term that encompasses both a physical stronghold and the social unit that inhabits it. Holds range from small family operations of a few dozen dwarves working a single vein to vast underground cities spanning multiple mountain ranges with populations in the tens of thousands. Each hold maintains its own authority structure, usually hereditary but subject to challenge by demonstrated competence, and its own trade relationships with neighboring holds and surface settlements. The network of holds is not a unified political entity - it is more accurately described as an extended family that happens to control significant mineral wealth and the tunnels that move it.
+
+
+Their brews are, as they will tell you unprompted, the best in the known world. This is a matter on which there is broader agreement than most interethnic debates achieve. The brewing traditions and fermentation rituals of individual holds are among their most carefully guarded intellectual property, and the exchange of brewing recipes has historically been used as a diplomatic gesture of unusual significance.
+
+
+Apisdrenn relationships with the surface world are usually more commercial than social. They trade-sign in markets - a gestural system that crosses language barriers efficiently - and maintain formal trade agreements with dozens of surface cultures. The Stoneguard are their oldest and most valued surface partners, a relationship built on mutual recognition of complementary capability. The Nordal represent a more personal alliance, built through generations of individual relationships rather than institutional agreement.
+
+
+GM Note: The Apisdrenn hold-network is an excellent source of dungeon content, faction politics, and trade intrigue. Individual holds have their own personalities and disputes. A hold that has recently lost its master brewer to a rival is a different political environment than one celebrating a new vein discovery. The Apisdrenn-Stoneguard alliance is presented as almost frictionless, but at the individual level there's plenty of room for personality clashes between pragmatic dwarven craftspeople and direct orcish warriors.
+	* * *
+DWARVEN
+Apiskeld (the Forge Lords)
+The Apiskeld emerge from deeper and older holds than their Apisdrenn kin, and the difference shows. Where Apisdrenn culture is commercial and communal, Apiskeld culture is specialist and hieratic - organized around the mastery of craft as a near-spiritual discipline rather than a productive trade. They describe the sound of a working forge as something close to music. Their skin carries a faint metallic sheen in direct firelight, a trait that appears to be genuine biological adaptation to generations spent near intense heat rather than cosmetic. Their eyes glow amber or deep orange near open flame; in complete darkness, older individuals show a faint internal luminescence that most other peoples find unsettling and that the Apiskeld consider unremarkable.
+
+
+Apiskeld smiths and enchanters are regarded across Durgeth as among the finest practitioners of their crafts. They are also expensive to commission, slow by most customers' standards, and temperamentally disinclined to rush. An Apiskeld enchanter who has agreed to work on a piece will produce something extraordinary; an Apiskeld enchanter who has been pressured to work faster will produce something adequate and remember the interaction unfavorably for decades. The commercial relationship between Apiskeld craft tradition and the wider world is largely mediated by Vethanirum brokers, who understand both sides well enough to manage expectations effectively.
+
+
+The Apiskeld maintain arcane notation systems alongside Stone-Tongue - written records of enchanting formulae, metallurgical processes, and geological surveys that represent centuries of accumulated specialist knowledge. Access to these archives is not given freely, and the Apiskeld do not sell knowledge, only finished work. What the archives contain beyond the professionally documented is a matter of significant speculation among scholars.
+
+
+GM Note: Apiskeld NPCs work best as experts rather than allies - people whose knowledge is genuinely valuable but whose cooperation is not easily obtained. A commission from an Apiskeld master enchanter is a campaign-level achievement, not a shopping trip. The Apiskeld-Vethanirum broker relationship creates interesting three-way dynamics when players need Apiskeld work: they may need to go through a Vethanirum intermediary first.
+	* * *
+DWARVEN
+Apisveldir (the Gem Seekers)
+The Apisveldir are the rarest of the dwarven peoples and the most widely misunderstood. Their fixation on rare gemstones reads, to most outside observers, as acquisitiveness bordering on greed. This interpretation misses the point entirely. The Apisveldir do not collect gems the way a merchant collects inventory or a noble collects art. The draw is something they cannot fully explain themselves - a uniform fascination among their people that precedes any cultural framework built around it. When an Apisveldir holds a gem, they notice things: approximate geological age, origin region, and whether it has been used in soul-binding. This is not magic as they experience it. It is perception, the way others notice heat or texture.
+
+
+This 'Stone Memory' is experienced not as a mystical power but as a sense. The Apisveldir find it genuinely strange when others describe it as supernatural - from inside, it feels about as remarkable as having good eyesight. What they have built around it, however, is remarkable: Gemscript, their written-only language for gem-cataloguing; their mobile communities that follow geological formations across the continent; their extensive trade relationship with the Sunblade, who travel far and find the cargo interesting. The oldest Apisveldir catalogues describe gems that were already ancient when they were first recorded.
+
+
+Apisveldir communities are small, mobile by dwarven standards, and found wherever rare geological formations occur. They practice a method of rotating hires, moving between multiple sets of guides and guards during even a short travel. Nobody complains about this strange practice, though, as coin is coin. 
+GM Note: The fascination with gems is best played as genuine and slightly inexplicable even to the Apisveldir themselves - they don't have a clean theological framework for it, just an irresistible pull and a centuries-old tradition of recording what they notice. Soul gems that have passed through Apisveldir hands are a particularly rich plot device - they will have been catalogued, which means an Apisveldir can potentially tell a party what a soul gem has contained, where it came from, and what was done with it.
+	* * *
+ELVEN
+Ashirum (the Ember People)
+The Ashirum have lived for centuries around active volcanic regions, and their culture reflects this with a clarity that visitors often find bracing. Comfort is temporary. Adaptation is permanent. The ground occasionally kills you. These are not philosophical positions for the Ashirum - they are observable facts of life in the caldera territories, and a culture that has survived there for generations has internalized them completely.
+
+
+Physically, the Ashirum are the sturdiest of the elven peoples - broader through the shoulders than other elven lineages, with dark complexions ranging from deep brown to near-black, ember-colored eyes that glow faintly in complete darkness (a cosmetic effect only, they will clarify with some irritation), and hair that is black almost universally, with deep red appearing in bloodlines from the volcanic heartland. Their fire resistance is not metaphorical: Ashirum who work forge-adjacent professions routinely handle temperatures that would hospitalize members of other peoples.
+
+
+Where the Ashveld have spent generations distancing themselves from fire as an identity - the association chafes against people who survived by being adaptable to everything, not just heat - the Ashirum have moved in the opposite direction. Fire magic is not merely tolerated among them; it is elevated. The Ashirum consider fire a sacred language, one that their people were born already speaking. Their most celebrated practitioners are not administrators or poets but pyromancers, and the Ashen Script itself is traditionally inscribed by controlled flame rather than by hand. This deliberate embrace of fire as cultural identity was partly a response to centuries of being grouped with the Ashveld by outsiders who saw shared geography and assumed shared character. The Ashirum preference for making this distinction vivid and unmistakable has, over generations, made it true.
+
+
+Their written tradition, the Ashen Script, is a ceremonial language used for records and oaths rather than daily communication. The choice to make their writing system ceremonial rather than practical says something about Ashirum priorities: the things worth writing down are the things that need to endure, not the things that need to be quickly referenced. The relationship between Ashirum and Stoneguard communities is one of the more robust cross-cultural alliances on Durgeth. Both peoples share a fundamental orientation toward danger as something to be prepared for and managed rather than avoided - a philosophical alignment that produces practical cooperation in difficult environments.
+
+
+GM Note: The Ashirum's deliberate embrace of fire magic creates clear narrative texture: they are the elven people who looked at the thing others warned them against and claimed it as their own. Their fire resistance creates interesting tactical and environmental storytelling possibilities. Volcanic regions, forge districts, and anywhere involving significant heat is their territory. The distinction between Ashirum pride in fire magic and Ashveld irritation at the same association is a reliable source of interplay when both peoples appear in the same scene.
+	* * *
+ELVEN
+Gorirum (the Old Kindred)
+The Gorirum insist - and their oldest scholars can produce genealogical records that are at minimum inconclusive - that their people and the elven peoples share a common ancestor, diverged in some ancient age before written history. The -irum suffix in their formal name is not accidental. Neither are the faintly longer ears, the slightly higher natural aptitude for magic, and the longer-than-average lifespan they carry compared to other orcish lineages. Most elves dismiss this claim with varying degrees of condescension. A few Solarirum scholars find it quietly disquieting - not because they believe it, but because the records do not clearly disprove it, and that is not the same thing. Some Vethanirum, whose own lineage formed at a cultural boundary, are privately interested.
+
+
+The Gorirum do not press the point. They simply live with the records and let others draw conclusions. This restraint is sometimes misread as uncertainty about their own claim; it is more accurately understood as the confidence of people who are not in a hurry. Their longest-lived individuals are approaching a hundred and fifty years old - long enough to watch other peoples' certainties cycle through several revisions.
+
+
+Gorirum culture is organized around scholarly and martial traditions that are understood as complementary rather than contrasting. A Gorirum warrior who has not studied the schools is considered incompletely trained; a Gorirum scholar who cannot fight is considered someone who has not finished their education. The expectation of dual competence produces individuals who are genuinely difficult to categorize by outside standards.
+
+
+The Solarirum, for their part, have no formal accord with the Gorirum and are disinclined to publicize any connection. The Gorirum Claim - supported by records that are concerning at best and inconclusive at worst - is the most significant ongoing intellectual controversy in Solarirum academic circles, and the elven people's institutional response has been to treat it as a matter not yet worthy of formal acknowledgment. The Gorirum observe this carefully and say nothing.
+
+
+GM Note: The Gorirum are most interesting as NPCs who complicate assumptions. Their claim to elven kinship is presented as unresolved rather than false - the lore deliberately supports the possibility. A campaign that takes this seriously and allows players to investigate the records creates a potentially setting-reshaping revelation. Gorirum individuals should feel like people who are used to being underestimated and have calibrated their presentation accordingly. The Solarirum's studied indifference is a visible political choice, not a factual conclusion.
+	* * *
+ELVEN
+Solarirum (the Gilt-Born)
+The Solarirum trace their lineage to the oldest elven civilization - a culture of scholar-casters that shaped the continent's earliest institutions and whose archival tradition reaches back further than the written records of any other people currently living on Durgeth. Tall, angular, and faintly luminescent in direct sunlight, most live in layered city-states where magical study is as ordinary as farming is elsewhere. They regard themselves as custodians of knowledge - a belief their neighbors find either admirable or insufferable, depending on how recently they have had to deal with one.
+
+
+The elven suffix -irum, shared by all four elven lineages, translates approximately as 'who endure.' The Solarirum have been enduring for long enough that they have watched human kingdoms rise and fall, watched geological features shift, and watched the political map of Durgeth redraw itself multiple times. The perspective this produces is genuine, occasionally useful, and often frustrating to interact with. A Solarirum scholar who says 'this has happened before' is usually right and is not always helpful about it.
+
+
+Solarirum magical tradition is the most developed and systematized on Durgeth. Their academies - distinct from the academies of the lowland kingdoms, which they consider derivative institutions - have been producing scholarship for centuries and maintain archives that are the primary resource for any serious magical research. Access to these archives requires either Solarirum academic credentials or an introduction from someone who has them, and the standards for both are genuinely demanding.
+
+
+The Gorirum question - the claim to shared elven ancestry, yet to be disproven despite sincere efforts - is the most significant ongoing intellectual controversy in Solarirum academic circles. The institutional response has been studied silence: neither confirmation nor formal refutation, simply a conspicuous absence of engagement. The Solarirum would prefer the connection to remain unexamined, and they have sufficient archival and scholarly infrastructure to shape which questions get asked.
+
+
+GM Note: Solarirum NPCs work best when their longevity is felt rather than just stated. A Solarirum who remembers an event that the party's Common Tongue education treats as ancient history is experiencing that event as a personal memory. This creates access to historical information but also to the particular kind of sadness that comes from watching most of the people you meet die on a timescale that, to you, feels fairly quick. Their studied silence on the Gorirum question should feel like a policy decision - something maintained carefully, not something that comes naturally.
+	* * *
+ELVEN
+Vethanirum (the Borderborn)
+The Vethanirum emerged generations ago at the cultural fringes of elven culture and today form their own distinct people. They carry natural attunement to magic without Solarirum-level immersion, and a practicality that comes from navigating between worlds their whole lives. Most describe themselves simply as 'practical' - which is the polite word for someone who has learned not to take anyone's traditions too seriously, including their own.
+
+
+The Vethanirum's physical diversity is the most striking of the elven lineages - their proportions lean toward either parent lineage, their skin ranges from pale ivory to warm brown, and they present a much broader range of physical variation than the other elven peoples, each of whom cluster tightly around a recognizable type. This diversity is not cultural weakness; it is the morphological record of a people defined by being at the intersection of things rather than the center of any single one.
+
+
+Their lifespan of 200-300 years puts them between elven and human in ways that are practically significant: long enough to watch children grow old, short enough that the long-lived elven peoples they grew up alongside will outlive them. This creates a particular relationship with time - longer than human urgency but shorter than elven patience, which produces people who understand both orientations and fully inhabit neither.
+
+
+GM Note: Vethanirum NPCs are culturally fluent in ways that make them excellent information sources and complex social actors. They understand the social expectations of multiple cultures and can navigate between them - which makes them useful to parties that need cross-cultural mediation and interesting to encounter because their own cultural allegiances are genuinely ambiguous. Their 25% magic resistance (incoming spell damage reduced by 25%) makes Vethanirum unusually durable against magical threats despite their otherwise moderate physical capability.
+	* * *
+ELVEN
+Sylvarirum (the Forest-Born)
+The Sylvarirum are an elven people whose civilization is entirely contained within the ancient forest territories they have maintained for most of their recorded history. They do not consider themselves one people in the way that the Solarirum understand a unified culture - they are specific communities in specific forests, and the commonality between those communities is real but incidental. The outside term 'Forest-Born' is a simplification they tolerate rather than use themselves.
+
+
+Sylvarirum settlements are genuinely difficult to find without either Sylvarirum guidance or the kind of extended familiarity with woodland navigation that very few outsiders develop. The treehouse structures used for most settlements are built to be invisible from ground level and from the air. Approaches to settlements trigger awareness through systems that visitors consistently describe as seeming like coincidence - a branch that deflects you slightly, a path that curves unexpectedly - until they understand what they are experiencing. The Sylvarirum do not maintain physical barriers. The forest is the barrier.
+
+
+Young adults (around 40 years) leave to undertake the Wandering: a period of solitary travel that lasts years or decades and serves simultaneously as coming-of-age ritual, spiritual discipline, and information-gathering mechanism for the community. Sylvarirum characters who are currently Wandering are the most likely to be encountered outside their home communities. They are not lost; they are where they are supposed to be.
+
+
+The Sylvarirum-Verdathi territorial understanding is the quietest alliance on Durgeth. Both peoples occupy adjacent difficult terrain and have developed a mutual recognition based less on formal agreement than on the simple fact that neither has given the other reason for conflict. Scholars who study the arrangement describe it as 'negative alliance' - defined by what has not happened rather than what has.
+
+
+GM Note: Forest Canopy territory works best as a settlement that is effectively invisible: the players know it exists, but finding it without guidance requires significant investment of time and skill, and uninvited arrival is noticed immediately. A Sylvarirum NPC who decides to guide a party to their community is making a significant social commitment, not a casual offer.
+	* * *
+HUMAN
+Ashveld (the Cindershorn Folk)
+The Ashveld are a human lineage from the volcanic highlands at the continent's interior, where the earth is young and the air tastes of sulfur. What defines them is not proximity to fire - that assumption irritates them, and they will make this clear promptly, distinguishing themselves from the Ashirum with a precision that comes from centuries of being confused with them. The Ashirum leaned into fire and made it their identity. The Ashveld went the other direction entirely. They are not a people of fire; they are a people of survival, and those are meaningfully different things. What defines the Ashveld is adaptability across conditions that would break most peoples: a culture built on the premise that the ground might kill you today, and you had better have already thought about what to do when it tries.
+
+
+Physically, they tend toward lean builds with weathered, ash-darkened complexions ranging from warm brown to deep bronze. Their hair is typically coarse and dark, and their eyes often carry a reddish-amber tint attributed in local folklore to generations of staring into forge-light. They are, bluntly, unremarkable to look at. This suits them fine.
+
+
+Ashveld Pidgin is a condensed trade-language that developed along the highland routes and has since spread considerably beyond them. It is not beautiful - it strips language down to functional essentials with a ruthlessness that linguists find fascinating and speakers find efficient. That a people from isolated volcanic highlands produced a trade pidgin now spoken across much of the continent's interior says something about the Ashveld's fundamental orientation: they communicate with whoever is in front of them, in whatever language gets the job done.
+
+
+This goes some way to explaining the Ashveld's long history of being used by larger powers without adequate recognition or compensation. They are capable, adaptable, and easy to underestimate - and the highland routes they know better than anyone have made them valuable to interests that had no particular concern for the Ashveld's own welfare. They were frequently tricked or forced into unfavorable contracts compelling them to transport goods or mine valuable materials within their volatile homeland for little return. This history of institutional exploitation runs a thread parallel to the Naukin's, if differently shaped: where the Naukin were held and studied, the Ashveld were hired and forgotten. The parallel is not lost on either people.
+
+
+The Ashveld-Naukin partnership is counterintuitive from outside and makes complete sense from inside. Both peoples carry serious institutional experience of being overlooked, exploited, or simply not accounted for by larger powers. Both have developed languages or dialects that function as in-group communication systems that outsiders cannot fully access. Both are entirely unsentimental about magic. Two peoples who learned to overcome being underestimated find each other's company natural.
+
+
+GM Note: The Ashveld's hardy adaptation and survivor instincts make them excellent contingency planners - in play, Ashveld characters and NPCs should feel like people who have already thought through what to do if things go wrong. The contrast between Ashveld pragmatism about fire (it's a tool, nothing more) and Ashirum reverence for it is a reliable point of friction when both peoples share a scene. The shared history of exploitation between the Ashveld and Naukin is a meaningful bond, not just a convenient alliance; it's worth playing as genuine solidarity rather than transactional partnership.
+	* * *
+HUMAN
+Hearthborn (the Imperials)
+The Hearthborn are the most numerous people in Durgeth's lowland cities and trade routes, and their civilization is organized around the conviction - demonstrated over centuries of practical experiment - that good administration produces better outcomes than raw power. They produce diplomats, merchants, soldiers, and bureaucrats in equal measure, and their language and coinage have become the continental standard through quiet, persistent usefulness rather than conquest. This is a distinction the Hearthborn consider important and occasionally mention to people who seem to be missing it.
+
+
+Hearthborn physical characteristics are deliberately unremarkable in the statistical sense - they are the most physically average of Durgeth's peoples across the broadest range of measurements. Warm olive to tawny brown skin, dark brown or black hair most commonly, brown or hazel eyes, average height, average build. Individual Hearthborn vary considerably; the population as a whole clusters toward the center of most distributions.
+
+
+The Hearthborn aptitude for diplomacy has bypassed their lack of magical aptitude or inborn physical advantages, allowing them to be influential figures in all corners of the world and integrate into most civilized societies without much trouble. The Mercantile Conglomerate demonstrates this clearly: overwhelming wealth earned from centuries of talented traders has allowed this merchants' guild to ascend into an independent sovereign state with borders of its own - a polity held together not by armies but by contracts, credit, and the accumulated trust of a people who have always been reliable, if shrewd, counterparties.
+
+
+The Hearthborn sit at one point of the Commonweal Triangle - the three-way alliance between themselves, the Bovari, and the Sunblade that has structured lowland commerce and security for generations. Hearthborn administration manages the institutional infrastructure. Bovari drovers move the goods. Sunblade guards and brokers of violence keep the routes honest. Each party recognizes the arrangement as something more durable than any bilateral treaty, because each has something the other two need and none of them have forgotten it.
+
+
+GM Note: Hearthborn NPCs are the default lowland city population - merchants, officials, innkeepers, guild representatives, lawyers. The character depth comes from individual variation within the cultural framework: a Hearthborn who has become deeply invested in elven scholarship, or one who has spent thirty years in Marchland territory and returned with unusual perspectives. The Hearthborn tendency to frame their cultural influence as helpfulness rather than dominance is a good source of subtle political texture.
+	* * *
+HUMAN
+Murrak (the Ashblood)
+The Murrak are a people of disputed origin. Some scholars claim they are the surviving descendants of a civilization that bargained poorly with something ancient - a phrasing that gestures at the Compact without naming any specific entity and that even the Compact's own practitioners find unhelpfully vague. Others suggest they are simply a human lineage that diverged under extreme magical saturation, which raises questions about the nature and source of that saturation that the proponents of this theory have not satisfactorily answered. The Murrak themselves do not spend much time on the question. They are here, they are capable, and the world's opinion of their origins is the world's problem to manage.
+
+
+Murrak have dull grey skin with a slightly matte texture, as though the color was pressed out of them by force. Their eyes are dim purple - not vivid or striking, but a flat, faded violet that unnerves people who look too long. They tend to be stocky and plain-featured. What they lack in raw intellectual processing, they compensate for with an instinctive resonance with magical force that outperforms academic credentials. A Murrak who has studied Elemental magic for six months will match an academically trained practitioner of comparable tenure. Something in their blood knows what spells are before their mind has finished learning it.
+
+
+The strange ability that all Murrak seem able to access - the Bloodspell - is understood by most magical theorists as deeply dangerous and by Murrak practitioners as simply their relationship with magic. They absorb Magicka when struck by it and release it when they need to. The mechanism has no theoretical framework that adequately explains it. The Murrak have not volunteered an explanation and respond to requests for one with varying degrees of patience.
+
+
+Murrak communities maintain a fragmentary private dialect - a language that some communities still use internally but that has been neither fully documented nor taught to outsiders. Its relationship to the languages of the ancient civilization of disputed origin is a matter of scholarly interest that the Murrak communities have not chosen to assist with.
+
+
+GM Note: The Murrak's origin mystery is deliberately unresolved and invites campaign-level engagement. The 'bad bargain with something ancient' hypothesis connects to Compact lore and could be developed in many directions. The Bloodspell mechanic should feel expensive at the table - a Murrak who is casting on HP is in genuine danger, and that danger should be visible.
+	* * *
+HUMAN
+Nordal (the Frost-Kin)
+The Nordal come from the northern reaches - tundra, glacier-carved fjords, and seas that freeze in winter. Large, hardy, shaped by a culture that prizes strength, directness, and communal endurance. Most Nordal magic users are unusual among their own people, though not unwelcome; the north has its own traditions of rune-working and storm-calling that most southerners don't recognize as the same discipline. A Nordal storm-caller and an academically trained Elementalist are doing related things through very different frameworks, and the Nordal storm-caller has generally been doing it in worse weather.
+
+
+Nordal culture is organized around the war-band - which should not be understood as purely military. A Nordal war-band is more accurately described as a functional community unit led by someone whose authority derives from demonstrated competence rather than hereditary right. The leader who cannot lead loses the position. The council that produces bad decisions is replaced by a better council. This is not a democratic system in the formal sense - the mechanisms for determining competence are traditional rather than procedural - but it produces leaders who have genuinely earned their position more consistently than hereditary systems do.
+
+
+North-Tongue is the Nordal primary language - spoken, rarely written, a language of few words and significant weight. The compression of North-Tongue is not poverty of expression; it is the opposite. A Nordal who has said something has said it, and the expectation is that it was worth saying. Repetition for emphasis is considered a form of weakness. Hesitation is considered a form of deception, regardless of intent. The Nordal-Apisdrenn alliance is older than most Lowland Kingdoms - mountain holds and tundra communities sharing territory and trade routes, built through generations of individual relationships rather than any formal treaty.
+
+
+GM Note: Nordal NPCs should feel like people who mean what they say and expect others to do the same. The culture's directness is not rudeness - it is a different convention for what communication is for. A Nordal who gives a short answer has given a complete one. Long explanations register as either condescension or uncertainty, depending on context.
+	* * *
+ORCISH
+Stoneguard (the Iron-Blooded)
+Stoneguard culture is organized around the sword, the smith, and the Stone God. They are direct, pragmatic, and deeply invested in the idea that capability matters more than blood. This meritocratic stance has allowed them to integrate cleanly with most other societies, and the vast majority of Iron-Blooded orcs are found in the cities of other races, especially the Apisdrenn. The few settlements they do maintain are fortified and self-sufficient - built for war not because they seek it, but because they have learned to expect it.
+
+
+Grey-green to dark olive skin, red or amber eyes with strong night-vision, black or very dark brown hair often shaved or knotted for function - the Stoneguard physical profile is recognizable across Durgeth. Their tall stature, muscular build, and reputation for directness in both speech and warfare mean that first encounters with Stoneguard communities tend to go very well or very badly depending entirely on how the initial approach is handled. There is no middle ground in which a first impression was fine but unclear.
+
+
+The Stoneguard-Apisdrenn alliance is the oldest continuously operating cross-cultural partnership on Durgeth by most estimates. Stoneguard guard companies defend Apisdrenn trade convoys and hold approaches; Apisdrenn smiths produce the best weapons and armor that Stoneguard warriors have access to. The relationship has survived long enough to become assumed on both sides - something that simply exists, the way the mountain exists, rather than something that needs to be maintained. Both parties understand that this assumption is itself a form of maintenance.
+
+
+GM Note: Stoneguard guard company politics are an excellent source of faction content. Guard companies are inherently competitive and lead to complex histories with each other - alliances, conflicts, Ironbound Oaths between companies, ongoing disputes. A Stoneguard NPC from a specific guard company brings that company's relationships with them as invisible background. Knowing which company an NPC belongs to, and what that company's current situation is, can transform a simple hired-guard encounter into something with political texture.
+	* * *
+ORCISH
+Veildrift (the Hauntborn)
+No one knows where the Veildrift came from. The oldest records describe them appearing at the edges of battlefields, in the ruins of collapsed towers, and at sites where large amounts of magic were spent in devastating ways. Current scholars debate whether they are the descendants of people who survived an unknown magical event, or something stranger still. The Veildrift themselves rarely discuss it - either because they don't know or because they have decided it doesn't matter.
+
+
+Veildrift are profoundly unsettling in appearance. Their skin is so pale as to be nearly translucent - in the right light, the faint shadows of veins and underlying structure are visible beneath the surface, giving them a ghostly, half-present quality. Their hair is white or silver without exception. Their eyes are a uniform pale blue or silver-grey with no visible pupil, and they glow faintly in complete darkness. Despite their fragile appearance, they move with unusual precision, and their strange partial-presence makes them naturally difficult to perceive in low light.
+
+
+The Veildrift's lifespan is unknown - the oldest appear ageless, but few survive the misfortune that finds them. This pattern is consistent across all recorded Veildrift communities and is the detail that makes their origin question most persistent: why do things keep finding the Veildrift? Several theories have been proposed. None have been confirmed. The Veildrift are not forthcoming on this point. They learn languages instinctively from exposure rather than study, producing individuals with broad linguistic repertoires acquired without formal learning and without the cultural context that formal learning typically provides - the linguistic competency and the cultural competency are separate, and the Veildrift's language acquisition consistently outpaces their cultural integration.
+
+
+GM Note: Veildrift NPCs create useful social effects: their appearance generates discomfort in most people, which provides a social dynamic worth playing. Their unknown origin is a campaign-scale mystery. Their language acquisition creates unusual linguistic situations - a Veildrift who has recently arrived in a region and is already speaking the local language without understanding the social register it encodes. The Veil-Step ability (incorporeal until end of next turn) should feel eerie rather than tactical when Veildrift NPCs use it.
+	* * *
+OTHER PEOPLES
+Kreln (the Deepstone Kin)
+The Kreln are the remnants of a dwarven civilization that, long before recorded history, retreated entirely into the deep ocean. No one knows whether it was catastrophe, choice, or something stranger that drove them below the surface. The Kreln themselves do not discuss it - either because they do not know, or because they have decided the question has no useful answer, or because the explanation does not translate well into the terms other peoples use to understand motivation. What remained emerged over millennia as something distinctly its own.
+
+
+Kreln bodies are compact and low-slung, built to withstand forces that would rupture other creatures. Their skin ranges from deep blue-grey to mottled greenish-black, with faint bioluminescent patches along the jaw, collarbones, and the backs of the hands - dim, cool light that pulses slowly when they are calm and brightens under stress. Many have partial carapace growth: ridged, calcified plates of bone-like material along the shoulders, shins, and the crown of the skull, their edges irregular and barnacle-roughed. Their eyes are enormous and pale, adapted for deep water - on the surface, many squint against bright light and wear smoked glass lenses carved from obsidian.
+
+
+The Kreln do not have a unified civilization above water. Small enclaves settle in coastal caves, flooded ruins, and port-city underbellies. Most who travel the wider world do so because their settlement was destroyed, because they were exiled, or because they are searching for something their people lost long ago. Kreln Deep-Sign, their click-and-gesture language pressurized for underwater use, is not fully reproducible above water. Most Kreln who spend extended time on the surface develop enough aptitude with Common Tongue to interact with surface civilizations, but maintain that it is a lesser form of communication.
+
+
+GM Note: Kreln NPCs work best as deeply alien presences that are nonetheless sincere in their engagement with the surface world. The bioluminescence as an emotional indicator (calm = dim, stressed = bright) gives players a visible tell that can be played interestingly. The 'searching for something lost in the original descent' hook is a campaign-scale backstory element - what a Kreln enclave is searching for, and what finding it would mean, is left to the GM to define.
+	* * *
+OTHER PEOPLES
+Naukin (the Ratfolk)
+The Naukin are ratfolk - lean, quick, whisker-faced, and collectively the survivors of centuries of exploitation at the hands of mage-scholars who created them to be subjects, test cases, servants, and occasionally ingredients. For at least three centuries, the great wizard academies sourced their test subjects and experimental participants from captive Naukin populations, held in academy warrens across at least six separate complexes. Contemporary records euphemize this practice relentlessly. What the records cannot explain away is what happened in the year that is now counted as Year 0: the Naukin, coordinating across all those facilities through means that have never been fully established, escaped simultaneously. The academies suffered significant structural damage. Neither academy officials nor Naukin survivors have been forthcoming with details.
+
+
+The great academies attempted to weaponize the escape for their own standing. In the immediate aftermath, prominent academy figures pushed the narrative that the Naukin were feral, dangerous, and uncontrollable - that the escape demonstrated why such populations required management rather than freedom. Public opinion did not accept this framing. By most accounts, ordinary people who encountered Naukin communities in the years following the escape found them cautious, organized, and markedly better at keeping to themselves than the academies were at anything. The academies' favorability has declined steadily in the centuries since, eroded not by any single scandal but by the accumulated weight of people comparing what they were told about the Naukin with what they actually observed.
+
+
+Their time in the academies forged within them a deep, abiding distrust of magic and its wielders. The residents of the undercities spurn scholars who approach desiring to inspect and learn from them, this residual suspicion keeping academics at arm's length. A side effect of this is the near-absence of a religious presence among the ratfolk. It is exceedingly rare - though not impossible - to find a Naukin sworn to any particular deity. The generations of abuse at the hands of the mages appears to have altered the Naukin biology itself, producing a people who rebuff magic far better than any other.
+
+
+This seclusion and aversion to academics does not mean they are unintelligent beings, despite this being a common presumption and one the Naukin are in no rush to disprove. The connected Naukin undercities have led to a remarkable and little-understood network of shared knowledge - a discovery in a distant settlement will be quickly spread through their underground channels. To this end, the Naukin have developed a deep interest in the books and related works of other cultures, desirous to learn from them without interacting with them.
+
+
+Individual Naukin who travel the wider world do so against significant cultural pressure, driven by necessity, exile, or a curiosity their people regard with suspicion. They are almost always operating with more awareness of their environment than they appear to have, speak Common Tongue by preference in all external communication, and are extremely unlikely to discuss their community's location or composition with anyone they have not established trust with over extended time.
+
+
+GM Note: Naukin player characters are operating in a cultural context where their community has explicitly decided that the wider world is not fully trustworthy. The Naukin escape is deliberately left unexplained in the lore - how they coordinated is one of the great unsolved mysteries of the setting. The academies' failed attempt to use Year 0 as propaganda is worth playing in interactions with academy NPCs: they are aware the narrative didn't take, and they have not fully processed what that means about their standing.
+	* * *
+OTHER PEOPLES
+Sunblade (the Blade-Born)
+The Sunblade come from a culture that treats swordsmanship as one of the highest arts - not as a practical skill or a military discipline, but as a practice that reveals character in the same way that calligraphy or scholarship does. Their history is one of migration, resistance, and the cultivation of martial excellence as both survival tool and cultural identity. Sunblade individuals frequently travel far from their homelands, some as merchants, some as mercenaries, some simply because the road is what they know best.
+
+
+Lean and athletic, deep brown to warm black skin, black or very dark brown hair kept short or tightly plaited for combat practicality, dark amber eyes in old bloodlines - the Sunblade physical profile is as much about movement as appearance. They are built for speed and precision rather than raw power, and this shows in how they occupy space. A Sunblade at rest tends to hold themselves in ways that suggest they could move quickly. This is not a performance; it is simply the default posture of someone who practices movement constantly.
+
+
+Sunblade Formal - the ceremonial language of dueling protocols and formal oaths - is the vehicle for a significant portion of their cultural identity. The protocols governing challenge, acceptance, witnesses, and resolution are elaborate and strictly observed. Violations of dueling protocol within Sunblade communities are treated as more serious than the underlying conflict that prompted the duel, because the protocol is what transforms violence into communication. A properly conducted Sunblade duel is a way of saying something that could not be said otherwise; an improperly conducted one is just violence.
+
+
+The Sunblade are the third point of the Commonweal Triangle alongside the Hearthborn and the Bovari. The arrangement is old enough that its origins are not well-documented - no single treaty established it, no single crisis tested it to breaking. What is known is that Sunblade guards, duelists, and brokers of violence have worked alongside Hearthborn commercial operations and Bovari trade convoys for long enough that mixed communities exist in most major lowland cities. Hearthborn merchants manage. Bovari drovers move. Sunblade blades keep the operation intact. Each party considers the others reliable counterparties, which is not as common as it should be.
+
+
+GM Note: Sunblade NPCs carry a complex relationship with violence - it is both their primary competency and their primary cultural expression, which creates people who take conflict very seriously and handle it with considerable formality. A Sunblade NPC who offers a duel is making a communication attempt, not just an aggressive gesture. Understanding what they are trying to say with the offer is often more important than whether to accept it.
+	* * *
+________________
+
+
+A PARTIAL HISTORY OF DURGETH
+
+
+
+
+The following represents a condensed accounting of the events considered most significant by the Chronicler's archivists. Dates are counted from Year 0 - the Year of the Naukin Escape - as the most recent universally recognized fixed point. Earlier ages are referred to as the First, Second, and Third Ages, the boundaries of which remain subjects of scholarly dispute. Years before the Escape are marked negative; years after, positive.
+
+
+The Ages Before
+The First Age is known primarily through the Stone-Tongue records of the Apisdrenn, which are slowly being decoded by outside scholars. What has been reconstructed suggests a period before most current civilizations were recognizable - the Apisdrenn holds were older then, the surface world sparsely settled, and the elven peoples still consolidated into what later became the Solarirum line. The name Durgeth itself dates to this period.
+
+
+The Second Age saw the rise of the great lowland civilizations - the early Hearthborn city-states, the first Stoneguard guard-companies, and the establishment of the Nine Pillars pantheon as an institutional force. It also saw the first recorded contacts between the Solarirum academies and what would become the lowland wizard academies, a relationship that soured within a century as the lowland institutions began operating independently of Solarirum oversight.
+
+
+The Third Age is the closest to living memory for the longer-lived peoples. The Solarirum date its beginning to the founding of the first lowland academic complex capable of independent magical research. The Apisdrenn date it to a particular catastrophe in the Deep Holds whose name does not translate cleanly. The Gorirum date it to a period of significant expansion in their own scholarly tradition - a dating choice that the Solarirum decline to comment on publicly.
+* * *
+Year 0: The Great Escape
+The Naukin Escape is the fixed point from which the current calendar is counted. In the year now designated Year 0, captive Naukin populations held across at least six separate wizard academy complexes escaped simultaneously, coordinating through means that have never been fully established. The academies suffered significant structural damage. Several prominent wizards died. The total number of Naukin freed is not agreed upon by any two sources, which is itself informative about the reliability of the records.
+
+
+In the immediate aftermath, the great academy heads sought to shape public perception of the event as a catastrophe - a dangerous breakdown of order requiring renewed institutional authority. They described the Naukin as feral, unpredictable, and a threat to the stability of the lowland kingdoms. This narrative found little purchase. Communities that encountered Naukin in the weeks and months following the escape consistently reported orderly, cautious people keeping to themselves and causing no disturbance. The gap between what the academies claimed and what people observed was not lost on anyone.
+
+
+Year 0 did not end the academies' power, but it began a slow erosion of their public standing that has continued in every decade since. The failed propaganda effort is now understood - by historians if not by the academies themselves - as a significant miscalculation: it established the academies as institutions willing to lie about people they had already wronged, which is a reputation that tends to compound over time.
+* * *
+Year 12: The Sundering of the Thornback Hold
+The destruction of Thornback Hold - a mid-tier Apisdrenn stronghold in the eastern mountain range - by an uncontrolled summoning experiment conducted by a lowland academy team marks the first formal diplomatic breach between the Apisdrenn hold-network and the academies. The Apisdrenn demanded compensation, the expulsion of academy personnel from Apisdrenn territorial access, and a formal acknowledgment of the academies' culpability. They received partial compensation. The hold was never rebuilt. Apisdrenn trust of academic institutions has not recovered.
+* * *
+Year 34: The Ironbound Compact of Three Roads
+The earliest surviving formal document acknowledging what is now called the Commonweal Triangle - the three-way alliance between the Hearthborn, Bovari, and Sunblade peoples. The Compact of Three Roads does not establish the relationship so much as codify one that had been operating for decades. Its significance is primarily as evidence: prior to Year 34, the arrangement existed but was not formally acknowledged by any party. After Year 34, it was an institution, with all the durability and inertia that implies.
+* * *
+Year 67: The First Undercity Census
+The Hearthborn Mercantile Conglomerate, whose records are among the most detailed of any institution in the lowland kingdoms, conducted what it described as a survey of 'subterranean habitation in the major trade cities.' The survey found far more infrastructure than expected - evidence that Naukin communities had been establishing organized settlements in city substrata for decades, with ventilation, water, and food storage that no abandoned infrastructure would require. The survey was not published. A copy survives in the Chronicler's libraries. The Naukin were aware of the census within weeks of its conclusion.
+* * *
+Year 89: The Ashveld-Naukin Concordat
+The first formal acknowledgment of the relationship between Ashveld highland communities and Naukin undercity networks - an agreement so minimal in its stated terms that most historians treat it as a recognition of an existing arrangement rather than the establishment of a new one. What the Concordat actually commits both parties to is less significant than what it represents: two peoples who had survived institutional exploitation finding each other's company reliable enough to put their mark on it.
+* * *
+Year 112: The Gorirum Disclosure
+A delegation of Gorirum scholars presented what they described as 'the full genealogical record' to a session of the Solarirum High Archive. The Solarirum accepted the documents, catalogued them, and have not issued a formal response in the two centuries since. The documents are held in a restricted section of the High Archive. Multiple parties have attempted to access them. None have succeeded. The Gorirum note that the Solarirum's refusal to refute the records is not the same as refuting them.
+* * *
+Year 156: The Ember Highlands Accord
+Following a period of territorial friction between Ashirum and Ashveld communities at the highland margins - where the volcanic interior's shifting geography repeatedly redraws the practical boundary between their territories - both peoples formalized a loose understanding governing shared access to contested geological formations. The Accord is not a treaty of alliance. Both parties describe it as a practical arrangement between neighbors who have found conflict more expensive than cooperation. The distinction matters to them.
+* * *
+Year 201: The Second Academy Crisis
+A coordinated campaign by a coalition of lowland guild interests, backed by Hearthborn Mercantile Conglomerate funding, forced the public disclosure of academy research records dating to the period of Naukin captivity. The records, once accessible, confirmed the scale of what had been euphemistically described. The academies' public favorability reached its lowest recorded point in the following year. Several institutions issued formal apologies. Others did not. The Naukin communities, informed of the disclosures within days, did not comment publicly.
+* * *
+Year 218: The Widemarch Lineage Conflicts
+A period of sustained territorial conflict in the Widemarch between three lineages whose names do not appear in the major ethnographic works - evidence, historians now suggest, that the Chronicler's estimate of sixty percent coverage of Durgeth's actual cultural variety may be generous. The conflicts were resolved not by any external power but by a series of Ironbound Oaths negotiated by a Stoneguard guard-company operating in the region. The Stoneguard's records of the negotiations exist; the identities of the other parties remain incompletely established.
+* * *
+Present Day: Ongoing Tensions
+The academies continue their institutional decline in public standing, managed by leadership that alternates between genuine reform efforts and reflexive defensiveness. The Commonweal Triangle operates efficiently and without significant internal stress, though the question of what would happen if any one of the three parties withdrew is one that none of the three parties discusses. The Gorirum records remain unanswered in the Solarirum High Archive. The Naukin undercity network continues to expand. The Chronicler's libraries catalogue what they can, acknowledge the gaps, and note that the gaps are themselves informative.
+* * *
+________________
+
+
+GODS & PANTHEONS
+
+
+
+
+Overview: The Nine Pillars
+The Nine Pillars are the dominant pantheon of Durgeth's lowland kingdoms - the gods most commonly worshipped in the areas where Hearthborn civilization has established itself and spread its administrative frameworks. Their temples are the institutions most adventurers encounter, their priests the most common source of healing magic, and their theological framework the baseline against which most Durgeth cultures define their own religious positions.
+
+
+The Nine Pillars are understood, in the broad theology of the continent, to be a cooperative arrangement - gods who do not conflict, who have divided dominion between themselves as much by temperament as by design. In practice, their clergy argue constantly. The official theological position is that this represents healthy institutional discourse.
+
+
+The nine deities are: Auren (Sun, Law, Civilization, Duty), Myrith (Water, Trade, Travel, Longing), Thal-Vor (Death, Memory, Endings, Grief), Sereveth (Secrets, Night, Shadow, Desire), Gorvath (Craft, Fire, Endurance, Ancestry), Lira-Sun (Growth, Healing, Seasons, Children), The Chronicler (Knowledge, Magic, Stars, Time), Vel-Ashur (War, Change, Storms, Birth), and The Wanderer (Luck, Paths, the Unknown, Thresholds).
+
+
+Worship of the Nine Pillars is practical and hopeful. Worshippers light candles, leave offerings, speak small prayers, and trust that somewhere in the machinery of the divine, something is listening. Most do not expect direct response - miracles are stories told afterward, not experiences planned for.
+
+
+GM Note: The Nine Pillars as an institution versus a faith is worth maintaining as a distinction. The temples have politics, property, and competing institutional interests. Individual practitioners may have genuine devotion, professional devotion, or some combination. Players interacting with Nine Pillars institutions are dealing with both layers simultaneously.
+	* * *
+* * *
+The Compact (the Older Powers)
+Nobody knows where the Compact came from. Not the scholars who study them, not the priests who serve them, and apparently not the Nine Pillars, whose eldest theological texts treat the Compact as simply already present when the world was new - like a draft or a deep smell in an old building that has always been there. The Compact is not a pantheon in the organized sense. It is a loose collection of beings who made agreements with each other and with the world long before mortal civilization had opinions about such things, and who have never seen fit to explain themselves.
+Worshippers of the Compact do not pray so much as petition - timidly, hopefully, knowing fully that they could be cursed simply for asking. The Compact’s entities are fickle in mortal terms: not malicious, not uncaring, but operating on a scale that makes human urgency seem like weather. Prayers are offered at standing stones, in deep caves, at the edges of forests, and at the moments before decisions that cannot be undone. The most prominent entities of the Compact include the Hollow King (Silence, Void, the Space Between Things), the Root-That-Drinks (Deep Earth, Hunger, Growth Beneath), the First Mare (Dreams, Wild Places, the Undomesticated), the Iron Mouth (Oaths, Binding, the Weight of Words), and She Who Waits at the Shore (Transition, the Borderlands, the In-Between). None of these entities recruited their worshippers. The worshippers arrived on their own and the entities have not told them to leave.
+GM Note: The Compact is most useful as a source of morally complicated quests, unusual patrons for strange character concepts, and the explanation behind dungeon anomalies that no living faction built. Compact cultists are not necessarily villains - though their practices look alarming from outside. The Iron Mouth’s connection to Ironbound Oaths (see Key Concepts) is left deliberately unresolved: some oathbreakers suffer, some do not, and the inconsistency is itself the point.
+	* * *
+The Vaeln (the Eldest Court)
+If the Nine Pillars are the gods of civilization and the Compact the powers of the deep world, the Vaeln are something else entirely - older than either, stranger than both, and apparently indifferent to the distinction. The Vaeln are a court of fifty fey beings whose origins predate the continent itself. They have been worshipped, feared, bargained with, and mostly misunderstood for as long as there have been people to do any of those things.
+No mortal theology has ever satisfactorily explained them. Their individual domains are varied and frequently esoteric: one presides over the moment before a decision is made; another over the specific texture of old paper; a third over the migration patterns of fish that no longer exist. What has been established, through careful comparative study of the agreements the Vaeln have honored and violated across recorded history, is that two things appear to matter to them above all else: equality among those present, and the keeping of promises. Their internal hierarchy is in permanent, deliberate flux - fifty defined roles, none held permanently, every member having occupied every position many times over across countless cycles of death and reincarnation. This makes hierarchy meaningless to them in the way it is meaningful to shorter-lived beings, and makes their behavior from any given position radically inconsistent by mortal standards.
+Worshipping the Vaeln is not precisely possible in the way the Nine Pillars or Compact can be worshipped. The Vaeln do not require or particularly value devotion. What they respond to is correct behavior: honoring agreements to the letter, treating those around you as equals regardless of station, and occasionally - rarely, and always at cost - requesting an audience through the correct ritual forms. Those who have successfully bargained with the Vaeln consistently report that the beings are not cruel but are absolutely literal, and that the difference between those two things is smaller than it sounds when the terms are being set.
+GM Note: The Vaeln appear when characters stumble into old agreements, discover places where the rules of the world run thin, or attempt to bargain for something that no other power can provide. Devotion to the Vaeln is rare and usually regarded as eccentric or dangerous. The fifty named Vaeln and their current domains are subject to change as their internal hierarchy shifts - a GM who defines a specific Vaeln’s domain is capturing a snapshot, not a permanent fact.
+	* * *
+A Note on the Stone God
+The Stoneguard speak of the Stone God as their patron deity - the divine presence they invoke before battle, after a forge-work succeeds, and at the moment of a guard-company’s founding oath. The name appears in Stoneguard records as far back as the Stone-Tongue documents can be dated, which is to say: very far back. What the Stone God is, precisely, is a question that the Stoneguard consider answered and most theologians consider open.
+The Nine Pillars’ theologians have produced three competing positions. The first holds that the Stone God is Gorvath under a different name - that the Stoneguard’s divine patron and the Nine Pillars’ god of craft, fire, and ancestry are the same being worshipped through different cultural lenses. The Gorvath clergy find this flattering and maintain it publicly. The second position holds that the Stone God is a Compact entity - something old and local to the mountain regions, given a name by a culture that needed one, operating at the same scale as the Hollow King or the Root-That-Drinks without belonging to either established tradition. The third position, held mostly by the Apisdrenn, is that the Stone God is not a god at all but rather the accumulated spiritual weight of the mountain itself: the deep stone as sentient presence, aware of what happens within it, responsive without being conscious in any mortal sense.
+The Stoneguard have not weighed in on any of these interpretations. When asked which is correct, most respond that the question misses the point: the Stone God answers or it does not, and in their experience, it does. What category that puts it in is a problem for people whose primary relationship with the divine is academic.
+GM Note: The Stone God’s ambiguity is intentional and should not be resolved at the table unless a campaign specifically calls for it. The three competing interpretations each generate different adventure directions: the Gorvath-equivalence route involves Nine Pillars institutional politics; the Compact-entity route opens into old-power territory and the moral complications of Compact worship; the sentient-mountain route is the strangest and arguably the richest, suggesting that the Apisdrenn hold-network sits inside something aware. All three can be simultaneously true in different senses, or true for different communities, without requiring resolution.
+	________________
+
+
+FACTIONS & ALLIANCES
+
+
+
+
+FACTION
+The Academies
+The great wizard academies of the lowland kingdoms represent one of the continent's most significant concentrations of arcane knowledge - and one of its most significant crimes. For at least three centuries, the academies sourced their test subjects, servants, and experimental participants from captive populations. The most extensively documented case involves the Naukin, whose ancestors were held in academy warrens for generations as subjects for enchantment research, summoning experiments, and the study of magical resistance. What the records cannot explain away is what happened in Year 0: the Naukin, coordinating across at least six separate academy complexes through means that have never been fully established, escaped simultaneously. The academies suffered significant structural damage.
+
+
+The modern academies have distanced themselves from this history with varying degrees of sincerity. Some have issued formal acknowledgments. Others maintain that historical practices were common to the era and should be evaluated by contemporary standards of that period. The Naukin communities have not responded to either position, as they do not discuss the matter with outsiders. The academies' attempts in Year 0's immediate aftermath to frame the Naukin as dangerous rather than wronged did not succeed - and the failure of that narrative has been as damaging to their standing as the original crime.
+
+
+GM Note: Academy NPCs who discuss the Year 0 period should be uncomfortable, defensive, or performatively contrite depending on their institution's current stance. The failed propaganda effort is recent enough that some academy figures remember it personally and have not developed a clean story about it.
+	* * *
+FACTION
+The Commonweal Triangle (Hearthborn-Sunblade-Bovari)
+The Commonweal Triangle is not a formal political institution - it has no charter, no membership roll, and no mechanism for official decisions. It is a description of a three-way relationship that has been operating for long enough that it has developed institutional weight without institutional structure. In practice: Hearthborn merchants employ Sunblade guards, duelists, and brokers of violence at rates both parties consider fair. Bovari drovers carry goods along routes the Hearthborn built and the Sunblade protect. Mixed communities of all three peoples exist in most major lowland cities, and the Triangle's most visible expression is in the mixed companies that operate out of those cities - typically with Hearthborn commercial management, Sunblade martial leadership, and Bovari logistical expertise.
+
+
+The earliest formal acknowledgment of the arrangement is the Compact of Three Roads (Year 34), though the relationship clearly predates it. What the Compact established was not the alliance itself but the acknowledgment that it existed - a significant step, because acknowledged alliances are considerably harder to dissolve than unacknowledged ones.
+
+
+GM Note: The Triangle is a background institution - present in almost every lowland city encounter without necessarily being the subject of it. Characters who need a caravan guard, a commercial broker, or a reliable drover are interacting with Triangle infrastructure whether they know it or not. A faction conflict that threatens any one of the three parties is a threat to all three, whether or not the other two choose to respond.
+	* * *
+________________
+
+
+KEY CONCEPTS
+
+
+
+
+KEY CONCEPT
+Guard-Companies (Stoneguard)
+The guard-company is the primary social and political unit of Stoneguard culture. The term translates inadequately from Orcish; the Common Tongue version emphasizes the martial function and underweights the community function. A guard-company is a functional community organized around demonstrated capability, collectively accountable for its members, and governed by whoever has most recently proven themselves capable of governing it. The distinction between a guard-company and an army is not size but organizational principle: an army follows hierarchical command regardless of demonstrated competence; a guard-company follows whoever is competent to lead the current situation.
+
+
+Guard-companies maintain Ironbound Oaths between themselves, creating a web of formal commitments that structures orcish geopolitics in ways that no formal treaty system does. A guard-company that has sworn alliance with another cannot simply decide not to be allied; the oath persists until its terms are met or its conditions are released by both parties.
+* * *
+KEY CONCEPT
+Ironbound Oaths (Stoneguard)
+Ironbound Oaths is the term used by Stoneguard and related orcish cultures for the formal commitment system that underlies their social and political organization. An Ironbound Oath is not an agreement that can be renegotiated when circumstances change. It is a statement of what you will do, witnessed by your community, which you will then do. The Gorirum maintain a parallel system with different terminology but similar structure - some scholars have cited this as further evidence for their claimed common ancestry with elven peoples, whose Solarirum have a comparable formal commitment system in Elven Formal's grammatical structure.
+
+
+This system of oaths is often seen as a strange reflection of the binding power of the Iron Mouth. There are conflicting accounts as to whether an Ironbound oath receives the Iron Mouth's blessing - some oathbreakers have not suffered magical comeuppance, while enough strange cases exist to keep the discussion alive.
+* * *
+KEY CONCEPT
+Magicka
+Magicka is the term used across Durgeth for the personal reserve of magical energy that spellcasters draw from when casting spells. It is finite, recoverable through rest, and distributed among individuals in ways that no current theory fully explains. The practical reality: every living being has access to Magicka, but only trained minds and souls have enough to weave the more complex and powerful spells. The Murrak display a strange relationship with Magicka - when pressed against a wall, they can draw even more magical power from deep within, at the cost of their health and wellbeing. The Naukin have a dramatically different relationship with magic: after centuries of abuse as the targets of magical experiments, they have developed a resistance to magical effects. This double-edged sword makes it much harder for magic to affect them at all, harmful and beneficial alike.
+* * *
+KEY CONCEPT
+Soul Gems
+Soul Gems are the mechanism by which magical power is stored and transferred in Durgeth's enchanting tradition. A soul gem that has been filled - through the death of a creature while under the effect of a soul trap spell - contains the magical residue of a life, which trained enchanters can draw upon to power permanent enchantments. The Apisveldir's Stone Memory gives them a unique relationship with soul gems: they can sense whether a gem has been used to bind a soul without magical investigation, and the filled gems they examine are experienced as containing something - not quite a person, but the echo of the specific qualities of a life.
+
+
+The ethics of soul gem use are actively contested in every major philosophical tradition on Durgeth. All three major theological traditions - the Nine Pillars, the Academies, and the Apisveldir - agree that binding the soul of a sentient person is abhorrent, though this does not go far in preventing it.
+* * *
+________________
+
+
+LANGUAGES
+
+
+
+
+Arantza Click
+Arantza Click is the primary language of the Arantza - a click-based system that incorporates eztena positioning and body language as integral rather than supplementary components. It is not reproducible by non-Arantza anatomy across most of its range. The oral tradition transmitted in Arantza Click carries, according to what little has been translated, detailed records of the world's early geography and what the Arantza experienced as its formative period. Scholars who have worked with Arantza communities consistently describe the experience of partial comprehension as frustrating in proportion to how much they understand - enough to know the tradition is rich, not enough to know what it contains.
+* * *
+Ashveld Pidgin
+Ashveld Pidgin is a condensed trade-language that developed along the highland routes and has since spread considerably beyond them. It is not beautiful - it strips language down to functional essentials with a ruthlessness that linguists find fascinating and speakers find efficient. It is the most widely spoken secondary language in the Widemarch and the primary language of most cross-cultural commercial negotiation in the highland interior. That a people from isolated volcanic highlands produced the continent's dominant trade pidgin says something about the Ashveld's fundamental orientation: they communicate with whoever is in front of them, in whatever language gets the job done.
+* * *
+Ashen Script (Ashirum)
+Ashen Script is the ceremonial written language of the Ashirum, used for records and oaths rather than daily communication. It is traditionally inscribed by controlled application of flame rather than by hand - a practice that requires skill and that produces distinctive fire-marked characters. The choice to make their writing system ceremonial rather than practical reflects Ashirum priorities: the things worth writing down are the things that need to endure, and the act of inscription itself should be commensurate with that significance.
+* * *
+Gemscript (Apisveldir)
+Gemscript is the written-only language of the Apisveldir, used for gem-cataloguing and ritual purposes rather than daily communication. It has no spoken form. What Gemscript encodes is too specific and too layered for efficient spoken transmission: the geological origin of a stone, its age in broad terms, the history of its holdings, any soul-binding it has undergone, and the reader's assessment of what it contains. Access to Apisveldir gem catalogues is not granted to outsiders. The information they contain - which gems have been used to bind souls, which stones carry significant geological age - would be extraordinarily valuable to enchanters, necromancers, and those with commercial interests in the soul gem trade. The Apisveldir are aware of this, and it is possibly the only reason the language is still alive.
+* * *
+Kreln Deep-Sign
+Kreln Deep-Sign is a click-and-gesture language pressurized for underwater use. It is not fully reproducible above water - the above-water register is understood by other Kreln as a degraded approximation, sufficient for practical purposes but missing significant tonal and pressurized components. Most Kreln who spend extended time on the surface develop enough Common Tongue aptitude to interact with surface civilizations, but maintain that it is a lesser form of communication. Deep-Sign above water functions roughly as shorthand: the vocabulary is available but the full range of expression is not.
+* * *
+Naukin Scratch
+Naukin Scratch is a written-only cipher language used exclusively within Naukin communities. It is not a natural language in the linguistic sense - it is an encoding system that translates concepts into a symbol set that is meaningless without the decryption key. The key is transmitted orally within Naukin communities and has never been written down in any form accessible to outsiders. Several of the Chronicler's libraries contain examples of Naukin Scratch accompanied by scholarly analyses that are correct as far as they go and useless for the purpose of reading them. Whether Naukin Scratch was developed during the academy period as a means of coordinating the escape, or whether it predates this, is unknown. The Naukin have not clarified.
+* * *
+North-Tongue (Nordal)
+North-Tongue is the primary language of the Nordal, spoken widely in the northern territories and wherever Nordal communities have settled. It has a written form that is rarely used - Nordal culture transmits most of what it needs to transmit orally, and the oral tradition is treated as the primary form. North-Tongue's compression - its preference for the fewest words that carry the necessary meaning - produces a language that is efficient in direct communication and limited in contexts that require nuance or indirection. Political speech in North-Tongue is functionally impossible: you cannot say what you mean while meaning something else. The rune-working tradition of the Nordal operates partly through North-Tongue, and writing in North-Tongue carries weight that writing in Common Tongue does not.
+* * *
+Orcish
+Orcish is a tonal language with significant regional variation. What a Stoneguard speaker understands as Orcish and what a Veildrift speaker understands as Orcish share enough common ancestry to be recognizably related, but are sufficiently diverged that communication requires either a shared register or significant accommodation from both parties. The Gorirum's Orcish shows the most influence from Elven Formal of any variant, which their scholars note as further evidence for their claimed ancestry. Murrak communities maintain a fragmentary private dialect that may be a heavily diverged variant of Orcish, a survival of an older language, or something else entirely.
+
+
+GM Note: For practical table purposes: Orcish proficiency gives fluency with Stoneguard Orcish and functional comprehension of Gorirum Orcish. Murrak private dialect and Veildrift variant are separate and cannot be accessed through generic Orcish proficiency.
+	* * *
+Stone-Tongue
+Stone-Tongue is the primary shared language of most dwarven peoples - used across Apisdrenn, Apiskeld, and Apisveldir communities as a common medium despite significant cultural divergence between the lineages. Its name comes from its characteristic quality: it is designed to be carved rather than spoken, expressed in marks on stone before it is expressed in sound. The written form is considered primary; the spoken form is the oral approximation of a lapidary system. Stone-Tongue's trade-signing register is the most accessible version for outsiders - a gestural system that reduces the language to functional commercial exchange. That the name 'Durgeth' itself comes from Stone-Tongue is a quiet reminder of who has been here longest.
+* * *
+Sunblade Formal
+Sunblade Formal is the ceremonial language used for dueling protocols and formal oaths within Sunblade communities. It is not a daily language - Sunblade individuals use Common Tongue for ordinary communication - but a specialized register that carries legal and social weight within Sunblade cultural frameworks. The language's structure reflects its purpose: it is extremely precise about the categories it cares about (the nature of an offense, the credentials of witnesses, the terms of resolution) and has no vocabulary for things it does not care about. You cannot make small talk in Sunblade Formal. Outsiders who learn it acquire the ability to participate in Sunblade protocols as recognized participants - which carries both access and obligation.
+* * *
+________________
+
+
+PLACES & GEOGRAPHY
+
+
+
+
+The Deep Holds
+The Deep Holds is the collective term for the Apisdrenn hold-network - the interconnected system of mountain strongholds, underground cities, and sub-surface trade routes that represents the primary territorial expression of Apisdrenn civilization. Not all holds are particularly deep, and some of the most significant ones are built into cliffsides or mountain ridges at significant altitude rather than buried beneath them. What they share is the orientation inward - each hold is designed to be self-contained, defensible, and connected to the network rather than integrated with any surface settlement. The Deep Holds' trade network is the economic backbone of Durgeth's mineral economy. An Apisdrenn trade embargo is a more serious threat to most surface kingdoms than any military action the holds would be inclined to take.
+
+
+GM Note: The Deep Holds are rich dungeon and political content territory. A hold in the process of a succession dispute, a hold that has struck an unusual vein and is being approached by surface powers, or a hold that controls a critical pass through a mountain range all generate different types of adventure.
+	* * *
+Durgeth
+Durgeth is the name given to the known world by the Apisdrenn, in the Stone-Tongue root language that serves as the oldest recoverable naming tradition on the continent. The name is most accurately translated as 'the carved stone' - a compound of the Stone-Tongue roots for stone (dur) and to cut or carve (geth). This etymology is significant: the dwarven peoples, who have lived in Durgeth longest of any currently present civilization, conceived of the world not as something given or discovered but as something worked. Shaped. Made meaningful by the act of carving into it. What Durgeth actually encompasses - its geography, its climates, its deep geology - is imperfectly known. The Chronicler's libraries hold the most comprehensive maps, which are also the most extensively annotated with uncertainty markers.
+* * *
+The Ember Highlands
+The Ember Highlands is the collective term for the volcanic plateau territory in the continent's interior where Ashirum civilization has been concentrated for most of its recorded history. The name comes from the character of the light at dusk, when the low sun catches the obsidian outcroppings and the sulfur-tinted atmosphere produces colors that visitors consistently describe as both beautiful and deeply unsettling. The Ashirum themselves use a different name in Ashen Script, which translates approximately as 'the place that keeps changing.' Surface travel through the Ember Highlands is possible for non-Ashirum parties but requires preparation and local knowledge. Routes shift as geological activity alters the terrain.
+* * *
+The Fens (Verdathi Territory)
+The Fens is a loose geographic designation covering the extensive wetland territories of Durgeth's southern coast and river deltas where Verdathi civilization has developed over centuries. It is not a political entity - the Verdathi do not maintain centralized governance over the Fens as a whole - but it functions as a recognized territory in the same way that the Deep Holds describes Apisdrenn space without implying unified political control. The Fens are navigable by outsiders only with assistance. What appears to be solid ground may not be. Non-Verdathi who enter Fen territory without Verdathi awareness and permission tend to either leave quickly or not leave at all.
+* * *
+The Forest Canopy (Sylvarirum Territory)
+The Forest Canopy is the term outsiders use for the ancient forest territories where Sylvarirum civilization has been concentrated for most of its history. The Sylvarirum themselves use a different set of names, all specific to individual forests rather than general to the category. Sylvarirum settlements are genuinely difficult to find without either Sylvarirum guidance or the kind of extended familiarity with woodland navigation that very few outsiders develop. The treehouse structures are built to be invisible from ground level and from the air. The Sylvarirum do not maintain physical barriers. The forest is the barrier.
+* * *
+The Highland Routes (Ashveld Territory)
+The Highland Routes are the network of trade paths through the volcanic interior that the Ashveld have maintained, navigated, and effectively owned for as long as anyone has been keeping records of such things. They are not well-mapped by lowland cartographic standards. The Ashveld's knowledge of these routes is not cartographic - it is embodied, passed through practice and direct experience, and cannot be fully transferred into a document. What the Highland Routes connect: mining operations in the volcanic highlands, alchemical material sources that exist nowhere else on the continent, Ashirum communities who produce fire-worked goods for export, and the lowland trade networks that want all of these things. The Ashveld-Naukin communities that cluster at Highland Route margins run information networks in parallel with the physical trade, and the combination of Ashveld route knowledge and Naukin cipher communication has produced a commercial intelligence operation that several powerful parties would very much like to access and have been unable to.
+* * *
+The Lowland Kingdoms
+The Lowland Kingdoms is a collective term for the Hearthborn-administered territories of Durgeth's inhabited plains and river valleys - the densest concentration of population, commerce, and institutional infrastructure on the continent. They contain Durgeth's largest cities, its most extensive road networks, its most developed banking and merchant guild infrastructure, and its highest concentration of Nine Pillars temple institutions. They also contain the wizard academies - a fact whose implications the Naukin communities in lowland city margins are very well aware of.
+
+
+GM Note: The Lowland Kingdoms are the default campaign starting territory - familiar enough to establish baseline assumptions, complex enough to support extended play. The political map of the kingdoms should be treated as contested and dynamic: merchant guilds, temple hierarchies, noble houses, and the academies all have competing interests.
+	* * *
+The Steppe Corridors (Bovari Drovelands)
+The Steppe Corridors is the informal name for the network of overland trade routes that cross Durgeth's open grassland territories between the highland regions and the lowland cities. The Bovari drovelands overlap extensively with the Steppe Corridors, which is not a coincidence - the Bovari have been moving goods through this territory for as long as the goods have existed, and their knowledge of the corridors is embodied rather than cartographic: which water sources are reliable in which seasons, where the footing is uncertain, what the weather does in spring in the highland approaches. The Commonweal Triangle is most visible in the Steppe Corridors - a combination of Hearthborn route infrastructure, Bovari driving expertise, and Sunblade security so effective that none of the three parties has needed to test what they would do without the other two in living memory.
+* * *
+The Undercities (Naukin Territory)
+The Undercities is the collective term for the inhabited space that exists beneath the official footprint of Durgeth's major lowland cities - the old sewer systems, collapsed substructure, tunnel networks, and repurposed foundations where Naukin communities have established themselves across generations. The term is used by those who know enough about the Naukin to know the territory exists. Most city residents do not. What they share is the Naukin's presence and the infrastructure of habitation that presence has built over time: ventilation systems that would not exist in abandoned space, light sources maintained at levels comfortable for Naukin eyes, food storage organized with the efficiency of a people who have learned that supply chain disruption is dangerous.
+* * *
+The Widemarch
+The Widemarch is a broad geographic term for the territories between the lowland kingdoms and the major highland regions of Durgeth's interior - the spaces claimed by no single culture, maintained by no single polity, and consequently inhabited by a disproportionate variety of peoples in various combinations. The Widemarch represent the most mixed territory on Durgeth: the significant cross-cultural partnerships identified by scholars are all either based in or regularly operative through Marchland territory. The Bovari drovelands run through the Widemarch. Ashveld-Naukin communities cluster in highland Marchland margins. The Chronicler's scholars estimate that current published work accounts for perhaps sixty percent of Durgeth's actual cultural variety - and most of the missing forty percent is probably here.
+* * *
+________________
+
+
+EDITOR'S NOTE
+
+
+
+
+A Note on Completeness
+This compendium represents the current state of documented knowledge about the peoples, powers, and places of Durgeth. It is not complete. The Chronicler's libraries themselves are not complete, and the tradition that produced this volume operates under the same limitations as any archive: it can only record what has been observed, reported, and judged worth recording.
+
+
+The Widemarch almost certainly contain communities that are not represented here. The Kreln's deep-water civilization, before its retreat, is known to us only through inference. The Murrak's private dialect has not been decoded. The birthplace of the Arantza has not been found. The Gorirum's records have not been evaluated by scholars with the tools to evaluate them fully. The history that the Naukin's escape made - and the history that preceded it - exists in a language that remains unread.
+
+
+This is not an apology. It is an acknowledgment of the nature of knowledge: it accumulates, it has gaps, and the gaps are themselves information about what has been difficult to see. A compendium that claimed completeness would be lying. This one claims only accuracy within its scope, and invites its readers to note what is missing.
+
+
+The Chronicler has no personal name. Knowledge is not finished.

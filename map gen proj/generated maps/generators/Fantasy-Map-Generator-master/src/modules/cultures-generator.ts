@@ -65,6 +65,17 @@ class CulturesModule {
       pack.features[cells.f[cells.haven[cell]]].type !== "lake"
         ? 1
         : fee; // not on sea coast fee
+    const getBase = (namesbase: string, fallback = 32) => {
+      const baseIndex = nameBases.findIndex(
+        (base) => base.name.toLowerCase() === namesbase.toLowerCase(),
+      );
+      return baseIndex === -1 ? fallback : baseIndex;
+    };
+    const scenario = ((globalThis as any).durgethScenarioDirectives || {}) as {
+      forceVerdathiSouthSwamp?: boolean;
+      forceSylvarirumSouthForest?: boolean;
+      nearConstraint?: boolean;
+    };
 
     if (culturesSet.value === "european") {
       return [
@@ -778,6 +789,171 @@ class CulturesModule {
       ];
     }
 
+    if (culturesSet.value === "durgeth") {
+      return [
+        {
+          name: "Solarirum Citadels",
+          base: getBase("SolarirumFrench"),
+          odd: 1,
+          sort: (i: number) => n(i) / td(i, 16) / bd(i, [6, 8]),
+          shield: "gondor",
+        },
+        {
+          name: "Sylvarirum Canopy",
+          base: getBase("SylvarirumNavajo"),
+          odd: 1,
+          sort: (i: number) => {
+            if (scenario.forceSylvarirumSouthForest) {
+              const isForest = [6, 7, 8, 9].includes(cells.biome[i]);
+              const isSouthern = cells.p[i][1] > graphHeight * 0.52;
+              if (!isForest || !isSouthern) return 0.001;
+            }
+            const southBias = 0.4 + cells.p[i][1] / graphHeight;
+            return (
+              (n(i) / td(i, 18) / bd(i, [6, 7, 8, 9], 10)) * h[i] * southBias
+            );
+          },
+          shield: "noldor",
+        },
+        {
+          name: "Ashirum Calderas",
+          base: getBase("AshirumIcelandic"),
+          odd: 0.9,
+          sort: (i: number) => (n(i) + h[i]) / td(i, 22),
+          shield: "fantasy2",
+        },
+        {
+          name: "Vethanirum-Hearthborn Borders",
+          base: getBase("Vethanirum"),
+          odd: 0.7,
+          sort: (i: number) => n(i) / td(i, 15),
+          shield: "hessen",
+        },
+        {
+          name: "Apisdrenn Deep Holds",
+          base: getBase("ApisdrenBhutanAksumite"),
+          odd: 1,
+          sort: (i: number) => n(i) + h[i],
+          shield: "erebor",
+        },
+        {
+          name: "Apiskeld Forge Cities",
+          base: getBase("ApiskeldSumerian"),
+          odd: 0.9,
+          sort: (i: number) => n(i) + h[i] / td(i, 21),
+          shield: "noldor",
+        },
+        {
+          name: "Apisveldir Gem Roads",
+          base: getBase("ApisveldirByzantineMughal"),
+          odd: 0.7,
+          sort: (i: number) => n(i) / td(i, 12),
+          shield: "pavise",
+        },
+        {
+          name: "Kreln-Apisdrenn Underdeep",
+          base: getBase("KrelnWelshPolynesian"),
+          odd: 0.6,
+          sort: (i: number) => n(i) + h[i],
+          shield: "erebor",
+        },
+        {
+          name: "Hearthborn Commonweal",
+          base: getBase("ImperialEngland"),
+          odd: 1,
+          sort: (i: number) => n(i) / td(i, 14),
+          shield: "roman",
+        },
+        {
+          name: "Nordal Jarls",
+          base: getBase("NordalRussian"),
+          odd: 0.9,
+          sort: (i: number) => n(i) / td(i, 6),
+          shield: "fantasy5",
+        },
+        {
+          name: "Sunblade Reaches",
+          base: getBase("SunbladeGreek"),
+          odd: 0.9,
+          sort: (i: number) => (n(i) + h[i]) / td(i, 17),
+          shield: "fantasy5",
+        },
+        {
+          name: "Ashveld-Nordal Cinderlands",
+          base: getBase("AshveldSwahiliQuechua"),
+          odd: 0.8,
+          sort: (i: number) => (n(i) + h[i]) / td(i, 19),
+          shield: "round",
+        },
+        {
+          name: "Stoneguard Legions",
+          base: getBase("StoneguardToltec"),
+          odd: 1,
+          sort: (i: number) => n(i) / td(i, 13),
+          shield: "urukHai",
+        },
+        {
+          name: "Gorirum Expanse",
+          base: getBase("GorirumPersianParthian"),
+          odd: 0.8,
+          sort: (i: number) => (n(i) / td(i, 17)) * h[i],
+          shield: "fantasy1",
+        },
+        {
+          name: "Veildrift-Murrak Ashwastes",
+          base: getBase("VeildriftSlavicCeltic"),
+          odd: 0.8,
+          sort: (i: number) => n(i) / td(i, 19),
+          shield: "easterling",
+        },
+        {
+          name: "Murrak Ashfields",
+          base: getBase("MurrakTasmanian"),
+          odd: 0.8,
+          sort: (i: number) => n(i) / td(i, 18),
+          shield: "moriaOrc",
+        },
+        {
+          name: "Bovari Drovelands",
+          base: getBase("BovariScythian"),
+          odd: 0.9,
+          sort: (i: number) => n(i) / td(i, 13),
+          shield: "pavise",
+        },
+        {
+          name: "Naukin Warrens",
+          base: getBase("NaukinMongolianAkkadian"),
+          odd: 0.9,
+          sort: (i: number) => n(i) / td(i, 10),
+          shield: "moriaOrc",
+        },
+        {
+          name: "Skittari Broodnests",
+          base: getBase("ArantzaKhoisanBasque"),
+          odd: 0.8,
+          sort: (i: number) => n(i) / bd(i, [12], 10),
+          shield: "horsehead2",
+        },
+        {
+          name: "Verdathi Fens",
+          base: getBase("VerdathiAboriginal"),
+          odd: 0.8,
+          sort: (i: number) => {
+            if (scenario.forceVerdathiSouthSwamp) {
+              const isSwamp = cells.biome[i] === 12;
+              const isSouthern = cells.p[i][1] > graphHeight * 0.55;
+              if (!isSwamp || !isSouthern) return 0.001;
+            }
+            const southBias = 0.35 + cells.p[i][1] / graphHeight;
+            return (
+              (n(i) / td(i, 24) / sf(i) / bd(i, [12], 18)) * southBias
+            );
+          },
+          shield: "round",
+        },
+      ];
+    }
+
     if (culturesSet.value === "random") {
       return range(count).map(() => {
         const rnd = rand(nameBases.length - 1);
@@ -1215,6 +1391,74 @@ class CulturesModule {
       cultureIds[center] = newId;
       if (emblemShape === "random") c.shield = this.getRandomShield();
     });
+
+    if (culturesSet.value === "durgeth") {
+      const scenario = ((globalThis as any).durgethScenarioDirectives || {}) as {
+        forceVerdathiSouthSwamp?: boolean;
+        forceSylvarirumSouthForest?: boolean;
+        nearConstraint?: boolean;
+      };
+      const verdathi = cultures.find((c) => c.name === "Verdathi Fens");
+      const sylvarirum = cultures.find((c) => c.name === "Sylvarirum Canopy");
+
+      if (verdathi?.center !== undefined && sylvarirum?.center !== undefined) {
+        const needsHardPlacement =
+          scenario.forceVerdathiSouthSwamp ||
+          scenario.forceSylvarirumSouthForest ||
+          scenario.nearConstraint;
+
+        if (needsHardPlacement) {
+          const preferredSwamp = populated
+            .filter((cellId: number) => {
+              const isSwamp = this.cells.biome[cellId] === 12;
+              const isSouthern = this.cells.p[cellId][1] > graphHeight * 0.55;
+              const isFree = !cultureIds[cellId];
+              return isSwamp && isSouthern && isFree;
+            })
+            .sort(
+              (a: number, b: number) =>
+                this.cells.s[b] + this.cells.h[b] - (this.cells.s[a] + this.cells.h[a]),
+            )[0];
+
+          if (preferredSwamp !== undefined) {
+            const oldVerdathiCenter = verdathi.center;
+            if (oldVerdathiCenter !== undefined) cultureIds[oldVerdathiCenter] = 0;
+            verdathi.center = preferredSwamp;
+            cultureIds[preferredSwamp] = verdathi.i;
+          }
+        }
+
+        const verdathiCenter = verdathi.center;
+        if (verdathiCenter !== undefined) {
+          const verdathiPoint = this.cells.p[verdathiCenter];
+          const preferredForest = populated
+            .filter((cellId: number) => {
+              const isForest = [6, 7, 8, 9].includes(this.cells.biome[cellId]);
+              const isSouthern = this.cells.p[cellId][1] > graphHeight * 0.52;
+              const isFree = !cultureIds[cellId];
+              const dx = this.cells.p[cellId][0] - verdathiPoint[0];
+              const dy = this.cells.p[cellId][1] - verdathiPoint[1];
+              const distance = Math.hypot(dx, dy);
+              const isCloseEnough = distance > 16 && distance < graphWidth * 0.2;
+              const touchesSwampBiome = this.cells.c[cellId].some(
+                (nei: number) => this.cells.biome[nei] === 12,
+              );
+              return isForest && isSouthern && isFree && isCloseEnough && touchesSwampBiome;
+            })
+            .sort(
+              (a: number, b: number) =>
+                this.cells.s[b] + this.cells.h[b] - (this.cells.s[a] + this.cells.h[a]),
+            )[0];
+
+          if (preferredForest !== undefined) {
+            const oldSylvarirumCenter = sylvarirum.center;
+            if (oldSylvarirumCenter !== undefined) cultureIds[oldSylvarirumCenter] = 0;
+            sylvarirum.center = preferredForest;
+            cultureIds[preferredForest] = sylvarirum.i;
+          }
+        }
+      }
+    }
 
     this.cells.culture = cultureIds;
 

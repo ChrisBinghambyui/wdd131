@@ -1,0 +1,663 @@
+IMPERIAL ENGLAND - 500 Common Word Translations
+Fantasy Language: Imperial England
+Linguistic roots: 50% Old/Middle English (equal blend, 5th-15th c.)
++ 50% borrowed/absorbed/conquered from 19 other Durgeth languages
+Stylization: Fantasy-leaning. Imperial England feels like a dominant
+tongue that has swallowed vocabulary from every culture it has touched.
+
+NATURE OF BORROWING:
+  CONQUEST borrowings (harder absorption, sometimes clipped/anglicized):
+    Bovari Scythian, Naukin Mongolian, Stoneguard Toltec,
+    Veildrift Slavic, Verdathi Aboriginal, Sylvarirum Navajo
+  TRADE borrowings (softer, more equal assimilation):
+    Solarirum French, Sunblade Greek, Gorirum Persian,
+    Vethanirum Catalan, Apisveldir Byzantine, Apiskeld Sumerian
+  ABSORBED borrowings (place-names, nature words, concepts):
+    Ashirum Icelandic, Nordal Russian, Ashveld Swahili,
+    Murrak Tasmanian-Etruscan, Arantza Basque, Apisdren Bhutan,
+    Kreln Welsh-Polynesian
+
+KEY OLD/MIDDLE ENGLISH ROOTS:
+  OE: þe/se (the), and/ond (and), ne/na (not), on/an (on/at),
+  of (of), mid (with), to (to), gif (if), forþan (because),
+  beon/wesan (be), habban (have), don (do), secgan (say), geseon (see),
+  gan (go), cuman (come), witan (know), gifan (give), niman (take),
+  man/guma (man), wif (woman), cild (child), cyning (king),
+  eorþe (earth), fyr (fire), wæter (water), heofon (sky/heaven),
+  dæg (day), mona (moon), steorra (star), god (good), micel/mycel (great)
+  ME: the, and, nat/not, on, of, with, to, if, for, because,
+  been, have, do, say, see, go, come, know, give, take,
+  man, woman, child, king, earth, fire, water, heven, day,
+  moon, sterre, good, grete, true, world, time, place, way
+
+SUFFIX/AFFIX SYSTEM FOR IMPERIAL ENGLAND:
+  -en  = OE/ME infinitive/past participle marker
+  -ish = OE/ME adjectival suffix (absorbed as quality marker)
+  -wyn = OE/ME joy/delight (used as positive noun suffix)
+  -ward = OE direction suffix (used for directional/place words)
+  -dom  = OE realm/state suffix
+  -craft = OE skill/art suffix
+  Borrowed suffixes retained: -vel (Solarirum), -ara (Gorirum),
+  -tli (Stoneguard, conquest-clipped to -tl), -vrath (Veildrift),
+  -lara (Murrak, softened to -lar in Imperial)
+
+===================================================================================
+RANK | ENGLISH       | IMPERIAL ENGLAND        | SOURCE / NOTES
+===================================================================================
+
+--- ARTICLES & PRONOUNS ---
+1    | the           | þe                      | OE þe (the) — attested
+2    | a / an        | an                      | OE an (one/a) — attested
+3    | to            | to                      | OE to — attested
+6    | it            | hit                     | OE hit (it) — attested
+8    | that          | þat                     | OE þæt (that) — attested
+10   | it            | hit                     | same
+11   | for           | forvel                  | OE for + Sol. -vel (trade)
+14   | this          | þis                     | OE þis (this) — attested
+20   | this          | þis                     | same
+22   | his           | his                     | OE his — attested
+28   | her           | hire                    | OE hire (her) — attested
+29   | she           | heo                     | OE heo (she) — attested
+31   | an            | an                      | OE an (a/an) — attested
+34   | one           | ān                      | OE ān (one) — attested
+35   | all           | eall                    | OE eall (all) — attested
+37   | there         | þær                     | OE þær (there) — attested
+38   | their         | heora                   | OE heora (their) — attested
+39   | what          | hwæt                    | OE hwæt (what) — attested
+45   | who           | hwā                     | OE hwā (who) — attested
+49   | me            | mē                      | OE mē (me) — attested
+50   | when          | hwenne                  | OE hwenne (when) — attested
+55   | no            | nā                      | OE nā (no) — attested
+63   | your          | ēower                   | OE ēower (your) — attested
+64   | good          | gōd                     | OE gōd (good) — attested
+65   | some          | sum                     | OE sum (some) — attested
+69   | other         | ōþer                    | OE ōþer (other) — attested
+83   | two           | twā                     | OE twā (two) — attested
+85   | our           | ūre                     | OE ūre (our) — attested
+95   | these         | þās                     | OE þās (these) — attested
+99   | us            | ūs                      | OE ūs (us) — attested
+120  | got           | geten                   | ME geten (got) — attested
+
+--- BEING / EXISTENCE ---
+2    | be / is / are | beon                    | OE beon (to be) — attested
+70   | there         | þær                     | OE þær (there)
+72   | seem          | sēman                   | OE sēman + Sol. sembleïr blend
+78   | think         | þencan                  | OE þencan (to think) — attested
+
+--- PREPOSITIONS & CONJUNCTIONS ---
+4    | of            | of                      | OE of — attested
+5    | and           | and                     | OE and — attested
+12   | not           | naht                    | OE naht (not/naught) — attested
+13   | on            | on                      | OE on — attested
+14   | with          | mid                     | OE mid (with) — attested
+19   | at            | æt                      | OE æt (at) — attested
+21   | but           | butan                   | OE butan (but/except) — attested
+23   | by            | bī                      | OE bī (by) — attested
+24   | from          | fram                    | OE fram (from) — attested
+30   | or            | oþþe                    | OE oþþe (or) — attested
+32   | will          | willen                  | OE willan (will/want) — attested
+33   | my            | mīn                     | OE mīn (my) — attested
+36   | would         | wolde                   | OE wolde (would) — attested
+40   | so            | swā                     | OE swā (so/thus) — attested
+41   | up            | upp                     | OE upp (up) — attested
+42   | out           | ūt                      | OE ūt (out) — attested
+43   | if            | gif                     | OE gif (if) — attested
+44   | about         | abūtan                  | OE abūtan (about) — attested
+60   | because       | forþan                  | OE forþan (because) — attested
+61   | into          | intō                    | OE intō (into) — attested
+71   | only          | ānolyvel                | OE ān (one) + Sol. -oly + -vel (trade)
+76   | its           | his                     | OE his (its — same as his)
+77   | over          | ofer                    | OE ofer (over) — attested
+79   | also          | ēac                     | OE ēac (also/even) — attested
+80   | back          | bæc                     | OE bæc (back) — attested
+81   | after         | æfter                   | OE æfter (after) — attested
+82   | use           | brucan                  | OE brucan (use/enjoy) — attested
+87   | first         | fyrst                   | OE fyrst (first) — attested
+88   | well          | wel                     | OE wel (well) — attested
+90   | even          | efne                    | OE efne (even/just) — attested
+94   | any           | ænig                    | OE ænig (any) — attested
+102  | need          | nēodwyn                 | OE nēod (need) + -wyn
+104  | often         | oft                     | OE oft (often) — attested
+106  | high          | hēah                    | OE hēah (high) — attested
+110  | never         | næfre                   | OE næfre (never) — attested
+112  | north         | norþ                    | OE norþ (north) — attested
+114  | seem          | sēman                   | OE sēman (seem/settle) stylized
+116  | next          | nēhst                   | OE nēhst (next/nearest) — attested
+119  | begin         | beginnan                | OE beginnan (to begin) — attested
+129  | both          | bēgen                   | OE bēgen (both) — attested
+133  | until         | oþ                      | OE oþ (until/up to) — attested
+147  | ever          | æfre                    | OE æfre (ever) — attested
+150  | though        | þēah                    | OE þēah (though) — attested
+154  | soon          | sōna                    | OE sōna (soon) — attested
+158  | direct        | rihtan                  | OE rihtan (direct/right) — attested
+160  | leave         | læfan                   | OE læfan (to leave) — attested
+169  | wind          | wind                    | OE wind — attested
+172  | since         | siþþan                  | OE siþþan (since/after) — attested
+183  | against       | ongēan                  | OE ongēan (against) — attested
+192  | during        | þurhvel                 | OE þurh (through/during) + Sol. -vel
+194  | true          | trēowe                  | OE trēowe (true/loyal) — attested
+219  | toward        | tōweard                 | OE tōweard (toward) — attested
+225  | center        | sentravel               | ME centre + Sol. -vel (trade)
+251  | still         | stille                  | OE stille (still/quiet) — attested
+261  | above         | abufan                  | OE abufan (above) — attested
+287  | behind        | behindan                | OE behindan (behind) — attested
+330  | yes           | gēa                     | OE gēa (yes) — attested
+332  | fill          | fyllan                  | OE fyllan (to fill) — attested
+338  | yet           | gīet                    | OE gīet (yet/still) — attested
+339  | among         | ongemang                | OE ongemang (among) — attested
+340  | perhaps       | mægwyn                  | OE mæg (may/might) + -wyn
+343  | am            | eom                     | OE eom (I am) — attested
+446  | whether       | hwæþer                  | OE hwæþer (whether) — attested
+451  | shall         | sceal                   | OE sceal (shall/must) — attested
+457  | either        | æghwæþer                | OE æghwæþer (either) — attested
+488  | else          | elles                   | OE elles (else/otherwise) — attested
+489  | quite         | cwitevan                | ME quite + Vet. -van blend
+490  | quite         | cwitevan                | same
+
+--- VERBS: CORE ACTIONS ---
+7    | do            | dōn                     | OE dōn (to do) — attested
+9    | have          | habban                  | OE habban (to have) — attested
+15   | he            | hē                      | OE hē (he) — attested
+16   | as            | swā swā                 | OE swā swā (as/just as) — attested
+17   | you           | þū                      | OE þū (thou/you) — attested
+18   | do            | dōn                     | same
+25   | they          | hīe                     | OE hīe (they) — attested
+26   | we            | wē                      | OE wē (we) — attested
+27   | say           | secgan                  | OE secgan (to say) — attested
+46   | get           | getan                   | OE getan (to get) — attested
+47   | which         | hwilc                   | OE hwilc (which) — attested
+48   | go            | gān                     | OE gān (to go) — attested
+51   | make          | macian                  | OE macian (to make) — attested
+52   | can           | cunnan                  | OE cunnan (can/know) — attested
+53   | like          | gēlīcian                | OE gēlīcian (to like/please) — attested
+54   | time          | tīma                    | OE tīma (time) — attested
+56   | just          | iusteval                | ME juste + Sol. -val (trade)
+57   | him           | him                     | OE him — attested
+58   | know          | witan                   | OE witan (to know) — attested
+59   | take          | niman                   | OE niman (to take) — attested
+62   | year          | gēar                    | OE gēar (year) — attested
+66   | could         | cūþe                    | OE cūþe (could/knew) — attested
+67   | them          | him                     | OE him (them — same form)
+68   | see           | gesēon                  | OE gesēon (to see) — attested
+73   | look          | lōcian                  | OE lōcian (to look) — attested
+74   | only          | ānolyvel                | same as only above
+75   | come          | cuman                   | OE cuman (to come) — attested
+84   | use           | brucan                  | OE brucan (to use) — attested
+86   | work          | weorc                   | OE weorc (work) — attested
+89   | way           | weg                     | OE weg (way/road) — attested
+91   | new           | nīwe                    | OE nīwe (new) — attested
+92   | want          | wilnian                 | OE wilnian (to want/desire) — attested
+93   | because       | forþan                  | same as because
+96   | give          | gifan                   | OE gifan (to give) — attested
+97   | day           | dæg                     | OE dæg (day) — attested
+98   | most          | mǣst                    | OE mǣst (most) — attested
+100  | great         | grēat                   | OE grēat (great) — attested
+101  | between       | betwēonum               | OE betwēonum (between) — attested
+103  | large         | lȳtel-naht              | OE blend: large from Gor. buzurgtavar
+105  | hand          | hand                    | OE hand — attested
+107  | place         | stede                   | OE stede (place/stead) — attested
+108  | hold          | healdan                 | OE healdan (to hold) — attested
+109  | turn          | tyrnan                  | OE tyrnan (to turn) — attested
+111  | few           | fēawe                   | OE fēawe (few) — attested
+113  | open          | openian                 | OE openian (to open) — attested
+115  | together      | tōgædere                | OE tōgædere (together) — attested
+117  | white         | hwīt                    | OE hwīt (white) — attested
+118  | children      | cildru                  | OE cildru (children) — attested
+121  | walk          | wealcan                 | OE wealcan (to walk/roll) — attested
+122  | example       | bīspell                 | OE bīspell (example/parable) — attested
+123  | ease          | ēaþness                 | OE ēaþness (ease) — attested
+124  | paper         | papirvel                | Aps. papirzdru clipped + -vel (trade)
+125  | group         | grūpavel                | ME groupe + -vel (Solarirum trade)
+126  | always        | simble                  | OE simble (always) — attested
+127  | music         | musicwyn                | ME musique (Fr. trade) + OE -wyn
+128  | those         | þā                      | OE þā (those) — attested
+130  | mark          | mearc                   | OE mearc (mark/boundary) — attested
+131  | book          | bōc                     | OE bōc (book) — attested
+132  | letter        | letravel                | Sol. letravelel clipped + -vel (trade)
+134  | mile          | mīl                     | OE mīl (mile) — attested
+135  | river         | ēa                      | OE ēa (river/stream) — attested
+136  | car           | cārraft                 | OE cār + -raft blend (craft suffix)
+137  | feet          | fēt                     | OE fēt (feet) — attested
+138  | care          | caru                    | OE caru (care/sorrow) — attested
+139  | second        | sēcund                  | ME secunde (Fr. trade) — attested
+140  | enough        | genōg                   | OE genōg (enough) — attested
+141  | plain         | plānvel                 | Sol. plāneth + OE -vel (trade)
+142  | girl          | gyrle                   | ME girle (girl) — attested
+143  | usual         | gewunelic               | OE gewunelic (usual/customary) — attested
+144  | young         | geong                   | OE geong (young) — attested
+145  | ready         | rǣde                    | OE rǣde (ready/quick) — attested
+146  | above         | abufan                  | OE abufan (above)
+148  | red           | rēad                    | OE rēad (red) — attested
+149  | list          | līste                   | ME liste (list, from Fr.) — attested
+151  | feel          | fēlan                   | OE fēlan (to feel) — attested
+152  | talk          | talken                  | ME talken (to talk) — attested
+153  | bird          | bridd                   | OE bridd (bird/chick) — attested
+155  | body          | bodig                   | OE bodig (body) — attested
+156  | dog           | docga                   | OE docga (dog) — attested
+157  | family        | familyvel               | ME famille + Sol. -vel (trade)
+159  | pose          | pōsen                   | ME posen (pose, from Fr.) — attested
+161  | song          | sang                    | OE sang (song) — attested
+162  | measure       | metan                   | OE metan (to measure) — attested
+163  | door          | duru                    | OE duru (door) — attested
+164  | product       | frumwyrc                | OE frumwyrc (first-work/product)
+165  | black         | blæc                    | OE blæc (black) — attested
+166  | short         | scort                   | OE scort (short) — attested
+167  | numeral       | telraft                 | OE telu (count) + -raft blend
+168  | class         | clas                    | ME classe (Fr. trade) — attested
+170  | question      | cwestion                | ME questioun (Fr. trade) — attested
+171  | happen        | gebyrian                | OE gebyrian (to happen/befall) — attested
+173  | ship          | scip                    | OE scip (ship) — attested
+174  | area          | ēa-rīm                  | OE ēa (water) + rīm (boundary) stylized
+175  | half          | healf                   | OE healf (half) — attested
+176  | rock          | roccavel                | ME roche (Fr. trade) + -vel
+177  | order         | ordren                  | ME ordre (Fr. trade) + OE -en
+178  | fire          | fȳr                     | OE fȳr (fire) — attested
+179  | south         | sūþ                     | OE sūþ (south) — attested
+180  | problem       | hefigtīma               | OE hefig (heavy) + tīma (time) = burden
+181  | piece         | pēce                    | ME pece (piece, from Fr.) — attested
+182  | told          | tālde                   | OE tālde (told) — attested
+184  | pass          | passvel                 | Sol. pass + -vel (Fr. trade)
+185  | since         | siþþan                  | same as since
+186  | top           | topp                    | OE topp (top) — attested
+187  | whole         | hāl                     | OE hāl (whole/healthy) — attested
+188  | king          | cyning                  | OE cyning (king) — attested
+189  | space         | rūm                     | OE rūm (space/room) — attested
+190  | heard         | hīerde                  | OE hīerde (heard/shepherd) stylized
+191  | best          | betst                   | OE betst (best) — attested
+192  | hour          | ūr                      | ME houre (Fr. trade) stylized
+193  | better        | betera                  | OE betera (better) — attested
+195  | during        | þurhvel                 | same as during
+196  | hundred       | hundred                 | OE hundred — attested
+197  | five          | fīf                     | OE fīf (five) — attested
+198  | remember      | gemyndgian              | OE gemyndgian (to remember) — attested
+199  | step          | stæpe                   | OE stæpe (step) — attested
+200  | early         | ǣrlic                   | OE ǣrlic (early) — attested
+201  | hold          | healdan                 | OE healdan (to hold)
+202  | west          | west                    | OE west — attested
+203  | ground        | grund                   | OE grund (ground) — attested
+204  | interest      | intrēst                 | ME interest (Fr. trade) — attested
+205  | reach         | rǣcan                   | OE rǣcan (to reach) — attested
+206  | fast          | fæst                    | OE fæst (fast/firm) — attested
+207  | verb          | verbvel                 | Sol. verbeth + OE -vel (trade)
+208  | sing          | singan                  | OE singan (to sing) — attested
+209  | listen        | hlysnan                 | OE hlysnan (to listen) — attested
+210  | six           | siex                    | OE siex (six) — attested
+211  | table         | tabul                   | ME table (Fr. trade) — attested
+212  | travel        | travailvel              | ME travaille (Fr. trade) + -vel
+213  | less          | lǣsse                   | OE lǣsse (less) — attested
+214  | morning       | morgen                  | OE morgen (morning) — attested
+215  | ten           | tīen                    | OE tīen (ten) — attested
+216  | simple        | simpledom               | ME simple + OE -dom
+217  | several       | seofofeald              | OE seofon + feald (sevenfold/several)
+218  | vowel         | vowelave                | ME vowel (Fr. trade) stylized
+220  | war           | werre                   | ME werre (war, from OFr.) — attested
+221  | lay           | lecgan                  | OE lecgan (to lay) — attested
+222  | against       | ongēan                  | same as against
+223  | pattern       | patronvel               | Sol. patroneth + -vel (trade)
+224  | slow          | slāw                    | OE slāw (slow) — attested
+226  | love          | lufu                    | OE lufu (love) — attested
+227  | person        | personedom              | ME persone + OE -dom (trade)
+228  | money         | feoh                    | OE feoh (money/cattle) — attested
+229  | serve         | servian                 | ME servien (to serve, Fr. trade)
+230  | appear        | ǣtīewan                 | OE ǣtīewan (to appear/show) — attested
+231  | road          | rād                     | OE rād (road/ride) — attested
+232  | map           | mæp                     | ME mappe (map, Fr. trade) — attested
+233  | rain          | regen                   | OE regen (rain) — attested
+234  | rule          | rihtle                  | OE riht (right/rule) + -le
+235  | govern        | styran                  | OE styran (to govern/steer) — attested
+236  | pull          | pullian                 | OE pullian (to pull) — attested
+237  | cold          | ceald                   | OE ceald (cold) — attested
+238  | notice        | tācnian                 | OE tācnian (to notice/mark) — attested
+239  | voice         | stefn                   | OE stefn (voice/prow) — attested
+240  | fall          | feallan                 | OE feallan (to fall) — attested
+241  | power         | mægen                   | OE mægen (power/strength) — attested
+242  | town          | tūn                     | OE tūn (town/enclosure) — attested
+243  | fine          | fīnvel                  | Sol. finel + OE -vel (trade)
+244  | drive         | drīfan                  | OE drīfan (to drive) — attested
+245  | lead          | lǣdan                   | OE lǣdan (to lead) — attested
+246  | cry           | crīgan                  | OE crīgan (to cry) — attested
+247  | dark          | deorc                   | OE deorc (dark) — attested
+248  | machine       | machinecraft            | ME machine + OE -craft
+249  | note          | nōtvel                  | Sol. noteth + -vel (trade)
+250  | wait          | bīdan                   | OE bīdan (to wait/abide) — attested
+252  | figure        | figuredom               | ME figure + OE -dom (trade)
+253  | star          | steorra                 | OE steorra (star) — attested
+254  | box           | box                     | OE box — attested
+255  | noun          | namenvel                | OE nama (name/noun) + -vel
+256  | field         | feld                    | OE feld (field) — attested
+257  | rest          | rest                    | OE rest (rest) — attested
+258  | correct       | corrīhtan               | ME correct + OE rihtan blend
+259  | able          | abel                    | ME abel (able, Fr. trade) — attested
+260  | pound         | pund                    | OE pund (pound) — attested
+262  | beauty        | beltedom                | Sol. belleseth clipped + OE -dom (trade)
+263  | drive         | drīfan                  | same as drive
+264  | stood         | stōd                    | OE stōd (stood) — attested
+265  | contain       | healdan                 | OE healdan (contain/hold) — attested
+266  | front         | frunt                   | ME frount (front, Fr. trade) — attested
+267  | teach         | tǣcan                   | OE tǣcan (to teach) — attested
+268  | week          | wicu                    | OE wicu (week) — attested
+269  | final         | finalvel                | Sol. finaleth + -vel (trade)
+270  | gave          | geaf                    | OE geaf (gave) — attested
+271  | green         | grēne                   | OE grēne (green) — attested
+272  | oh            | ō                       | OE ō (oh/exclamation) — attested
+273  | quick         | cwic                    | OE cwic (quick/alive) — attested
+274  | develop       | þēon                    | OE þēon (to develop/thrive) — attested
+275  | ocean         | gārsecg                 | OE gārsecg (ocean/sea) — attested
+276  | warm          | wearm                   | OE wearm (warm) — attested
+277  | free          | frēo                    | OE frēo (free) — attested
+278  | minute        | minutvel                | Sol. minuteth + -vel (trade)
+279  | strong        | strang                  | OE strang (strong) — attested
+280  | special       | specialdom              | ME special (Fr. trade) + OE -dom
+281  | behind        | behindan                | OE behindan (behind)
+282  | clear         | clǣne                   | OE clǣne (clear/clean) — attested
+283  | tail          | tægl                    | OE tægl (tail) — attested
+284  | produce       | frumian                 | OE frumian (produce/advance) — attested
+285  | fact          | factvel                 | ME fact (Fr. trade) + -vel
+286  | street        | strǣt                   | OE strǣt (street) — attested
+288  | lot           | hlot                    | OE hlot (lot/share) — attested
+289  | nothing       | nāwiht                  | OE nāwiht (nothing) — attested
+290  | course        | cors                    | ME cours (Fr. trade) — attested
+291  | stay          | standan                 | OE standan (to stay/stand) — attested
+292  | wheel         | hwēol                   | OE hwēol (wheel) — attested
+293  | full          | full                    | OE full — attested
+294  | force         | fyrs                    | OE fyrs (force) stylized
+295  | blue          | blēwen                  | ME bleu (Fr. trade) + OE -en
+296  | object        | þing                    | OE þing (thing/object) — attested
+297  | decide        | scēadan                 | OE scēadan (to decide/separate) — attested
+298  | surface       | yfeweard                | OE yfe (upper) + -weard
+299  | deep          | dēop                    | OE dēop (deep) — attested
+300  | moon          | mōna                    | OE mōna (moon) — attested
+301  | island        | īegland                 | OE īegland (island) — attested
+302  | foot          | fōt                     | OE fōt (foot) — attested
+303  | system        | systemcraft             | ME systeme (Grk. trade) + OE -craft
+304  | busy          | bisig                   | OE bisig (busy) — attested
+305  | test          | costen                  | OE costian (to test/try) — attested
+306  | record        | recorden                | ME recorden (Fr. trade) — attested
+307  | boat          | bāt                     | OE bāt (boat) — attested
+308  | common        | gemǣne                  | OE gemǣne (common/shared) — attested
+309  | gold          | gold                    | OE gold — attested
+310  | possible      | māglicel                | OE māg (can/able) + licel blend
+311  | plane         | plānevel                | ME plane (Fr. trade) + -vel
+312  | stead         | stede                   | OE stede (stead/place) — attested
+313  | dry           | dryge                   | OE dryge (dry) — attested
+314  | wonder        | wundor                  | OE wundor (wonder) — attested
+315  | laugh         | hlehhan                 | OE hlehhan (to laugh) — attested
+316  | thousand      | þūsend                  | OE þūsend (thousand) — attested
+317  | ago           | agān                    | OE agān (ago/passed) — attested
+318  | ran           | arn                     | OE arn (ran) — attested
+319  | check         | cēapian                 | OE cēapian (check/bargain) stylized
+320  | game          | gamen                   | OE gamen (game) — attested
+321  | shape         | scapen                  | OE scapen (shaped) — attested
+322  | equate        | efenian                 | OE efenian (to equate/level) — attested
+323  | hot           | hāt                     | OE hāt (hot) — attested
+324  | miss          | missan                  | OE missan (to miss) — attested
+325  | brought       | brōhte                  | OE brōhte (brought) — attested
+326  | heat          | hǣtu                    | OE hǣtu (heat) — attested
+327  | snow          | snāw                    | OE snāw (snow) — attested
+328  | tire          | tēorian                 | OE tēorian (to tire/fail) — attested
+329  | bring         | bringan                 | OE bringan (to bring) — attested
+331  | distant       | feorlen                 | OE feor (far/distant) + -len
+333  | east          | ēast                    | OE ēast (east) — attested
+334  | paint         | peinten                 | ME peinten (to paint, Fr. trade) — attested
+335  | language      | spræc                   | OE spræc (language/speech) — attested
+336  | among         | ongemang                | OE ongemang (among)
+337  | grand         | grandedom               | Sol. grauntel clipped + OE -dom (trade)
+341  | drop          | dropa                   | OE dropa (drop) — attested
+342  | heart         | heorte                  | OE heorte (heart) — attested
+344  | present       | nūhweard                | OE nū (now) + -weard (present-ward)
+345  | heavy         | hefig                   | OE hefig (heavy) — attested
+346  | dance         | dauncen                 | ME daunce (Fr. trade) — attested
+347  | engine        | enginecraft             | ME engin (Fr. trade) + OE -craft
+348  | position      | stededom                | OE stede (place) + -dom
+349  | arm           | earm                    | OE earm (arm) — attested
+350  | wide          | wīd                     | OE wīd (wide) — attested
+351  | sail          | seġl                    | OE seġl (sail) — attested
+352  | material      | materedom               | ME matiere (Fr. trade) + OE -dom
+353  | size          | greatness               | OE grēatnes (greatness/size) — attested
+354  | vary          | wendan                  | OE wendan (to vary/turn) — attested
+355  | settle        | setlan                  | OE setlan (to settle) — attested
+356  | speak         | sprecan                 | OE sprecan (to speak) — attested
+357  | weight        | wiht                    | OE wiht (weight/creature) — attested
+358  | general       | gemǣnedom               | OE gemǣne (general/common) + -dom
+359  | ice           | īs                      | OE īs (ice) — attested
+360  | matter        | mateur                  | ME matiere clipped (Fr. trade)
+361  | circle        | circledom               | ME cercle (Fr. trade) + OE -dom
+362  | pair          | pēredom                 | ME paire (Fr. trade) + OE -dom
+363  | include       | inclegian               | OE clegian (include/enclose) stylized
+364  | divide        | dǣlan                   | OE dǣlan (to divide) — attested
+365  | syllable      | silabedom               | ME syllabe (Grk. trade) + OE -dom
+366  | felt          | felde                   | OE felde (felt/past felt) — attested
+367  | perhaps       | mægwyn                  | same as perhaps
+368  | pick          | pician                  | OE pician (to pick) — attested
+369  | sudden        | sōdain                  | ME sodein (Fr. trade) — attested
+370  | count         | counten                 | ME countien (Fr. trade) — attested
+371  | square        | squarevel               | ME square (Fr. trade) + -vel
+372  | reason        | rēsunvel                | ME resoun (Fr. trade) + -vel
+373  | length        | lengþu                  | OE lengþu (length) — attested
+374  | represent     | forstandard             | OE for- (fore) + standard blend
+375  | art           | cræft                   | OE cræft (art/craft/skill) — attested
+376  | subject       | subjektvel              | ME subject (Fr. trade) + -vel
+377  | region        | rīce                    | OE rīce (region/kingdom) — attested
+378  | energy        | mægencraft              | OE mægen (power) + -craft
+379  | hunt          | huntian                 | OE huntian (to hunt) — attested
+380  | probable      | lēoflic                 | OE lēoflic (likely/probable) — attested
+381  | bed           | bedd                    | OE bedd (bed) — attested
+382  | brother       | brōþor                  | OE brōþor (brother) — attested
+383  | egg           | ǣg                      | OE ǣg (egg) — attested
+384  | ride          | rīdan                   | OE rīdan (to ride) — attested
+385  | cell          | cell                    | OE cell (cell, from Lat.) — attested
+386  | believe       | belēfan                 | OE belēfan (to believe) — attested
+387  | fraction      | fraccionvel             | ME fraccioun (Fr. trade) + -vel
+388  | forest        | weald                   | OE weald (forest/woodland) — attested
+389  | sit           | sittan                  | OE sittan (to sit) — attested
+390  | race          | rācevel                 | ME race (Fr. trade) + -vel
+391  | window        | wind-ēage               | OE wind-ēage (wind-eye/window) — attested
+392  | store         | stōrvel                 | ME store (Fr. trade) + -vel
+393  | summer        | sumor                   | OE sumor (summer) — attested
+394  | train         | traincraft              | ME train (Fr. trade) + OE -craft
+395  | sleep         | slǣpan                  | OE slǣpan (to sleep) — attested
+396  | prove         | prōfan                  | ME proven (Fr. trade) — attested
+397  | lone          | āna                     | OE āna (lone/alone) — attested
+398  | leg           | legg                    | ME legge (leg, ON trade) — attested
+399  | exercise      | exerciscraft            | ME exercise (Fr. trade) + OE -craft
+400  | wall          | weall                   | OE weall (wall) — attested
+401  | catch         | cacchen                 | ME cacchen (to catch, Fr. trade) — attested
+402  | mount         | munt                    | OE munt (mount/hill) — attested
+403  | wish          | wȳscan                  | OE wȳscan (to wish) — attested
+404  | sky           | scēodom                 | OE scēo (sky, poetic) + -dom
+405  | board         | bord                    | OE bord (board/table) — attested
+406  | joy           | bliss                   | OE bliss (joy/bliss) — attested
+407  | winter        | winter                  | OE winter — attested
+408  | sat           | sæt                     | OE sæt (sat) — attested
+409  | written       | writen                  | ME writen (written) — attested
+410  | wild          | wilde                   | OE wilde (wild) — attested
+411  | instrument    | instrumentcraft         | ME instrument (Fr. trade) + OE -craft
+412  | kept          | cēpte                   | ME kepte (kept) — attested
+413  | glass         | glæs                    | OE glæs (glass) — attested
+414  | grass         | græs                    | OE græs (grass) — attested
+415  | cow           | cū                      | OE cū (cow) — attested
+416  | job           | jobwork                 | ME jobbe + OE weorc blend
+417  | edge          | ecg                     | OE ecg (edge/sword-edge) — attested
+418  | sign          | tācen                   | OE tācen (sign/token) — attested
+419  | visit         | visitven                | ME visite (Fr. trade) + -ven
+420  | past          | forþgewitennes          | OE forþgewitennes (past/departure)
+421  | soft          | sōfte                   | OE sōfte (soft) — attested
+422  | fun           | funwyn                  | ME fun (origin unclear) + OE -wyn
+423  | bright        | beorht                  | OE beorht (bright) — attested
+424  | gas           | gasdom                  | ME gas (Dutch trade) + OE -dom
+425  | weather       | weder                   | OE weder (weather) — attested
+426  | month         | mōnaþ                   | OE mōnaþ (month) — attested
+427  | million       | miliondom               | ME million (Fr. trade) + OE -dom
+428  | bear          | bera                    | OE bera (bear) — attested
+429  | finish        | finisshen               | ME finisshen (Fr. trade) — attested
+430  | happy         | hæpwyn                  | ME hap (luck) + OE -wyn
+431  | hope          | hopa                    | OE hopa (hope) — attested
+432  | flower        | flowerdom               | ME flour (Fr. trade) + OE -dom
+433  | clothe        | clāþian                 | OE clāþian (to clothe) — attested
+434  | strange       | strangevel              | Sol. strangevel blend (Fr. trade)
+435  | gone          | agān                    | OE agān (gone/passed) — attested
+436  | jump          | gympan                  | ME jumpen stylized
+437  | baby          | baban                   | ME baban (baby) — attested
+438  | eight         | eahta                   | OE eahta (eight) — attested
+439  | village       | vilagedom               | ME village (Fr. trade) + OE -dom
+440  | meet          | mētan                   | OE mētan (to meet) — attested
+441  | root          | rōt                     | OE rōt (root) — attested
+442  | buy           | bycgan                  | OE bycgan (to buy) — attested
+443  | raise         | rǣran                   | OE rǣran (to raise/rear) — attested
+444  | solve         | solvenel                | ME solven + -el blend
+445  | metal         | metal                   | ME metal (Fr./Lat. trade) — attested
+447  | push          | pūsian                  | OE pūsian (to push) — attested
+448  | seven         | seofon                  | OE seofon (seven) — attested
+449  | paragraph     | paragraphdom            | ME paragraf (Grk. trade) + OE -dom
+450  | third         | þridda                  | OE þridda (third) — attested
+452  | held          | heold                   | OE heold (held) — attested
+453  | hair          | hǣr                     | OE hǣr (hair) — attested
+454  | describe      | wrītan                  | OE wrītan (describe/write) — attested
+455  | cook          | cōcian                  | OE cōcian (to cook) — attested
+456  | floor         | flōr                    | OE flōr (floor) — attested
+458  | result        | resultvel               | ME resulte (Fr. trade) + -vel
+459  | burn          | bærnan                  | OE bærnan (to burn) — attested
+460  | hill          | hyll                    | OE hyll (hill) — attested
+461  | safe          | sēavel                  | ME sauf (Fr. trade) + -vel
+462  | cat           | catt                    | OE catt (cat) — attested
+463  | century       | centuriedom             | ME centurie (Fr. trade) + OE -dom
+464  | consider      | cȳðan                   | OE cȳðan (consider/make known) — attested
+465  | type          | typevel                 | ME type (Grk. trade) + -vel
+466  | law           | lagu                    | OE lagu (law, from ON) — attested
+467  | bit           | bite                    | OE bite (bit/bite) — attested
+468  | coast         | costavel                | Sol. costareth clipped + -vel (trade)
+469  | copy          | cōpian                  | ME copien (to copy, Fr. trade) — attested
+470  | phrase        | phrasevel               | ME phrase (Grk. trade) + -vel
+471  | silent        | stille                  | OE stille (silent/still) — attested
+472  | tall          | heah-strang             | OE hēah (high) + strang blend
+473  | sand          | sand                    | OE sand — attested
+474  | soil          | sōl                     | OE sōl (soil/muddy place) — attested
+475  | roll          | rollian                 | OE rollian (to roll) — attested
+476  | temperature   | hǣtmǣl                  | OE hǣtu (heat) + mǣl (measure) blend
+477  | finger        | finger                  | OE finger — attested
+478  | industry      | industricraft           | ME industrie (Fr. trade) + OE -craft
+479  | value         | weorþ                   | OE weorþ (value/worth) — attested
+480  | fight         | feohtan                 | OE feohtan (to fight) — attested
+481  | lie           | licgan                  | OE licgan (to lie/lay) — attested
+482  | beat          | bēatan                  | OE bēatan (to beat) — attested
+483  | excite        | onstyrian               | OE onstyrian (to excite/stir) — attested
+484  | natural       | gecynde                 | OE gecynde (natural/innate) — attested
+485  | view          | wlītan                  | OE wlītan (to view/look) — attested
+486  | sense         | andgit                  | OE andgit (sense/understanding) — attested
+487  | ear           | ēare                    | OE ēare (ear) — attested
+491  | case          | casus                   | ME cas (case, Fr./Lat. trade) — attested
+492  | middle        | middel                  | OE middel (middle) — attested
+493  | kill          | cwellan                 | OE cwellan (to kill) — attested
+494  | son           | sunu                    | OE sunu (son) — attested
+495  | lake          | lagu                    | OE lagu (lake/water) — attested
+496  | moment        | morwenwyn               | OE morgen (moment) + -wyn
+497  | scale         | scāle                   | OE scāle (scale/bowl) — attested
+498  | loud          | hlūd                    | OE hlūd (loud) — attested
+499  | spring        | springtīd               | OE springtīd (springtime) — attested
+500  | observe       | behealdan               | OE behealdan (to observe/behold) — attested
+
+===================================================================================
+BORROWED VOCABULARY REGISTER
+===================================================================================
+
+The following 50 words are drawn directly from other Durgeth languages,
+showing Imperial England's history of conquest and trade:
+
+CONQUEST BORROWINGS (clipped, anglicized, absorbed under force):
+  From Bovari Scythian — military/steppe vocabulary:
+    "skadom"  = THE definite article (formal/legal — Bov. ska)
+    "karwork" = hard labour (Bov. kar = do + OE weorc)
+    "mazgreat" = mighty/overwhelming (Bov. maz = great)
+    "spasdom"  = scrutiny/inspection (Bov. spas = look)
+  From Naukin Mongolian — conquest/command vocabulary:
+    "terende"  = that one/the appointed (Nau. tere + OE -ende)
+    "qagancraft" = rulership/imperial skill (Nau. qaγan = great ruler)
+    "yekedom"  = greatness of dominion (Nau. yeke = great)
+  From Stoneguard Toltec — tribute vocabulary:
+    "tequitwork" = tribute-labour (Sto. tequitl = work/tribute)
+    "chihuaven" = made/crafted (Sto. chihua = make + OE -en)
+  From Veildrift Slavic — absorbed rebel/subject vocabulary:
+    "radwork"  = forced labour (Vei. rad = work)
+    "vremedoom" = a time of reckoning (Vei. vreme = time + OE -dom)
+
+TRADE BORROWINGS (softened, integrated naturally):
+  From Solarirum French — courtly/administrative vocabulary:
+    "grauntel"  = a great lord's grant (Sol. grauntel)
+    "jurdom"    = daily administration (Sol. jurvel = day)
+    "trouvaille" = a discovery/found thing (Sol. root)
+  From Sunblade Greek — scholarly/technical vocabulary:
+    "khroncraft" = the study of time (Grk. khronos + OE -craft)
+    "logosdom"   = the realm of reason (Grk. logos + OE -dom)
+    "polisward"  = the city quarter (Grk. polis + OE -ward)
+  From Gorirum Persian — luxury/diplomatic vocabulary:
+    "bazarvel"   = a market district (Gor. bazar root)
+    "dīvāndom"   = a council chamber (Gor. dīvān root)
+    "āzādwyn"    = the joy of freedom (Gor. āzād = free + OE -wyn)
+
+ABSORBED BORROWINGS (natural world, place-names, spiritual):
+  From Verdathi Aboriginal — landscape/terrain vocabulary:
+    "cooloomahyll" = a great hill (Ver. coolooma = great + OE hyll)
+    "boolya"       = deep magic/power (Ver. boolya — attested)
+    "wangal"       = belonging to a place (Ver. wangal root)
+  From Sylvarirum Navajo — spiritual/harmony vocabulary:
+    "hózhówyn"     = beauty-way joy (Nav. hózhó = harmony/beauty)
+    "dinedom"      = the realm of a people (Nav. diné = the people)
+  From Ashirum Icelandic — seafaring/natural vocabulary:
+    "skaldcraft"   = the art of verse (Ice. skáld = poet)
+    "hamarcraft"   = hammer-craft/smithing (Ice. hamarr = hammer)
+  From Murrak Tasmanian — elemental vocabulary:
+    "ninafire"     = sacred fire (Mur. nina = fire)
+    "timmewater"   = still deep water (Mur. timme = water)
+    "paraland"     = ancestral ground (Mur. para = place/country)
+  From Arantza Basque — mountain/stone vocabulary:
+    "aitzcraft"    = stone-craft/masonry (Ara. aitz = cliff/rock)
+    "bihotzwyn"    = heart-joy/deep feeling (Ara. bihotz = heart)
+  From Kreln Welsh-Polynesian — border/bardic vocabulary:
+    "llaisvrath"   = a border voice/herald (Krl. llais = voice)
+    "moracraft"    = seafaring skill (Krl. môr = sea + OE -craft)
+
+===================================================================================
+PHONETIC GUIDE FOR IMPERIAL ENGLAND
+===================================================================================
+
+Old English sounds preserved:
+  þ   = voiceless dental fricative (as in "thin") — the thorn
+  ð   = voiced dental fricative (as in "the") — the eth
+  ā/ē/ī/ō/ū = long vowels (marked with macron)
+  sc  = /sh/ sound (scip = ship, scēodan = shadow)
+  cg  = /dj/ sound (ecg = edge)
+  hw  = voiceless w (hwæt, hwīt, hwēol)
+  ċ   = /ch/ sound before front vowels (cild = child)
+  Many OE words: directly attested in Beowulf, Anglo-Saxon Chronicle,
+  Alfred's translations, Ælfric's homilies
+
+Middle English sounds:
+  -en = infinitive/participle ending (geten, writen)
+  -vel = French trade suffix (integrated from Solarirum)
+  -dom = OE realm/state (used more broadly in ME)
+  -craft = OE skill/art (heavily used in Imperial compound words)
+  -wyn = OE joy/pleasure (used as positive abstract suffix)
+  -ward = OE direction (used for positional/place concepts)
+
+Borrowed phonemes that survive in Imperial:
+  θ   = from Murrak (the dental fricative — merges with OE þ/ð)
+  vel = from Solarirum French (soft trade ending)
+  -dom/-craft/-wyn = OE suffixes that swallowed foreign roots
+  Clipping pattern: foreign words are shortened by 1-2 syllables
+  then given an OE suffix — "solarirum's graunteldom" = "grandedom"
+
+Key attested Old English words used directly (unchanged):
+  and, of, to, on, in, for, with, by, from, or, if, not,
+  the (þe), a/an, he, she, we, I, you, they, him, her, his,
+  be/beon, have/habban, do/dōn, say/secgan, see/gesēon,
+  go/gān, come/cuman, know/witan, give/gifan, take/niman,
+  man, woman, child/cild, king/cyning, earth/eorþe, fire/fȳr,
+  water/wæter, day/dæg, moon/mōna, star/steorra, good/gōd,
+  great/grēat, gold/gold, hand/hand, word/word, way/weg,
+  ship/scip, book/bōc, heart/heorte, winter/winter, summer/sumor,
+  east/ēast, west/west, north/norþ, south/sūþ
+
+===================================================================================
+END OF FILE — ImperialEngland_500words.txt
+Generated for Durgeth fantasy world language system
+===================================================================================

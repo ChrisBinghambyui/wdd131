@@ -1,0 +1,599 @@
+GORIRUM PERSIAN-PARTHIAN - 500 Common Word Translations
+Fantasy Language based on GorirumPersian-Parthian name patterns
+Linguistic roots: Broad blend of Old Persian (Achaemenid, 6th-4th c. BC),
+Parthian/Arsacid (3rd c. BC - 3rd c. AD), and Middle Persian/Pahlavi (3rd-7th c. AD)
+Equal Persian/Parthian weighting. Stylization: Fantasy-leaning.
+
+KEY SOURCE WORDS:
+  Old Persian (OP): adam (I), tuvam (you), hauv (he/she), vayam (we),
+  hya/tyā (who/which/that), utā (and), naiy (not), patiy (on/at),
+  hacā (from), abiy (to/toward), yadiy (if), avahyā (of that),
+  ahy (be/is), akunauš (did/made), adā (gave), aθangaina (strong),
+  baga (god/divine), arta (truth/order), druj (lie/chaos), xšāyaθiya (king),
+  kāra (people/army), būmi (earth), āp (water), ātar (fire), asman (sky),
+  raucah (light/day), māha (moon), star (star), xšnuta (satisfied/good),
+  Parthian: man (I/me), to (you), ō (he/she), amāh (we), šmāh (you pl.),
+  ud (and), nē (not), pad (at/in), az (from), ō (to), agar (if),
+  būdan (to be), kardan (to do), didan (to see), guftan (to say),
+  dānistan (to know), dādan (to give), raftan (to go), āmadan (to come),
+  mard (man), zan (woman), pus (son), šāh (king), xalq (people),
+  zamin (earth), āb (water), ātaš (fire), āsmān (sky), rōz (day),
+  māh (moon), sitāra (star), buzurg (great), nēk (good), rāst (true)
+  Middle Persian/Pahlavi: ān (that/the), ēn (this), ī (of/relative),
+  u (and), nē (not), pad (at/in), az (from/of), ō (to),
+  būdan (be), kardan (do), widan (see), gōwišn (speech), dānāgīh (knowledge)
+
+PHONETIC BRIDGE STRATEGY:
+  All three share: open a/ā vowels, x/kh fricatives, sh/š sounds,
+  r liquids, n/m nasals, -an/-ān noun endings, -ar/-ar suffixes
+  Old Persian: formal -aiy/-ahy endings, consonant clusters (xš, θr),
+  Parthian: simpler CV structure, -ag/-ag endings, more open vowels
+  Middle Persian: -ēd verb endings, ī genitive, -išn abstract nouns
+  Fantasy suffix system: -avar (noun/being, fr. OP/MP -avar = possessing),
+  -shan (verb, fr. MP -išn abstract + Parth. -an infinitive),
+  -druj (negative/dark quality, fr. OP druj = lie/chaos),
+  -arta (truth/order quality, fr. OP arta), -rōz (day/light word),
+  -mah (moon/great word, fr. OP māha + Parth. māh)
+
+===================================================================================
+RANK | ENGLISH       | GORIRUM                 | ROOT / NOTES
+===================================================================================
+
+--- ARTICLES & PRONOUNS ---
+1    | the           | ānavar                  | MP ān (the/that) + -avar
+2    | a / an        | aivavar                 | OP aiva (one/a) + -avar
+3    | to            | abiyshan                | OP abiy (to/toward) + -shan
+6    | it            | hauvar                  | OP hauv (it/he/she) + -avar
+8    | that          | āndruj                  | MP ān (that) + -druj
+10   | it            | hauvar                  | same
+11   | for           | rādavar                 | OP rādiy (for/because) + -avar
+14   | this          | ēnavar                  | MP ēn (this) + -avar
+20   | this          | ēnavar                  | same
+22   | his           | hauravar                | OP hauvā (his/her) + -avar
+28   | her           | hauravar                | same — Iranian gender-neutral
+29   | she           | ōmavar                  | Parth. ō (she/he) + -mavar
+31   | an            | aivavar                 | same as a
+34   | one           | aivartavar              | OP aiva (one) + -rtavar
+35   | all           | haruvaavar              | OP haruva (all/every) + -avar
+37   | there         | avarshan                | OP avar (there/upon) + -shan
+38   | their         | taishamavar             | OP taišām (their) + -avar
+39   | what          | čiyavar                 | OP čiy (what) + -avar
+45   | who           | kavar                   | OP ka (who) + -avar
+49   | me            | adamavar                | OP adam (me/I) + -avar
+50   | when          | yadiyavar               | OP yadiy (when/if) + -avar
+55   | no            | naiyavar                | OP naiy (no/not) + -avar
+63   | your          | tuvamavar               | OP tuvam (your) + -avar
+64   | good          | nēkavar                 | Parth. nēk (good) + -avar
+65   | some          | paravar                 | OP para (some/beyond) + -avar
+69   | other         | anyavar                 | OP anya (other) + -avar
+83   | two           | duvaavar                | OP duva (two) + -avar
+85   | our           | amāhavar                | Parth. amāh (our) + -avar
+95   | these         | ēnahavar                | MP ēn pl. + -havar
+99   | us            | vayamavar               | OP vayam (us/we) + -avar
+120  | got           | griftavar               | Parth. grift (got/seized) + -avar
+
+--- BEING / EXISTENCE ---
+2    | be / is / are | būdanshan               | Parth. būdan (to be) + -shan
+70   | there         | avarshan                | same as there
+72   | seem          | namūdanshan             | Parth. namūdan (to seem/show) + -shan
+78   | think         | wiyābānshan             | MP wiyābān (to think/consider) + -shan
+
+--- PREPOSITIONS & CONJUNCTIONS ---
+4    | of            | hačāavar                | OP hacā (of/from) + -avar
+5    | and           | utāshan                 | OP utā (and) + -shan
+12   | not           | naiyavar                | OP naiy (not) + -avar
+13   | on            | patiyavar               | OP patiy (on/upon) + -avar
+14   | with          | hamavar                 | OP ham (with/together) + -avar
+19   | at            | padavar                 | Parth. pad (at/in) + -avar
+21   | but           | wālīavar                | MP wālī (but/however) + -avar
+23   | by            | azavar                  | Parth. az (by/from) + -avar
+24   | from          | hačāshan                | OP hacā (from) + -shan
+30   | or            | yaavar                  | MP yā (or) + -avar
+32   | will          | xwāhavar                | MP xwāh (will/desire) + -avar
+33   | my            | manavavar               | OP manā (my) + -vavar
+36   | would         | būdēavar                | MP būdē (would be) + -avar
+40   | so            | ēdōnavar                | MP ēdōn (so/thus) + -avar
+41   | up            | bālāavar                | Parth. bālā (up/above) + -avar
+42   | out           | birūnavar               | Parth. birūn (out/outside) + -avar
+43   | if            | agaravar                | Parth. agar (if) + -avar
+44   | about         | darbāreavar             | Parth. darbāre (about) + -avar
+60   | because       | čonavar                 | MP čon (because/since) + -avar
+61   | into          | andarvavar              | MP andar (into/within) + -vavar
+71   | only          | tanhaavar               | Parth. tanhā (only/alone) + -avar
+76   | its           | hauravar                | same as his/her
+77   | over          | uzavar                  | OP uz (over/up) + -avar
+79   | also          | hamčonavar              | MP hamčon (also/likewise) + -avar
+80   | back          | pasavar                 | OP pasa (back/after) + -avar
+81   | after         | pasazavar               | OP pasa (after) + -zavar
+82   | use           | kārburdanshan           | Parth. kārburd (use) + -anshan
+87   | first         | naxtumavar              | OP naxtum (first) + -avar
+88   | well          | nēkīavar                | Parth. nēkī (well/goodness) + -avar
+90   | even          | hamavar                 | OP ham (even/also/same) + -avar
+94   | any           | haravar                 | OP har (any/every) + -avar
+102  | need          | niyāzavar               | Parth. niyāz (need) + -avar
+104  | often         | basavar                 | Parth. bas (often/enough) + -avar
+106  | high          | bālandavar              | Parth. bāland (high) + -avar
+110  | never         | hargizavar              | Parth. hargiz (never) + -avar
+112  | north         | šomālavar               | Parth. šomāl (north) + -avar
+114  | seem          | namūdanshan             | same as seem
+116  | next          | baʿdavar                | Parth. baʿd (next/after) + -avar
+119  | begin         | āγāzanshan              | Parth. āγāz (begin) + -anshan
+129  | both          | harduavar               | Parth. hardu (both) + -avar
+133  | until         | tāavar                  | Parth. tā (until/to) + -avar
+147  | ever          | hamišeavar              | Parth. hamiše (ever/always) + -avar
+150  | though        | agarčeavar              | Parth. agarče (though) + -avar
+154  | soon          | zūdavar                 | Parth. zūd (soon/fast) + -avar
+158  | direct        | rāstavar                | Parth. rāst (direct/true) + -avar
+160  | leave         | rafanshan               | Parth. raftan (to leave/go) + -shan
+169  | wind          | wādavar                 | OP wāta (wind) + -davar
+172  | since         | azānšavar               | Parth. az ān (since/from that) + -avar
+183  | against       | bartaravar              | Parth. bartar (against/above) + -avar
+192  | during        | andaravar               | MP andar (during/within) + -avar
+194  | true          | artaavar                | OP arta (true/order) + -avar
+219  | toward        | suavar                  | Parth. su (toward/direction) + -avar
+225  | center        | miyānavar               | Parth. miyān (center/middle) + -avar
+251  | still         | hanūzavar               | Parth. hanūz (still/yet) + -avar
+261  | above         | bālārtavar              | Parth. bālā (above) + -rtavar
+287  | behind        | pušatavar               | Parth. pušat (behind) + -avar
+330  | yes           | āriavar                 | OP āri (yes/verily) + -avar
+332  | fill          | purīdanshan             | Parth. purīdan (to fill) + -shan
+338  | yet           | hanūzavar               | same as still
+339  | among         | miyanavar               | Parth. miyān (among) + -avar
+340  | perhaps       | šāyadavar               | Parth. šāyad (perhaps) + -avar
+343  | am            | hastamavar              | Parth. hastam (I am) + -avar
+446  | whether       | agaravar                | same as if
+451  | shall         | xwāhīdanshan            | MP xwāhīdan (shall/will) + -shan
+457  | either        | yaavar yaavar           | MP yā...yā (either...or)
+488  | else          | anyavar                 | same as other
+489  | quite         | besyāravar              | Parth. besyār (quite/very) + -avar
+490  | quite         | besyāravar              | same
+
+--- VERBS: CORE ACTIONS ---
+7    | do            | kardanshan              | Parth. kardan (to do) + -shan
+9    | have          | dāštanshan              | Parth. dāštan (to have) + -shan
+15   | he            | ōavar                   | Parth. ō (he) + -avar
+16   | as            | čonavar                 | MP čon (as/like) + -avar
+17   | you           | toavar                  | Parth. to (you) + -avar
+18   | do            | kardanshan              | same
+25   | they          | išānavar                | Parth. išān (they) + -avar
+26   | we            | māavar                  | Parth. mā (we) + -avar
+27   | say           | guftanshan              | Parth. guftan (to say) + -shan
+46   | get           | griftanshan             | Parth. griftan (to get/seize) + -shan
+47   | which         | kēavar                  | MP kē (which/who) + -avar
+48   | go            | raftanshan              | Parth. raftan (to go) + -shan
+51   | make          | sāxtanshan              | Parth. sāxtan (to make) + -shan
+52   | can           | tavānīdanshan           | Parth. tavānīdan (can) + -shan
+53   | like          | dūstdāštanshan          | Parth. dūst dāštan (like/love) + -shan
+54   | time          | zamānavar               | Parth. zamān (time) + -avar
+56   | just          | tanhaavar               | same as only
+57   | him           | ōavar                   | same as he
+58   | know          | dānistanshan            | Parth. dānistan (to know) + -shan
+59   | take          | griftanshan             | same as get
+62   | year          | sālavar                 | Parth. sāl (year) + -avar
+66   | could         | tavānistavar            | Parth. tavānist (could) + -avar
+67   | them          | išānavar                | same as they
+68   | see           | dīdanshan               | Parth. dīdan (to see) + -shan
+73   | look          | negāhīdanshan           | Parth. negāhīdan (to look) + -shan
+74   | only          | tanhaavar               | same
+75   | come          | āmadanshan              | Parth. āmadan (to come) + -shan
+84   | use           | kārburdanshan           | same as use above
+86   | work          | kāravar                 | Parth. kār (work) + -avar
+89   | way           | rāhavar                 | Parth. rāh (way/road) + -avar
+91   | new           | nawaavar                | OP nawa (new) + -avar
+92   | want          | xwāstanshan             | Parth. xwāstan (to want) + -shan
+93   | because       | čonavar                 | same as because
+96   | give          | dādanshan               | Parth. dādan (to give) + -shan
+97   | day           | rōzavar                 | Parth. rōz (day) + -avar
+98   | most          | bištaravar              | Parth. bištar (most/more) + -avar
+100  | great         | buzurgavar              | Parth. buzurg (great) + -avar
+101  | between       | miyānaavar              | Parth. miyān (between) + -aavar
+103  | large         | buzurgtavar             | Parth. buzurg (large) + -tavar
+105  | hand          | dastavar                | Parth. dast (hand) + -avar
+107  | place         | jāyavar                 | Parth. jāy (place) + -avar
+108  | hold          | dāštanshan              | Parth. dāštan (to hold) + -shan
+109  | turn          | gardīdanshan            | Parth. gardīdan (to turn) + -shan
+111  | few           | andakavar               | Parth. andak (few/little) + -avar
+113  | open          | gušādanshan             | Parth. gušādan (to open) + -shan
+115  | together      | hamrāhavar              | Parth. hamrāh (together) + -avar
+117  | white         | spēdavar                | MP spēd (white) + -avar
+118  | children      | kudakānavar             | Parth. kudakān (children) + -avar
+121  | walk          | gāmzadanshan            | Parth. gāmzadan (to walk) + -shan
+122  | example       | namūneavar              | Parth. namūne (example) + -avar
+123  | ease          | āsāyišavar              | Parth. āsāyiš (ease/rest) + -avar
+124  | paper         | kāγaδavar               | OP kāγaδ (paper) + -avar
+125  | group         | grouhavar               | Parth. grouh (group) + -avar
+126  | always        | hamišeavar              | Parth. hamiše (always) + -avar
+127  | music         | mūsīqīavar              | Parth. mūsīqī (music) + -avar
+128  | those         | ānhāavar                | MP ān pl. + -hāavar
+130  | mark          | nišānavar               | Parth. nišān (mark/sign) + -avar
+131  | book          | nāmagavar               | OP nāma (book/letter) + -gavar
+132  | letter        | nāmaavar                | OP nāma (letter) + -avar
+134  | mile          | mīlavar                 | Parth. mīl (mile) + -avar
+135  | river         | rōdavar                 | Parth. rōd (river) + -avar
+136  | car           | ārābaavar               | Parth. ārāba (cart/car) + -avar
+137  | feet          | pāyānavar               | Parth. pāyān (feet) + -avar
+138  | care          | negerānīdanshan         | Parth. negerān (care/worry) + -shan
+139  | second        | dovomavar               | Parth. dovom (second) + -avar
+140  | enough        | basavar                 | Parth. bas (enough/often) + -avar
+141  | plain         | daštnavar               | Parth. dašt (plain/steppe) + -navar
+142  | girl          | doxteravar              | Parth. doxtar (girl) + -avar
+143  | usual         | moʿmūlavar              | Parth. moʿmūl (usual) + -avar
+144  | young         | javānavar               | Parth. javān (young) + -avar
+145  | ready         | āmādeavar               | Parth. āmāde (ready) + -avar
+146  | above         | bālārtavar              | same as above
+148  | red           | sorzavar                | OP sarza (red) stylized + -avar
+149  | list          | fehrestavar             | Parth. fehrest (list) + -avar
+151  | feel          | hesasīdanshan           | Parth. hesāsīdan (to feel) + -shan
+152  | talk          | sokhanavar              | Parth. sokhan (talk/speech) + -avar
+153  | bird          | morγavar                | Parth. morγ (bird) + -avar
+155  | body          | tanavar                 | Parth. tan (body) + -avar
+156  | dog           | sagavar                 | Parth. sag (dog) + -avar
+157  | family        | xānevādaavar            | Parth. xānevāda (family) + -avar
+159  | pose          | andāmavar               | Parth. andām (pose/form) + -avar
+161  | song          | āhangavar               | Parth. āhang (song/tune) + -avar
+162  | measure       | andāzeavar              | Parth. andāze (measure) + -avar
+163  | door          | daravar                 | Parth. dar (door/gate) + -avar
+164  | product       | farāvordeavar           | Parth. farāvorde (product) + -avar
+165  | black         | siyāhavar               | Parth. siyāh (black) + -avar
+166  | short         | kutāhavar               | Parth. kutāh (short) + -avar
+167  | numeral       | adadeavar               | Parth. adad (numeral) + -eavar
+168  | class         | dasteavar               | Parth. daste (class/group) + -avar
+170  | question      | porsešavar              | Parth. poršeš (question) + -avar
+171  | happen        | oftādanshan             | Parth. oftādan (to happen/fall) + -shan
+173  | ship          | nāvavar                 | Parth. nāv (ship) + -avar
+174  | area          | manṭaqeavar             | Parth. manṭaqe (area) + -avar
+175  | half          | nīmavar                 | Parth. nīm (half) + -avar
+176  | rock          | sangavar                | Parth. sang (rock/stone) + -avar
+177  | order         | farmanavar              | Parth. farmān (order/command) + -avar
+178  | fire          | ātaravar                | OP ātar (fire) + -avar
+179  | south         | junūbavar               | Parth. junūb (south) + -avar
+180  | problem       | moškelavar              | Parth. moškel (problem) + -avar
+181  | piece         | pāreavar                | Parth. pāre (piece) + -avar
+182  | told          | guftavar                | Parth. guft (told/said) + -avar
+184  | pass          | gozaštanshan            | Parth. gozaštan (to pass) + -shan
+185  | since         | azānšavar               | same as since
+186  | top           | bālāavar                | Parth. bālā (top/above) + -avar
+187  | whole         | hamaavar                | OP hama (whole/all) + -avar
+188  | king          | xšāyaθiyavar            | OP xšāyaθiya (king) + -avar
+189  | space         | fazāavar                | Parth. fazā (space) + -avar
+190  | heard         | šonīdavar               | Parth. šonīd (heard) + -avar
+191  | best          | behtaravar              | Parth. behtar (better/best) + -avar
+192  | hour          | sāʿatavar               | Parth. sāʿat (hour) + -avar
+193  | better        | behtaravar              | same as best
+195  | during        | andaravar               | same as during
+196  | hundred       | satavar                 | OP sata (hundred) + -avar
+197  | five          | panjaavar               | OP panja (five) + -avar
+198  | remember      | yādāvarīdanshan         | Parth. yādāvarī (remember) + -shan
+199  | step          | gāmavar                 | Parth. gām (step) + -avar
+200  | early         | zūdavar                 | Parth. zūd (early/fast) + -avar
+201  | hold          | dāštanshan              | same as hold
+202  | west          | bāxteravar              | OP bāxtar (west) + -avar
+203  | ground        | zamīnavar               | Parth. zamīn (ground/earth) + -avar
+204  | interest      | علاقه/alāqeavar         | Parth. alāqe (interest) + -avar
+205  | reach         | resīdanshan             | Parth. resīdan (to reach) + -shan
+206  | fast          | tīzavar                 | Parth. tīz (fast/sharp) + -avar
+207  | verb          | feʿlavar                | Parth. feʿl (verb/action) + -avar
+208  | sing          | xāndanshan              | Parth. xāndan (to sing/read) + -shan
+209  | listen        | šonīdanshan             | Parth. šonīdan (to listen) + -shan
+210  | six           | šašavar                 | Parth. šaš (six) + -avar
+211  | table         | mīzavar                 | Parth. mīz (table) + -avar
+212  | travel        | safaravar               | Parth. safar (travel) + -avar
+213  | less          | kamtaravar              | Parth. kamtar (less) + -avar
+214  | morning       | sobhavar                | Parth. sobh (morning) + -avar
+215  | ten           | dasavar                 | Parth. das (ten) + -avar
+216  | simple        | sādeavar                | Parth. sāde (simple) + -avar
+217  | several       | čandavar                | Parth. čand (several) + -avar
+218  | vowel         | moṣavvetavar            | Parth. moṣavvet (vowel) + -avar
+220  | war           | jangavar                | Parth. jang (war) + -avar
+221  | lay           | xābiīdanshan            | Parth. xābīdan (to lay/sleep) + -shan
+222  | against       | bartaravar              | same as against
+223  | pattern       | olgūavar                | Parth. olgū (pattern/model) + -avar
+224  | slow          | āhesteavar              | Parth. āheste (slow) + -avar
+226  | love          | ešqavar                 | Parth. ešq (love) + -avar
+227  | person        | šaxsavar                | Parth. šaxs (person) + -avar
+228  | money         | simavar                 | OP sima (silver/money) + -avar
+229  | serve         | xedmatavar              | Parth. xedmat (serve/service) + -avar
+230  | appear        | namūdanshan             | same as seem
+231  | road          | rāhavar                 | same as way
+232  | map           | naqšeavar               | Parth. naqše (map/pattern) + -avar
+233  | rain          | bārānavar               | Parth. bārān (rain) + -avar
+234  | rule          | qānūnavar               | Parth. qānūn (rule/law) + -avar
+235  | govern        | farmāndahīdanshan       | Parth. farmāndahī (govern) + -shan
+236  | pull          | kešīdanshan             | Parth. kešīdan (to pull) + -shan
+237  | cold          | sardavar                | Parth. sard (cold) + -avar
+238  | notice        | motovajeavar            | Parth. motavaje (notice) + -avar
+239  | voice         | āvāzavar                | Parth. āvāz (voice/song) + -avar
+240  | fall          | oftādanshan             | same as happen/fall
+241  | power         | nīruavar                | Parth. nīru (power/force) + -avar
+242  | town          | šahravar                | Parth. šahr (town/city) + -avar
+243  | fine          | nēkavar                 | same as good
+244  | drive         | rāndanshan              | Parth. rāndan (to drive) + -shan
+245  | lead          | rahbarīdanshan          | Parth. rahbarī (lead) + -shan
+246  | cry           | gerīstanshan            | Parth. gerīstan (to cry) + -shan
+247  | dark          | tarīkavar               | Parth. tarīk (dark) + -avar
+248  | machine       | dastgāhavar             | Parth. dastgāh (machine) + -avar
+249  | note          | yāddāštavar             | Parth. yāddāšt (note) + -avar
+250  | wait          | sabr kardanshan         | Parth. sabr (wait/patience) + -shan
+252  | figure        | šaxlavar                | Parth. šaxl (figure/shape) + -avar
+253  | star          | staravar                | OP star (star) + -avar
+254  | box           | jʿebeavar               | Parth. jʿebe (box/case) + -avar
+255  | noun          | esemavar                | Parth. esem (noun/name) + -avar
+256  | field         | maydānavar              | Parth. maydān (field) + -avar
+257  | rest          | āsūdanshan              | Parth. āsūdan (to rest) + -shan
+258  | correct       | dorostavar              | Parth. dorost (correct) + -avar
+259  | able          | tavānavar               | Parth. tavān (able/power) + -avar
+260  | pound         | ratleavar               | Parth. ratle (pound/weight) + -avar
+262  | beauty        | zibāīavar               | Parth. zibāī (beauty) + -avar
+263  | drive         | rāndanshan              | same as drive
+264  | stood         | īstādavar               | Parth. īstāda (stood) + -avar
+265  | contain       | dāranshan               | Parth. dāran (to contain) + -shan
+266  | front         | jolōavar                | Parth. jolō (front) + -avar
+267  | teach         | āmūxtanshan             | Parth. āmūxtan (to teach) + -shan
+268  | week          | haftaavar               | Parth. hafta (week) + -avar
+269  | final         | āxaravar                | Parth. āxar (final/last) + -avar
+270  | gave          | dādavar                 | Parth. dād (gave) + -avar
+271  | green         | sabzavar                | Parth. sabz (green) + -avar
+272  | oh            | āhavar                  | Parth. āh (oh/alas) + -avar
+273  | quick         | tīzavar                 | same as fast
+274  | develop       | rošdavar                | Parth. rošd (develop/growth) + -avar
+275  | ocean         | daryāavar               | Parth. daryā (ocean/sea) + -avar
+276  | warm          | garmavar                | Parth. garm (warm) + -avar
+277  | free          | āzādavar                | Parth. āzād (free) + -avar
+278  | minute        | daqīqeavar              | Parth. daqīqe (minute) + -avar
+279  | strong        | nīrumandavar            | Parth. nīrumand (strong) + -avar
+280  | special       | xāssavar                | Parth. xāss (special/particular) + -avar
+281  | behind        | pušatavar               | same as behind
+282  | clear         | rošanavar               | Parth. rošan (clear/bright) + -avar
+283  | tail          | domavar                 | Parth. dom (tail) + -avar
+284  | produce       | tolīdavar               | Parth. tolīd (produce) + -avar
+285  | fact          | vāqeʿavar               | Parth. vāqeʿ (fact/real) + -avar
+286  | street        | xiyābānavar             | Parth. xiyābān (street) + -avar
+288  | lot           | ziādavar                | Parth. ziād (lot/much) + -avar
+289  | nothing       | hičavar                 | Parth. hič (nothing/any) + -avar
+290  | course        | masīravar               | Parth. masīr (course/path) + -avar
+291  | stay          | māndanshan              | Parth. māndan (to stay) + -shan
+292  | wheel         | čarxavar                | Parth. čarx (wheel) + -avar
+293  | full          | puravar                 | Parth. pur (full) + -avar
+294  | force         | zōravar                 | OP zōr (force/strength) + -avar
+295  | blue          | ābiavar                 | Parth. ābi (blue/water-like) + -avar
+296  | object        | šeyavar                 | Parth. šey (object/thing) + -avar
+297  | decide        | tasmīmavar              | Parth. tasmīm (decide) + -avar
+298  | surface       | rūyavar                 | Parth. rūy (surface/face) + -avar
+299  | deep          | amīqavar                | Parth. amīq (deep) + -avar
+300  | moon          | māhavar                 | Parth. māh (moon) + -avar
+301  | island        | jazīreavar              | Parth. jazīre (island) + -avar
+302  | foot          | pāyavar                 | Parth. pāy (foot) + -avar
+303  | system        | nezāmavar               | Parth. nezām (system/order) + -avar
+304  | busy          | mašγūlavar              | Parth. mašγūl (busy) + -avar
+305  | test          | āzmāyešavar             | Parth. āzmāyeš (test) + -avar
+306  | record        | sabteavar               | Parth. sabt (record) + -eavar
+307  | boat          | qāyiqavar               | Parth. qāyiq (boat) + -avar
+308  | common        | ʿādiavar                | Parth. ʿādi (common/ordinary) + -avar
+309  | gold          | zaravar                 | OP zara (gold) + -avar
+310  | possible      | momkenavar              | Parth. momken (possible) + -avar
+311  | plane         | havāpeymāavar           | Parth. havāpeymā (plane) + -avar
+312  | stead         | jāyavar                 | same as place
+313  | dry           | xoškavar                | Parth. xošk (dry) + -avar
+314  | wonder        | šegeftavar              | Parth. šegeft (wonder/amazement) + -avar
+315  | laugh         | xandīdanshan            | Parth. xandīdan (to laugh) + -shan
+316  | thousand      | hazāravar               | Parth. hazār (thousand) + -avar
+317  | ago           | pīšavar                 | Parth. pīš (ago/before) + -avar
+318  | ran           | davīdavar               | Parth. davīd (ran) + -avar
+319  | check         | barrasyavar             | Parth. barrasy (check/examine) + -avar
+320  | game          | bāzīavar                | Parth. bāzī (game) + -avar
+321  | shape         | šaklavar                | Parth. šakl (shape) + -avar
+322  | equate        | mosāvīavar              | Parth. mosāvī (equate/equal) + -avar
+323  | hot           | dāγavar                 | Parth. dāγ (hot/brand) + -avar
+324  | miss          | dozavar                 | Parth. doz (miss/steal) + -avar
+325  | brought       | āvardavar               | Parth. āvard (brought) + -avar
+326  | heat          | garmāavar               | Parth. garmā (heat) + -avar
+327  | snow          | borfavar                | Parth. borf (snow) + -avar
+328  | tire          | xasteavar               | Parth. xaste (tired) + -avar
+329  | bring         | āvardanshan             | Parth. āvardan (to bring) + -shan
+331  | distant       | dūravar                 | Parth. dūr (distant) + -avar
+333  | east          | xāvaravar               | OP xāvar (east) + -avar
+334  | paint         | naqāšīdanshan           | Parth. naqāšī (to paint) + -shan
+335  | language      | zabānavar               | Parth. zabān (language) + -avar
+336  | among         | miyanavar               | same as among
+337  | grand         | šahanšāhavar            | OP šahanšāh (grand/king-of-kings) + -avar
+341  | drop          | qatreavar               | Parth. qatre (drop) + -avar
+342  | heart         | delavar                 | Parth. del (heart) + -avar
+344  | present       | hālavar                 | Parth. hāl (present/state) + -avar
+345  | heavy         | sangīnavar              | Parth. sangīn (heavy/stone-like) + -avar
+346  | dance         | raqqāsīdanshan          | Parth. raqqāsī (dance) + -shan
+347  | engine        | moharrekavar            | Parth. moharrek (engine) + -avar
+348  | position      | maqāmavar               | Parth. maqām (position) + -avar
+349  | arm           | bāzūavar                | Parth. bāzū (arm) + -avar
+350  | wide          | pāhnavar                | Parth. pāhn (wide/spread) + -avar
+351  | sail          | nāvardīdanshan          | Parth. nāvardī (sail/navigate) + -shan
+352  | material      | māddavar                | Parth. mādda (material) + -avar
+353  | size          | andāzeavar              | same as measure
+354  | vary          | tagīravar               | Parth. tagīr (vary/change) + -avar
+355  | settle        | saknaavar               | Parth. sakna (settle) + -avar
+356  | speak         | sokhanavar              | same as talk
+357  | weight        | vazanavar               | Parth. vazan (weight) + -avar
+358  | general       | kūliavar                | Parth. kūli (general/total) + -avar
+359  | ice           | yaxavar                 | Parth. yax (ice) + -avar
+360  | matter        | masʾaleavar             | Parth. masʾale (matter) + -avar
+361  | circle        | dayreavar               | Parth. dayre (circle) + -avar
+362  | pair          | joravar                 | Parth. jor (pair/couple) + -avar
+363  | include       | darbaragīdanshan        | Parth. darbara (include) + -shan
+364  | divide        | taqsīmavar              | Parth. taqsīm (divide) + -avar
+365  | syllable      | hejāavar                | Parth. hejā (syllable) + -avar
+366  | felt          | hesasīdavar             | Parth. hesāsīd (felt) + -avar
+367  | perhaps       | šāyadavar               | same as perhaps
+368  | pick          | entexābavar             | Parth. entexāb (pick/choose) + -avar
+369  | sudden        | nāgahānavar             | Parth. nāgahān (sudden) + -avar
+370  | count         | šomārdanshan            | Parth. šomārdan (to count) + -shan
+371  | square        | morabbaʿavar            | Parth. morabbaʿ (square) + -avar
+372  | reason        | dalīlavar               | Parth. dalīl (reason) + -avar
+373  | length        | darāzāavar              | Parth. darāzā (length) + -avar
+374  | represent     | namāyandegīavar         | Parth. namāyandegī (represent) + -avar
+375  | art           | honaravar               | Parth. honar (art/skill) + -avar
+376  | subject       | mowzūʿavar              | Parth. mowzūʿ (subject) + -avar
+377  | region        | manṭaqeavar             | same as area
+378  | energy        | enerjīavar              | Parth. enerjī (energy) + -avar
+379  | hunt          | šekāravar               | Parth. šekār (hunt) + -avar
+380  | probable      | ehtimālavar             | Parth. ehtimāl (probable) + -avar
+381  | bed           | bāligavar               | Parth. bālig (bed/resting) + -avar
+382  | brother       | barādaravar             | Parth. barādar (brother) + -avar
+383  | egg           | toxmavar                | Parth. toxm (egg/seed) + -avar
+384  | ride          | savārīdanshan           | Parth. savārī (to ride) + -shan
+385  | cell          | yāxteavar               | Parth. yāxte (cell) + -avar
+386  | believe       | bāvaravar               | Parth. bāvar (believe) + -avar
+387  | fraction      | kasravar                | Parth. kasr (fraction) + -avar
+388  | forest        | jangalavar              | Parth. jangal (forest) + -avar
+389  | sit           | nešastanshan            | Parth. nešastan (to sit) + -shan
+390  | race          | nežādavar               | Parth. nežād (race/lineage) + -avar
+391  | window        | panjareavar             | Parth. panjare (window) + -avar
+392  | store         | foršgāhavar             | Parth. foršgāh (store) + -avar
+393  | summer        | tābastānavar            | Parth. tābastān (summer) + -avar
+394  | train         | qatāreavar              | Parth. qatār (train/row) + -eavar
+395  | sleep         | xābīdanshan             | Parth. xābīdan (to sleep) + -shan
+396  | prove         | esbātavar               | Parth. esbāt (prove) + -avar
+397  | lone          | tanhaavar               | same as only/alone
+398  | leg           | pāyavar                 | same as foot
+399  | exercise      | varzešavar              | Parth. varzeš (exercise) + -avar
+400  | wall          | dīvāravar               | Parth. dīvār (wall) + -avar
+401  | catch         | gerefanshan             | Parth. gerefan (to catch) + -shan
+402  | mount         | bālāraftanshan          | Parth. bālā raftan (mount) + -shan
+403  | wish          | ārzūavar                | Parth. ārzū (wish) + -avar
+404  | sky           | asmanavar               | OP asman (sky) + -avar
+405  | board         | taxteavar               | Parth. taxte (board) + -avar
+406  | joy           | šādīavar                | Parth. šādī (joy) + -avar
+407  | winter        | zemestānavar            | Parth. zemestān (winter) + -avar
+408  | sat           | nešasteavar             | Parth. nešaste (sat) + -avar
+409  | written       | nevešteavar             | Parth. nevešte (written) + -avar
+410  | wild          | vahšīavar               | Parth. vahšī (wild) + -avar
+411  | instrument    | āletavar                | Parth. ālet (instrument) + -avar
+412  | kept          | negāhdāštavar           | Parth. negāhdāšt (kept) + -avar
+413  | glass         | šīšeavar                | Parth. šīše (glass) + -avar
+414  | grass         | čamanavar               | Parth. čaman (grass/meadow) + -avar
+415  | cow           | gāvavar                 | Parth. gāv (cow) + -avar
+416  | job           | kāravar                 | same as work
+417  | edge          | lababavar               | Parth. labab (edge/lip) + -avar
+418  | sign          | nišānavar               | same as mark
+419  | visit         | dīdanshan               | same as see/visit
+420  | past          | gozašteavar             | Parth. gozašte (past) + -avar
+421  | soft          | narmavar                | Parth. narm (soft) + -avar
+422  | fun           | xošīavar                | Parth. xošī (fun/joy) + -avar
+423  | bright        | deraxšānavar            | Parth. deraxšān (bright) + -avar
+424  | gas           | gazavar                 | Parth. gaz (gas) + -avar
+425  | weather       | havāavar                | Parth. havā (weather/air) + -avar
+426  | month         | māhavar                 | same as moon (month/moon share māh)
+427  | million       | melyonavar              | Parth. melyōn (million) + -avar
+428  | bear          | xersavar                | Parth. xers (bear) + -avar
+429  | finish        | tamāmavar               | Parth. tamām (finish/complete) + -avar
+430  | happy         | šādavar                 | Parth. šād (happy) + -avar
+431  | hope          | omīdavar                | Parth. omīd (hope) + -avar
+432  | flower        | gūlavar                 | Parth. gūl (flower/rose) + -avar
+433  | clothe        | pūšīdanshan             | Parth. pūšīdan (to clothe) + -shan
+434  | strange       | gharībavar              | Parth. gharīb (strange) + -avar
+435  | gone          | raftavar                | Parth. raft (gone) + -avar
+436  | jump          | jastandanshan           | Parth. jastan (to jump) + -shan
+437  | baby          | nowzādavar              | Parth. nowzād (baby) + -avar
+438  | eight         | haštavar                | Parth. hašt (eight) + -avar
+439  | village       | dehavar                 | Parth. deh (village) + -avar
+440  | meet          | molāqātavar             | Parth. molāqāt (meet) + -avar
+441  | root          | rīšeavar                | Parth. rīše (root) + -avar
+442  | buy           | xarīdanshan             | Parth. xarīdan (to buy) + -shan
+443  | raise         | balandavar              | Parth. baland (raise/high) + -avar
+444  | solve         | hallavar                | Parth. hall (solve) + -avar
+445  | metal         | felezavar               | Parth. felez (metal) + -avar
+447  | push          | hol dādanshan           | Parth. hol dādan (push) + -shan
+448  | seven         | haftavar                | Parth. haft (seven) + -avar
+449  | paragraph     | bandavar                | Parth. band (paragraph/section) + -avar
+450  | third         | sevomavar               | Parth. sevom (third) + -avar
+452  | held          | dāštavar                | Parth. dāšt (held) + -avar
+453  | hair          | mūavar                  | Parth. mū (hair) + -avar
+454  | describe      | tawsīfavar              | Parth. tawsīf (describe) + -avar
+455  | cook          | poxtan shan             | Parth. poxtan (to cook) + -shan
+456  | floor         | kfavar                  | Parth. kaf (floor/palm) + -avar
+458  | result        | natījeavar              | Parth. natīje (result) + -avar
+459  | burn          | sūxtanshan              | Parth. sūxtan (to burn) + -shan
+460  | hill          | tapalavar               | Parth. tapal (hill/mound) + -avar
+461  | safe          | emānavar                | Parth. emān (safe/peace) + -avar
+462  | cat           | gorbeavar               | Parth. gorbe (cat) + -avar
+463  | century       | sadeavar                | Parth. sade (century) + -avar
+464  | consider      | mālāndanshan            | Parth. mālāndan (consider) + -shan
+465  | type          | nowʿavar                | Parth. nowʿ (type/kind) + -avar
+466  | law           | qānūnavar               | same as rule
+467  | bit           | kameavar                | Parth. kame (bit/little) + -avar
+468  | coast         | sāhelavar               | Parth. sāhel (coast) + -avar
+469  | copy          | nosxeavar               | Parth. nosxe (copy) + -avar
+470  | phrase        | jomlavar                | Parth. jomle (phrase) + -avar
+471  | silent        | sākestavar              | Parth. sākest (silent) + -avar
+472  | tall          | bolandavar              | Parth. boland (tall) + -avar
+473  | sand          | šenavar                 | Parth. šen (sand) + -avar
+474  | soil          | xākavar                 | Parth. xāk (soil/dust) + -avar
+475  | roll          | qaltīdanshan            | Parth. qaltīdan (to roll) + -shan
+476  | temperature   | darmāavar               | Parth. darmā (temperature) + -avar
+477  | finger        | angoštar                | Parth. angošt (finger) + -ar
+478  | industry      | sanʿatavar              | Parth. sanʿat (industry) + -avar
+479  | value         | arzešavar               | Parth. arzeš (value) + -avar
+480  | fight         | jangīdanshan            | Parth. jangīdan (to fight) + -shan
+481  | lie           | drazīdanshan            | Parth. drazīdan (to lie down) + -shan
+482  | beat          | zadadanshan             | Parth. zadan (to beat) + -shan
+483  | excite        | hayajānavar             | Parth. hayajān (excite) + -avar
+484  | natural       | ṭabīʿīavar              | Parth. ṭabīʿī (natural) + -avar
+485  | view          | nazaravar               | Parth. nazar (view) + -avar
+486  | sense         | hesavar                 | Parth. hes (sense/feeling) + -avar
+487  | ear           | gūšavar                 | Parth. gūš (ear) + -avar
+491  | case          | mājerāavar              | Parth. mājerā (case/event) + -avar
+492  | middle        | miyāneavar              | Parth. miyāne (middle) + -avar
+493  | kill          | koštanshan              | Parth. koštan (to kill) + -shan
+494  | son           | pusavar                 | Parth. pus (son) + -avar
+495  | lake          | daryācheavar            | Parth. daryāče (lake) + -avar
+496  | moment        | lahzeavar               | Parth. lahze (moment) + -avar
+497  | scale         | tarazūavar              | Parth. tarazū (scale/balance) + -avar
+498  | loud          | boluandavar             | Parth. boluand (loud) + -avar
+499  | spring        | bahāravar               | Parth. bahār (spring) + -avar
+500  | observe       | mošāhedavar             | Parth. mošāhede (observe) + -avar
+
+===================================================================================
+PHONETIC GUIDE FOR GORIRUM
+===================================================================================
+
+Old Persian sounds (Achaemenid inscriptions):
+  x   = voiceless velar fricative (as in Scots "loch")
+  xš  = cluster (as in "xšāyaθiya" = king/shah)
+  θ   = voiceless dental fricative (as in "thin")
+  ā   = long open back vowel
+  Formal, inscriptional register — every syllable deliberate
+
+Parthian/Arsacid sounds:
+  γ   = voiced velar fricative (softer than g)
+  š   = voiceless palatal fricative (as in "shoe")
+  č   = voiceless palatal affricate (as in "church")
+  ž   = voiced palatal fricative (as in "measure")
+  More conversational than OP — warrior-court register
+
+Middle Persian/Pahlavi sounds:
+  ē   = front mid vowel (as in "they")
+  ō   = back mid rounded vowel
+  ī   = front high vowel (long)
+  -išn = abstract noun suffix (gōwišn = speech, dānāgīh = knowledge)
+  ī   = relative/genitive particle (very characteristic)
+
+Key attested words used across eras:
+  OP: adam (I), utā (and), naiy (not), arta (truth), baga (god),
+  xšāyaθiya (king), haruva (all), asman (sky), ātar (fire), star (star)
+  Parth: nēk (good), rāst (true/straight), buzurg (great), māh (moon),
+  daryā (sea), āzād (free), bahār (spring), šāh (king), del (heart)
+  MP: ān (that), ēn (this), ī (of), hamče (also), ēdōn (thus)
+
+Gorirum suffix system:
+  -avar  = primary noun/adjective ending (fr. OP/MP -avar = possessing)
+  -shan  = verb ending (fr. MP -išn + Parth. -an infinitive)
+  -tavar = elevated/royal noun (compound intensity)
+  -mavar = feminine/personal pronoun form
+  -rtavar = superlative/highest form
+  -druj  = negative quality (fr. OP druj = lie/chaos — used sparingly)
+  -arta  = truth/order quality (fr. OP arta — used for positive absolutes)
+  -rōz   = day/light word (fr. Parth. rōz)
+  -mah   = moon/great word (fr. OP māha + Parth. māh)
+
+===================================================================================
+END OF FILE — GorirumPersianParthian_500words.txt
+Generated for Durgeth fantasy world language system
+===================================================================================
