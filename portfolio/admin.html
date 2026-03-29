@@ -291,9 +291,16 @@
       `;
     }
 
-    async function loadSummary() {
+    let isLoadingSummary = false;
+    const AUTO_REFRESH_MS = 5000;
+    let autoRefreshTimer = null;
+
+    async function loadSummary(options = {}) {
+      const { quiet = false } = options;
+      if (isLoadingSummary) return;
+      isLoadingSummary = true;
       const status = document.getElementById('status');
-      status.textContent = 'Loading analytics...';
+      if (!quiet) status.textContent = 'Loading analytics...';
 
       try {
         const response = await fetch('/api/analytics/summary', { cache: 'no-store' });
@@ -326,14 +333,25 @@
         renderTable('table-killers', summary.enemyKillLeaders || []);
         renderTable('table-run-results', summary.runResults || []);
 
-        status.textContent = `Last refreshed: ${new Date().toLocaleTimeString()}`;
+        status.textContent = `Last refreshed: ${new Date().toLocaleTimeString()} (auto every ${Math.floor(AUTO_REFRESH_MS / 1000)}s)`;
       } catch (err) {
         status.textContent = `Error: ${err.message}`;
+      } finally {
+        isLoadingSummary = false;
       }
     }
 
-    document.getElementById('refresh-btn').addEventListener('click', loadSummary);
-    loadSummary();
+    function startAutoRefresh() {
+      if (autoRefreshTimer) clearInterval(autoRefreshTimer);
+      autoRefreshTimer = setInterval(() => {
+        if (document.visibilityState !== 'visible') return;
+        loadSummary({ quiet: true });
+      }, AUTO_REFRESH_MS);
+    }
+
+    document.getElementById('refresh-btn').addEventListener('click', () => loadSummary({ quiet: false }));
+    loadSummary({ quiet: false });
+    startAutoRefresh();
   </script>
 </body>
 </html>
