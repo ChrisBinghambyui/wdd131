@@ -425,7 +425,7 @@ const LINEAGE_LORE = {
   "Sylvarirum": "Sylvarirum communities nestle in ancient forests in treehouse settlements invisible to the uninvited. Smaller-framed than most races but extraordinarily quick, they are at home in natural terrain that slows everyone else. Many spend years on solitary journeys - called the Wandering - before returning to their communities, treating it as both a coming-of-age and a spiritual discipline.",
   "Vethanirum": "The Vethanirum emerged generations ago at the cultural fringes of elven culture and today form their own distinct people. They carry natural attunement to magic without Solarirum-level immersion, and a practicality that comes from navigating between worlds their whole lives. Most describe themselves simply as practical - which is the polite word for someone who has learned not to take anyone's traditions too seriously, including their own.",
   "Ashirum": "The Ashirum have lived for centuries around active volcanic regions, their culture shaped by constant fire and geological instability. Their dark complexions are marked by subtle ember-coloured eyes and faint natural patterns on the skin. Ashirum society emphasises resilience, self-sufficiency, and the understanding that comfort is temporary but adaptation is permanent.",
-  "Apisdrenn": "The Apisdrenn are the most widely encountered dwarven people - builders, miners, and smiths who maintain a vast network of mountain strongholds and underground trade routes. Stocky even by dwarven standards, with a well-earned reputation for stubbornness and craftsmanship that they consider deeply accurate and not remotely an insult. Their ales are the best in the known world, which they will tell you unprompted.",
+  "Apisdrenn": "The Apisdrenn are the most widely encountered dwarven people - character-builders, miners, and smiths who maintain a vast network of mountain strongholds and underground trade routes. Stocky even by dwarven standards, with a well-earned reputation for stubbornness and craftsmanship that they consider deeply accurate and not remotely an insult. Their ales are the best in the known world, which they will tell you unprompted.",
   "Apiskeld": "The Apiskeld emerge from deeper and older holds than their Apisdrenn kin. Their connection to heat and geological pressure runs almost spiritual - their skin carries a faint metallic sheen in firelight, and many Apiskeld describe the sound of a working forge as something close to music. Apiskeld smiths and enchanters are regarded as among the finest practitioners in the known world, and they charge accordingly.",
   "Apisveldir": "The Apisveldir are the rarest and most widely misunderstood of the dwarven peoples. To outsiders their fixation on rare gemstones looks like greed - they will divert an entire expedition to investigate a glimmer in a far tunnel, spend a month's wages on a single flawless sapphire, and turn down gold in favour of a fragment of something rarer. To the Apisveldir themselves, this is not acquisitiveness. It is closer to recognition. Apisveldir believe that exceptional gemstones are not merely beautiful - they are the physical memory of geological time, compressed emotion, and in some cases echoes of souls too ancient to be contained by mortal vessels. Their theology holds that certain gems are listening. Most non-Apisveldir find this unsettling. The Apisveldir consider that a limitation of imagination.",
   "Kreln": "The Kreln are the remnants of a dwarven civilization that, long before recorded history, retreated entirely into the deep ocean. No one knows whether it was catastrophe, choice, or something stranger that drove them below the surface. What remained emerged over millennia as something distinctly its own: stocky and dense like their landbound cousins, but shaped by crushing pressure and lightless depths into a form that unsettles those encountering them for the first time. Kreln bodies are compact and low-slung, built to withstand forces that would rupture other creatures. Their skin ranges from deep blue-grey to mottled greenish-black, with faint bioluminescent patches along the jaw, collarbones, and the backs of the hands - dim, cool light that pulses slowly when they are calm and brightens under stress. Many have partial carapace growth: ridged, calcified plates of bone-like material along the shoulders, shins, and the crown of the skull, their edges irregular and barnacle-roughed. Their eyes are enormous and pale, adapted for deep water - on the surface, many squint against bright light and wear smoked glass lenses carved from obsidian. The Kreln do not have a unified civilization above water. Small enclaves settle in coastal caves, flooded ruins, and port-city underbellies. Most who travel the wider world do so because their settlement was destroyed, because they were exiled, or because they are searching for something their people lost long ago.",
@@ -437,7 +437,7 @@ const LINEAGE_LORE = {
   "Gorirum": "The Gorirum insist - and their oldest scholars can produce genealogical records that are at minimum inconclusive - that their people and the elven peoples share a common ancestor, diverged in some ancient age before written history. The suffix -irum in their formal name is not accidental. Neither are the faintly longer ears, the slightly higher natural aptitude for magic, and the longer-than-average lifespan they carry compared to other orcish lineages. Most elves dismiss this claim with varying degrees of condescension. A few Solarirum scholars find it quietly disquieting. Some Vethanirum, whose own lineage formed at a cultural boundary, are privately interested. The Gorirum do not press the point - they simply live with the records and let others draw conclusions.",
   "Veildrift": "No one knows where the Veildrift came from. The oldest records describe them appearing at the edges of battlefields, in the ruins of collapsed towers, and at sites where large amounts of magic were spent in catastrophic ways. Current scholars debate whether they are the descendants of people who survived a planar boundary event, or something stranger still. The Veildrift themselves rarely discuss it, either because they do not know or because they have decided it does not matter. Veildrift are profoundly unsettling in appearance. Their skin is so pale as to be nearly translucent - in dim light, the faint shadows of veins and underlying structure are visible beneath the surface, giving them a ghostly, half-present quality. Their hair is white or silver without exception, and their eyes are a uniform pale blue or silver-grey with no visible pupil. Despite their fragile appearance, they move with unusual precision, and their strange partial-presence makes them naturally difficult to perceive in low light.",
   "Murrak": "The Murrak are a people of disputed origin. Some scholars claim they are the surviving descendants of a civilization that bargained poorly with something ancient. Others suggest they are simply a human lineage that diverged under extreme magical saturation. The Murrak themselves do not spend much time on the question: they are here, they are capable, and the world's opinion of their origins is their own problem. Murrak have dull grey skin with a slightly matte texture, as though the color was pressed out of them. Their eyes are dim purple - not vivid or striking, but a flat, faded violet that unnerves people who look too long. They tend to be stocky and plain-featured. What they lack in raw intellectual processing they compensate for with an instinctive resonance with magical force: Murrak spellcasters often outperform their academic credentials, drawing on something in their blood that instruction alone does not explain.",
-  "Bovari": "The Bovari are a large and immediately distinctive people: broadly built at the shoulder, standing just under six feet in most cases, with the squared heads and prominent curved horns of bovine ancestry. Both males and females bear horns, and Bovari culture attaches enormous personal significance to them - horns are cultivated, carved, painted, and adorned across a lifetime, and their condition and decoration communicate more about a Bovari's personal history than any word of introduction. The most immediately unusual feature of Bovari anatomy is their arms. Each arm bifurcates at the elbow, branching into two forearms and hands. A Bovari at rest typically holds two of their four hands at their sides and keeps the other two available for tasks; in conversation, all four are often in motion. This gives them a social expressiveness that other peoples can find overwhelming, and a practical capability that makes them sought-after as craftspeople, builders, and cooks. Bovari live in nomadic family groups or integrate comfortably into larger settlements, and they are generally regarded as among the most good-natured peoples in Aethermoor - a reputation they accept without particular pride.",
+  "Bovari": "The Bovari are a large and immediately distinctive people: broadly built at the shoulder, standing just under six feet in most cases, with the squared heads and prominent curved horns of bovine ancestry. Both males and females bear horns, and Bovari culture attaches enormous personal significance to them - horns are cultivated, carved, painted, and adorned across a lifetime, and their condition and decoration communicate more about a Bovari's personal history than any word of introduction. The most immediately unusual feature of Bovari anatomy is their arms. Each arm bifurcates at the elbow, branching into two forearms and hands. A Bovari at rest typically holds two of their four hands at their sides and keeps the other two available for tasks; in conversation, all four are often in motion. This gives them a social expressiveness that other peoples can find overwhelming, and a practical capability that makes them sought-after as craftspeople, character-builders, and cooks. Bovari live in nomadic family groups or integrate comfortably into larger settlements, and they are generally regarded as among the most good-natured peoples in Aethermoor - a reputation they accept without particular pride.",
   "Naukin": "The Naukin are ratfolk - lean, quick, whisker-faced, and collectively the product of centuries of exploitation at the hands of mage-scholars who used them as subjects, test cases, servants, and occasionally ingredients. Their escape from the great wizard academies is a matter of historical record; how they organized it is not, because the Naukin have never discussed it with outsiders. Naukin colonies exist in the cracks of the world: old sewer networks beneath cities, collapsed buildings in the scholars' districts they once served, tunnels beneath mage towers. They are neither friendly nor hostile to the outside world by default - they are cautious in the extreme. A Naukin encountered alone has almost certainly been sent out deliberately, and a Naukin settlement does not welcome unannounced visitors. Individual Naukin who travel the wider world do so against cultural pressure, driven by necessity, exile, or a curiosity their people regard with suspicion. Naukin as a group are deeply, institutionally opposed to magic. This is not superstition - it is experiential. Most know exactly what was done to their ancestors with spells and enchantments. Naukin characters who practice magic are extraordinarily rare and face significant social consequences within their communities.",
   "Arantza": "The Arantza are bipedal spider-folk - primitive in the sense that their culture is oral, decentralized, and largely pre-agricultural, not in the sense of being simple. They are older than most of the cultures that would call them primitive, and their memory of the world's early shape is carried in stories that scholars have been trying to transcribe for a hundred years with limited success. Arantza anatomy is immediately arresting. They have three pairs of arms: two pairs in the normal humanoid configuration with hands at the ends, and one pair that juts from just below the shoulder blades, ending not in hands but in tapered chitinous points used for climbing and combat. Their faces have eight eyes arranged in two vertical rows along the sides of the skull - the upper four larger, the lower four smaller - with a wide, angular mouth positioned at roughly mid-face. Their skin is covered in fine dark bristle-hairs and their coloration varies from near-black to dark amber to a grey-brown that makes them nearly invisible in shadow.",
   "Verdathi": "The Verdathi are a reptilian people from the vast marshland territories of the southern coast. Reliable in ways that are hard to fake: the swamp does not forgive pretense. On land, Verdathi are capable - solid, if slightly slower than average. In water, they are something else entirely. A Verdathi in their element is faster than almost anything that did not evolve there, and the water offers capabilities that land-dwellers simply cannot counter."
@@ -599,12 +599,12 @@ const state = {
   archetype: "Knight",
   lineage: "Solarirum",
   birthsign: "The Ironstar",
-  customAttrSpend: Object.fromEntries(ATTRIBUTES.map((a) => [a, 0])),
+  customAttrSpend: buildEmptyAttributeSpend(),
   majorSelected: [],
   minorSelected: [],
-  majorPool: 5,
-  minorPool: 5,
-  miscPool: 5,
+  majorPoints: 5,
+  minorPoints: 5,
+  miscPoints: 5,
   majorAlloc: {},
   minorAlloc: {},
   miscAlloc: {},
@@ -624,312 +624,352 @@ const state = {
   background: ""
 };
 
-const el = {};
+const ui = {};
 
-document.addEventListener("DOMContentLoaded", () => {
-  bindElements();
-  initSelectors();
+document.addEventListener("DOMContentLoaded", function () {
+  loadElements();
+  fillMainSelects();
   restoreFromStorage();
   bindEvents();
-  renderAll();
+  renderPage();
 });
 
-function bindElements() {
-  el.modeCards = document.getElementById("modeCards");
-  el.archetypeWrap = document.getElementById("archetypeWrap");
-  el.archetypeDetail = document.getElementById("archetypeDetail");
-  el.archetypeSelect = document.getElementById("archetypeSelect");
-  el.lineageSelect = document.getElementById("lineageSelect");
-  el.birthsignSelect = document.getElementById("birthsignSelect");
-  el.lineageRules = document.getElementById("lineageRules");
-  el.birthsignRules = document.getElementById("birthsignRules");
-  el.lineageChoices = document.getElementById("lineageChoices");
-  el.lineageDetail = document.getElementById("lineageDetail");
-  el.birthsignChoices = document.getElementById("birthsignChoices");
-  el.birthsignDetail = document.getElementById("birthsignDetail");
-  el.attributeHelp = document.getElementById("attributeHelp");
-  el.attributePoints = document.getElementById("attributePoints");
-  el.attributesGrid = document.getElementById("attributesGrid");
-  el.majorPool = document.getElementById("majorPool");
-  el.minorPool = document.getElementById("minorPool");
-  el.miscPool = document.getElementById("miscPool");
-  el.majorPicker = document.getElementById("majorPicker");
-  el.minorPicker = document.getElementById("minorPicker");
-  el.skillsTables = document.getElementById("skillsTables");
-  el.derivedStats = document.getElementById("derivedStats");
-  el.equipmentHint = document.getElementById("equipmentHint");
-  el.weaponSelect = document.getElementById("weaponSelect");
-  el.weaponDetail = document.getElementById("weaponDetail");
-  el.armorSelect = document.getElementById("armorSelect");
-  el.armorDetail = document.getElementById("armorDetail");
-  el.shieldSelect = document.getElementById("shieldSelect");
-  el.shieldDetail = document.getElementById("shieldDetail");
-  el.kitSelect = document.getElementById("kitSelect");
-  el.kitDetail = document.getElementById("kitDetail");
-  el.spellSelectHelp = document.getElementById("spellSelectHelp");
-  el.spellSchool1 = document.getElementById("spellSchool1");
-  el.spellSchool2 = document.getElementById("spellSchool2");
-  el.spellName1 = document.getElementById("spellName1");
-  el.spellName2 = document.getElementById("spellName2");
-  el.spellDetail1 = document.getElementById("spellDetail1");
-  el.spellDetail2 = document.getElementById("spellDetail2");
-  el.characterName = document.getElementById("characterName");
-  el.background = document.getElementById("background");
-  el.exportBtn = document.getElementById("exportBtn");
-  el.finalizeBtn = document.getElementById("finalizeBtn");
-  el.exportPreview = document.getElementById("exportPreview");
-  el.saveSheetBtn = document.getElementById("saveSheetBtn");
+function buildEmptyAttributeSpend() {
+  const result = {};
+  for (let i = 0; i < ATTRIBUTES.length; i += 1) {
+    result[ATTRIBUTES[i]] = 0;
+  }
+  return result;
 }
 
-function initSelectors() {
-  populateSelect(el.archetypeSelect, Object.keys(ARCHETYPES));
-  populateSelect(el.lineageSelect, Object.keys(LINEAGES));
-  populateSelect(el.birthsignSelect, Object.keys(BIRTHSIGNS));
+function loadElements() {
+  ui.buildModeCards = document.getElementById("buildModeCards");
+  ui.archetypeSection = document.getElementById("archetypeSection");
+  ui.archetypeInfo = document.getElementById("archetypeInfo");
+  ui.archetypeSelect = document.getElementById("archetypeSelect");
+  ui.lineageSelect = document.getElementById("lineageSelect");
+  ui.birthsignSelect = document.getElementById("birthsignSelect");
+  ui.lineageNotes = document.getElementById("lineageNotes");
+  ui.birthsignNotes = document.getElementById("birthsignNotes");
+  ui.lineageOptions = document.getElementById("lineageOptions");
+  ui.lineageInfo = document.getElementById("lineageInfo");
+  ui.birthsignOptions = document.getElementById("birthsignOptions");
+  ui.birthsignInfo = document.getElementById("birthsignInfo");
+  ui.attributeGuide = document.getElementById("attributeGuide");
+  ui.attributePool = document.getElementById("attributePool");
+  ui.attributeGrid = document.getElementById("attributeGrid");
+  ui.majorPoints = document.getElementById("majorPoints");
+  ui.minorPoints = document.getElementById("minorPoints");
+  ui.miscPoints = document.getElementById("miscPoints");
+  ui.majorSkillPicker = document.getElementById("majorSkillPicker");
+  ui.minorSkillPicker = document.getElementById("minorSkillPicker");
+  ui.skillTableWrap = document.getElementById("skillTableWrap");
+  ui.derivedStatsGrid = document.getElementById("derivedStatsGrid");
+  ui.equipmentGuide = document.getElementById("equipmentGuide");
+  ui.weaponSelect = document.getElementById("weaponSelect");
+  ui.weaponInfo = document.getElementById("weaponInfo");
+  ui.armorSelect = document.getElementById("armorSelect");
+  ui.armorInfo = document.getElementById("armorInfo");
+  ui.shieldSelect = document.getElementById("shieldSelect");
+  ui.shieldInfo = document.getElementById("shieldInfo");
+  ui.kitSelect = document.getElementById("kitSelect");
+  ui.kitInfo = document.getElementById("kitInfo");
+  ui.spellGuide = document.getElementById("spellGuide");
+  ui.spellOneSchool = document.getElementById("spellOneSchool");
+  ui.spellTwoSchool = document.getElementById("spellTwoSchool");
+  ui.spellOneName = document.getElementById("spellOneName");
+  ui.spellTwoName = document.getElementById("spellTwoName");
+  ui.spellOneInfo = document.getElementById("spellOneInfo");
+  ui.spellTwoInfo = document.getElementById("spellTwoInfo");
+  ui.characterName = document.getElementById("characterName");
+  ui.background = document.getElementById("background");
+  ui.exportCharacterBtn = document.getElementById("exportCharacterBtn");
+  ui.openFinalSheetBtn = document.getElementById("openFinalSheetBtn");
+  ui.exportJsonPreview = document.getElementById("exportJsonPreview");
+  ui.saveCharacterBtn = document.getElementById("saveCharacterBtn");
 }
 
-function populateSelect(select, values) {
-  select.innerHTML = "";
-  values.forEach((value) => {
+function fillMainSelects() {
+  fillSelectFromList(ui.archetypeSelect, Object.keys(ARCHETYPES));
+  fillSelectFromList(ui.lineageSelect, Object.keys(LINEAGES));
+  fillSelectFromList(ui.birthsignSelect, Object.keys(BIRTHSIGNS));
+}
+
+function fillSelectFromList(selectEl, list) {
+  selectEl.innerHTML = "";
+  for (let i = 0; i < list.length; i += 1) {
     const option = document.createElement("option");
-    option.value = value;
-    option.textContent = value;
-    select.appendChild(option);
-  });
+    option.value = list[i];
+    option.textContent = list[i];
+    selectEl.appendChild(option);
+  }
 }
 
 function bindEvents() {
-  document.querySelectorAll('input[name="buildMode"]').forEach((radio) => {
-    radio.addEventListener("change", (event) => {
+  const modeRadios = document.querySelectorAll('input[name="buildMode"]');
+  modeRadios.forEach(function (radio) {
+    radio.addEventListener("change", function (event) {
       state.buildMode = event.target.value;
-      clearSkillAllocations();
-      renderAll();
+      resetSkillPointPools();
+      renderPage();
     });
   });
 
-  el.archetypeSelect.addEventListener("change", () => {
-    state.archetype = el.archetypeSelect.value;
-    clearSkillAllocations();
-    renderAll();
+  ui.archetypeSelect.addEventListener("change", function () {
+    state.archetype = ui.archetypeSelect.value;
+    resetSkillPointPools();
+    renderPage();
   });
 
-  el.lineageSelect.addEventListener("change", () => {
-    state.lineage = el.lineageSelect.value;
+  ui.lineageSelect.addEventListener("change", function () {
+    state.lineage = ui.lineageSelect.value;
     state.lineageChoiceValues = {};
-    renderAll();
+    renderPage();
   });
 
-  el.birthsignSelect.addEventListener("change", () => {
-    state.birthsign = el.birthsignSelect.value;
+  ui.birthsignSelect.addEventListener("change", function () {
+    state.birthsign = ui.birthsignSelect.value;
     state.birthsignChoiceValues = {};
-    renderAll();
+    renderPage();
   });
 
-  [0, 1].forEach((idx) => {
-    const schoolEl = idx === 0 ? el.spellSchool1 : el.spellSchool2;
-    const spellEl = idx === 0 ? el.spellName1 : el.spellName2;
-
-    schoolEl.addEventListener("change", () => {
-      state.selectedSpells[idx].school = schoolEl.value;
-      state.selectedSpells[idx].spell = "";
-      renderSpellSelectors();
-    });
-
-    spellEl.addEventListener("change", () => {
-      state.selectedSpells[idx].spell = spellEl.value;
-      const otherIdx = idx === 0 ? 1 : 0;
-      if (
-        state.selectedSpells[idx].spell &&
-        state.selectedSpells[idx].spell === state.selectedSpells[otherIdx].spell
-      ) {
-        state.selectedSpells[idx].spell = "";
-      }
-      renderSpellSelectors();
-    });
-  });
-
-  el.weaponSelect.addEventListener("change", () => {
-    state.selectedEquipment.weapon = el.weaponSelect.value;
+  ui.weaponSelect.addEventListener("change", function () {
+    state.selectedEquipment.weapon = ui.weaponSelect.value;
     renderEquipment();
   });
 
-  el.armorSelect.addEventListener("change", () => {
-    state.selectedEquipment.armor = el.armorSelect.value;
+  ui.armorSelect.addEventListener("change", function () {
+    state.selectedEquipment.armor = ui.armorSelect.value;
     renderEquipment();
   });
 
-  el.shieldSelect.addEventListener("change", () => {
-    state.selectedEquipment.shield = el.shieldSelect.value;
+  ui.shieldSelect.addEventListener("change", function () {
+    state.selectedEquipment.shield = ui.shieldSelect.value;
     renderEquipment();
   });
 
-  el.kitSelect.addEventListener("change", () => {
-    state.selectedEquipment.kit = el.kitSelect.value;
+  ui.kitSelect.addEventListener("change", function () {
+    state.selectedEquipment.kit = ui.kitSelect.value;
     renderEquipment();
   });
 
-  el.exportBtn.addEventListener("click", () => {
-    el.exportPreview.textContent = JSON.stringify(buildCharacterSheet(), null, 2);
+  bindSpellRowEvents(0, ui.spellOneSchool, ui.spellOneName);
+  bindSpellRowEvents(1, ui.spellTwoSchool, ui.spellTwoName);
+
+  ui.characterName.addEventListener("input", function () {
+    state.characterName = ui.characterName.value;
   });
 
-  el.finalizeBtn.addEventListener("click", () => {
-    const sheet = buildCharacterSheet();
-    localStorage.setItem("scrolls_steel_final_sheet", JSON.stringify(sheet));
+  ui.background.addEventListener("input", function () {
+    state.background = ui.background.value;
+  });
+
+  ui.exportCharacterBtn.addEventListener("click", function () {
+    const character = buildCharacterSheet();
+    ui.exportJsonPreview.textContent = JSON.stringify(character, null, 2);
+  });
+
+  ui.saveCharacterBtn.addEventListener("click", function () {
     persistToStorage();
-    window.location.href = "scrolls_and_steel_sheet.html";
-  });
-
-  el.saveSheetBtn.addEventListener("click", () => {
-    persistToStorage();
-    el.saveSheetBtn.textContent = "Saved";
-    setTimeout(() => {
-      el.saveSheetBtn.textContent = "Save Character";
+    ui.saveCharacterBtn.textContent = "Saved";
+    setTimeout(function () {
+      ui.saveCharacterBtn.textContent = "Save Character";
     }, 1200);
   });
 
-  el.characterName.addEventListener("input", () => {
-    state.characterName = el.characterName.value;
-  });
-
-  el.background.addEventListener("input", () => {
-    state.background = el.background.value;
+  ui.openFinalSheetBtn.addEventListener("click", function () {
+    const character = buildCharacterSheet();
+    localStorage.setItem("scrolls_steel_final_sheet", JSON.stringify(character));
+    persistToStorage();
+    window.location.href = "scrolls_and_steel_sheet.html";
   });
 }
 
-function clearSkillAllocations() {
+function bindSpellRowEvents(index, schoolSelect, spellSelect) {
+  schoolSelect.addEventListener("change", function () {
+    state.selectedSpells[index].school = schoolSelect.value;
+    state.selectedSpells[index].spell = "";
+    renderSpells();
+  });
+
+  spellSelect.addEventListener("change", function () {
+    state.selectedSpells[index].spell = spellSelect.value;
+    const otherIndex = index === 0 ? 1 : 0;
+    if (
+      state.selectedSpells[index].spell !== "" &&
+      state.selectedSpells[index].spell === state.selectedSpells[otherIndex].spell
+    ) {
+      state.selectedSpells[index].spell = "";
+    }
+    renderSpells();
+  });
+}
+
+function resetSkillPointPools() {
   state.majorAlloc = {};
   state.minorAlloc = {};
   state.miscAlloc = {};
-  state.majorPool = 5;
-  state.minorPool = 5;
-  state.miscPool = 5;
+  state.majorPoints = 5;
+  state.minorPoints = 5;
+  state.miscPoints = 5;
 }
 
-function renderAll() {
-  document.querySelectorAll(".mode-card").forEach((card) => {
+function renderPage() {
+  updateCommonFields();
+  renderArchetypeInfo();
+  renderLineageSection();
+  renderBirthsignSection();
+  renderAttributes();
+  renderSkillPickers();
+  renderSkillTables();
+  renderDerived();
+  renderEquipment();
+  renderSpells();
+}
+
+function updateCommonFields() {
+  const cards = document.querySelectorAll(".build-mode-card");
+  cards.forEach(function (card) {
     card.classList.toggle("active", card.dataset.mode === state.buildMode);
   });
 
-  el.archetypeWrap.classList.toggle("hidden", state.buildMode !== "archetype");
-  el.archetypeSelect.value = state.archetype;
-  el.lineageSelect.value = state.lineage;
-  el.birthsignSelect.value = state.birthsign;
-  el.characterName.value = state.characterName;
-  el.background.value = state.background;
+  ui.archetypeSection.classList.toggle("hidden", state.buildMode !== "archetype");
+  ui.archetypeSelect.value = state.archetype;
+  ui.lineageSelect.value = state.lineage;
+  ui.birthsignSelect.value = state.birthsign;
+  ui.characterName.value = state.characterName;
+  ui.background.value = state.background;
 
-  renderArchetypeDetails();
-  renderLineageChoices();
-  renderBirthsignChoices();
-  renderAttributes();
-  renderSkillPickers();
-  renderSkillsTable();
-  renderDerived();
-  renderEquipment();
-  renderSpellSelectors();
+  const radios = document.querySelectorAll('input[name="buildMode"]');
+  radios.forEach(function (radio) {
+    radio.checked = radio.value === state.buildMode;
+  });
 }
 
-function renderArchetypeDetails() {
+function renderArchetypeInfo() {
   if (state.buildMode !== "archetype") {
-    el.archetypeDetail.innerHTML = "";
+    ui.archetypeInfo.innerHTML = "";
     return;
   }
 
   const archetype = ARCHETYPES[state.archetype];
-  const details = ARCHETYPE_INFO[state.archetype];
-  const attrs = ATTRIBUTES.map((attr) => `${attr} ${archetype.attrs[attr]}`).join("  ");
+  const info = ARCHETYPE_INFO[state.archetype] || {};
+  const attrParts = [];
+  for (let i = 0; i < ATTRIBUTES.length; i += 1) {
+    const attr = ATTRIBUTES[i];
+    attrParts.push(attr + " " + archetype.attrs[attr]);
+  }
 
-  el.archetypeDetail.innerHTML = `
-    <h3>${state.archetype}</h3>
-    <p>${details?.lore || "No lore found."}</p>
-    <p><strong>Starting Attributes</strong></p>
-    <p>${attrs}</p>
-    <p><strong>Archetype Adjustment</strong></p>
-    <p>${details?.bonus || "No archetype adjustment found."}</p>
-  `;
+  ui.archetypeInfo.innerHTML = ""
+    + "<h3>" + state.archetype + "</h3>"
+    + "<p>" + (info.lore || "No lore found.") + "</p>"
+    + "<p><strong>Starting Attributes</strong></p>"
+    + "<p>" + attrParts.join("  ") + "</p>"
+    + "<p><strong>Archetype Adjustment</strong></p>"
+    + "<p>" + (info.bonus || "No archetype adjustment found.") + "</p>";
 }
 
-function renderLineageChoices() {
+function renderLineageSection() {
   const lineage = LINEAGES[state.lineage];
-  el.lineageRules.textContent = lineage.notes || "";
-  renderChoiceControls(el.lineageChoices, lineage.choices || [], state.lineageChoiceValues, "lineage");
+  ui.lineageNotes.textContent = lineage.notes || "";
+  renderChoiceControls(ui.lineageOptions, lineage.choices || [], state.lineageChoiceValues, "lineage");
   renderLineageDetails();
 }
 
 function renderLineageDetails() {
-  const lineageKey = state.lineage;
-  const lineage = LINEAGES[lineageKey];
-  const title = lineageKey;
-  const lore = LINEAGE_LORE[lineageKey] || "Lore text not available.";
-  const abilities = LINEAGE_ABILITIES[lineageKey] || [];
+  const key = state.lineage;
+  const lineage = LINEAGES[key];
+  const lore = LINEAGE_LORE[key] || "Lore text not available.";
+  const abilities = LINEAGE_ABILITIES[key] || [];
 
-  const attrParts = Object.entries(lineage.attrs || {}).map(([attr, value]) => `${value >= 0 ? "+" : ""}${value} ${attr}`);
-  const skillParts = Object.entries(lineage.skills || {}).map(([skill, value]) => `${value >= 0 ? "+" : ""}${value} ${skill}`);
-  const choiceParts = (lineage.choices || []).map((choice) => `+${choice.amount} to ${choice.count} choice(s) from: ${choice.options.join(", ")}`);
-  const movement = lineage.baseMoveWater
-    ? `Land ${lineage.baseMoveLand}m, Water ${lineage.baseMoveWater}m (use higher of lineage baseline or SPD-derived land move)`
-    : `${lineage.baseMoveLand}m baseline land movement (use higher of this or SPD-derived move)`;
+  const attrParts = formatMapAsBonusList(lineage.attrs || {});
+  const skillParts = formatMapAsBonusList(lineage.skills || {});
 
-  const modifiers = [
-    `Attribute Modifiers: ${attrParts.join(", ") || "None"}`,
-    `Skill Modifiers: ${skillParts.join(", ") || "None"}`,
-    ...choiceParts,
-    `Base Movement: ${movement}`
-  ];
+  let movement = "";
+  if (lineage.baseMoveWater) {
+    movement = "Land " + lineage.baseMoveLand + "m, Water " + lineage.baseMoveWater + "m";
+  } else {
+    movement = lineage.baseMoveLand + "m baseline land movement";
+  }
 
-  const abilityItems = abilities.map((ability) => `<li>${ability}</li>`).join("");
-  const modifierItems = modifiers.map((modifier) => `<li>${modifier}</li>`).join("");
+  let html = "";
+  html += "<h3>" + key + "</h3>";
+  html += "<p>" + lore + "</p>";
+  html += "<p><strong>Abilities</strong></p>";
+  html += "<ul>" + listToHtml(abilities, "None") + "</ul>";
+  html += "<p><strong>Modifiers</strong></p>";
+  html += "<ul>";
+  html += "<li>Attribute Modifiers: " + (attrParts.length ? attrParts.join(", ") : "None") + "</li>";
+  html += "<li>Skill Modifiers: " + (skillParts.length ? skillParts.join(", ") : "None") + "</li>";
+  const choices = lineage.choices || [];
+  for (let i = 0; i < choices.length; i += 1) {
+    const choice = choices[i];
+    html += "<li>Choice bonus: +" + choice.amount + " to " + choice.count + " choice(s) from " + choice.options.join(", ") + "</li>";
+  }
+  html += "<li>Base Movement: " + movement + "</li>";
+  html += "</ul>";
 
-  el.lineageDetail.innerHTML = `
-    <h3>${title}</h3>
-    <p>${lore}</p>
-    <p><strong>Abilities</strong></p>
-    <ul>${abilityItems || "<li>None</li>"}</ul>
-    <p><strong>Modifiers</strong></p>
-    <ul>${modifierItems}</ul>
-  `;
+  ui.lineageInfo.innerHTML = html;
 }
 
-function renderBirthsignChoices() {
+function renderBirthsignSection() {
   const sign = BIRTHSIGNS[state.birthsign];
-  el.birthsignRules.textContent = sign.notes || "";
-  renderChoiceControls(el.birthsignChoices, sign.choices || [], state.birthsignChoiceValues, "birthsign");
+  ui.birthsignNotes.textContent = sign.notes || "";
+  renderChoiceControls(ui.birthsignOptions, sign.choices || [], state.birthsignChoiceValues, "birthsign");
   renderBirthsignDetails();
 }
 
 function renderBirthsignDetails() {
-  const signKey = state.birthsign;
-  const sign = BIRTHSIGNS[signKey] || {};
-  const lore = BIRTHSIGN_LORE[signKey] || "Lore text not available.";
+  const key = state.birthsign;
+  const sign = BIRTHSIGNS[key] || {};
+  const lore = BIRTHSIGN_LORE[key] || "Lore text not available.";
 
-  const boon = sign.notes || "No boon listed.";
-  const additionalParts = [];
+  const extra = [];
   if (sign.attrs) {
-    const attrText = Object.entries(sign.attrs)
-      .map(([attr, v]) => `${v >= 0 ? "+" : ""}${v} ${attr}`)
-      .join(", ");
-    additionalParts.push(`Attribute modifiers: ${attrText}`);
+    extra.push("Attribute modifiers: " + formatMapAsBonusList(sign.attrs).join(", "));
   }
   if (sign.skills) {
-    const skillText = Object.entries(sign.skills)
-      .map(([skill, v]) => `${v >= 0 ? "+" : ""}${v} ${skill}`)
-      .join(", ");
-    additionalParts.push(`Skill modifiers: ${skillText}`);
+    extra.push("Skill modifiers: " + formatMapAsBonusList(sign.skills).join(", "));
   }
-  if (sign.choices?.length) {
-    sign.choices.forEach((choice) => {
-      additionalParts.push(`Choice bonus: +${choice.amount} to ${choice.count} choice(s) from ${choice.options.join(", ")}`);
-    });
+  if (sign.choices && sign.choices.length) {
+    for (let i = 0; i < sign.choices.length; i += 1) {
+      const choice = sign.choices[i];
+      extra.push("Choice bonus: +" + choice.amount + " to " + choice.count + " choice(s) from " + choice.options.join(", "));
+    }
   }
 
-  const extraList = additionalParts.map((item) => `<li>${item}</li>`).join("");
+  let html = "";
+  html += "<h3>" + key + "</h3>";
+  html += "<p>" + lore + "</p>";
+  html += "<p><strong>Boon</strong></p>";
+  html += "<p>" + (sign.notes || "No boon listed.") + "</p>";
+  html += "<p><strong>Additional / Mechanical Effects</strong></p>";
+  html += "<ul>" + listToHtml(extra, "No additional effects listed.") + "</ul>";
 
-  el.birthsignDetail.innerHTML = `
-    <h3>${signKey}</h3>
-    <p>${lore}</p>
-    <p><strong>Boon</strong></p>
-    <p>${boon}</p>
-    <p><strong>Additional / Mechanical Effects</strong></p>
-    <ul>${extraList || "<li>No additional effects listed.</li>"}</ul>
-  `;
+  ui.birthsignInfo.innerHTML = html;
+}
+
+function formatMapAsBonusList(mapObject) {
+  const list = [];
+  const keys = Object.keys(mapObject);
+  for (let i = 0; i < keys.length; i += 1) {
+    const key = keys[i];
+    const value = mapObject[key];
+    const prefix = value >= 0 ? "+" : "";
+    list.push(prefix + value + " " + key);
+  }
+  return list;
+}
+
+function listToHtml(list, fallback) {
+  if (!list || list.length === 0) {
+    return "<li>" + fallback + "</li>";
+  }
+  let html = "";
+  for (let i = 0; i < list.length; i += 1) {
+    html += "<li>" + list[i] + "</li>";
+  }
+  return html;
 }
 
 function renderChoiceControls(container, choices, stateBag, bagName) {
@@ -938,171 +978,178 @@ function renderChoiceControls(container, choices, stateBag, bagName) {
     return;
   }
 
-  choices.forEach((choice) => {
+  for (let c = 0; c < choices.length; c += 1) {
+    const choice = choices[c];
     for (let i = 0; i < choice.count; i += 1) {
-      const wrapper = document.createElement("div");
-      wrapper.className = "attribute-row";
-
-      const label = document.createElement("label");
-      label.textContent = `${choice.id} (${i + 1}/${choice.count})`;
-
-      const select = document.createElement("select");
-      const key = `${choice.id}_${i}`;
-      choice.options.forEach((opt) => {
-        const option = document.createElement("option");
-        option.value = opt;
-        option.textContent = opt;
-        select.appendChild(option);
-      });
-
+      const key = choice.id + "_" + i;
       if (!stateBag[key]) {
         stateBag[key] = choice.options[0];
       }
 
+      const box = document.createElement("div");
+      box.className = "attribute-box";
+
+      const label = document.createElement("label");
+      label.textContent = choice.id + " (" + (i + 1) + "/" + choice.count + ")";
+
+      const select = document.createElement("select");
+      fillSelectFromList(select, choice.options);
       select.value = stateBag[key];
-      select.addEventListener("change", () => {
+      select.addEventListener("change", function () {
         stateBag[key] = select.value;
-        renderAll();
+        renderPage();
       });
 
-      wrapper.append(label, select);
-      container.appendChild(wrapper);
+      box.append(label, select);
+      container.appendChild(box);
     }
-  });
+  }
 
   if (bagName === "birthsign" && state.birthsign === "The Thornweave") {
-    const selected = state.birthsignChoiceValues.thornweaveSkill_0 || "Enchanting";
-    const other = selected === "Enchanting" ? "Alchemy" : "Enchanting";
+    const chosen = state.birthsignChoiceValues.thornweaveSkill_0 || "Enchanting";
+    const other = chosen === "Enchanting" ? "Alchemy" : "Enchanting";
     const note = document.createElement("p");
     note.className = "subtext";
-    note.textContent = `Thornweave also grants +5 to ${other}.`;
+    note.textContent = "Thornweave also grants +5 to " + other + ".";
     container.appendChild(note);
   }
 }
 
 function renderAttributes() {
   const attrs = getFinalAttributes();
-  const pointsLeft = 30 - Object.values(state.customAttrSpend).reduce((sum, n) => sum + n, 0);
+  const pointsUsed = totalAttributePointsSpent();
+  const pointsLeft = 30 - pointsUsed;
 
   if (state.buildMode === "custom") {
-    el.attributeHelp.textContent = "Set all to 40 and distribute 30 points. Max 65 before lineage/birthsign bonuses.";
-    el.attributePoints.textContent = `Points Remaining: ${pointsLeft}`;
+    ui.attributeGuide.textContent = "Set all to 40 and distribute 30 points. Max 65 before lineage/birthsign bonuses.";
+    ui.attributePool.textContent = "Points Remaining: " + pointsLeft;
   } else {
-    el.attributeHelp.textContent = "Archetype attributes are fixed; only lineage and birthsign adjustments apply.";
-    el.attributePoints.textContent = "Archetype mode (view-only)";
+    ui.attributeGuide.textContent = "Archetype attributes are fixed; only lineage and birthsign adjustments apply.";
+    ui.attributePool.textContent = "Archetype mode (view-only)";
   }
 
-  el.attributesGrid.innerHTML = "";
-  ATTRIBUTES.forEach((attr) => {
+  ui.attributeGrid.innerHTML = "";
+  for (let i = 0; i < ATTRIBUTES.length; i += 1) {
+    const attr = ATTRIBUTES[i];
     const row = document.createElement("div");
-    row.className = "attribute-row";
-    const topline = document.createElement("div");
-    topline.className = "topline";
+    row.className = "attribute-box";
 
-    const label = document.createElement("strong");
-    label.textContent = attr;
-    const value = document.createElement("span");
-    value.textContent = attrs[attr];
-
-    topline.append(label, value);
-    row.appendChild(topline);
+    const top = document.createElement("div");
+    top.className = "attribute-top";
+    top.innerHTML = "<strong>" + attr + "</strong><span>" + attrs[attr] + "</span>";
+    row.appendChild(top);
 
     if (state.buildMode === "custom") {
-      const control = document.createElement("div");
-      control.className = "points-control";
+      const controls = document.createElement("div");
+      controls.className = "point-controls";
 
       const minus = document.createElement("button");
       minus.type = "button";
       minus.textContent = "-";
-      minus.addEventListener("click", () => {
+      minus.addEventListener("click", function () {
         if (state.customAttrSpend[attr] > 0) {
           state.customAttrSpend[attr] -= 1;
-          renderAll();
+          renderPage();
         }
       });
 
       const spent = document.createElement("span");
-      spent.textContent = `+${state.customAttrSpend[attr]}`;
+      spent.textContent = "+" + state.customAttrSpend[attr];
 
       const plus = document.createElement("button");
       plus.type = "button";
       plus.textContent = "+";
-      plus.addEventListener("click", () => {
-        const baseCandidate = 40 + state.customAttrSpend[attr] + 1;
-        if (pointsLeft > 0 && baseCandidate <= 65) {
+      plus.addEventListener("click", function () {
+        const candidate = 40 + state.customAttrSpend[attr] + 1;
+        if (pointsLeft > 0 && candidate <= 65) {
           state.customAttrSpend[attr] += 1;
-          renderAll();
+          renderPage();
         }
       });
 
-      control.append(minus, spent, plus);
-      row.appendChild(control);
+      controls.append(minus, spent, plus);
+      row.appendChild(controls);
     }
 
-    el.attributesGrid.appendChild(row);
-  });
+    ui.attributeGrid.appendChild(row);
+  }
+}
+
+function totalAttributePointsSpent() {
+  let total = 0;
+  for (let i = 0; i < ATTRIBUTES.length; i += 1) {
+    total += state.customAttrSpend[ATTRIBUTES[i]];
+  }
+  return total;
 }
 
 function renderSkillPickers() {
-  el.majorPool.textContent = state.majorPool;
-  el.minorPool.textContent = state.minorPool;
-  el.miscPool.textContent = state.miscPool;
+  ui.majorPoints.textContent = String(state.majorPoints);
+  ui.minorPoints.textContent = String(state.minorPoints);
+  ui.miscPoints.textContent = String(state.miscPoints);
 
-  if (state.buildMode !== "custom") {
-    const setup = getSkillSetup();
-    el.majorPicker.innerHTML = `<p class='subtext'>Archetype major skills: ${setup.major.join(", ")}</p>`;
-    el.minorPicker.innerHTML = `<p class='subtext'>Archetype minor skills: ${setup.minor.join(", ")}</p>`;
+  if (state.buildMode === "archetype") {
+    const setup = getCurrentSkillSetup();
+    ui.majorSkillPicker.innerHTML = "<p class='subtext'>Archetype major skills: " + setup.major.join(", ") + "</p>";
+    ui.minorSkillPicker.innerHTML = "<p class='subtext'>Archetype minor skills: " + setup.minor.join(", ") + "</p>";
     return;
   }
 
-  el.majorPicker.innerHTML = "";
-  el.minorPicker.innerHTML = "";
-
-  SKILL_DEFS.forEach((skill) => {
-    el.majorPicker.appendChild(makeSkillCheckbox(skill.name, "major"));
-    el.minorPicker.appendChild(makeSkillCheckbox(skill.name, "minor"));
-  });
+  ui.majorSkillPicker.innerHTML = "";
+  ui.minorSkillPicker.innerHTML = "";
+  for (let i = 0; i < SKILL_DEFS.length; i += 1) {
+    const skillName = SKILL_DEFS[i].name;
+    ui.majorSkillPicker.appendChild(buildSkillPickerCheckbox(skillName, "major"));
+    ui.minorSkillPicker.appendChild(buildSkillPickerCheckbox(skillName, "minor"));
+  }
 }
 
-function makeSkillCheckbox(skillName, tier) {
+function buildSkillPickerCheckbox(skillName, tier) {
   const label = document.createElement("label");
   const input = document.createElement("input");
   input.type = "checkbox";
 
-  const arr = tier === "major" ? state.majorSelected : state.minorSelected;
-  input.checked = arr.includes(skillName);
+  const ownList = tier === "major" ? state.majorSelected : state.minorSelected;
+  const otherList = tier === "major" ? state.minorSelected : state.majorSelected;
 
-  input.addEventListener("change", () => {
-    const current = tier === "major" ? state.majorSelected : state.minorSelected;
-    const other = tier === "major" ? state.minorSelected : state.majorSelected;
-
+  input.checked = ownList.includes(skillName);
+  input.addEventListener("change", function () {
     if (input.checked) {
-      if (current.length >= 5) {
+      if (ownList.length >= 5 || otherList.includes(skillName)) {
         input.checked = false;
         return;
       }
-      if (other.includes(skillName)) {
-        input.checked = false;
-        return;
-      }
-      current.push(skillName);
+      ownList.push(skillName);
     } else {
-      const idx = current.indexOf(skillName);
-      if (idx >= 0) {
-        current.splice(idx, 1);
+      const index = ownList.indexOf(skillName);
+      if (index >= 0) {
+        ownList.splice(index, 1);
       }
     }
 
-    clearSkillAllocations();
-    renderAll();
+    resetSkillPointPools();
+    renderPage();
   });
 
-  label.append(input, document.createTextNode(` ${skillName}`));
+  label.append(input, document.createTextNode(" " + skillName));
   return label;
 }
 
+function getCurrentSkillSetup() {
+  if (state.buildMode === "archetype") {
+    return {
+      major: ARCHETYPES[state.archetype].major.slice(),
+      minor: ARCHETYPES[state.archetype].minor.slice()
+    };
+  }
+  return {
+    major: state.majorSelected.slice(),
+    minor: state.minorSelected.slice()
+  };
+}
+
 function getSkillTier(skillName) {
-  const setup = getSkillSetup();
+  const setup = getCurrentSkillSetup();
   if (setup.major.includes(skillName)) {
     return "Major";
   }
@@ -1112,201 +1159,100 @@ function getSkillTier(skillName) {
   return "Misc";
 }
 
-function getSkillSetup() {
-  if (state.buildMode === "archetype") {
-    const arch = ARCHETYPES[state.archetype];
-    return {
-      major: [...arch.major],
-      minor: [...arch.minor]
-    };
-  }
-  return {
-    major: [...state.majorSelected],
-    minor: [...state.minorSelected]
-  };
-}
-
-function renderSkillsTable() {
-  const values = getSkillValues();
+function renderSkillTables() {
   const attrs = getFinalAttributes();
-  const grouped = {
-    Major: SKILL_DEFS.filter((def) => getSkillTier(def.name) === "Major"),
-    Minor: SKILL_DEFS.filter((def) => getSkillTier(def.name) === "Minor"),
-    Misc: SKILL_DEFS.filter((def) => getSkillTier(def.name) === "Misc")
+  const values = getSkillValues();
+
+  const groups = {
+    Major: [],
+    Minor: [],
+    Misc: []
   };
 
-  el.skillsTables.innerHTML = "";
-  ["Major", "Minor", "Misc"].forEach((tier, index) => {
-    const section = buildSkillSection(tier, grouped[tier], values, attrs);
-    el.skillsTables.appendChild(section);
-    if (index < 2) {
-      const divider = document.createElement("div");
-      divider.className = "skill-divider";
-      el.skillsTables.appendChild(divider);
-    }
-  });
-}
-
-function buildSkillSection(tier, skillDefs, values, attrs) {
-  const section = document.createElement("section");
-  section.className = "skill-section";
-
-  const title = document.createElement("h3");
-  title.textContent = `${tier} Skills`;
-  section.appendChild(title);
-
-  const tableWrap = document.createElement("div");
-  tableWrap.className = "table-wrap";
-
-  const table = document.createElement("table");
-  const poolLeft = getPoolByTier(tier);
-  table.innerHTML = `
-    <thead>
-      <tr>
-        <th>Skill</th>
-        <th>Value</th>
-        <th>Cap</th>
-        <th>Adjust (${poolLeft} left)</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  `;
-
-  const tbody = table.querySelector("tbody");
-
-  if (!skillDefs.length) {
-    const row = document.createElement("tr");
-    row.innerHTML = "<td colspan='4'>No skills in this tier yet.</td>";
-    tbody.appendChild(row);
+  for (let i = 0; i < SKILL_DEFS.length; i += 1) {
+    const def = SKILL_DEFS[i];
+    groups[getSkillTier(def.name)].push(def);
   }
 
-  skillDefs.forEach((skillDef) => {
-    const cap = skillCap(skillDef, attrs);
-    const value = values[skillDef.name];
-    const row = document.createElement("tr");
-    row.innerHTML = `
-      <td>${skillDef.name}</td>
-      <td>${value}</td>
-      <td>${cap}</td>
-      <td class="adjust-cell"></td>
-    `;
-
-    const minusBtn = document.createElement("button");
-    minusBtn.type = "button";
-    minusBtn.className = "plus-btn minus-btn";
-    minusBtn.textContent = "-1";
-    const spentOnSkill = getAllocatedForSkill(skillDef.name, tier);
-    minusBtn.disabled = spentOnSkill <= 0;
-    minusBtn.title = spentOnSkill > 0 ? "Remove 1 allocated point" : "No allocated points on this skill";
-    minusBtn.addEventListener("click", () => deallocateFromSkill(skillDef.name));
-
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "plus-btn";
-    btn.textContent = "+1";
-    const rowPoolLeft = getPoolByTier(tier);
-    btn.disabled = value >= cap || rowPoolLeft <= 0;
-    if (value >= cap) {
-      btn.title = "At skill cap";
-    } else if (rowPoolLeft <= 0) {
-      btn.title = `${tier} pool is empty`;
-    } else {
-      btn.title = "Allocate +1";
+  ui.skillTableWrap.innerHTML = "";
+  const tiers = ["Major", "Minor", "Misc"];
+  for (let i = 0; i < tiers.length; i += 1) {
+    ui.skillTableWrap.appendChild(buildSkillTableSection(tiers[i], groups[tiers[i]], values, attrs));
+    if (i < tiers.length - 1) {
+      const divider = document.createElement("div");
+      divider.className = "section-divider";
+      ui.skillTableWrap.appendChild(divider);
     }
-    btn.addEventListener("click", () => allocateToSkill(skillDef.name));
-    const adjustCell = row.querySelector(".adjust-cell");
-    adjustCell.append(minusBtn, btn);
-    tbody.appendChild(row);
-  });
+  }
+}
 
-  tableWrap.appendChild(table);
-  section.appendChild(tableWrap);
+function buildSkillTableSection(tier, defs, values, attrs) {
+  const section = document.createElement("section");
+  section.className = "skill-box";
+  section.innerHTML = "<h3>" + tier + " Skills</h3>";
+
+  const wrap = document.createElement("div");
+  wrap.className = "table-wrap";
+  const table = document.createElement("table");
+  table.innerHTML = ""
+    + "<thead><tr>"
+    + "<th>Skill</th><th>Value</th><th>Cap</th><th>Adjust (" + getPoolByTier(tier) + " left)</th>"
+    + "</tr></thead><tbody></tbody>";
+
+  const body = table.querySelector("tbody");
+  if (!defs.length) {
+    const emptyRow = document.createElement("tr");
+    emptyRow.innerHTML = "<td colspan='4'>No skills in this tier yet.</td>";
+    body.appendChild(emptyRow);
+  }
+
+  for (let i = 0; i < defs.length; i += 1) {
+    const def = defs[i];
+    const cap = skillCap(def, attrs);
+    const value = values[def.name];
+
+    const row = document.createElement("tr");
+    row.innerHTML = "<td>" + def.name + "</td><td>" + value + "</td><td>" + cap + "</td><td class='adjust-controls'></td>";
+    const controls = row.querySelector(".adjust-controls");
+
+    const minus = document.createElement("button");
+    minus.type = "button";
+    minus.className = "adjust-btn adjust-btn-minus";
+    minus.textContent = "-1";
+    minus.disabled = getAllocatedPoints(def.name, tier) <= 0;
+    minus.addEventListener("click", function () {
+      changeSkillAllocation(def.name, -1);
+    });
+
+    const plus = document.createElement("button");
+    plus.type = "button";
+    plus.className = "adjust-btn";
+    plus.textContent = "+1";
+    plus.disabled = value >= cap || getPoolByTier(tier) <= 0;
+    plus.addEventListener("click", function () {
+      changeSkillAllocation(def.name, 1);
+    });
+
+    controls.append(minus, plus);
+    body.appendChild(row);
+  }
+
+  wrap.appendChild(table);
+  section.appendChild(wrap);
   return section;
 }
 
 function getPoolByTier(tier) {
   if (tier === "Major") {
-    return state.majorPool;
+    return state.majorPoints;
   }
   if (tier === "Minor") {
-    return state.minorPool;
+    return state.minorPoints;
   }
-  return state.miscPool;
+  return state.miscPoints;
 }
 
-function allocateToSkill(skillName) {
-  const tier = getSkillTier(skillName);
-  const attrs = getFinalAttributes();
-  const skillDef = SKILL_DEFS.find((def) => def.name === skillName);
-  if (!skillDef) {
-    return;
-  }
-
-  const cap = skillCap(skillDef, attrs);
-  const values = getSkillValues();
-  if (values[skillName] >= cap) {
-    return;
-  }
-
-  if (tier === "Major") {
-    if (state.majorPool <= 0) {
-      return;
-    }
-    state.majorAlloc[skillName] = (state.majorAlloc[skillName] || 0) + 1;
-    state.majorPool -= 1;
-  } else if (tier === "Minor") {
-    if (state.minorPool <= 0) {
-      return;
-    }
-    state.minorAlloc[skillName] = (state.minorAlloc[skillName] || 0) + 1;
-    state.minorPool -= 1;
-  } else {
-    if (state.miscPool <= 0) {
-      return;
-    }
-    state.miscAlloc[skillName] = (state.miscAlloc[skillName] || 0) + 1;
-    state.miscPool -= 1;
-  }
-
-  renderAll();
-}
-
-function deallocateFromSkill(skillName) {
-  const tier = getSkillTier(skillName);
-
-  if (tier === "Major") {
-    if ((state.majorAlloc[skillName] || 0) <= 0) {
-      return;
-    }
-    state.majorAlloc[skillName] -= 1;
-    if (state.majorAlloc[skillName] <= 0) {
-      delete state.majorAlloc[skillName];
-    }
-    state.majorPool += 1;
-  } else if (tier === "Minor") {
-    if ((state.minorAlloc[skillName] || 0) <= 0) {
-      return;
-    }
-    state.minorAlloc[skillName] -= 1;
-    if (state.minorAlloc[skillName] <= 0) {
-      delete state.minorAlloc[skillName];
-    }
-    state.minorPool += 1;
-  } else {
-    if ((state.miscAlloc[skillName] || 0) <= 0) {
-      return;
-    }
-    state.miscAlloc[skillName] -= 1;
-    if (state.miscAlloc[skillName] <= 0) {
-      delete state.miscAlloc[skillName];
-    }
-    state.miscPool += 1;
-  }
-
-  renderAll();
-}
-
-function getAllocatedForSkill(skillName, tier) {
+function getAllocatedPoints(skillName, tier) {
   if (tier === "Major") {
     return state.majorAlloc[skillName] || 0;
   }
@@ -1316,63 +1262,129 @@ function getAllocatedForSkill(skillName, tier) {
   return state.miscAlloc[skillName] || 0;
 }
 
-function getBaseAttributes() {
-  if (state.buildMode === "archetype") {
-    return { ...ARCHETYPES[state.archetype].attrs };
+function changeSkillAllocation(skillName, amount) {
+  const tier = getSkillTier(skillName);
+  const values = getSkillValues();
+  const attrs = getFinalAttributes();
+  const def = SKILL_DEFS.find(function (item) {
+    return item.name === skillName;
+  });
+  if (!def) {
+    return;
   }
-  return Object.fromEntries(ATTRIBUTES.map((attr) => [attr, 40 + state.customAttrSpend[attr]]));
+
+  const cap = skillCap(def, attrs);
+
+  if (amount > 0) {
+    if (values[skillName] >= cap) {
+      return;
+    }
+    if (tier === "Major" && state.majorPoints > 0) {
+      state.majorAlloc[skillName] = (state.majorAlloc[skillName] || 0) + 1;
+      state.majorPoints -= 1;
+    } else if (tier === "Minor" && state.minorPoints > 0) {
+      state.minorAlloc[skillName] = (state.minorAlloc[skillName] || 0) + 1;
+      state.minorPoints -= 1;
+    } else if (tier === "Misc" && state.miscPoints > 0) {
+      state.miscAlloc[skillName] = (state.miscAlloc[skillName] || 0) + 1;
+      state.miscPoints -= 1;
+    }
+  } else {
+    if (tier === "Major" && (state.majorAlloc[skillName] || 0) > 0) {
+      state.majorAlloc[skillName] -= 1;
+      if (state.majorAlloc[skillName] <= 0) {
+        delete state.majorAlloc[skillName];
+      }
+      state.majorPoints += 1;
+    } else if (tier === "Minor" && (state.minorAlloc[skillName] || 0) > 0) {
+      state.minorAlloc[skillName] -= 1;
+      if (state.minorAlloc[skillName] <= 0) {
+        delete state.minorAlloc[skillName];
+      }
+      state.minorPoints += 1;
+    } else if (tier === "Misc" && (state.miscAlloc[skillName] || 0) > 0) {
+      state.miscAlloc[skillName] -= 1;
+      if (state.miscAlloc[skillName] <= 0) {
+        delete state.miscAlloc[skillName];
+      }
+      state.miscPoints += 1;
+    }
+  }
+
+  renderPage();
+}
+
+function getBaseAttributes() {
+  const attrs = {};
+  if (state.buildMode === "archetype") {
+    const archetypeAttrs = ARCHETYPES[state.archetype].attrs;
+    for (let i = 0; i < ATTRIBUTES.length; i += 1) {
+      const attr = ATTRIBUTES[i];
+      attrs[attr] = archetypeAttrs[attr];
+    }
+    return attrs;
+  }
+
+  for (let i = 0; i < ATTRIBUTES.length; i += 1) {
+    const attr = ATTRIBUTES[i];
+    attrs[attr] = 40 + state.customAttrSpend[attr];
+  }
+  return attrs;
 }
 
 function getFinalAttributes() {
   const attrs = getBaseAttributes();
-  const lineage = LINEAGES[state.lineage];
-  const sign = BIRTHSIGNS[state.birthsign];
+  addAttributeMap(attrs, LINEAGES[state.lineage].attrs || {});
+  addAttributeMap(attrs, BIRTHSIGNS[state.birthsign].attrs || {});
 
-  applyAttributeMap(attrs, lineage.attrs || {});
-  applyAttributeMap(attrs, sign.attrs || {});
+  applyChoiceEffects(attrs, {}, LINEAGES[state.lineage].choices || [], state.lineageChoiceValues, "attribute");
+  applyChoiceEffects(attrs, {}, BIRTHSIGNS[state.birthsign].choices || [], state.birthsignChoiceValues, "attribute");
 
-  applyChoiceEffects(attrs, {}, lineage.choices || [], state.lineageChoiceValues, "attribute");
-  applyChoiceEffects(attrs, {}, sign.choices || [], state.birthsignChoiceValues, "attribute");
-
-  ATTRIBUTES.forEach((attr) => {
-    attrs[attr] = clamp(attrs[attr], 10, 75);
-  });
+  for (let i = 0; i < ATTRIBUTES.length; i += 1) {
+    const key = ATTRIBUTES[i];
+    attrs[key] = clamp(attrs[key], 10, 75);
+  }
 
   return attrs;
 }
 
-function applyAttributeMap(target, map) {
-  Object.entries(map).forEach(([attr, value]) => {
-    target[attr] = (target[attr] || 0) + value;
-  });
+function addAttributeMap(target, map) {
+  const keys = Object.keys(map);
+  for (let i = 0; i < keys.length; i += 1) {
+    const key = keys[i];
+    target[key] = (target[key] || 0) + map[key];
+  }
 }
 
 function getSkillValues() {
-  const setup = getSkillSetup();
   const attrs = getFinalAttributes();
-  const skills = Object.fromEntries(SKILL_DEFS.map((s) => [s.name, 5]));
+  const setup = getCurrentSkillSetup();
+  const skills = {};
 
-  setup.major.forEach((s) => {
-    skills[s] = 40;
-  });
-  setup.minor.forEach((s) => {
-    skills[s] = 25;
-  });
-
-  const lineage = LINEAGES[state.lineage];
-  const sign = BIRTHSIGNS[state.birthsign];
-
-  applySkillMap(skills, lineage.skills || {});
-  applySkillMap(skills, sign.skills || {});
-
-  if (lineage.schoolFloor) {
-    MAGIC_SCHOOLS.forEach((school) => {
-      skills[school] = Math.max(skills[school], lineage.schoolFloor);
-    });
+  for (let i = 0; i < SKILL_DEFS.length; i += 1) {
+    skills[SKILL_DEFS[i].name] = 5;
   }
 
-  applyChoiceEffects({}, skills, lineage.choices || [], state.lineageChoiceValues, "skill");
-  applyChoiceEffects({}, skills, sign.choices || [], state.birthsignChoiceValues, "skill");
+  for (let i = 0; i < setup.major.length; i += 1) {
+    skills[setup.major[i]] = 40;
+  }
+  for (let i = 0; i < setup.minor.length; i += 1) {
+    skills[setup.minor[i]] = 25;
+  }
+
+  addSkillMap(skills, LINEAGES[state.lineage].skills || {});
+  addSkillMap(skills, BIRTHSIGNS[state.birthsign].skills || {});
+
+  const lineage = LINEAGES[state.lineage];
+  if (lineage.schoolFloor) {
+    for (let i = 0; i < MAGIC_SCHOOLS.length; i += 1) {
+      const school = MAGIC_SCHOOLS[i];
+      skills[school] = Math.max(skills[school], lineage.schoolFloor);
+    }
+  }
+
+  applyChoiceEffects({}, skills, LINEAGES[state.lineage].choices || [], state.lineageChoiceValues, "skill");
+  applyChoiceEffects({}, skills, BIRTHSIGNS[state.birthsign].choices || [], state.birthsignChoiceValues, "skill");
 
   if (state.birthsign === "The Thornweave") {
     const chosen = state.birthsignChoiceValues.thornweaveSkill_0 || "Enchanting";
@@ -1380,47 +1392,46 @@ function getSkillValues() {
     skills[other] = (skills[other] || 0) + 5;
   }
 
-  Object.entries(state.majorAlloc).forEach(([skill, val]) => {
-    skills[skill] += val;
-  });
-  Object.entries(state.minorAlloc).forEach(([skill, val]) => {
-    skills[skill] += val;
-  });
-  Object.entries(state.miscAlloc).forEach(([skill, val]) => {
-    skills[skill] += val;
-  });
+  addSkillMap(skills, state.majorAlloc);
+  addSkillMap(skills, state.minorAlloc);
+  addSkillMap(skills, state.miscAlloc);
 
-  SKILL_DEFS.forEach((def) => {
+  for (let i = 0; i < SKILL_DEFS.length; i += 1) {
+    const def = SKILL_DEFS[i];
     const cap = skillCap(def, attrs);
     skills[def.name] = clamp(skills[def.name], 5, cap);
-  });
+  }
 
   return skills;
 }
 
-function applySkillMap(target, map) {
-  Object.entries(map).forEach(([skill, value]) => {
-    target[skill] = (target[skill] || 0) + value;
-  });
+function addSkillMap(target, map) {
+  const keys = Object.keys(map);
+  for (let i = 0; i < keys.length; i += 1) {
+    const key = keys[i];
+    target[key] = (target[key] || 0) + map[key];
+  }
 }
 
 function applyChoiceEffects(attrTarget, skillTarget, choices, choiceState, mode) {
-  choices.forEach((choice) => {
+  for (let c = 0; c < choices.length; c += 1) {
+    const choice = choices[c];
     for (let i = 0; i < choice.count; i += 1) {
-      const selected = choiceState[`${choice.id}_${i}`];
+      const key = choice.id + "_" + i;
+      const selected = choiceState[key];
       if (!selected) {
         continue;
       }
 
-      const treatAsAttribute = choice.type === "attribute" || ATTRIBUTES.includes(selected);
-      if (mode === "attribute" && treatAsAttribute) {
+      const isAttr = choice.type === "attribute" || ATTRIBUTES.includes(selected);
+      if (mode === "attribute" && isAttr) {
         attrTarget[selected] = (attrTarget[selected] || 0) + choice.amount;
       }
-      if (mode === "skill" && !treatAsAttribute) {
+      if (mode === "skill" && !isAttr) {
         skillTarget[selected] = (skillTarget[selected] || 0) + choice.amount;
       }
     }
-  });
+  }
 }
 
 function skillCap(skillDef, attrs) {
@@ -1430,78 +1441,102 @@ function skillCap(skillDef, attrs) {
   return Math.floor((attrs[skillDef.gov[0]] + attrs[skillDef.gov[1]]) / 2);
 }
 
-function renderDerived() {
+function computeDerived() {
   const attrs = getFinalAttributes();
   const lineage = LINEAGES[state.lineage];
   const sign = BIRTHSIGNS[state.birthsign];
 
-  const spdMove = Math.max(10, Math.round((attrs.SPD / 2) / 5) * 5);
-  const move = Math.max(spdMove, lineage.baseMoveLand || 20);
+  const speedMove = Math.max(10, Math.round((attrs.SPD / 2) / 5) * 5);
+  const landMove = Math.max(speedMove, lineage.baseMoveLand || 20);
 
   const derived = {
     "Health (HP)": Math.floor(attrs.END / 5),
     "Magicka (MP)": Math.floor(attrs.INT / 5),
     "Fatigue (FP)": Math.floor((attrs.END + attrs.STR + attrs.AGI + attrs.SPD) / 10),
-    "Initiative": Math.floor(attrs.AGI / 10),
+    Initiative: Math.floor(attrs.AGI / 10),
     "Luck Bonus": Math.floor(attrs.LCK / 10) + (sign.luckBonusFlat || 0),
     "Melee Damage Bonus": Math.floor(attrs.STR / 20),
     "Agility Damage Bonus": Math.floor(attrs.AGI / 20),
-    "Movement (land)": `${move}m`
+    "Movement (land)": landMove + "m"
   };
 
   if (lineage.baseMoveWater) {
-    derived["Movement (water)"] = `${lineage.baseMoveWater}m`;
+    derived["Movement (water)"] = lineage.baseMoveWater + "m";
   }
 
-  el.derivedStats.innerHTML = "";
-  Object.entries(derived).forEach(([k, v]) => {
+  return derived;
+}
+
+function renderDerived() {
+  const derived = computeDerived();
+  ui.derivedStatsGrid.innerHTML = "";
+
+  const keys = Object.keys(derived);
+  for (let i = 0; i < keys.length; i += 1) {
+    const key = keys[i];
     const card = document.createElement("div");
-    card.className = "stat-card";
-    card.innerHTML = `<strong>${k}</strong><div>${v}</div>`;
-    el.derivedStats.appendChild(card);
-  });
+    card.className = "derived-card";
+    card.innerHTML = "<strong>" + key + "</strong><div>" + derived[key] + "</div>";
+    ui.derivedStatsGrid.appendChild(card);
+  }
 }
 
 function renderEquipment() {
   const skills = getSkillValues();
-  const combat = ["Long Blade", "Short Blade", "Blunt Weapon", "Axe", "Spear", "Marksman", "Fistfight"];
-  const topCombat = combat.reduce((best, s) => (skills[s] > skills[best] ? s : best), combat[0]);
-
+  const combatSkills = ["Long Blade", "Short Blade", "Blunt Weapon", "Axe", "Spear", "Marksman", "Fistfight"];
   const armorSkills = ["Heavy Armor", "Medium Armor", "Light Armor", "Unarmored"];
-  const topArmor = armorSkills.reduce((best, s) => (skills[s] > skills[best] ? s : best), armorSkills[0]);
 
-  const recommendedWeapon = STARTER_WEAPONS.find((weapon) => weapon.skill === topCombat) || STARTER_WEAPONS[0];
-  const recommendedArmor = STARTER_ARMOR.find((armor) => armor.type === topArmor) || STARTER_ARMOR[0];
+  let bestCombat = combatSkills[0];
+  for (let i = 1; i < combatSkills.length; i += 1) {
+    if (skills[combatSkills[i]] > skills[bestCombat]) {
+      bestCombat = combatSkills[i];
+    }
+  }
 
-  if (!STARTER_WEAPONS.some((weapon) => weapon.name === state.selectedEquipment.weapon)) {
-    state.selectedEquipment.weapon = recommendedWeapon.name;
+  let bestArmor = armorSkills[0];
+  for (let i = 1; i < armorSkills.length; i += 1) {
+    if (skills[armorSkills[i]] > skills[bestArmor]) {
+      bestArmor = armorSkills[i];
+    }
   }
-  if (!STARTER_ARMOR.some((armor) => armor.name === state.selectedEquipment.armor)) {
-    state.selectedEquipment.armor = recommendedArmor.name;
+
+  const suggestedWeapon = STARTER_WEAPONS.find(function (item) {
+    return item.skill === bestCombat;
+  }) || STARTER_WEAPONS[0];
+
+  const suggestedArmor = STARTER_ARMOR.find(function (item) {
+    return item.type === bestArmor;
+  }) || STARTER_ARMOR[0];
+
+  if (!STARTER_WEAPONS.find(function (item) { return item.name === state.selectedEquipment.weapon; })) {
+    state.selectedEquipment.weapon = suggestedWeapon.name;
   }
-  if (!STARTER_SHIELDS.some((shield) => shield.name === state.selectedEquipment.shield)) {
+  if (!STARTER_ARMOR.find(function (item) { return item.name === state.selectedEquipment.armor; })) {
+    state.selectedEquipment.armor = suggestedArmor.name;
+  }
+  if (!STARTER_SHIELDS.find(function (item) { return item.name === state.selectedEquipment.shield; })) {
     state.selectedEquipment.shield = "No Shield";
   }
-  if (state.selectedEquipment.kit && !STARTER_KITS.some((kit) => kit.name === state.selectedEquipment.kit)) {
+  if (state.selectedEquipment.kit && !STARTER_KITS.find(function (item) { return item.name === state.selectedEquipment.kit; })) {
     state.selectedEquipment.kit = "";
   }
 
-  el.equipmentHint.textContent = `Recommended focus: ${topCombat} weapon and ${topArmor} armor. Pick your exact loadout below.`;
+  ui.equipmentGuide.textContent = "Recommended focus: " + bestCombat + " weapon and " + bestArmor + " armor.";
 
-  populateSelect(el.weaponSelect, STARTER_WEAPONS.map((weapon) => weapon.name));
-  populateSelect(el.armorSelect, STARTER_ARMOR.map((armor) => armor.name));
-  populateSelect(el.shieldSelect, STARTER_SHIELDS.map((shield) => shield.name));
-  populateSelect(el.kitSelect, ["None", ...STARTER_KITS.map((kit) => kit.name)]);
+  fillSelectFromList(ui.weaponSelect, STARTER_WEAPONS.map(function (item) { return item.name; }));
+  fillSelectFromList(ui.armorSelect, STARTER_ARMOR.map(function (item) { return item.name; }));
+  fillSelectFromList(ui.shieldSelect, STARTER_SHIELDS.map(function (item) { return item.name; }));
+  fillSelectFromList(ui.kitSelect, ["None"].concat(STARTER_KITS.map(function (item) { return item.name; })));
 
-  el.weaponSelect.value = state.selectedEquipment.weapon;
-  el.armorSelect.value = state.selectedEquipment.armor;
-  el.shieldSelect.value = state.selectedEquipment.shield;
-  el.kitSelect.value = state.selectedEquipment.kit || "None";
+  ui.weaponSelect.value = state.selectedEquipment.weapon;
+  ui.armorSelect.value = state.selectedEquipment.armor;
+  ui.shieldSelect.value = state.selectedEquipment.shield;
+  ui.kitSelect.value = state.selectedEquipment.kit || "None";
 
-  const weapon = STARTER_WEAPONS.find((item) => item.name === state.selectedEquipment.weapon);
-  const armor = STARTER_ARMOR.find((item) => item.name === state.selectedEquipment.armor);
-  const shield = STARTER_SHIELDS.find((item) => item.name === state.selectedEquipment.shield);
-  const kit = STARTER_KITS.find((item) => item.name === state.selectedEquipment.kit);
+  const weapon = STARTER_WEAPONS.find(function (item) { return item.name === state.selectedEquipment.weapon; });
+  const armor = STARTER_ARMOR.find(function (item) { return item.name === state.selectedEquipment.armor; });
+  const shield = STARTER_SHIELDS.find(function (item) { return item.name === state.selectedEquipment.shield; });
+  const kit = STARTER_KITS.find(function (item) { return item.name === state.selectedEquipment.kit; });
 
   renderWeaponDetail(weapon);
   renderArmorDetail(armor);
@@ -1511,191 +1546,203 @@ function renderEquipment() {
 
 function renderWeaponDetail(weapon) {
   if (!weapon) {
-    el.weaponDetail.innerHTML = "<p class=\"detail-muted\">Choose a weapon to view attack profiles.</p>";
+    ui.weaponInfo.innerHTML = "<p class='detail-muted'>Choose a weapon to view details.</p>";
     return;
   }
 
-  el.weaponDetail.innerHTML = `
-    <h4>${weapon.name}</h4>
-    <p><strong>Skill:</strong> ${weapon.skill}</p>
-    <p><strong>FP Cost:</strong> ${weapon.fp}</p>
-    <p><strong>Primary Attack:</strong> ${weapon.primary}</p>
-    <p><strong>Secondary Attack:</strong> ${weapon.secondary}</p>
-    <p><strong>Tags:</strong> ${weapon.tags || "None"}</p>
-    <p><strong>Notes:</strong> ${weapon.notes}</p>
-    <p class="detail-muted"><strong>Reference Price:</strong> ${weapon.price}</p>
-  `;
+  ui.weaponInfo.innerHTML = ""
+    + "<h4>" + weapon.name + "</h4>"
+    + "<p><strong>Skill:</strong> " + weapon.skill + "</p>"
+    + "<p><strong>FP Cost:</strong> " + weapon.fp + "</p>"
+    + "<p><strong>Primary Attack:</strong> " + weapon.primary + "</p>"
+    + "<p><strong>Secondary Attack:</strong> " + weapon.secondary + "</p>"
+    + "<p><strong>Tags:</strong> " + (weapon.tags || "None") + "</p>"
+    + "<p><strong>Notes:</strong> " + weapon.notes + "</p>"
+    + "<p class='detail-muted'><strong>Reference Price:</strong> " + weapon.price + "</p>";
 }
 
 function renderArmorDetail(armor) {
   if (!armor) {
-    el.armorDetail.innerHTML = "<p class=\"detail-muted\">Choose armor to view base AR details.</p>";
+    ui.armorInfo.innerHTML = "<p class='detail-muted'>Choose armor to view details.</p>";
     return;
   }
 
-  el.armorDetail.innerHTML = `
-    <h4>${armor.name}</h4>
-    <p><strong>Armor Type:</strong> ${armor.type}</p>
-    <p><strong>Base AR:</strong> ${armor.baseAr}</p>
-    <p><strong>Notes:</strong> ${armor.notes}</p>
-    <p class="detail-muted"><strong>Reference Price:</strong> ${armor.price}</p>
-  `;
+  ui.armorInfo.innerHTML = ""
+    + "<h4>" + armor.name + "</h4>"
+    + "<p><strong>Armor Type:</strong> " + armor.type + "</p>"
+    + "<p><strong>Base AR:</strong> " + armor.baseAr + "</p>"
+    + "<p><strong>Notes:</strong> " + armor.notes + "</p>"
+    + "<p class='detail-muted'><strong>Reference Price:</strong> " + armor.price + "</p>";
 }
 
 function renderShieldDetail(shield) {
   if (!shield) {
-    el.shieldDetail.innerHTML = "<p class=\"detail-muted\">Choose shield option to view AR effect.</p>";
+    ui.shieldInfo.innerHTML = "<p class='detail-muted'>Choose shield option to view details.</p>";
     return;
   }
 
-  el.shieldDetail.innerHTML = `
-    <h4>${shield.name}</h4>
-    <p><strong>Armor Effect:</strong> ${shield.arBonus}</p>
-    <p><strong>Notes:</strong> ${shield.notes}</p>
-  `;
+  ui.shieldInfo.innerHTML = ""
+    + "<h4>" + shield.name + "</h4>"
+    + "<p><strong>Armor Effect:</strong> " + shield.arBonus + "</p>"
+    + "<p><strong>Notes:</strong> " + shield.notes + "</p>";
 }
 
 function renderKitDetail(kit) {
   if (!kit) {
-    el.kitDetail.innerHTML = "<p class=\"detail-muted\">No kit selected.</p>";
     state.selectedEquipment.kit = "";
+    ui.kitInfo.innerHTML = "<p class='detail-muted'>No kit selected.</p>";
     return;
   }
 
   state.selectedEquipment.kit = kit.name;
-  el.kitDetail.innerHTML = `
-    <h4>${kit.name}</h4>
-    <p><strong>Use:</strong> ${kit.notes}</p>
-    <p class="detail-muted"><strong>Reference Price:</strong> ${kit.price}</p>
-  `;
+  ui.kitInfo.innerHTML = ""
+    + "<h4>" + kit.name + "</h4>"
+    + "<p><strong>Use:</strong> " + kit.notes + "</p>"
+    + "<p class='detail-muted'><strong>Reference Price:</strong> " + kit.price + "</p>";
 }
 
 function getMajorMagicSchools() {
-  const majors = getSkillSetup().major;
-  return majors.filter((skill) => MAGIC_SCHOOLS.includes(skill));
+  const majorSkills = getCurrentSkillSetup().major;
+  const schools = [];
+  for (let i = 0; i < majorSkills.length; i += 1) {
+    if (MAGIC_SCHOOLS.includes(majorSkills[i])) {
+      schools.push(majorSkills[i]);
+    }
+  }
+  return schools;
 }
 
-function renderSpellSelectors() {
-  const availableSchools = getMajorMagicSchools();
-  const isSpellcaster = availableSchools.length > 0;
-  const chosenCount = state.selectedSpells.filter((entry) => entry.school && entry.spell).length;
+function renderSpells() {
+  const schools = getMajorMagicSchools();
+  const enabled = schools.length > 0;
 
-  if (!isSpellcaster) {
-    el.spellSelectHelp.textContent = "No magic school is currently a Major skill. Spell selection is disabled.";
-  } else {
-    el.spellSelectHelp.textContent = `Select two Apprentice spells from schools in your Major skills (${chosenCount}/2 selected).`;
+  let count = 0;
+  for (let i = 0; i < state.selectedSpells.length; i += 1) {
+    if (state.selectedSpells[i].school && state.selectedSpells[i].spell) {
+      count += 1;
+    }
   }
 
-  [0, 1].forEach((idx) => renderSpellRow(idx, availableSchools, !isSpellcaster));
-  renderSpellDetail(0);
-  renderSpellDetail(1);
+  if (!enabled) {
+    ui.spellGuide.textContent = "No magic school is currently a Major skill. Spell selection is disabled.";
+  } else {
+    ui.spellGuide.textContent = "Select two Apprentice spells from your Major schools (" + count + "/2 selected).";
+  }
+
+  renderSpellRow(0, ui.spellOneSchool, ui.spellOneName, schools, !enabled);
+  renderSpellRow(1, ui.spellTwoSchool, ui.spellTwoName, schools, !enabled);
+  renderSpellDetail(0, ui.spellOneInfo);
+  renderSpellDetail(1, ui.spellTwoInfo);
 }
 
-function renderSpellRow(idx, availableSchools = getMajorMagicSchools(), disabled = false) {
-  const schoolEl = idx === 0 ? el.spellSchool1 : el.spellSchool2;
-  const spellEl = idx === 0 ? el.spellName1 : el.spellName2;
-  const otherIdx = idx === 0 ? 1 : 0;
+function renderSpellRow(index, schoolSelect, spellSelect, schools, disabled) {
+  const otherIndex = index === 0 ? 1 : 0;
+  const selected = state.selectedSpells[index];
+  const otherSpell = state.selectedSpells[otherIndex].spell;
 
-  schoolEl.innerHTML = "";
-  spellEl.innerHTML = "";
+  schoolSelect.innerHTML = "";
+  spellSelect.innerHTML = "";
 
   const schoolPlaceholder = document.createElement("option");
   schoolPlaceholder.value = "";
   schoolPlaceholder.textContent = disabled ? "No eligible school" : "Choose school";
-  schoolEl.appendChild(schoolPlaceholder);
+  schoolSelect.appendChild(schoolPlaceholder);
 
-  availableSchools.forEach((school) => {
-    const opt = document.createElement("option");
-    opt.value = school;
-    opt.textContent = school;
-    schoolEl.appendChild(opt);
-  });
-
-  let selectedSchool = state.selectedSpells[idx]?.school || "";
-  if (!availableSchools.includes(selectedSchool)) {
-    selectedSchool = "";
-    state.selectedSpells[idx].school = "";
-    state.selectedSpells[idx].spell = "";
+  for (let i = 0; i < schools.length; i += 1) {
+    const option = document.createElement("option");
+    option.value = schools[i];
+    option.textContent = schools[i];
+    schoolSelect.appendChild(option);
   }
 
-  schoolEl.value = selectedSchool;
+  if (!schools.includes(selected.school)) {
+    selected.school = "";
+    selected.spell = "";
+  }
+  schoolSelect.value = selected.school;
 
   const spellPlaceholder = document.createElement("option");
   spellPlaceholder.value = "";
-  spellPlaceholder.textContent = selectedSchool ? "Choose Apprentice spell" : "Choose school first";
-  spellEl.appendChild(spellPlaceholder);
+  spellPlaceholder.textContent = selected.school ? "Choose Apprentice spell" : "Choose school first";
+  spellSelect.appendChild(spellPlaceholder);
 
-  const otherChosenSpell = state.selectedSpells[otherIdx]?.spell || "";
-  const spells = selectedSchool
-    ? (APPRENTICE_SPELLS[selectedSchool] || []).filter((spell) => spell.name !== otherChosenSpell)
-    : [];
-  spells.forEach((spell) => {
-    const opt = document.createElement("option");
-    opt.value = spell.name;
-    opt.textContent = spell.name;
-    spellEl.appendChild(opt);
-  });
-
-  if (!spells.some((spell) => spell.name === state.selectedSpells[idx].spell)) {
-    state.selectedSpells[idx].spell = "";
+  const spellOptions = selected.school ? APPRENTICE_SPELLS[selected.school] || [] : [];
+  for (let i = 0; i < spellOptions.length; i += 1) {
+    const spell = spellOptions[i];
+    if (spell.name === otherSpell) {
+      continue;
+    }
+    const option = document.createElement("option");
+    option.value = spell.name;
+    option.textContent = spell.name;
+    spellSelect.appendChild(option);
   }
 
-  if (
-    state.selectedSpells[idx].spell &&
-    state.selectedSpells[idx].spell === state.selectedSpells[otherIdx]?.spell
-  ) {
-    state.selectedSpells[idx].spell = "";
+  const validNames = spellOptions
+    .filter(function (item) {
+      return item.name !== otherSpell;
+    })
+    .map(function (item) {
+      return item.name;
+    });
+
+  if (!validNames.includes(selected.spell)) {
+    selected.spell = "";
   }
 
-  spellEl.value = state.selectedSpells[idx].spell;
-
-  schoolEl.disabled = disabled;
-  spellEl.disabled = disabled;
+  spellSelect.value = selected.spell;
+  schoolSelect.disabled = disabled;
+  spellSelect.disabled = disabled;
 }
 
-function renderSpellDetail(idx) {
-  const detailEl = idx === 0 ? el.spellDetail1 : el.spellDetail2;
-  const school = state.selectedSpells[idx]?.school;
-  const spellName = state.selectedSpells[idx]?.spell;
-
-  if (!school || !spellName) {
-    detailEl.innerHTML = "<p class=\"detail-muted\">Choose a school and spell to see cost and effect details.</p>";
+function renderSpellDetail(index, detailEl) {
+  const entry = state.selectedSpells[index];
+  if (!entry.school || !entry.spell) {
+    detailEl.innerHTML = "<p class='detail-muted'>Choose a school and spell to see details.</p>";
     return;
   }
 
-  const spell = (APPRENTICE_SPELLS[school] || []).find((entry) => entry.name === spellName);
+  const schoolSpells = APPRENTICE_SPELLS[entry.school] || [];
+  const spell = schoolSpells.find(function (item) {
+    return item.name === entry.spell;
+  });
+
   if (!spell) {
-    detailEl.innerHTML = "<p class=\"detail-muted\">Spell details unavailable.</p>";
+    detailEl.innerHTML = "<p class='detail-muted'>Spell details unavailable.</p>";
     return;
   }
 
-  detailEl.innerHTML = `
-    <h4>${spell.name}</h4>
-    <p><strong>School:</strong> ${school}</p>
-    <p><strong>Cost:</strong> ${spell.cost}</p>
-    <p><strong>Effect:</strong> ${spell.details}</p>
-  `;
+  detailEl.innerHTML = ""
+    + "<h4>" + spell.name + "</h4>"
+    + "<p><strong>School:</strong> " + entry.school + "</p>"
+    + "<p><strong>Cost:</strong> " + spell.cost + "</p>"
+    + "<p><strong>Effect:</strong> " + spell.details + "</p>";
 }
 
 function buildCharacterSheet() {
-  const chosenSpells = state.selectedSpells
-    .filter((entry) => entry.school && entry.spell)
-    .map((entry) => {
-      const spellMeta = (APPRENTICE_SPELLS[entry.school] || []).find((spell) => spell.name === entry.spell);
-      return {
-        ...entry,
-        cost: spellMeta?.cost || "",
-        effect: spellMeta?.details || ""
-      };
+  const spells = [];
+  for (let i = 0; i < state.selectedSpells.length; i += 1) {
+    const pick = state.selectedSpells[i];
+    if (!pick.school || !pick.spell) {
+      continue;
+    }
+
+    const spellData = (APPRENTICE_SPELLS[pick.school] || []).find(function (item) {
+      return item.name === pick.spell;
     });
 
-  const selectedWeapon = STARTER_WEAPONS.find((item) => item.name === state.selectedEquipment.weapon);
-  const selectedArmor = STARTER_ARMOR.find((item) => item.name === state.selectedEquipment.armor);
-  const selectedShield = STARTER_SHIELDS.find((item) => item.name === state.selectedEquipment.shield);
-  const selectedKit = STARTER_KITS.find((item) => item.name === state.selectedEquipment.kit);
-  const lineageAbilities = LINEAGE_ABILITIES[state.lineage] || [];
-  const birthsignBoon = BIRTHSIGNS[state.birthsign]?.notes || "";
-  const archetypeBonus = state.buildMode === "archetype" ? (ARCHETYPE_INFO[state.archetype]?.bonus || "") : "";
+    spells.push({
+      school: pick.school,
+      spell: pick.spell,
+      cost: spellData ? spellData.cost : "",
+      effect: spellData ? spellData.details : ""
+    });
+  }
+
+  const weapon = STARTER_WEAPONS.find(function (item) { return item.name === state.selectedEquipment.weapon; }) || null;
+  const armor = STARTER_ARMOR.find(function (item) { return item.name === state.selectedEquipment.armor; }) || null;
+  const shield = STARTER_SHIELDS.find(function (item) { return item.name === state.selectedEquipment.shield; }) || null;
+  const kit = STARTER_KITS.find(function (item) { return item.name === state.selectedEquipment.kit; }) || null;
 
   return {
     name: state.characterName || "Unnamed Adventurer",
@@ -1705,38 +1752,25 @@ function buildCharacterSheet() {
     birthsign: state.birthsign,
     attributes: getFinalAttributes(),
     skills: getSkillValues(),
-    derived: collectDerived(),
-    lineageAbilities,
-    birthsignBoon,
-    archetypeBonus,
-    startingSpells: chosenSpells,
+    derived: computeDerived(),
+    lineageAbilities: LINEAGE_ABILITIES[state.lineage] || [],
+    birthsignBoon: BIRTHSIGNS[state.birthsign].notes || "",
+    archetypeBonus: state.buildMode === "archetype" ? (ARCHETYPE_INFO[state.archetype] ? ARCHETYPE_INFO[state.archetype].bonus : "") : "",
+    startingSpells: spells,
     selectedEquipment: {
-      weapon: selectedWeapon || null,
-      armor: selectedArmor || null,
-      shield: selectedShield || null,
-      kit: selectedKit || null
+      weapon: weapon,
+      armor: armor,
+      shield: shield,
+      kit: kit
     },
     notes: state.background
   };
 }
 
-function collectDerived() {
-  const out = {};
-  el.derivedStats.querySelectorAll(".stat-card").forEach((card) => {
-    const key = card.querySelector("strong").textContent;
-    const value = card.querySelector("div").textContent;
-    out[key] = value;
-  });
-  return out;
-}
-
 function persistToStorage() {
-  const data = {
-    ...state,
-    characterName: el.characterName.value,
-    background: el.background.value
-  };
-  localStorage.setItem("scrolls_steel_sheet", JSON.stringify(data));
+  state.characterName = ui.characterName.value;
+  state.background = ui.background.value;
+  localStorage.setItem("scrolls_steel_sheet", JSON.stringify(state));
 }
 
 function restoreFromStorage() {
@@ -1748,11 +1782,17 @@ function restoreFromStorage() {
   try {
     const parsed = JSON.parse(raw);
     Object.assign(state, parsed);
-    document.querySelectorAll('input[name="buildMode"]').forEach((radio) => {
-      radio.checked = radio.value === state.buildMode;
-    });
-  } catch (err) {
-    console.error("Unable to restore saved sheet", err);
+    if (!state.customAttrSpend) {
+      state.customAttrSpend = buildEmptyAttributeSpend();
+    }
+    if (!state.selectedSpells || state.selectedSpells.length !== 2) {
+      state.selectedSpells = [{ school: "", spell: "" }, { school: "", spell: "" }];
+    }
+    if (!state.selectedEquipment) {
+      state.selectedEquipment = { weapon: "", armor: "", shield: "No Shield", kit: "" };
+    }
+  } catch (error) {
+    console.error("Unable to restore saved character sheet", error);
   }
 }
 

@@ -1,0 +1,107 @@
+{
+  "name": "Sareth",
+  "mode": "archetype",
+  "archetype": "Nightblade",
+  "lineage": "Verdathi",
+  "birthsign": "The Voidwalker",
+  "attributes": {
+    "STR": 25,
+    "END": 40,
+    "AGI": 65,
+    "SPD": 40,
+    "INT": 55,
+    "WIL": 50,
+    "PER": 30,
+    "LCK": 20
+  },
+  "skills": {
+    "Long Blade": 25,
+    "Short Blade": 40,
+    "Blunt Weapon": 5,
+    "Axe": 5,
+    "Spear": 5,
+    "Marksman": 10,
+    "Block": 5,
+    "Unarmored": 5,
+    "Light Armor": 40,
+    "Medium Armor": 5,
+    "Heavy Armor": 5,
+    "Athletics": 35,
+    "Acrobatics": 40,
+    "Sneak": 45,
+    "Security": 35,
+    "Speechcraft": 5,
+    "Mercantile": 5,
+    "Alchemy": 5,
+    "Enchanting": 5,
+    "Conjuration": 10,
+    "Alteration": 25,
+    "Elementalism": 5,
+    "Illusion": 40,
+    "Divination": 30,
+    "Vitalism": 5,
+    "Armorer": 5,
+    "Fistfight": 5
+  },
+  "derived": {
+    "Health (HP)": "8",
+    "Magicka (MP)": "11",
+    "Fatigue (FP)": "17",
+    "Initiative": "6",
+    "Luck Bonus": "2",
+    "Melee Damage Bonus": "1",
+    "Agility Damage Bonus": "3",
+    "Movement (land)": "20m",
+    "Movement (water)": "35m"
+  },
+  "lineageAbilities": [
+    "Aquatic Dominance: while in water, your attacks/skill checks are at advantage and attacks from outside water are at disadvantage.",
+    "Disease Resistance: near-immune to disease; Marsh Fever immunity."
+  ],
+  "birthsignBoon": "+10 WIL (cap 75), improved spell absorption.",
+  "archetypeBonus": "+1d6 damage from undetected position (once per combat unless re-hidden). Start with an Iron Dagger, Leather Armor, and two Apprentice Illusion spells.",
+  "startingSpells": [
+    {
+      "school": "Illusion",
+      "spell": "Muffle",
+      "cost": "2 MP",
+      "effect": "Self. Your movement makes no sound. Until next rest."
+    },
+    {
+      "school": "Illusion",
+      "spell": "Night-Eye",
+      "cost": "2 MP",
+      "effect": "Self. See clearly in darkness. Until next rest."
+    }
+  ],
+  "selectedEquipment": {
+    "weapon": {
+      "name": "Iron Dagger",
+      "skill": "Short Blade",
+      "fp": 1,
+      "primary": "1d4 Piercing",
+      "secondary": "1d4 Slashing",
+      "tags": "THROWN",
+      "notes": "Standard sidearm.",
+      "price": "15g"
+    },
+    "armor": {
+      "name": "Leather Armor (full)",
+      "type": "Light Armor",
+      "baseAr": 2,
+      "notes": "Light armor baseline from Chapter 8.",
+      "price": "60g"
+    },
+    "shield": {
+      "name": "No Shield",
+      "arBonus": "+0 AR",
+      "notes": "No block reaction from shield."
+    },
+    "kit": {
+      "name": "Lockpick Set",
+      "price": "20g",
+      "notes": "Required for Security checks to pick locks."
+    }
+  },
+  "notes": ""
+}

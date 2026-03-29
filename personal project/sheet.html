@@ -19,12 +19,13 @@
       <a href="index.html">Home</a>
       <a href="site-plan.html">Site Plan</a>
       <a href="sheet.html" aria-current="page">Character Creator</a>
+      <a href="rules-live.html">Rules</a>
     </nav>
-    <button id="saveSheetBtn" class="btn btn-accent" type="button">Save Character</button>
+    <button id="saveCharacterBtn" class="btn btn-accent" type="button">Save Character</button>
   </header>
 
-  <main class="builder" id="builderRoot">
-    <section class="panel panel-wide intro">
+  <main class="character-builder" id="characterBuilder">
+    <section class="panel full-width intro">
       <h1>Character Creator</h1>
       <p>
         Build from scratch or start from an archetype template. This tool follows Chapter 11 flow:
@@ -32,132 +33,132 @@
       </p>
     </section>
 
-    <section class="panel mode-select">
+    <section class="panel build-mode-section">
       <h2>Build Path</h2>
-      <div class="mode-cards" id="modeCards">
-        <label class="mode-card" data-mode="custom">
+      <div class="build-mode-cards" id="buildModeCards">
+        <label class="build-mode-card" data-mode="custom">
           <input type="radio" name="buildMode" value="custom" checked>
-          <span class="mode-title">From Scratch</span>
-          <span class="mode-copy">Assign attributes, choose major/minor skills, and tune every stat manually.</span>
+          <span class="mode-name">From Scratch</span>
+          <span class="mode-text">Assign attributes, choose major/minor skills, and tune every stat manually.</span>
         </label>
-        <label class="mode-card" data-mode="archetype">
+        <label class="build-mode-card" data-mode="archetype">
           <input type="radio" name="buildMode" value="archetype">
-          <span class="mode-title">Archetype Template</span>
-          <span class="mode-copy">Start from a pre-built package, then apply lineage and birthsign adjustments.</span>
+          <span class="mode-name">Archetype Template</span>
+          <span class="mode-text">Start from a pre-built package, then apply lineage and birthsign adjustments.</span>
         </label>
       </div>
-      <div id="archetypeWrap" class="stack hidden">
+      <div id="archetypeSection" class="stack hidden">
         <label for="archetypeSelect">Archetype</label>
         <select id="archetypeSelect"></select>
-        <div id="archetypeDetail" class="lineage-detail"></div>
+        <div id="archetypeInfo" class="info-box"></div>
       </div>
     </section>
 
-    <section class="panel lineage-select">
+    <section class="panel lineage-section">
       <h2>Step 1: Choose Lineage</h2>
       <label for="lineageSelect">Lineage</label>
       <select id="lineageSelect"></select>
-      <p id="lineageRules" class="subtext"></p>
-      <div id="lineageChoices" class="choice-grid"></div>
-      <div id="lineageDetail" class="lineage-detail"></div>
+      <p id="lineageNotes" class="subtext"></p>
+      <div id="lineageOptions" class="option-grid"></div>
+      <div id="lineageInfo" class="info-box"></div>
     </section>
 
-    <section class="panel panel-wide attrs" id="attributesPanel">
+    <section class="panel full-width attribute-section" id="attributeSection">
       <h2>Step 2: Assign Attributes</h2>
-      <p id="attributeHelp" class="subtext"></p>
-      <div id="attributePoints" class="pill"></div>
-      <div id="attributesGrid" class="attributes-grid"></div>
+      <p id="attributeGuide" class="subtext"></p>
+      <div id="attributePool" class="pill"></div>
+      <div id="attributeGrid" class="attribute-grid"></div>
     </section>
 
-    <section class="panel panel-wide skills" id="skillsPanel">
+    <section class="panel full-width skills-section" id="skillsSection">
       <h2>Step 3: Skills</h2>
       <p class="subtext">Allocate +5 to Major skills, +5 to Minor skills, and +5 to Misc skills. In custom mode, first choose your 5 Major and 5 Minor skills.</p>
-      <div class="skill-controls">
-        <div class="pool">Major Pool: <span id="majorPool">5</span></div>
-        <div class="pool">Minor Pool: <span id="minorPool">5</span></div>
-        <div class="pool">Misc Pool: <span id="miscPool">5</span></div>
+      <div class="skill-pools">
+        <div class="pool-box">Major Pool: <span id="majorPoints">5</span></div>
+        <div class="pool-box">Minor Pool: <span id="minorPoints">5</span></div>
+        <div class="pool-box">Misc Pool: <span id="miscPoints">5</span></div>
       </div>
-      <div class="skill-pickers">
+      <div class="skill-pickers-wrap">
         <div>
           <h3>Major Skills</h3>
-          <div id="majorPicker" class="picker-grid"></div>
+          <div id="majorSkillPicker" class="picker-box"></div>
         </div>
         <div>
           <h3>Minor Skills</h3>
-          <div id="minorPicker" class="picker-grid"></div>
+          <div id="minorSkillPicker" class="picker-box"></div>
         </div>
       </div>
-      <div id="skillsTables" class="skills-sections">
+      <div id="skillTableWrap" class="skill-table-wrap">
       </div>
     </section>
 
-    <section class="panel birthsign-select">
+    <section class="panel birthsign-section">
       <h2>Step 4: Choose Birthsign</h2>
       <label for="birthsignSelect">Birthsign</label>
       <select id="birthsignSelect"></select>
-      <p id="birthsignRules" class="subtext"></p>
-      <div id="birthsignChoices" class="choice-grid"></div>
-      <div id="birthsignDetail" class="lineage-detail"></div>
+      <p id="birthsignNotes" class="subtext"></p>
+      <div id="birthsignOptions" class="option-grid"></div>
+      <div id="birthsignInfo" class="info-box"></div>
     </section>
 
-    <section class="panel derived">
+    <section class="panel derived-section">
       <h2>Step 5: Derived Statistics</h2>
-      <div id="derivedStats" class="stat-grid"></div>
+      <div id="derivedStatsGrid" class="derived-grid"></div>
     </section>
 
-    <section class="panel equip">
+    <section class="panel equipment-section">
       <h2>Step 6: Starting Equipment</h2>
-      <p id="equipmentHint" class="subtext"></p>
+      <p id="equipmentGuide" class="subtext"></p>
       <div class="spell-row">
         <label for="weaponSelect">Weapon</label>
         <select id="weaponSelect"></select>
       </div>
-      <div id="weaponDetail" class="spell-detail"></div>
+      <div id="weaponInfo" class="info-box"></div>
       <div class="spell-row">
         <label for="armorSelect">Armor</label>
         <select id="armorSelect"></select>
       </div>
-      <div id="armorDetail" class="spell-detail"></div>
+      <div id="armorInfo" class="info-box"></div>
       <div class="spell-row">
         <label for="shieldSelect">Shield</label>
         <select id="shieldSelect"></select>
       </div>
-      <div id="shieldDetail" class="spell-detail"></div>
+      <div id="shieldInfo" class="info-box"></div>
       <div class="spell-row">
         <label for="kitSelect">Kit / Tool</label>
         <select id="kitSelect"></select>
       </div>
-      <div id="kitDetail" class="spell-detail"></div>
+      <div id="kitInfo" class="info-box"></div>
     </section>
 
-    <section class="panel spells">
+    <section class="panel spell-section">
       <h2>Step 7: Starting Spells</h2>
-      <p id="spellSelectHelp" class="subtext"></p>
+      <p id="spellGuide" class="subtext"></p>
       <div class="spell-row">
-        <label for="spellSchool1">Spell 1 School</label>
-        <select id="spellSchool1"></select>
-        <label for="spellName1">Spell 1</label>
-        <select id="spellName1"></select>
+        <label for="spellOneSchool">Spell 1 School</label>
+        <select id="spellOneSchool"></select>
+        <label for="spellOneName">Spell 1</label>
+        <select id="spellOneName"></select>
       </div>
-      <div id="spellDetail1" class="spell-detail"></div>
+      <div id="spellOneInfo" class="info-box"></div>
       <div class="spell-row">
-        <label for="spellSchool2">Spell 2 School</label>
-        <select id="spellSchool2"></select>
-        <label for="spellName2">Spell 2</label>
-        <select id="spellName2"></select>
+        <label for="spellTwoSchool">Spell 2 School</label>
+        <select id="spellTwoSchool"></select>
+        <label for="spellTwoName">Spell 2</label>
+        <select id="spellTwoName"></select>
       </div>
-      <div id="spellDetail2" class="spell-detail"></div>
+      <div id="spellTwoInfo" class="info-box"></div>
     </section>
 
-    <section class="panel panel-wide summary">
+    <section class="panel full-width summary-section">
       <h2>Character Summary</h2>
       <label for="characterName">Character Name</label>
       <input id="characterName" type="text" maxlength="60" placeholder="Name your character">
       <label for="background">Step 8: Background Notes</label>
       <textarea id="background" rows="5" placeholder="Where they came from and why they adventure..."></textarea>
-      <button id="exportBtn" class="btn" type="button">Export Character JSON</button>
-      <button id="finalizeBtn" class="btn btn-accent" type="button">Done: Open Final Character Sheet</button>
-      <pre id="exportPreview" class="preview"></pre>
+      <button id="exportCharacterBtn" class="btn" type="button">Export Character JSON</button>
+      <button id="openFinalSheetBtn" class="btn btn-accent" type="button">Done: Open Final Character Sheet</button>
+      <pre id="exportJsonPreview" class="preview"></pre>
     </section>
   </main>
 

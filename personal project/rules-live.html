@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrolls & Steel Rules</title>
+  <meta name="description" content="Live rules reference powered by a Google Doc embed.">
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <link rel="stylesheet" href="sheet.css">
+  <style>
+    .rules-page {
+      width: min(1200px, calc(100% - 2rem));
+      margin: 1rem auto 2rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .doc-frame {
+      width: 100%;
+      min-height: 75vh;
+      border: 1px solid var(--secondary-color);
+      background: #fff;
+    }
+
+    .helper-list {
+      margin: 0.4rem 0 0;
+      padding-left: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Back to home">
+      <img src="images/icon.png" alt="Scrolls and Steel icon" class="brand-icon">
+      <span>Scrolls & Steel</span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="site-plan.html">Site Plan</a>
+      <a href="sheet.html">Character Creator</a>
+      <a href="rules-live.html" aria-current="page">Rules</a>
+    </nav>
+  </header>
+
+  <main class="rules-page">
+    <section class="panel">
+      <h1>Live Rules Reference</h1>
+      <p>
+        The current rules for Scrolls and Steel.
+      </p>
+      <p>
+        Direct doc link:
+        <a href="https://docs.google.com/document/d/1UL9_fAMQ7eEVsHQxUU_ard6e3jLduBHz/edit" target="_blank" rel="noopener">Open in Google Docs</a>
+      </p>
+    </section>
+
+    <section class="panel">
+      <iframe
+        class="doc-frame"
+        title="Scrolls and Steel Rules Document"
+        src="https://docs.google.com/document/d/1UL9_fAMQ7eEVsHQxUU_ard6e3jLduBHz/preview"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+    </section>
+
+    <!-- <section class="panel">
+      <h2>One-time Setup (if embed is blank)</h2>
+      <ol class="helper-list">
+        <li>Open the Google Doc.</li>
+        <li>Go to File > Share > Publish to web.</li>
+        <li>Copy the published URL and replace the iframe src if needed.</li>
+        <li>Keep editing the same doc normally. This page will reflect new changes.</li>
+      </ol>
+    </section> -->
+  </main>
+
+  <footer class="site-footer">
+    <p>Scrolls & Steel Rules</p>
+  </footer>
+</body>
+</html>
