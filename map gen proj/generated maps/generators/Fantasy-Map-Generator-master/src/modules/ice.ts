@@ -49,8 +49,18 @@ class IceModule {
     // Generate glaciers on cold land
     {
       const type = "iceShield";
-      const getType = (cellId: number) =>
-        h[cellId] >= 20 && temp[cellId] <= GLACIER_MAX_TEMP ? type : null;
+      const getType = (cellId: number) => {
+        if (h[cellId] < 20) return null;
+        if (temp[cellId] > GLACIER_MAX_TEMP) return null;
+        // Glaciers should primarily be in far north (top 30% of map)
+        const cellY = grid.points[cellId][1];
+        const northFraction = cellY / graphHeight;
+        // Allow some glaciers in mid-north if very cold, but strong north bias
+        const temperatureFactor = normalize(temp[cellId], -25, GLACIER_MAX_TEMP);
+        const northBias = 1.5 - northFraction * 2;
+        if (rand() < northBias * temperatureFactor) return type;
+        return null;
+      };
       const isolines = getIsolines(grid, getType, { polygons: true });
 
       if (isolines[type]?.polygons) {
@@ -65,12 +75,16 @@ class IceModule {
       }
     }
 
-    // Generate icebergs on cold water
+    // Generate icebergs on cold water (primarily in far north)
     for (const cellId of grid.cells.i) {
       const t = temp[cellId];
       if (h[cellId] >= 20) continue; // no icebergs on land
       if (t > ICEBERG_MAX_TEMP) continue; // too warm: no icebergs
       if (features[cells.f[cellId]].type === "lake") continue; // no icebergs on lakes
+      // Strong preference for far north icebergs (top 30% of map)
+      const cellY = grid.points[cellId][1];
+      const northFraction = cellY / graphHeight;
+      if (northFraction > 0.30 && rand() < 0.85) continue; // 85% skip south of north zone
       if (P(0.8)) continue; // skip most of eligible cells
 
       const randomFactor = 0.8 + rand() * 0.4; // random size factor

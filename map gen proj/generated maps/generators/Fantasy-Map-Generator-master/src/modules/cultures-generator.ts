@@ -75,7 +75,9 @@ class CulturesModule {
       forceVerdathiSouthSwamp?: boolean;
       forceSylvarirumSouthForest?: boolean;
       nearConstraint?: boolean;
+      loreProfile?: boolean;
     };
+    const useDurgethLoreProfile = scenario.loreProfile !== false;
 
     if (culturesSet.value === "european") {
       return [
@@ -794,23 +796,23 @@ class CulturesModule {
         {
           name: "Solarirum Citadels",
           base: getBase("SolarirumFrench"),
-          odd: 1,
-          sort: (i: number) => n(i) / td(i, 16) / bd(i, [6, 8]),
+          odd: useDurgethLoreProfile ? 1.0 : 1.05,
+          sort: (i: number) => (n(i) / td(i, 14) / bd(i, [6, 8], 3)) * 1.1,
           shield: "gondor",
         },
         {
           name: "Sylvarirum Canopy",
           base: getBase("SylvarirumNavajo"),
-          odd: 1,
+          odd: 1.05,
           sort: (i: number) => {
             if (scenario.forceSylvarirumSouthForest) {
               const isForest = [6, 7, 8, 9].includes(cells.biome[i]);
-              const isSouthern = cells.p[i][1] > graphHeight * 0.52;
+              const isSouthern = cells.p[i][1] > graphHeight * 0.50;
               if (!isForest || !isSouthern) return 0.001;
             }
-            const southBias = 0.4 + cells.p[i][1] / graphHeight;
+            const southBias = 0.5 + cells.p[i][1] / graphHeight * 1.2;
             return (
-              (n(i) / td(i, 18) / bd(i, [6, 7, 8, 9], 10)) * h[i] * southBias
+              (n(i) / td(i, 16) / bd(i, [6, 7, 8, 9], 8)) * h[i] * southBias
             );
           },
           shield: "noldor",
@@ -818,78 +820,84 @@ class CulturesModule {
         {
           name: "Ashirum Calderas",
           base: getBase("AshirumIcelandic"),
-          odd: 0.9,
-          sort: (i: number) => (n(i) + h[i]) / td(i, 22),
+          odd: useDurgethLoreProfile ? 0.90 : 0.95,
+          sort: (i: number) => {
+            const volcanicHighlandBias = h[i] > 58 ? 2.0 : h[i] > 48 ? 1.3 : 0.25;
+            return ((n(i) + h[i]) * volcanicHighlandBias) / td(i, 18);
+          },
           shield: "fantasy2",
         },
         {
-          name: "Vethanirum-Hearthborn Borders",
-          base: getBase("Vethanirum"),
-          odd: 0.7,
-          sort: (i: number) => n(i) / td(i, 15),
-          shield: "hessen",
+          name: "Ashveld Cinderclans",
+          base: getBase("AshveldSwahiliQuechua"),
+          odd: useDurgethLoreProfile ? 0.88 : 0.93,
+          sort: (i: number) => {
+            const volcanicHighlandBias = h[i] > 56 ? 1.9 : h[i] > 46 ? 1.25 : 0.23;
+            return ((n(i) + h[i]) * volcanicHighlandBias) / td(i, 19);
+          },
+          shield: "fantasy2",
         },
         {
           name: "Apisdrenn Deep Holds",
           base: getBase("ApisdrenBhutanAksumite"),
-          odd: 1,
-          sort: (i: number) => n(i) + h[i],
+          odd: useDurgethLoreProfile ? 1.05 : 1.1,
+          sort: (i: number) => ((n(i) + h[i]) * (h[i] > 52 ? 1.8 : 0.4)) / td(i, 10),
           shield: "erebor",
         },
         {
           name: "Apiskeld Forge Cities",
           base: getBase("ApiskeldSumerian"),
-          odd: 0.9,
-          sort: (i: number) => n(i) + h[i] / td(i, 21),
+          odd: useDurgethLoreProfile ? 0.92 : 0.95,
+          sort: (i: number) => ((n(i) + h[i]) * (h[i] > 50 ? 1.6 : 0.35)) / td(i, 14),
           shield: "noldor",
         },
         {
           name: "Apisveldir Gem Roads",
           base: getBase("ApisveldirByzantineMughal"),
-          odd: 0.7,
-          sort: (i: number) => n(i) / td(i, 12),
+          odd: useDurgethLoreProfile ? 0.88 : 0.80,
+          sort: (i: number) => ((n(i) + h[i]) * (h[i] > 48 ? 1.5 : 0.4)) / td(i, 12),
           shield: "pavise",
         },
         {
-          name: "Kreln-Apisdrenn Underdeep",
+          name: "Kreln Tideclans",
           base: getBase("KrelnWelshPolynesian"),
-          odd: 0.6,
-          sort: (i: number) => n(i) + h[i],
-          shield: "erebor",
+          odd: useDurgethLoreProfile ? 0.80 : 0.85,
+          sort: (i: number) => (n(i) / td(i, 10) / sf(i, 20)) * (cells.haven[i] ? 2.2 : 0.5),
+          shield: "oldFrench",
         },
         {
           name: "Hearthborn Commonweal",
           base: getBase("ImperialEngland"),
-          odd: 1,
+          odd: 1.15,
           sort: (i: number) => n(i) / td(i, 14),
           shield: "roman",
         },
         {
           name: "Nordal Jarls",
           base: getBase("NordalRussian"),
-          odd: 0.9,
-          sort: (i: number) => n(i) / td(i, 6),
+          odd: useDurgethLoreProfile ? 0.85 : 1,
+          sort: (i: number) => {
+            const isNorthern = cells.p[i][1] < graphHeight * 0.40;
+            const northness = 1.3 - cells.p[i][1] / graphHeight;
+            const coldness = 1 / td(i, 0);
+            const taigas = bd(i, [9, 10, 11], 8);
+            if (!isNorthern) return 0.001;
+            return (n(i) * northness * coldness) / taigas;
+          },
           shield: "fantasy5",
         },
         {
           name: "Sunblade Reaches",
           base: getBase("SunbladeGreek"),
-          odd: 0.9,
-          sort: (i: number) => (n(i) + h[i]) / td(i, 17),
+          odd: 0.95,
+          sort: (i: number) => (n(i) + h[i]) / td(i, 20) / bd(i, [1, 3], 6),
           shield: "fantasy5",
-        },
-        {
-          name: "Ashveld-Nordal Cinderlands",
-          base: getBase("AshveldSwahiliQuechua"),
-          odd: 0.8,
-          sort: (i: number) => (n(i) + h[i]) / td(i, 19),
-          shield: "round",
         },
         {
           name: "Stoneguard Legions",
           base: getBase("StoneguardToltec"),
-          odd: 1,
-          sort: (i: number) => n(i) / td(i, 13),
+          odd: 1.05,
+          sort: (i: number) => (n(i) / td(i, 12)) * (h[i] > 32 ? 1.2 : 1),
           shield: "urukHai",
         },
         {
@@ -898,13 +906,6 @@ class CulturesModule {
           odd: 0.8,
           sort: (i: number) => (n(i) / td(i, 17)) * h[i],
           shield: "fantasy1",
-        },
-        {
-          name: "Veildrift-Murrak Ashwastes",
-          base: getBase("VeildriftSlavicCeltic"),
-          odd: 0.8,
-          sort: (i: number) => n(i) / td(i, 19),
-          shield: "easterling",
         },
         {
           name: "Murrak Ashfields",
@@ -916,8 +917,8 @@ class CulturesModule {
         {
           name: "Bovari Drovelands",
           base: getBase("BovariScythian"),
-          odd: 0.9,
-          sort: (i: number) => n(i) / td(i, 13),
+          odd: 1,
+          sort: (i: number) => (n(i) / td(i, 13)) / bd(i, [4, 3], 5),
           shield: "pavise",
         },
         {
@@ -928,28 +929,42 @@ class CulturesModule {
           shield: "moriaOrc",
         },
         {
-          name: "Skittari Broodnests",
+          name: "Arantza Conclaves",
           base: getBase("ArantzaKhoisanBasque"),
-          odd: 0.8,
-          sort: (i: number) => n(i) / bd(i, [12], 10),
+          odd: useDurgethLoreProfile ? 0.70 : 0.85,
+          sort: (i: number) => n(i) / bd(i, [6, 7, 8, 9], 12),
           shield: "horsehead2",
         },
         {
           name: "Verdathi Fens",
           base: getBase("VerdathiAboriginal"),
-          odd: 0.8,
+          odd: 0.88,
           sort: (i: number) => {
             if (scenario.forceVerdathiSouthSwamp) {
               const isSwamp = cells.biome[i] === 12;
-              const isSouthern = cells.p[i][1] > graphHeight * 0.55;
+              const isSouthern = cells.p[i][1] > graphHeight * 0.52;
               if (!isSwamp || !isSouthern) return 0.001;
             }
-            const southBias = 0.35 + cells.p[i][1] / graphHeight;
+            const southBias = 0.45 + cells.p[i][1] / graphHeight * 1.15;
             return (
-              (n(i) / td(i, 24) / sf(i) / bd(i, [12], 18)) * southBias
+              (n(i) / td(i, 20) / sf(i) / bd(i, [12], 15)) * southBias
             );
           },
           shield: "round",
+        },
+        {
+          name: "Vethanirum Borderlands",
+          base: getBase("Vethanirum"),
+          odd: 0.75,
+          sort: (i: number) => (n(i) / td(i, 14)) * (h[i] > 45 ? 0.8 : 1.2),
+          shield: "fantasy3",
+        },
+        {
+          name: "Veildrift Hauntborn",
+          base: getBase("VeildriftSlavicCeltic"),
+          odd: 0.78,
+          sort: (i: number) => n(i) / td(i, 18),
+          shield: "fantasy4",
         },
       ];
     }
@@ -1202,6 +1217,14 @@ class CulturesModule {
     TIME && console.time("generateCultures");
     this.cells = pack.cells;
     const cultureIds = new Uint16Array(this.cells.i.length); // cell cultures
+    const durgethScenario = ((globalThis as any).durgethScenarioDirectives || {}) as {
+      forceVerdathiSouthSwamp?: boolean;
+      forceSylvarirumSouthForest?: boolean;
+      nearConstraint?: boolean;
+      loreProfile?: boolean;
+    };
+    const useDurgethLoreProfile =
+      culturesSet.value === "durgeth" && durgethScenario.loreProfile !== false;
 
     const culturesInputNumber = +(byId("culturesInput") as HTMLInputElement)
       .value;
@@ -1259,9 +1282,15 @@ class CulturesModule {
     const selectCultures = (culturesNumber: number): Culture[] => {
       const defaultCultures = this.getDefault(culturesNumber);
       const cultures: Culture[] = [];
+      const defaultCultureNames = new Set(defaultCultures.map((culture) => culture.name));
 
+      const lockedNames = new Set<string>();
       pack.cultures?.forEach((culture) => {
-        if (culture.lock && !culture.removed) cultures.push(culture);
+        const canKeepLockedCulture = defaultCultureNames.has(culture.name);
+        if (culture.lock && !culture.removed && canKeepLockedCulture && !lockedNames.has(culture.name)) {
+          cultures.push(culture);
+          lockedNames.add(culture.name);
+        }
       });
 
       if (!cultures.length) {
@@ -1269,6 +1298,47 @@ class CulturesModule {
           return defaultCultures as Culture[];
         if (defaultCultures.every((d) => d.odd === 1))
           return defaultCultures.splice(0, culturesNumber) as Culture[];
+      }
+
+      if (useDurgethLoreProfile) {
+        const prevalenceOrder: Record<string, number> = {
+          "Hearthborn Commonweal": 100,
+          "Apisdrenn Deep Holds": 95,
+          "Solarirum Citadels": 90,
+          "Apiskeld Forge Cities": 82,
+          "Apisveldir Gem Roads": 78,
+          "Ashirum Calderas": 74,
+          "Ashveld Cinderclans": 72,
+          "Nordal Jarls": 66,
+          "Kreln Tideclans": 60,
+          "Verdathi Fens": 52,
+          "Sylvarirum Canopy": 50,
+          "Vethanirum Borderlands": 48,
+          "Arantza Conclaves": 42,
+          "Sunblade Reaches": 35,
+          "Stoneguard Legions": 33,
+          "Gorirum Expanse": 28,
+          "Murrak Ashfields": 25,
+          "Bovari Drovelands": 22,
+          "Naukin Warrens": 20,
+          "Veildrift Hauntborn": 18,
+        };
+
+        const unlockedNames = new Set(cultures.map((culture) => culture.name));
+        const candidates = defaultCultures
+          .filter((candidate) => !unlockedNames.has(candidate.name))
+          .sort((a, b) => {
+            const scoreA = prevalenceOrder[a.name] ?? 50;
+            const scoreB = prevalenceOrder[b.name] ?? 50;
+            if (scoreA !== scoreB) return scoreB - scoreA;
+            return (b.odd ?? 1) - (a.odd ?? 1);
+          });
+
+        for (let i = 0; cultures.length < culturesNumber && i < candidates.length; i++) {
+          cultures.push(candidates[i] as Culture);
+        }
+
+        return cultures;
       }
 
       for (
@@ -1385,6 +1455,41 @@ class CulturesModule {
       c.color = colors[i];
       c.type = defineCultureType(center);
       c.expansionism = defineCultureExpansionism(c.type);
+      if (useDurgethLoreProfile) {
+        const expansionMultipliers: Record<string, number> = {
+          "Hearthborn Commonweal": 2.4,
+          "Apisdrenn Deep Holds": 1.8,
+          "Solarirum Citadels": 1.5,
+          "Apiskeld Forge Cities": 1.15,
+          "Apisveldir Gem Roads": 1.1,
+          "Ashirum Calderas": 1.05,
+          "Ashveld Cinderclans": 1.05,
+          "Nordal Jarls": 0.75,
+          "Kreln Tideclans": 0.85,
+          "Verdathi Fens": 0.88,
+          "Sylvarirum Canopy": 0.92,
+          "Vethanirum Borderlands": 0.7,
+          "Arantza Conclaves": 0.12,
+          "Sunblade Reaches": 0.38,
+          "Stoneguard Legions": 0.35,
+          "Gorirum Expanse": 0.3,
+          "Murrak Ashfields": 0.28,
+          "Bovari Drovelands": 0.25,
+          "Naukin Warrens": 0.22,
+          "Veildrift Hauntborn": 0.18,
+        };
+        c.expansionism = rn(
+          (c.expansionism as number) * (expansionMultipliers[c.name] ?? 1),
+          2,
+        );
+
+        if (c.name === "Arantza Conclaves") {
+          c.type = "Hunting";
+          c.expansionism = rn((c.expansionism as number) * 0.55, 2);
+        }
+
+        if (c.name === "Kreln Tideclans") c.type = "Naval";
+      }
       c.origins = [0];
       c.code = abbreviate(c.name, codes);
       codes.push(c.code);
@@ -1393,16 +1498,13 @@ class CulturesModule {
     });
 
     if (culturesSet.value === "durgeth") {
-      const scenario = ((globalThis as any).durgethScenarioDirectives || {}) as {
-        forceVerdathiSouthSwamp?: boolean;
-        forceSylvarirumSouthForest?: boolean;
-        nearConstraint?: boolean;
-      };
+      const scenario = durgethScenario;
       const verdathi = cultures.find((c) => c.name === "Verdathi Fens");
       const sylvarirum = cultures.find((c) => c.name === "Sylvarirum Canopy");
 
       if (verdathi?.center !== undefined && sylvarirum?.center !== undefined) {
         const needsHardPlacement =
+          useDurgethLoreProfile ||
           scenario.forceVerdathiSouthSwamp ||
           scenario.forceSylvarirumSouthForest ||
           scenario.nearConstraint;
@@ -1455,6 +1557,27 @@ class CulturesModule {
             if (oldSylvarirumCenter !== undefined) cultureIds[oldSylvarirumCenter] = 0;
             sylvarirum.center = preferredForest;
             cultureIds[preferredForest] = sylvarirum.i;
+          }
+        }
+      }
+
+      if (useDurgethLoreProfile) {
+        const nordal = cultures.find((c) => c.name === "Nordal Jarls");
+        if (nordal?.center !== undefined) {
+          const preferredNordal = populated
+            .filter((cellId: number) => {
+              const isNorthern = this.cells.p[cellId][1] < graphHeight * 0.38;
+              const isCold = grid.cells.temp[this.cells.g[cellId]] <= 4;
+              const isFree = !cultureIds[cellId];
+              return isNorthern && isCold && isFree;
+            })
+            .sort((a: number, b: number) => this.cells.s[b] - this.cells.s[a])[0];
+
+          if (preferredNordal !== undefined) {
+            const oldNordalCenter = nordal.center;
+            if (oldNordalCenter !== undefined) cultureIds[oldNordalCenter] = 0;
+            nordal.center = preferredNordal;
+            cultureIds[preferredNordal] = nordal.i;
           }
         }
       }
@@ -1531,6 +1654,11 @@ class CulturesModule {
   expand() {
     TIME && console.time("expandCultures");
     const { cells, cultures } = pack;
+    const durgethScenario = ((globalThis as any).durgethScenarioDirectives || {}) as {
+      loreProfile?: boolean;
+    };
+    const useDurgethLoreProfile =
+      culturesSet.value === "durgeth" && durgethScenario.loreProfile !== false;
 
     const queue = new FlatQueue();
     const cost: number[] = [];
@@ -1603,11 +1731,39 @@ class CulturesModule {
     while (queue.length) {
       const { cellId, priority, cultureId } = queue.pop();
       const { type, expansionism } = cultures[cultureId];
+      const cultureName = cultures[cultureId].name;
 
       cells.c[cellId].forEach((neibCellId) => {
         if (hasLocked) {
           const neibCultureId = cells.culture[neibCellId];
           if (neibCultureId && cultures[neibCultureId].lock) return; // do not overwrite cell of locked culture
+        }
+
+        if (useDurgethLoreProfile) {
+          const cellY = cells.p[neibCellId][1];
+          const temp = grid.cells.temp[cells.g[neibCellId]];
+          const isForest = [6, 7, 8, 9].includes(cells.biome[neibCellId]);
+          const isMountain = cells.h[neibCellId] >= 48;
+          const isHighVolcanic = cells.h[neibCellId] >= 54;
+          const isCoastal = Boolean(cells.haven[neibCellId]) || cells.t[neibCellId] === 1;
+          const isNorthernCold = cellY < graphHeight * 0.45 && temp <= 6;
+
+          if (cultureName === "Nordal Jarls" && !isNorthernCold) return;
+
+          if (
+            ["Apisdrenn Deep Holds", "Apiskeld Forge Cities", "Apisveldir Gem Roads"].includes(
+              cultureName,
+            ) &&
+            !isMountain
+          )
+            return;
+
+          if (["Ashirum Calderas", "Ashveld Cinderclans"].includes(cultureName) && !isHighVolcanic)
+            return;
+
+          if (cultureName === "Kreln Tideclans" && !isCoastal) return;
+
+          if (cultureName === "Arantza Conclaves" && !isForest) return;
         }
 
         const biome = cells.biome[neibCellId];
@@ -1640,6 +1796,69 @@ class CulturesModule {
           );
         }
       });
+    }
+
+    if (useDurgethLoreProfile) {
+      const arantzaIds = cultures
+        .filter((culture) => culture.name === "Arantza Conclaves")
+        .map((culture) => culture.i)
+        .filter(Boolean) as number[];
+
+      for (const arantzaId of arantzaIds) {
+        const owned = cells.i.filter(
+          (cellId: number) =>
+            cells.culture[cellId] === arantzaId &&
+            cells.pop[cellId] > 0 &&
+            [6, 7, 8, 9].includes(cells.biome[cellId]),
+        );
+        if (!owned.length) continue;
+
+        const populatedCount = cells.i.reduce(
+          (sum: number, candidateCellId: number) => sum + (cells.pop[candidateCellId] > 0 ? 1 : 0),
+          0,
+        );
+        const maxCells = Math.max(8, Math.floor(populatedCount * 0.015));
+        if (owned.length <= maxCells) continue;
+
+        const sortedOwned = [...owned].sort((a: number, b: number) => cells.pop[b] - cells.pop[a]);
+        const kept: number[] = [];
+        const minPatchDistance = Math.max(10, ((graphWidth + graphHeight) / 2) * 0.02);
+
+        for (const cellId of sortedOwned) {
+          const [x, y] = cells.p[cellId];
+          const tooClose = kept.some((keptCellId) => {
+            const [kx, ky] = cells.p[keptCellId];
+            return Math.hypot(x - kx, y - ky) < minPatchDistance;
+          });
+          if (!tooClose) kept.push(cellId);
+          if (kept.length >= maxCells) break;
+        }
+
+        for (const cellId of sortedOwned) {
+          if (kept.includes(cellId)) continue;
+          const neighborCultures = cells.c[cellId]
+            .map((neighborId: number) => cells.culture[neighborId])
+            .filter((neighborCultureId: number) => neighborCultureId && neighborCultureId !== arantzaId);
+
+          if (neighborCultures.length) {
+            const counts = new Map<number, number>();
+            for (const neighborCultureId of neighborCultures) {
+              counts.set(neighborCultureId, (counts.get(neighborCultureId) ?? 0) + 1);
+            }
+            let bestCulture = 0;
+            let bestCount = -1;
+            counts.forEach((count, cultureId) => {
+              if (count > bestCount) {
+                bestCount = count;
+                bestCulture = cultureId;
+              }
+            });
+            cells.culture[cellId] = bestCulture;
+          } else {
+            cells.culture[cellId] = 0;
+          }
+        }
+      }
     }
 
     TIME && console.timeEnd("expandCultures");

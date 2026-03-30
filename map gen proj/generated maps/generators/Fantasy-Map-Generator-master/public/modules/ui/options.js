@@ -719,15 +719,19 @@ function parseScenarioPrompt(rawPrompt) {
   };
 
   const mentionsSouth = has(/south|southern|bottom|lower half|southlands?/);
+  const mentionsNorth = has(/north|northern|far north|upper half|top/);
+  const mentionsFarNorth = has(/far north|extreme north|deep north|northernmost|polar/);
   const mentionsSwamp = has(/swamp|swamps|fen|fens|marsh|marshes|wetland|wetlands|bog|bogs|mire|mangrove/);
   const mentionsForest = has(/forest|forests|canopy|woods?|woodland|jungle|rainforest|grove/);
   const mentionsNear = has(/near|next to|border|adjacent|neighbor|touching/);
+  const mentionsIce = has(/ice|icy|glacier|glaciers|iceberg|icebergs|frozen|frost/);
 
   const directives = {
     prompt,
     useDurgeth: has(/durgeth|verdathi|sylvarirum|aethermoor/),
     forceVerdathiSouthSwamp: has(/verdathi/) && mentionsSouth && mentionsSwamp,
     forceSylvarirumSouthForest: has(/sylvarirum/) && mentionsSouth && mentionsForest,
+    forceIceFarNorth: mentionsIce && (mentionsFarNorth || mentionsNorth) && has(/only|just|confine|restricted?|limit|far/),
     nearConstraint: mentionsNear,
     statesDelta: 0,
     culturesDelta: 0,
@@ -740,7 +744,8 @@ function parseScenarioPrompt(rawPrompt) {
       religions: has(/religion|faith|cult/),
       burgs: has(/burg|city|town|settlement/),
       rivers: has(/river|waterway/),
-      provinces: has(/province|duchy|county/)
+      provinces: has(/province|duchy|county/),
+      ice: mentionsIce
     }
   };
 
@@ -768,6 +773,7 @@ function parseScenarioPrompt(rawPrompt) {
   // "verdathi:south-swamp"  "sylvarirum:south-forest"  "adjacent:true"
   if (has(/verdathi\s*:\s*south[-\s]?swamp/)) directives.forceVerdathiSouthSwamp = true;
   if (has(/sylvarirum\s*:\s*south[-\s]?forest/)) directives.forceSylvarirumSouthForest = true;
+  if (has(/ice\s*:\s*far[-\s]?north|ice\s*:\s*north[-\s]?only|north[-\s]?only\s*ice/)) directives.forceIceFarNorth = true;
   if (has(/adjacent\s*:\s*true|border\s*:\s*true/)) directives.nearConstraint = true;
 
   return directives;
@@ -854,6 +860,10 @@ function applyScenarioPromptToCurrentMap(rawPrompt) {
   }
   if (directives.applyCurrent.provinces && typeof regenerateProvinces === "function") {
     regenerateProvinces();
+    changed++;
+  }
+  if (directives.applyCurrent.ice && typeof regenerateIce === "function") {
+    regenerateIce();
     changed++;
   }
   if (directives.applyCurrent.rivers && typeof regenerateRivers === "function") {

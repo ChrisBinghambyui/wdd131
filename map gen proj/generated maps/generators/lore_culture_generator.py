@@ -217,6 +217,43 @@ def parse_language_file(path: Path) -> LanguagePack:
     return LanguagePack(filename=path.name, key=normalize_ascii(base_key), tokens=tokens)
 
 
+def parse_namesbase_file(path: Path) -> List[LanguagePack]:
+    """Parse a FMG-style namesbase file into per-culture token packs."""
+    packs: List[LanguagePack] = []
+
+    for raw_line in path.read_text(encoding="utf-8", errors="ignore").splitlines():
+        line = raw_line.strip()
+        if not line or "|" not in line:
+            continue
+
+        parts = [part.strip() for part in line.split("|")]
+        if len(parts) < 6:
+            continue
+
+        base_name = parts[0]
+        raw_names = parts[5]
+        if not base_name or not raw_names:
+            continue
+
+        tokens: List[str] = []
+        for name in raw_names.split(","):
+            for word in split_words(name):
+                cleaned = clean_display(word)
+                if len(cleaned) >= 3:
+                    tokens.append(cleaned)
+
+        if tokens:
+            packs.append(
+                LanguagePack(
+                    filename=f"{path.name}:{base_name}",
+                    key=normalize_ascii(base_name),
+                    tokens=tokens,
+                )
+            )
+
+    return packs
+
+
 def load_languages(languages_dir: Path) -> List[LanguagePack]:
     packs: List[LanguagePack] = []
     for path in sorted(languages_dir.glob("*.txt")):
@@ -347,13 +384,14 @@ def render_text(seeds: List[Dict[str, str]]) -> str:
     return "\n\n".join(blocks)
 
 
-def resolve_default_paths(script_path: Path) -> Tuple[Path, Path]:
+def resolve_default_paths(script_path: Path) -> Tuple[Path, Path, Path]:
     root = script_path.parent.parent
     lore_primary = script_path.parent / "Lore for integration" / "Durgeth_Lore_Compendium_v5.docx.txt"
     lore_fallback = script_path.parent / "lore" / "Durgeth_Lore_Compendium_v5.docx.txt"
     languages_dir = root / "languages"
+    namesbase_file = root / "Durgeth Namesbase 2026-03-22-10-25.txt"
     lore_file = lore_primary if lore_primary.exists() else lore_fallback
-    return lore_file, languages_dir
+    return lore_file, languages_dir, namesbase_file
 
 
 def parse_args() -> argparse.Namespace:
@@ -369,6 +407,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--languages-dir", type=Path, default=None, help="Optional override path to language folder."
     )
+    parser.add_argument(
+        "--namesbase-file",
+        type=Path,
+        default=None,
+        help="Optional override path to FMG namesbase file (pipe-delimited).",
+    )
     return parser.parse_args()
 
 
@@ -376,14 +420,17 @@ def main() -> int:
     args = parse_args()
     rng = random.Random(args.seed)
 
-    default_lore, default_lang = resolve_default_paths(Path(__file__))
+    default_lore, default_lang, default_namesbase = resolve_default_paths(Path(__file__))
     lore_file = args.lore_file or default_lore
     languages_dir = args.languages_dir or default_lang
+    namesbase_file = args.namesbase_file or default_namesbase
 
     if not lore_file.exists():
         raise FileNotFoundError(f"Lore file not found: {lore_file}")
-    if not languages_dir.exists():
-        raise FileNotFoundError(f"Languages directory not found: {languages_dir}")
+    if not languages_dir.exists() and not namesbase_file.exists():
+        raise FileNotFoundError(
+            f"Neither language source exists. Missing folder: {languages_dir}; missing namesbase: {namesbase_file}"
+        )
 
     lore_entries = parse_lore_file(lore_file)
     if not lore_entries:
@@ -394,9 +441,14 @@ def main() -> int:
             print(culture)
         return 0
 
-    packs = load_languages(languages_dir)
+    packs: List[LanguagePack] = []
+    if namesbase_file.exists():
+        packs.extend(parse_namesbase_file(namesbase_file))
+    if languages_dir.exists():
+        packs.extend(load_languages(languages_dir))
+
     if not packs:
-        raise RuntimeError("No usable language files found.")
+        raise RuntimeError("No usable language/namebase sources found.")
 
     if args.culture:
         key = normalize_ascii(args.culture)
