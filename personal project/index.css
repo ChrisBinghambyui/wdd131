@@ -1,0 +1,96 @@
+:root {
+  --bg: #f4f1e8;
+  --panel: #fffdf6;
+  --text: #1f1f1f;
+  --muted: #5e5a52;
+  --accent: #9a7b2f;
+  --border: #d8d0be;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+.site-header {
+  padding: 2rem 1rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  background: #efe8d6;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+.subtitle {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+}
+
+.container {
+  width: min(960px, 100% - 2rem);
+  margin: 1.25rem auto;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 1rem;
+}
+
+.panel h2 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.link-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.link-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  padding: 0.8rem;
+  border-radius: 6px;
+}
+
+.link-card h3 {
+  margin: 0 0 0.25rem;
+  color: var(--accent);
+}
+
+.link-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.link-card:hover,
+.link-card:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.site-footer {
+  padding: 1rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+@media (min-width: 700px) {
+  .link-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

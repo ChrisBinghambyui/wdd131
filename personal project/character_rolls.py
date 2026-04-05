@@ -123,7 +123,7 @@ def roll_dice(number_of_dice, dice_sides):
     return total, roll_list
 
 
-def parse_damage_text(damage_text):
+def clean_damage_text(damage_text):
     assert type(damage_text) == str, "damage_text must be a string."
     if damage_text == "":
         return 0, 0, ""
@@ -297,7 +297,7 @@ def do_attack_roll(character_dict):
         print("No attack profile found on this weapon.")
         return
 
-    number_of_dice, dice_sides, damage_type = parse_damage_text(damage_text)
+    number_of_dice, dice_sides, damage_type = clean_damage_text(damage_text)
 
     hit_roll = random.randint(1, 100)
     hit_success = hit_roll <= skill_value
