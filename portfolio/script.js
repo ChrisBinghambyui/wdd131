@@ -69,8 +69,8 @@ function initTronBackground() {
   function resize() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    cols = Math.floor(canvas.width / GRID_SIZE);
-    rows = Math.floor(canvas.height / GRID_SIZE);
+    cols = Math.ceil(canvas.width / GRID_SIZE);
+    rows = Math.ceil(canvas.height / GRID_SIZE);
     occupiedGrid = Array.from({ length: cols }, () => new Array(rows).fill(false));
     ctx.fillStyle = "#060911";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
