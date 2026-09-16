@@ -23,7 +23,7 @@ body {
   margin: 0;
   font-family: "Fira Code", monospace, sans-serif;
   color: var(--text);
-  background-color: var(--term-bg);
+  background-color: var(--term-bg) !important;
   text-align: center;
   line-height: 1.6;
   position: relative;
