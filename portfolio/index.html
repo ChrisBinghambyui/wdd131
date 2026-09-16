@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>About Me</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <title>About Me</title>
+    <meta name="description" content="Portfolio of Chris Bingham, Computer Science student at BYU-Idaho specializing in software engineering and game development." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/styles.css"/>
   </head>
   <body>
+    <canvas id="tronCanvas"></canvas>
     <header class="site-header">
-      <h1>Welcome!</h1>
+      <h1 class="terminal-title"><span id="typewriter"></span><span class="cursor">_</span></h1>
     </header>
+    <script src="script.js" defer></script>
     <main>
       <section id="content">
-        <img src="images/me.jpg" alt="Portrait of Chris Bingham" />
+        <img src="images/me (1).webp" alt="Portrait of Chris Bingham" width="300" height="300"/>
         <p>
-          Hello! My name is Chris Bingham, and this is my first website. I'm currently a student at BYU-Idaho, majoring in Computer Science. It's my dream to design video games and software that brings people together. Thanks for taking the time to come visit!
+          Hello! My name is Chris Bingham, and this is my first website. I'm currently a student at BYU-Idaho, majoring in Computer Science. It's my dream to design video games and software that helps people to connect with one another. Thanks for taking the time to come visit!
         </p>
       </section>
 
@@ -40,7 +47,9 @@
 
         <section class="jousting-card">
           <a href="https://multiplayer-games-2unu.onrender.com/loaded_bones.html">
-            <img class="card-img" src="images/Die.gif" alt="A spinning die" />
+            <video class="card-img" autoplay loop muted playsinline>
+              <source src="images/Die.webm" type="video/webm">
+            </video>
             <div class="overlay">
               <div class="text">My second project is inspired by Dicey Dungeons, combining dice and deckbuilding into a fun adventuring game.</div>
             </div>
@@ -49,8 +58,8 @@
         </section>
       </section>
     </main>
-    <footer>
+    <!-- <footer>
       <p>My First Web Page 2025</p>
-    </footer>
+    </footer> -->
   </body>
 </html>

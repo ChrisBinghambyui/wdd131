@@ -1,5 +1,4 @@
-// PASTE THESE FUNCTIONS INTO loaded_bones.html (lines 2851-2997)
-// These replace the broken functions with properly quoted strings
+// loaded_bones.html (lines 2851-2997)
 
 function showShipTutorialIntro() {
   const screen = document.getElementById('story-screen');
